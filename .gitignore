@@ -1,0 +1,77 @@
+# Dépendances
+/node_modules
+
+# Logs
+/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Répertoires de build Nuxt
+/.nuxt
+/dist
+
+# Fichiers de configuration locaux
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode
+
+# Fichiers de couverture de tests
+/coverage
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de build
+/build
+
+# Fichiers de cache
+.cache
+.npm
+
+# Fichiers spécifiques à Nuxt
+.nuxt-*
+
+# Fichiers de déploiement
+.netlify
+.vercel
+
+# Fichiers de package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Fichiers de debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers de configuration TypeScript (si vous utilisez TypeScript)
+tsconfig.json
+tsconfig.*.json
+
+# Fichiers de configuration ESLint (si vous utilisez ESLint)
+.eslintcache
+
+# Fichiers de configuration Prettier (si vous utilisez Prettier)
+.prettierignore
+.prettierrc
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
