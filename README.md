@@ -1,69 +1,94 @@
-# TimeoRH-frontend
+# TimeoRH - Frontend
 
-## Build Setup
+Ce projet est le frontend de l'application TimeoRH, développé avec Nuxt.js.
 
-```bash
-# install dependencies
-$ yarn install
+## Prérequis
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+- Node.js (v14 ou supérieur)
+- npm ou yarn
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## Installation
 
-# generate static project
-$ yarn generate
-```
+1. Clonez ce dépôt :
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+git clone https://github.com/votre-username/TimeoRH-frontend.git
+cd TimeoRH-frontend
 
-## Special Directories
+2. Installez les dépendances :
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+npm install
 
-### `assets`
+ou
+yarn install
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+3. Copiez le fichier `.env.example` en `.env` et configurez les variables d'environnement :
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+cp .env.example .env
 
-### `components`
+## Configuration
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+### Utilisation du fichier data.json
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Si vous utilisez un fichier data.json pour le développement ou les tests :
 
-### `layouts`
+Placez le fichier data.json dans le dossier static/ de votre projet Nuxt.
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+Vous pouvez accéder aux données comme ceci :
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+async fetchLocalData() {
+  const response = await this.$axios.get('/data.json');
+  this.localData = response.data;
+}
 
+## Développement
 
-### `pages`
+Lancez le serveur de développement :
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+npm run dev
+# ou
+yarn dev
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+L'application sera accessible à l'adresse http://localhost:3000.
 
-### `plugins`
+## Production
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+Construisez l'application pour la production :
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+npm run build
+# ou
+yarn build
 
-### `static`
+Lancez le serveur de production :
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+npm run start
+# ou
+yarn start
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+## Fonctionnalités principales
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+- Page d'accueil responsive
+- Tableau de bord avec graphiques et visualisations
+- Tables de données responsives avec filtrage et recherche
+- Système d'onglets pour une navigation facile
 
-### `store`
+## Structure du projet
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+- pages/ : Contient les pages de l'application
+- components/ : Composants réutilisables
+- layouts/ : Layouts de l'application
+- store/ : État global de l'application (Vuex)
+- static/ : Fichiers statiques (dont data.json)
+- plugins/ : Plugins Nuxt (Bootstrap, etc.)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+## Contribution
+
+1. Forkez le projet
+2. Créez votre branche de fonctionnalité (git checkout -b feature/AmazingFeature)
+3. Committez vos changements (git commit -m 'Add some AmazingFeature')
+4. Poussez vers la branche (git push origin feature/AmazingFeature)
+5. Ouvrez une Pull Request
+
+## Licence
+
+Ce projet est sous licence MIT.
+‡
