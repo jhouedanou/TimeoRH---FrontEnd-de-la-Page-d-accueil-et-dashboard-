@@ -1,15 +1,56 @@
 {
   "candidats": [
     {
-      "id": "string",
-      "nom": "string",
-      "prenom": "string",
-      "email": "string",
-      "telephone": "string",
-      "cv": "string",
-      "competences": ["string"],
-      "experience": "number",
-      "dateInscription": "date"
+      "id": "C001",
+      "nom": "Dubois",
+      "prenom": "Marie",
+      "email": "marie.dubois@email.com",
+      "telephone": "0123456789",
+      "cv": "cv_marie_dubois.pdf",
+      "competences": ["Java", "Python", "SQL"],
+      "experience": 5,
+      "dateInscription": "2023-05-15",
+      "education": "Master en Informatique",
+      "geolocalisation": "Cocody, Abidjan, Côte d'Ivoire"
+    },
+    {
+      "id": "C002",
+      "nom": "Martin",
+      "prenom": "Pierre",
+      "email": "pierre.martin@email.com",
+      "telephone": "0234567890",
+      "cv": "cv_pierre_martin.pdf",
+      "competences": ["JavaScript", "React", "Node.js"],
+      "experience": 3,
+      "dateInscription": "2023-05-16",
+      "education": "Licence en Développement Web",
+      "geolocalisation": "Plateau, Abidjan, Côte d'Ivoire"
+    },
+    {
+      "id": "C003",
+      "nom": "Leroy",
+      "prenom": "Sophie",
+      "email": "sophie.leroy@email.com",
+      "telephone": "0345678901",
+      "cv": "cv_sophie_leroy.pdf",
+      "competences": ["C++", "C#", "Unity"],
+      "experience": 7,
+      "dateInscription": "2023-05-17",
+      "education": "Doctorat en Informatique",
+      "geolocalisation": "Marcory, Abidjan, Côte d'Ivoire"
+    },
+    {
+      "id": "C004",
+      "nom": "Petit",
+      "prenom": "Thomas",
+      "email": "thomas.petit@email.com",
+      "telephone": "0456789012",
+      "cv": "cv_thomas_petit.pdf",
+      "competences": ["PHP", "Laravel", "MySQL"],
+      "experience": 4,
+      "dateInscription": "2023-05-18",
+      "education": "DUT Informatique",
+      "geolocalisation": "Yopougon, Abidjan, Côte d'Ivoire"
     }
   ]
 }

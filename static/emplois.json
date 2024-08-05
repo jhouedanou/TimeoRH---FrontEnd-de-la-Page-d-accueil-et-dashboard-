@@ -1,14 +1,67 @@
 {
   "emplois": [
     {
-      "id": "string",
-      "titre": "string",
-      "description": "string",
-      "competencesRequises": ["string"],
-      "experienceRequise": "number",
-      "departement": "string",
-      "datePublication": "date",
-      "statut": "string"
+      "id": "001",
+      "titre": "Développeur Full Stack",
+      "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
+      "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
+      "experienceRequise": 3,
+      "departement": "Développement",
+      "datePublication": "2023-05-15",
+      "statut": "Ouvert",
+      "geolocalisation": "Côte d'Ivoire, Abidjan - Cocody",
+      "societe": "TechInnovate CI",
+      "motsCles": [
+        "développement web",
+        "full stack",
+        "JavaScript",
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "002",
+      "titre": "Designer UX/UI",
+      "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
+      "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
+      "experienceRequise": 2,
+      "departement": "Design",
+      "datePublication": "2023-05-16",
+      "statut": "Ouvert",
+      "geolocalisation": "Côte d'Ivoire, Abidjan - Plateau",
+      "societe": "DesignMasters CI",
+      "motsCles": ["design", "UX/UI", "interface utilisateur", "prototypage"]
+    },
+    {
+      "id": "003",
+      "titre": "Ingénieur DevOps",
+      "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
+      "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
+      "experienceRequise": 4,
+      "departement": "Opérations",
+      "datePublication": "2023-05-17",
+      "statut": "Ouvert",
+      "geolocalisation": "Côte d'Ivoire, Abidjan - Marcory",
+      "societe": "CloudOps CI",
+      "motsCles": ["DevOps", "cloud", "automatisation", "CI/CD"]
+    },
+    {
+      "id": "004",
+      "titre": "Data Scientist",
+      "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
+      "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
+      "experienceRequise": 3,
+      "departement": "Analyse de données",
+      "datePublication": "2023-05-18",
+      "statut": "Ouvert",
+      "geolocalisation": "Côte d'Ivoire, Abidjan - Yopougon",
+      "societe": "DataInsights CI",
+      "motsCles": [
+        "data science",
+        "analyse de données",
+        "machine learning",
+        "statistiques"
+      ]
     }
   ]
 }
