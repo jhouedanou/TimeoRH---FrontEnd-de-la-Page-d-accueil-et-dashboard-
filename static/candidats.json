@@ -1,0 +1,15 @@
+{
+  "candidats": [
+    {
+      "id": "string",
+      "nom": "string",
+      "prenom": "string",
+      "email": "string",
+      "telephone": "string",
+      "cv": "string",
+      "competences": ["string"],
+      "experience": "number",
+      "dateInscription": "date"
+    }
+  ]
+}

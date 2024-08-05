@@ -1,0 +1,14 @@
+{
+  "emplois": [
+    {
+      "id": "string",
+      "titre": "string",
+      "description": "string",
+      "competencesRequises": ["string"],
+      "experienceRequise": "number",
+      "departement": "string",
+      "datePublication": "date",
+      "statut": "string"
+    }
+  ]
+}

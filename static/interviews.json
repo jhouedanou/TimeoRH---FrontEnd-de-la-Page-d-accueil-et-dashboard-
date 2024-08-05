@@ -1,0 +1,15 @@
+{
+  "interviews": [
+    {
+      "id": "string",
+      "candidatId": "string",
+      "recruteurId": "string",
+      "emploiId": "string",
+      "date": "date",
+      "heure": "string",
+      "type": "string",
+      "statut": "string",
+      "notes": "string"
+    }
+  ]
+}
