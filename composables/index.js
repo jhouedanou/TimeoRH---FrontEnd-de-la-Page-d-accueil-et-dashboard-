@@ -1,22 +1,21 @@
+
 import { ref, onMounted } from 'vue'
+import indexJson from '@/static/api/index.json'
 
-export function useIndexContent() {
-  const content = ref({})
+export function useindex() {
+  const index = ref(indexJson)
 
-  async function fetchContent() {
+  const fetchindex = () => {
     try {
-      const response = await fetch('/api/index.json')
-      const data = await response.json()
-      content.value = data
+      index.value = indexJson
     } catch (error) {
-      console.error('Erreur lors de la récupération du contenu:', error)
+      console.error('Erreur lors de la récupération des données globales:', error)
     }
   }
 
-  onMounted(fetchContent)
+  onMounted(fetchindex)
 
   return {
-    content,
-    fetchContent
+    data: index
   }
 }

@@ -1,8 +1,7 @@
 <script setup>
 import { useIndexContent } from "/composables/index";
 import FrontendLayout from "/layouts/frontend.vue";
-
-const { content } = useIndexContent();
+const { content } = useindex();
 </script>
 
 <template>

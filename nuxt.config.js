@@ -51,5 +51,7 @@ export default {
   build: {
   },
   compabilityDate: '2024-07-03',
-
+  typescript: {
+    strict: false
+  }
 }

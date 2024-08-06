@@ -1,12 +1,12 @@
 import { ref, onMounted } from 'vue'
+import globalDataJson from '@/static/api/globalData.json'
 
 export function useGlobalData() {
-  const globalData = ref({})
+  const globalData = ref(globalDataJson)
 
-  const fetchGlobalData = async () => {
+  const fetchGlobalData = () => {
     try {
-      const response = await fetch('globalData.json')
-      globalData.value = await response.json()
+      globalData.value = globalDataJson
     } catch (error) {
       console.error('Erreur lors de la récupération des données globales:', error)
     }
