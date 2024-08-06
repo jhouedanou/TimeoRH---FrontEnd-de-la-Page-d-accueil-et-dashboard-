@@ -9,17 +9,13 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from "@nuxtjs/composition-api";
+<script setup>
+import { onMounted } from "vue";
 import useCandidats from "@/composables/useCandidats";
 
-export default defineComponent({
-  setup() {
-    const { candidats, fetchCandidats } = useCandidats();
+const { candidats, fetchCandidats } = useCandidats();
 
-    fetchCandidats();
-
-    return { candidats };
-  },
+onMounted(() => {
+  fetchCandidats();
 });
 </script>

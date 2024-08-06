@@ -1,16 +1,23 @@
-import { ref, useContext } from '@nuxtjs/composition-api'
+import { ref } from 'vue'
 
 export default function useCandidats() {
-  const { $axios } = useContext()
   const candidats = ref([])
 
   const fetchCandidats = async () => {
-    const { data } = await $axios.get('/api/candidats')
+    const response = await fetch('/api/candidats')
+    const data = await response.json()
     candidats.value = data
   }
 
   const addCandidat = async (candidat) => {
-    const { data } = await $axios.post('/api/candidats', candidat)
+    const response = await fetch('/api/candidats', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(candidat),
+    })
+    const data = await response.json()
     candidats.value.push(data)
   }
 

@@ -1,16 +1,23 @@
-import { ref, useContext } from '@nuxtjs/composition-api'
+import { ref, onMounted, getCurrentInstance } from 'vue'
 
 export default function useRecruteurs() {
-  const { $axios } = useContext()
   const recruteurs = ref([])
 
   const fetchRecruteurs = async () => {
-    const { data } = await $axios.get('/api/recruteurs')
+    const response = await fetch('/api/recruteurs')
+    const data = await response.json()
     recruteurs.value = data
   }
 
   const addRecruteur = async (recruteur) => {
-    const { data } = await $axios.post('/api/recruteurs', recruteur)
+    const response = await fetch('/api/recruteurs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(recruteur),
+    })
+    const data = await response.json()
     recruteurs.value.push(data)
   }
 

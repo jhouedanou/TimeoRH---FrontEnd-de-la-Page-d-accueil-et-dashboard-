@@ -1,0 +1,48 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de configuration d'éditeur
+.vscode/
+.idea/
+
+# Fichiers de dépendances
+/node_modules/
+/vendor/
+
+# Fichiers de build
+/dist/
+/build/
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.swp
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Fichiers de cache
+.cache/
+
+# Fichiers de sauvegarde
+*.bak
+
+# Fichiers de test de couverture
+/coverage/
+
+# Fichiers spécifiques au framework (à adapter selon votre projet)
+# Par exemple, pour React :
+# /public/
+
+# Fichiers de package
+package-lock.json
+yarn.lock
+
+# Autres fichiers spécifiques au projet
+# TODO: Ajoutez ici d'autres fichiers ou dossiers spécifiques à votre projet
+Ò

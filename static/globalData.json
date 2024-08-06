@@ -1,0 +1,9 @@
+{
+  "logo": "/images/logo.svg",
+  "slogan": "Gérez vos ressources humaines efficacement",
+  "buttonText": "Login",
+  "googleplaylogo": "/images/googleplay.png",
+  "googlePlayUrl": "https://play.google.com/store/apps/details?id=votre.app.id",
+  "applelogo": "/images/googleplay.png",
+  "appStoreUrl": "https://apps.apple.com/app/id123456789"
+}

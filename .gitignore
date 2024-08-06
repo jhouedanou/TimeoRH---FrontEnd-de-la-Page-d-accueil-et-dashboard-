@@ -1,6 +1,6 @@
 # Dépendances
 /node_modules
-
+node_modules/*
 # Logs
 /logs
 *.log
@@ -76,3 +76,4 @@ tsconfig.*.json
 *.bak
 *.backup
 nu
+node_modules

@@ -10,7 +10,8 @@
 </template>
 
 <script setup>
-import { useEmplois } from "@/composables/useEmplois";
+import { onMounted } from "vue";
+import useEmplois from "@/composables/useEmplois";
 
 const { emplois, fetchEmplois } = useEmplois();
 onMounted(() => {

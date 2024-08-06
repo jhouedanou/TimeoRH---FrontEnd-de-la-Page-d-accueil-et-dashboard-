@@ -1,13 +1,13 @@
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
 
 export function useIndexContent() {
   const content = ref({})
 
   async function fetchContent() {
     try {
-      const response = await axios.get('/index.json')
-      content.value = response.data
+      const response = await fetch('/api/index.json')
+      const data = await response.json()
+      content.value = data
     } catch (error) {
       console.error('Erreur lors de la récupération du contenu:', error)
     }

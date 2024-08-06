@@ -1,10 +1,6 @@
 <template>
   <div class="frontend-layout">
-    <header>
-      <nav>
-        <!-- Ajoutez ici la navigation du frontend -->
-      </nav>
-    </header>
+    <home-page-header> </home-page-header>
     <main>
       <slot />
     </main>

@@ -12,7 +12,7 @@
 <script setup>
 import { onMounted } from "vue";
 import useRecruteurs from "@/composables/useRecruteurs";
-import DashboardLayout from "@/layouts/DashboardLayout.vue";
+import DashboardLayout from "@/layouts/dashboard.vue";
 
 const { recruteurs, fetchRecruteurs } = useRecruteurs();
 

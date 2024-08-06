@@ -1,0 +1,28 @@
+{
+  "actualites": [
+    {
+      "titre": "Boom du secteur technologique en Côte d'Ivoire",
+      "image": "https://example.com/images/tech_ci.jpg",
+      "resume": "Le secteur technologique connaît une croissance rapide, créant de nombreuses opportunités d'emploi.",
+      "texte": "La Côte d'Ivoire voit une augmentation significative des startups et des entreprises technologiques, offrant de nouvelles perspectives d'emploi pour les jeunes diplômés. Les domaines de la fintech, de l'agritech et de l'e-commerce sont particulièrement dynamiques."
+    },
+    {
+      "titre": "Réformes du code du travail ivoirien",
+      "image": "https://example.com/images/reforme_travail.jpg",
+      "resume": "Le gouvernement annonce des modifications importantes du code du travail pour 2023.",
+      "texte": "Les nouvelles réformes visent à moderniser le marché du travail ivoirien, en incluant des dispositions sur le télétravail, l'égalité professionnelle et la formation continue. Ces changements devraient avoir un impact significatif sur les employeurs et les employés."
+    },
+    {
+      "titre": "Essor du secteur agricole et création d'emplois",
+      "image": "https://example.com/images/agriculture_ci.jpg",
+      "resume": "L'agriculture reste un pilier de l'économie ivoirienne et continue de créer des emplois.",
+      "texte": "Avec l'introduction de nouvelles technologies et pratiques agricoles, le secteur connaît une transformation qui attire de plus en plus de jeunes. Des programmes de formation et de soutien aux entrepreneurs agricoles sont mis en place pour encourager cette tendance."
+    },
+    {
+      "titre": "Développement des compétences numériques en Côte d'Ivoire",
+      "image": "https://example.com/images/competences_numeriques.jpg",
+      "resume": "Des initiatives publiques et privées visent à combler le déficit de compétences numériques.",
+      "texte": "Face à la demande croissante de professionnels du numérique, de nombreux programmes de formation sont lancés en Côte d'Ivoire. Ces initiatives visent à préparer la main-d'œuvre locale aux défis de l'économie numérique et à attirer les investissements étrangers dans le secteur des TIC."
+    }
+  ]
+}
