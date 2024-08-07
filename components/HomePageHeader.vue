@@ -1,7 +1,7 @@
 <template>
   <header class="container">
-    <div id="HeaderFront" class="columns">
-      <div class="column is-one-quarter">
+    <div id="HeaderFront" class="columns is-mobile">
+      <div class="column is-one-quarter is-full-mobile">
         <figure class="image">
           <NuxtImg
             :src="data.logo"
@@ -14,7 +14,7 @@
         </figure>
       </div>
       <div
-        class="column is-flex is-justify-content-flex-end is-align-items-center"
+        class="column is-flex is-justify-content-flex-end is-align-items-center is-full-mobile"
       >
         <div class="buttons">
           <button class="button is-primary login" @click="downloadApp">
@@ -67,7 +67,7 @@ const downloadApp = () => {
 #HeaderFront {
   margin-top: 62px;
   max-width: 1246px;
-  height: 83px;
+  min-height: 83px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
