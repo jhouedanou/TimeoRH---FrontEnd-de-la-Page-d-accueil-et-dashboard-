@@ -1,1 +1,7 @@
-{ "siteName": "TimeoRH" }
+{
+  "siteName": "TimeoRH",
+  "titre": "Votre <span>carrière</span><br/>commence <span>ici</span>",
+  "soustitre": "Opportunités sélectionnées pour travailler à domicile, à distance, en freelance, à temps plein, à temps partiel, en contrat et en stage.",
+  "searchbox": "Trouvez le job correspondant à votre profil",
+  "background": "/images/hero.jpg"
+}

@@ -65,10 +65,16 @@ const downloadApp = () => {
   object-fit: contain;
 }
 #HeaderFront {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 62px;
-  max-width: 1246px;
   min-height: 83px;
   display: flex;
+  z-index: 100;
+  max-width: 90vw;
+  left: 0;
+  right: 0;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -87,6 +93,11 @@ const downloadApp = () => {
   padding: 10px 59px;
   border-radius: 5px;
   background-color: #dc9756;
+  font-family: "Poppins", sans-serif;
+  &:hover {
+    background: #012e61;
+    color: white;
+  }
 }
 a {
   img {

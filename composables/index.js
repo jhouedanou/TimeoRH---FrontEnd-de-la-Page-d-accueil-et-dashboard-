@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 import indexJson from '@/static/api/index.json'
 
-export function useindex() {
+export function useIndex() {
   const index = ref(indexJson)
 
   const fetchindex = () => {
