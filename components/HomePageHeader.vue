@@ -51,10 +51,6 @@
 <script setup>
 import { useGlobalData } from "@/composables/useGlobalData";
 const { data } = useGlobalData();
-console.log(useGlobalData());
-const downloadApp = () => {
-  // Logique pour le téléchargement de l'application
-};
 </script>
 
 <style scoped lang="scss">

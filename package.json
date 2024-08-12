@@ -19,7 +19,8 @@
     "nuxt": "^3.12.4",
     "vue": "^3.4.36",
     "vue-server-renderer": "^2.7.16",
-    "vue-template-compiler": "^2.7.16"
+    "vue-template-compiler": "^2.7.16",
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@vuelidate/core": "^2.0.3",

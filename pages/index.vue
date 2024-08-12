@@ -3,5 +3,8 @@ import FrontendLayout from "/layouts/frontend.vue";
 </script>
 
 <template>
-  <FrontendLayout> <Hero /> </FrontendLayout>
+  <FrontendLayout>
+    <Hero />
+    <homepagejobs :limit="6" />
+  </FrontendLayout>
 </template>
