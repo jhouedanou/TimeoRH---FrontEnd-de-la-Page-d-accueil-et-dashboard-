@@ -6,16 +6,14 @@
         <Swiper
           v-if="isSwiper"
           :modules="[Navigation, Pagination]"
-          const
           :slides-per-view="isMobile ? 1 : 3"
           :space-between="0"
           :navigation="true"
-          :pagination="true"
           :loop="true"
-          :autoplay="{ delay: 2000, disableOnInteraction: false }"
+          :autoplay="{ delay: 2000, disableOnInteraction: true }"
           id="caro"
         >
-          <SwiperSlide v-for="(emploi, index) in carouselData" :key="index">
+          <SwiperSlide v-for="(emploi, index) in limitedData" :key="index">
             <div class="emploi-card">
               <div class="white">
                 <img :src="emploi.imageHomepage" alt="" />
@@ -57,6 +55,18 @@ const isMobile = ref(false);
 const checkIfMobile = () => {
   isMobile.value = window.innerWidth < 768;
 };
+const props = defineProps({
+  limit: {
+    type: Number,
+    default: 6,
+  },
+});
+const limitedData = computed(() => {
+  return Array.isArray(carouselData.value)
+    ? carouselData.value.slice(0, props.limit)
+    : [];
+});
+
 onMounted(() => {
   isSwiper.value = true;
   checkIfMobile();
