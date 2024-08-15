@@ -1,20 +1,22 @@
 import { ref, onMounted } from 'vue'
-import homepageJobsJson from '@/static/api/jobs.json'
+import emploisDataJson from '@/static/api/emplois.json'
 
-export function usehomepageJobs() {
-  const homepageJobs = ref(homepageJobsJson)
+export function useCarouselHomepageEmplois() {
+  const emplois = ref(emploisDataJson)
 
-  const fetchhomepageJobs = () => {
+  const fetchEmplois = () => {
     try {
-      homepageJobs.value = homepageJobsJson
+      emplois.value = emploisDataJson
+      console.log('Emplois chargés:', emplois.value)
     } catch (error) {
-      console.error('Erreur lors de la récupération des données globales:', error)
+      console.error('Erreur lors de la récupération des emplois:', error)
     }
   }
 
-  onMounted(fetchhomepageJobs)
+  onMounted(fetchEmplois)
+
 
   return {
-    data: homepageJobs
+    data: emplois
   }
 }

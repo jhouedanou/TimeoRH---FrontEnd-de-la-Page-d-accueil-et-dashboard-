@@ -1,32 +1,70 @@
 <template>
-  <div>
-    <carousel :items-to-show="3">
-      <slide v-for="job in limitedJobs" :key="job.id">
-        {{ job.title }}
-      </slide>
-    </carousel>
+  <div class="jobscarousel">
+    <div class="container">
+      <h3 class="homepageTitle">{{ globalData.introSectionEmploi }}</h3>
+      <client-only>
+        <Swiper
+          v-if="isSwiper"
+          :modules="[Navigation, Pagination]"
+          const
+          :slides-per-view="isMobile ? 1 : 3"
+          :space-between="0"
+          :navigation="true"
+          :pagination="true"
+          :loop="true"
+          :autoplay="{ delay: 2000, disableOnInteraction: false }"
+          id="caro"
+        >
+          <SwiperSlide v-for="(emploi, index) in carouselData" :key="index">
+            <div class="emploi-card">
+              <div class="white">
+                <img :src="emploi.imageHomepage" alt="" />
+                <div class="white-content">
+                  <h3 class="Email-Support-Agent">{{ emploi.titre }}</h3>
+                  <h4>{{ emploi.societe }}</h4>
+                  <p>{{ emploi.shortDescription }}</p>
+                </div>
+                <div class="white-content-2">
+                  <p><img src="/images/time.svg" alt="" />{{ emploi.type }}</p>
+                  <p>
+                    <img src="/images/localisation.svg" alt="" />{{
+                      emploi.geolocalisation
+                    }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </client-only>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue";
-import { Carousel, Slide } from "vue3-carousel";
-import { usehomepageJobs } from "@/composables/useCarouselHomepageEmplois";
-
-const props = defineProps({
-  limit: {
-    type: Number,
-    default: 6,
-  },
+import { useCarouselHomepageEmplois } from "@/composables/useCarouselHomepageEmplois";
+import { useGlobalData } from "@/composables/useGlobalData";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+const { data: globalData } = useGlobalData();
+const { data: carouselData } = useCarouselHomepageEmplois();
+const isSwiper = ref(false);
+const isMobile = ref(false);
+const checkIfMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+onMounted(() => {
+  isSwiper.value = true;
+  checkIfMobile();
+  window.addEventListener("resize", checkIfMobile);
 });
-
-const { data } = usehomepageJobs();
-
-const limitedJobs = computed(() => {
-  return data.value.slice(0, props.limit);
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkIfMobile);
 });
 </script>
 
-<style scoped>
-@import "vue3-carousel/dist/carousel.css";
-</style>
+<style scoped></style>
