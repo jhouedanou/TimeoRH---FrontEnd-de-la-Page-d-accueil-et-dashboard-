@@ -1,111 +1,153 @@
 <template>
-  <div class="offres-emploi">
-    <h1>Offres d'emploi</h1>
+  <home-page-header />
+  <Banner />
+  <div class="offremploi-container container">
+    <div class="offres-emploi">
+      <form @submit.prevent="appliquerFiltres" class="filtres">
+        <input
+          v-model="filtres.titre"
+          list="titres"
+          placeholder="Titre du poste"
+        />
+        <datalist id="titres">
+          <option v-for="titre in titres" :key="titre" :value="titre" />
+        </datalist>
 
-    <form @submit.prevent="appliquerFiltres" class="filtres">
-      <input
-        v-model="filtres.titre"
-        list="titres"
-        placeholder="Titre du poste"
-      />
-      <datalist id="titres">
-        <option v-for="titre in titres" :key="titre" :value="titre" />
-      </datalist>
+        <input
+          v-model="filtres.geolocalisation"
+          list="localisations"
+          placeholder="Localisation"
+        />
+        <datalist id="localisations">
+          <option v-for="loc in localisations" :key="loc" :value="loc" />
+        </datalist>
 
-      <input
-        v-model="filtres.geolocalisation"
-        list="localisations"
-        placeholder="Localisation"
-      />
-      <datalist id="localisations">
-        <option v-for="loc in localisations" :key="loc" :value="loc" />
-      </datalist>
+        <select v-model="filtres.type">
+          <option value="">Type de contrat</option>
+          <option v-for="type in types" :key="type" :value="type">
+            {{ type }}
+          </option>
+        </select>
 
-      <select v-model="filtres.type">
-        <option value="">Type de contrat</option>
-        <option v-for="type in types" :key="type" :value="type">
-          {{ type }}
-        </option>
-      </select>
+        <select v-model="filtres.experiencerequise">
+          <option value="">Expérience requise</option>
+          <option v-for="exp in experiences" :key="exp" :value="exp">
+            {{ exp }}
+          </option>
+        </select>
 
-      <select v-model="filtres.experiencerequise">
-        <option value="">Expérience requise</option>
-        <option v-for="exp in experiences" :key="exp" :value="exp">
-          {{ exp }}
-        </option>
-      </select>
+        <button type="submit">Filtrer</button>
+      </form>
 
-      <button type="submit">Filtrer</button>
-      <button type="button" @click="reinitialiserFiltres">Réinitialiser</button>
-    </form>
-
-    <div class="columns">
-      <div class="filtrewrapper column is-4-desktop">
-        <UAccordion>
-          <UAccordionItem>
-            <template #title>Type de contrat</template>
-            <template #content>
-              <div v-for="type in types" :key="type" class="form-check">
-                <UCheckbox v-model="filtres.typeCheckbox" :value="type">{{
-                  type
-                }}</UCheckbox>
+      <div class="columns">
+        <div class="filtrewrapper column is-4-desktop">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Type de contrat
+              </button>
+              <div class="accordion-content">
+                <div v-for="type in types" :key="type" class="form-check">
+                  <input
+                    type="checkbox"
+                    :id="type"
+                    v-model="filtres.typeCheckbox"
+                    :value="type"
+                  />
+                  <label :for="type">{{ type }}</label>
+                </div>
               </div>
-            </template>
-          </UAccordionItem>
-          <UAccordionItem>
-            <template #title>Niveau d'expérience</template>
-            <template #content>
-              <div v-for="exp in experiences" :key="exp" class="form-check">
-                <UCheckbox
-                  v-model="filtres.experiencerequisecheckbox"
-                  :value="exp"
-                  >{{ exp }}</UCheckbox
-                >
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Niveau d'expérience
+              </button>
+              <div class="accordion-content">
+                <div v-for="exp in experiences" :key="exp" class="form-check">
+                  <input
+                    type="checkbox"
+                    :id="exp"
+                    v-model="filtres.experiencerequisecheckbox"
+                    :value="exp"
+                  />
+                  <label :for="exp">{{ exp }}</label>
+                </div>
               </div>
-            </template>
-          </UAccordionItem>
-          <UAccordionItem>
-            <template #title>Mots-clés</template>
-            <template #content>
-              <UInput
-                v-model="filtres.motsCles"
-                placeholder="Entrez des mots-clés"
-              />
-            </template>
-          </UAccordionItem>
-        </UAccordion>
-        <UButton @click="reinitialiserFiltres" class="mt-3"
-          >Réinitialiser tous les filtres</UButton
-        >
-      </div>
-
-      <div class="column is-8-desktop">
-        <div class="emplois-liste">
-          <div class="columns">
-            <EmploiCard
-              v-for="emploi in emploisFiltres.emplois"
-              :key="emploi.id"
-              :imageHomepage="emploi.imageHomepage"
-              :titre="emploi.titre"
-              :societe="emploi.societe"
-              :shortDescription="emploi.shortDescription"
-              :type="emploi.type"
-              :geolocalisation="emploi.geolocalisation"
-              :experienceRequise="emploi.experienceRequise"
-              :typeDeContrat="emploi.typeDeContrat"
-              class="column is-6-desktop is-12-tablet is-12-mobile"
-            />
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Mots-clés
+              </button>
+              <div class="accordion-content">
+                <div class="keywords-input">
+                  <div
+                    v-for="(keyword, index) in filtres.motsCles"
+                    :key="index"
+                    class="keyword-chip"
+                  >
+                    {{ keyword }}
+                    <button
+                      @click="removeKeyword(index)"
+                      class="remove-keyword"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    v-model="newKeyword"
+                    @keyup.enter="addKeyword"
+                    @input="handleInput"
+                    placeholder="Entrez des mots-clés"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+          <button @click="reinitialiserFiltres" class="btn btn-secondary mt-3">
+            Réinitialiser tous les filtres
+          </button>
         </div>
 
-        <div class="pagination">
-          <button @click="prevPage" :disabled="currentPage === 1">
-            Précédent
-          </button>
-          <span>Page {{ currentPage }} sur {{ totalPages }}</span>
-          <button @click="nextPage" :disabled="currentPage === totalPages">
-            Suivant
-          </button>
+        <div class="column is-8-desktop">
+          <div v-if="noResults" class="alert alert-warning">
+            Aucun poste ne correspond aux critères de recherche. Veuillez
+            modifier vos filtres.
+            <button
+              @click="reinitialiserFiltres"
+              class="btn btn-secondary mt-3"
+            >
+              Réinitialiser tous les filtres
+            </button>
+          </div>
+          <div v-if="!noResults" class="emplois-liste">
+            <div class="columns">
+              <EmploiCard
+                v-for="emploi in emploisFiltres.emplois"
+                :key="emploi.id"
+                :imageHomepage="emploi.imageHomepage"
+                :titre="emploi.titre"
+                :societe="emploi.societe"
+                :shortDescription="emploi.shortDescription"
+                :type="emploi.type"
+                :geolocalisation="emploi.geolocalisation"
+                :experienceRequise="emploi.experienceRequise"
+                :typeDeContrat="emploi.typeDeContrat"
+                class="column is-6-desktop is-12-tablet is-12-mobile"
+              />
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button @click="prevPage" :disabled="currentPage === 1">
+              Précédent
+            </button>
+            <span>Page {{ currentPage }} sur {{ totalPages }}</span>
+            <button @click="nextPage" :disabled="currentPage === totalPages">
+              Suivant
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -128,11 +170,12 @@ const filtres = ref({
   experiencerequise: "",
   typeCheckbox: [],
   experiencerequisecheckbox: [],
-  motsCles: "",
+  motsCles: [],
 });
 
 const currentPage = ref(1);
 const emploisPerPage = 4;
+const newKeyword = ref("");
 
 const titres = computed(() => [...new Set(emplois.value.map((e) => e.titre))]);
 const localisations = computed(() => [
@@ -169,9 +212,11 @@ const emploisFiltres = computed(() => {
         emploi.experienceRequise
       );
     const matchMotsCles =
-      !filtres.value.motsCles ||
-      emploi.motsCles.some((mc) =>
-        mc.mot.toLowerCase().includes(filtres.value.motsCles.toLowerCase())
+      filtres.value.motsCles.length === 0 ||
+      filtres.value.motsCles.some((mot) =>
+        emploi.motsCles.some((mc) =>
+          mc.mot.toLowerCase().includes(mot.toLowerCase())
+        )
       );
 
     return (
@@ -214,6 +259,7 @@ const appliquerFiltres = () => {
   currentPage.value = 1;
   console.log("Filtres appliqués:", filtres.value);
 };
+
 const reinitialiserFiltres = () => {
   filtres.value = {
     titre: "",
@@ -222,10 +268,29 @@ const reinitialiserFiltres = () => {
     experiencerequise: "",
     typeCheckbox: [],
     experiencerequisecheckbox: [],
-    motsCles: "",
+    motsCles: [],
   };
   appliquerFiltres();
 };
+
+const toggleAccordion = (event) => {
+  const content = event.target.nextElementSibling;
+  content.style.maxHeight = content.style.maxHeight
+    ? null
+    : content.scrollHeight + "px";
+};
+
+const addKeyword = () => {
+  if (newKeyword.value.trim()) {
+    filtres.value.motsCles.push(newKeyword.value.trim());
+    newKeyword.value = "";
+  }
+};
+
+const removeKeyword = (index) => {
+  filtres.value.motsCles.splice(index, 1);
+};
+const noResults = computed(() => emploisFiltres.value.total === 0);
 
 onMounted(() => {
   const searchQuery = route.query.titre;
@@ -233,7 +298,6 @@ onMounted(() => {
     filtres.value.titre = searchQuery;
     appliquerFiltres();
   }
-  //accordéonn
 });
 </script>
 
@@ -262,10 +326,11 @@ onMounted(() => {
   gap: 10px;
 }
 
-.accordion-button {
-  background-color: #f8f9fa;
-  color: #212529;
-  padding: 15px;
+.accordion-header {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
@@ -273,31 +338,36 @@ onMounted(() => {
   transition: 0.4s;
 }
 
-.accordion-button:hover {
-  background-color: #e9ecef;
+.accordion-header:hover {
+  background-color: #ddd;
 }
 
-.accordion-button:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.accordion-button.active:after {
-  content: "\2212";
-}
-
-.accordion-body {
-  padding: 0 15px;
+.accordion-content {
+  padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-.accordion-body.show {
-  max-height: 500px;
+.keywords-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.keyword-chip {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.remove-keyword {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
 }
 </style>
