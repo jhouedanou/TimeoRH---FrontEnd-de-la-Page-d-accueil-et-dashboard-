@@ -1,11 +1,11 @@
 # TimeoRH - Frontend
 
-Ce projet est le frontend de l'application TimeoRH, développé avec Nuxt.js.
+Ce projet est le frontend de l'application TimeoRH, développé avec Nuxt.js (version 3).
 
 ## Prérequis
 
 - Node.js (v14 ou supérieur)
-- npm ou yarn
+- yarn
 
 ## Installation
 
@@ -18,7 +18,6 @@ cd TimeoRH-frontend
 
 yarn install
 
-
 ## Configuration
 
 
@@ -26,8 +25,6 @@ yarn install
 
 Lancez le serveur de développement :
 
-npm run dev
-# ou
 yarn dev
 
 L'application sera accessible à l'adresse http://localhost:3000.
