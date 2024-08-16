@@ -21,11 +21,11 @@ const performSearch = () => {
       <h1 class="inter mt-6" v-html="data.titrepageOffre"></h1>
       <div class="breadcrumb mb-4">
         <div class="breadcrumb-item">
-          <a href="/">Accueil</a>
+          <nuxt-link to="/">Accueil</nuxt-link>
         </div>
         <div class="breadcrumb-item">/</div>
         <div class="breadcrumb-item">
-          <a href="/offres">Offres d'emploi</a>
+          <nuxt-link to="/offres">Offres d'emploi</nuxt-link>
         </div>
       </div>
     </div>
