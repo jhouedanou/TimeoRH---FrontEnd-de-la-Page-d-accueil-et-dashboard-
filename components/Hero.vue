@@ -24,7 +24,7 @@ const performSearch = () => {
         />
         <NuxtLink
           class="button is-primary is-medium"
-          :to="{ path: '/offres', query: { titre: searchQuery || '' } }"
+          :to="{ path: '/offres', query: { titre: searchQuery } }"
         >
           <img src="/images/searchBtn.svg" alt="Search bouton" />
         </NuxtLink>
