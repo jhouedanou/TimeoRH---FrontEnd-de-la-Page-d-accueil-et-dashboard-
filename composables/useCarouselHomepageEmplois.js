@@ -7,9 +7,9 @@ export function useCarouselHomepageEmplois() {
   const fetchEmplois = () => {
     try {
       emplois.value = emploisDataJson
-      console.log('Emplois chargés:', emplois.value)
+      // console.log('Emplois chargés:', emplois.value)
     } catch (error) {
-      console.error('Erreur lors de la récupération des emplois:', error)
+      // console.error('Erreur lors de la récupération des emplois:', error)
     }
   }
 

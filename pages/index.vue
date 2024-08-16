@@ -6,5 +6,7 @@ import FrontendLayout from "/layouts/frontend.vue";
   <FrontendLayout>
     <Hero />
     <homepagejobs :limit="6" />
+    <homepageRecruteurs />
+    <homepageActualites :limit="3" />
   </FrontendLayout>
 </template>

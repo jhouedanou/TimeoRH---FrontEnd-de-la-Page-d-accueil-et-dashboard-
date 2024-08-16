@@ -6,5 +6,24 @@
   "googlePlayUrl": "https://play.google.com/store/apps/details?id=votre.app.id",
   "applelogo": "/images/apple.png",
   "appStoreUrl": "https://apps.apple.com/app/id123456789",
-  "introSectionEmploi": "Offres d’emploi les plus récentes"
+  "introSectionEmploi": "Offres d’emploi les plus récentes",
+  "titreSectionRecruteurs": "Vous êtes un <span>Recruteur </span>?",
+  "soustitreSectionRecruteurs": "Gâce à TimoRH, élevez votre stratégie de recrutement à de nouveaux sommets",
+  "recrutementBlock": {
+    "0": {
+      "titre": "recrutement simplifié",
+      "description": "de la publication des offres d'emploi à l'évaluation des candidats, TimeoRH simplifie chaque étape",
+      "image": "/images/file.svg"
+    },
+    "1": {
+      "titre": "recrutement simplifié",
+      "description": "connectez-vous facilement avec des professionnels qualifiés dans diverses industries.",
+      "image": "/images/visage.svg"
+    },
+    "2": {
+      "titre": "recrutement simplifié",
+      "description": "présentez la culture et les valeurs de votre entreprise pour attirer les meilleurs talents sans effort.",
+      "image": "/images/tasse.svg"
+    }
+  }
 }
