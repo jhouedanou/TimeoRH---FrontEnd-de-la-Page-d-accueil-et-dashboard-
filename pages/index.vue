@@ -1,5 +1,9 @@
 <script setup>
 import FrontendLayout from "/layouts/frontend.vue";
+import { useHead } from "#app";
+useHead({
+  title: "TimeoRH - Accueil",
+});
 </script>
 
 <template>

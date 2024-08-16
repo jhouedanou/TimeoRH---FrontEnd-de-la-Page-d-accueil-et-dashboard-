@@ -175,7 +175,10 @@ import { ref, computed, onMounted } from "vue";
 import { useCarouselHomepageEmplois } from "@/composables/useCarouselHomepageEmplois";
 import { useRoute } from "vue-router";
 import EmploiCard from "@/components/emploiCard.vue";
-
+import { useHead } from "#app";
+useHead({
+  title: "TimeoRH - Offres d'emploi",
+});
 const { data: emplois } = useCarouselHomepageEmplois();
 const route = useRoute();
 
