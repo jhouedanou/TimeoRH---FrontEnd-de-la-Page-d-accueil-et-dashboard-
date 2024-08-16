@@ -127,6 +127,9 @@
         </div>
 
         <div class="column is-8-desktop">
+          <div class="nombre-posts">
+            Postes correspondants : {{ emploisFiltres.total }}
+          </div>
           <div v-if="noResults" class="alert alert-warning">
             Aucun poste ne correspond aux critères de recherche. Veuillez
             modifier vos filtres.
@@ -137,6 +140,7 @@
               Réinitialiser tous les filtres
             </button>
           </div>
+
           <div v-if="!noResults" class="emplois-liste">
             <div class="columns ndjo is-flex is-flex-wrap-wrap">
               <EmploiCard
@@ -390,5 +394,10 @@ onMounted(() => {
   border: none;
   cursor: pointer;
   margin-left: 5px;
+}
+.nombre-posts {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
 }
 </style>
