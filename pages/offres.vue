@@ -1,42 +1,58 @@
-<template>
+<template id="appeloki">
   <home-page-header />
   <Banner />
   <div class="offremploi-container container">
     <div class="offres-emploi">
       <form @submit.prevent="appliquerFiltres" class="filtres">
-        <input
-          v-model="filtres.titre"
-          list="titres"
-          placeholder="Titre du poste"
-        />
-        <datalist id="titres">
-          <option v-for="titre in titres" :key="titre" :value="titre" />
-        </datalist>
+        <div class="columns">
+          <div class="column is-one-third-desktop is-12-mobile">
+            <input
+              v-model="filtres.titre"
+              list="titres"
+              placeholder="Titre du poste"
+            />
+            <datalist id="titres">
+              <option v-for="titre in titres" :key="titre" :value="titre" />
+            </datalist>
+          </div>
 
-        <input
-          v-model="filtres.geolocalisation"
-          list="localisations"
-          placeholder="Localisation"
-        />
-        <datalist id="localisations">
-          <option v-for="loc in localisations" :key="loc" :value="loc" />
-        </datalist>
+          <div class="column is-one-third-desktop is-12-mobile">
+            <input
+              v-model="filtres.geolocalisation"
+              list="localisations"
+              placeholder="Localisation"
+            />
+            <datalist id="localisations">
+              <option v-for="loc in localisations" :key="loc" :value="loc" />
+            </datalist>
+          </div>
+          <div class="column is-one-third-desktop is-12-mobile">
+            <select v-model="filtres.type">
+              <option value="">Type de contrat</option>
+              <option v-for="type in types" :key="type" :value="type">
+                {{ type }}
+              </option>
+            </select>
+          </div>
+          <div class="column is-one-third-desktop is-12-mobile">
+            <select v-model="filtres.experiencerequise">
+              <option value="">Expérience requise</option>
+              <option v-for="exp in experiences" :key="exp" :value="exp">
+                {{ exp }}
+              </option>
+            </select>
+          </div>
+          <div class="column">
+            <button type="submit">Filtrer</button>
 
-        <select v-model="filtres.type">
-          <option value="">Type de contrat</option>
-          <option v-for="type in types" :key="type" :value="type">
-            {{ type }}
-          </option>
-        </select>
-
-        <select v-model="filtres.experiencerequise">
-          <option value="">Expérience requise</option>
-          <option v-for="exp in experiences" :key="exp" :value="exp">
-            {{ exp }}
-          </option>
-        </select>
-
-        <button type="submit">Filtrer</button>
+            <button
+              @click="reinitialiserFiltres"
+              class="btn btn-secondary mt-3"
+            >
+              Réinitialiser tous les filtres
+            </button>
+          </div>
+        </div>
       </form>
 
       <div class="columns">
@@ -122,7 +138,7 @@
             </button>
           </div>
           <div v-if="!noResults" class="emplois-liste">
-            <div class="columns">
+            <div class="columns ndjo is-flex is-flex-wrap-wrap">
               <EmploiCard
                 v-for="emploi in emploisFiltres.emplois"
                 :key="emploi.id"
@@ -293,6 +309,8 @@ const removeKeyword = (index) => {
 const noResults = computed(() => emploisFiltres.value.total === 0);
 
 onMounted(() => {
+  document.body.id = "offres";
+
   const searchQuery = route.query.titre;
   if (searchQuery) {
     filtres.value.titre = searchQuery;
@@ -301,7 +319,10 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
+#HeaderFront {
+  margin-top: 62px !important;
+}
 .offres-emploi {
   padding: 20px;
 }
@@ -313,9 +334,6 @@ onMounted(() => {
 }
 
 .emplois-liste {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
 }
 
 .pagination {

@@ -2,7 +2,10 @@
   <div>
     <div class="emploi-card" @click="isPopupOpen = true">
       <div class="white">
-        <img :src="imageHomepage" alt="" />
+        <div
+          class="headercard"
+          :style="{ backgroundImage: `url(${imageHomepage})` }"
+        ></div>
         <div class="white-content">
           <h3 class="Email-Support-Agent">{{ titre }}</h3>
           <h4>{{ societe }}</h4>
@@ -77,6 +80,7 @@ const sendApplication = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .popup-content {
@@ -85,5 +89,6 @@ const sendApplication = () => {
   border-radius: 8px;
   max-width: 500px;
   width: 100%;
+  z-index: 1001;
 }
 </style>

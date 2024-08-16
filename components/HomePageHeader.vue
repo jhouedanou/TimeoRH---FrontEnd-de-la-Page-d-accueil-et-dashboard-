@@ -1,20 +1,22 @@
 <template>
   <header class="container">
-    <div id="HeaderFront" class="columns is-mobile">
-      <div class="column is-one-quarter is-full-mobile">
+    <div id="HeaderFront" class="columns">
+      <div class="column is-one-quarter-desktop is-12-mobile">
         <figure class="image">
-          <NuxtImg
-            :src="data.logo"
-            alt="Logo"
-            class="logo"
-            loading="lazy"
-            format="webp"
-            quality="80"
-          />
+          <NuxtLink to="/" aria-label="Retour à l'accueil">
+            <NuxtImg
+              :src="data.logo"
+              alt="Logo"
+              class="logo"
+              loading="lazy"
+              format="webp"
+              quality="80"
+            />
+          </NuxtLink>
         </figure>
       </div>
       <div
-        class="column is-flex is-justify-content-flex-end is-align-items-center is-full-mobile"
+        class="column is-flex is-justify-content-flex-end is-align-items-center is-12-mobile"
       >
         <div class="buttons">
           <button class="button is-primary login" @click="downloadApp">
@@ -98,6 +100,17 @@ const { data } = useGlobalData();
 a {
   img {
     height: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+      margin-bottom: 10px;
+      width: 100%;
+    }
   }
 }
 </style>
