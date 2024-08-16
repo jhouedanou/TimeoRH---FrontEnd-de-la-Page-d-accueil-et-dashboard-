@@ -27,10 +27,9 @@ const limitedData = computed(() => {
       >
         <div class="actualite-card">
           <img :src="actualite.imageHomepage" :alt="actualite.titre" />
+          <h3>{{ actualite.titre }}</h3>
+          <p>{{ actualite.resume }}</p>
         </div>
-        <div>{{ actualite.id }}</div>
-        <div>{{ actualite.titre }}</div>
-        <div>{{ actualite.resume }}</div>
       </div>
     </div>
   </div>

@@ -14,24 +14,16 @@
           id="caro"
         >
           <SwiperSlide v-for="(emploi, index) in limitedData" :key="index">
-            <div class="emploi-card">
-              <div class="white">
-                <img :src="emploi.imageHomepage" alt="" />
-                <div class="white-content">
-                  <h3 class="Email-Support-Agent">{{ emploi.titre }}</h3>
-                  <h4>{{ emploi.societe }}</h4>
-                  <p>{{ emploi.shortDescription }}</p>
-                </div>
-                <div class="white-content-2">
-                  <p><img src="/images/time.svg" alt="" />{{ emploi.type }}</p>
-                  <p>
-                    <img src="/images/localisation.svg" alt="" />{{
-                      emploi.geolocalisation
-                    }}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <emploiCard
+              :imageHomepage="emploi.imageHomepage"
+              :titre="emploi.titre"
+              :societe="emploi.societe"
+              :shortDescription="emploi.shortDescription"
+              :type="emploi.type"
+              :geolocalisation="emploi.geolocalisation"
+              :experienceRequise="emploi.experienceRequise"
+              :typeDeContrat="emploi.typeDeContrat"
+            />
           </SwiperSlide>
         </Swiper>
       </client-only>
@@ -48,6 +40,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import emploiCard from "./emploiCard.vue";
 const { data: globalData } = useGlobalData();
 const { data: carouselData } = useCarouselHomepageEmplois();
 const isSwiper = ref(false);

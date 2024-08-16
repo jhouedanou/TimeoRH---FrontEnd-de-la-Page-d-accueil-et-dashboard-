@@ -20,7 +20,6 @@
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
     "titre": "Essor du secteur agricole et création d'emplois",
-    "image": "https://example.com/images/agriculture_ci.jpg",
     "resume": "L'agriculture reste un pilier de l'économie ivoirienne et continue de créer des emplois.",
     "texte": "Avec l'introduction de nouvelles technologies et pratiques agricoles, le secteur connaît une transformation qui attire de plus en plus de jeunes. Des programmes de formation et de soutien aux entrepreneurs agricoles sont mis en place pour encourager cette tendance."
   },
@@ -29,8 +28,39 @@
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
     "titre": "Développement des compétences numériques en Côte d'Ivoire",
-    "image": "https://example.com/images/competences_numeriques.jpg",
     "resume": "Des initiatives publiques et privées visent à combler le déficit de compétences numériques.",
     "texte": "Face à la demande croissante de professionnels du numérique, de nombreux programmes de formation sont lancés en Côte d'Ivoire. Ces initiatives visent à préparer la main-d'œuvre locale aux défis de l'économie numérique et à attirer les investissements étrangers dans le secteur des TIC."
+  },
+  {
+    "id": 5,
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "titre": "Expansion du secteur touristique en Côte d'Ivoire",
+    "resume": "Le tourisme connaît une croissance significative, créant de nouvelles opportunités d'emploi.",
+    "texte": "La Côte d'Ivoire investit massivement dans le développement de son secteur touristique, avec la création de nouvelles infrastructures et la promotion de destinations uniques. Cette expansion génère de nombreux emplois dans l'hôtellerie, la restauration et les services connexes."
+  },
+  {
+    "id": 6,
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "titre": "Renforcement de l'entrepreneuriat féminin",
+    "resume": "De nouvelles initiatives soutiennent l'entrepreneuriat féminin en Côte d'Ivoire.",
+    "texte": "Le gouvernement et diverses organisations lancent des programmes de mentorat, de formation et de financement spécifiquement destinés aux femmes entrepreneurs. Ces efforts visent à réduire les inégalités de genre dans le monde des affaires et à stimuler la croissance économique."
+  },
+  {
+    "id": 7,
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "titre": "Développement des énergies renouvelables",
+    "resume": "La Côte d'Ivoire investit dans les énergies vertes, créant de nouveaux emplois.",
+    "texte": "Le pays s'engage dans une transition énergétique avec des projets d'envergure dans le solaire et la biomasse. Ces initiatives ouvrent de nouvelles perspectives d'emploi dans les secteurs de l'ingénierie, de la construction et de la maintenance des installations d'énergie renouvelable."
+  },
+  {
+    "id": 8,
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+actualite",
+    "titre": "Essor de l'industrie cinématographique ivoirienne",
+    "resume": "Le cinéma ivoirien connaît un renouveau, offrant de nouvelles opportunités professionnelles.",
+    "texte": "Avec l'augmentation des productions locales et l'intérêt croissant des plateformes de streaming, l'industrie cinématographique ivoirienne est en pleine expansion. Cette croissance crée des emplois dans la production, la réalisation, la technique et la distribution de contenu audiovisuel."
   }
 ]

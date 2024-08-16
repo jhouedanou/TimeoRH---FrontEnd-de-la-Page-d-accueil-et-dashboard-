@@ -4,11 +4,19 @@
     <main>
       <slot />
     </main>
-    <footer>
-      <p>© {{ currentYear }} TimeoRH</p>
-      <nav>
-        <!-- Ajoutez ici les liens du pied de page -->
-      </nav>
+    <footer class="footer">
+      <div class="columns is-desktop">
+        <div
+          class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
+        >
+          <p>© {{ currentYear }} TimeoRH</p>
+        </div>
+        <div
+          class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
+        >
+          <p>Fait avec ❤️ en Côte d'Ivoire</p>
+        </div>
+      </div>
     </footer>
   </div>
 </template>

@@ -22,9 +22,12 @@ const performSearch = () => {
           class="input is-medium"
           v-model="searchQuery"
         />
-        <button class="button is-primary is-medium" @click="performSearch">
+        <NuxtLink
+          class="button is-primary is-medium"
+          :to="{ path: '/offres', query: { titre: searchQuery || '' } }"
+        >
           <img src="/images/searchBtn.svg" alt="Search bouton" />
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </div>

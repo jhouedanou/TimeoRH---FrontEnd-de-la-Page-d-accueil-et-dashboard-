@@ -7,20 +7,21 @@
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
     "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
-    "experienceRequise": 3,
+    "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
     "statut": "Ouvert",
     "geolocalisation": "Cocody",
     "societe": "TechInnovate CI",
     "motsCles": [
-      "développement web",
-      "full stack",
-      "JavaScript",
-      "React",
-      "Node.js"
+      { "id": 1, "mot": "développement web" },
+      { "id": 2, "mot": "full stack" },
+      { "id": 3, "mot": "JavaScript" },
+      { "id": 4, "mot": "React" },
+      { "id": 5, "mot": "Node.js" }
     ],
-    "type": "temps plein"
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -30,14 +31,20 @@
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
     "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
-    "experienceRequise": 2,
+    "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
     "statut": "Ouvert",
     "geolocalisation": "Plateau",
     "societe": "DesignMasters CI",
-    "motsCles": ["design", "UX/UI", "interface utilisateur", "prototypage"],
-    "type": "freelance"
+    "motsCles": [
+      { "id": 1, "mot": "design" },
+      { "id": 2, "mot": "UX/UI" },
+      { "id": 3, "mot": "interface utilisateur" },
+      { "id": 4, "mot": "prototypage" }
+    ],
+    "type": "Freelance",
+    "typeDeContrat": "Freelance"
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -47,14 +54,20 @@
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
     "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    "experienceRequise": 4,
+    "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
     "statut": "Ouvert",
     "geolocalisation": "Marcory",
     "societe": "CloudOps CI",
-    "motsCles": ["DevOps", "cloud", "automatisation", "CI/CD"],
-    "type": "temps plein"
+    "motsCles": [
+      { "id": 1, "mot": "DevOps" },
+      { "id": 2, "mot": "cloud" },
+      { "id": 3, "mot": "automatisation" },
+      { "id": 4, "mot": "CI/CD" }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -64,132 +77,172 @@
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
     "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
-    "experienceRequise": 3,
+    "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
     "statut": "Ouvert",
     "geolocalisation": "Yopougon",
     "societe": "DataInsights CI",
     "motsCles": [
-      "data science",
-      "analyse de données",
-      "machine learning",
-      "statistiques"
+      { "id": 1, "mot": "data science" },
+      { "id": 2, "mot": "analyse de données" },
+      { "id": 3, "mot": "machine learning" },
+      { "id": 4, "mot": "statistiques" }
     ],
-    "type": "freelance"
+    "type": "Freelance",
+    "typeDeContrat": "Freelance"
   },
-
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "002",
-    "titre": "Designer UX/UI",
-    "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
-    "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
-    "experienceRequise": 2,
-    "departement": "Design",
-    "datePublication": "2023-05-16",
+    "id": "005",
+    "titre": "Développeur Front-end",
+    "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
+    "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
+    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "experienceRequise": "Junior",
+    "departement": "Développement",
+    "datePublication": "2023-05-19",
+    "statut": "Ouvert",
+    "geolocalisation": "Treichville",
+    "societe": "WebFront CI",
+    "motsCles": [
+      { "id": 1, "mot": "développement web" },
+      { "id": 2, "mot": "front-end" },
+      { "id": 3, "mot": "JavaScript" },
+      { "id": 4, "mot": "Vue.js" }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": "006",
+    "titre": "Ingénieur en Sécurité Informatique",
+    "description": "Nous cherchons un ingénieur en sécurité informatique pour protéger nos systèmes et données contre les menaces cybernétiques.",
+    "shortDescription": "Recherche d'un ingénieur en sécurité informatique pour protéger nos systèmes et données.",
+    "competencesRequises": [
+      "Cybersécurité",
+      "Analyse de risques",
+      "Cryptographie",
+      "Ethical Hacking"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "Sécurité IT",
+    "datePublication": "2023-05-20",
     "statut": "Ouvert",
     "geolocalisation": "Plateau",
-    "societe": "DesignMasters CI",
-    "motsCles": ["design", "UX/UI", "interface utilisateur", "prototypage"],
-    "type": "freelance"
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "003",
-    "titre": "Ingénieur DevOps",
-    "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
-    "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    "experienceRequise": 4,
-    "departement": "Opérations",
-    "datePublication": "2023-05-17",
-    "statut": "Ouvert",
-    "geolocalisation": "Marcory",
-    "societe": "CloudOps CI",
-    "motsCles": ["DevOps", "cloud", "automatisation", "CI/CD"],
-    "type": "temps plein"
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "004",
-    "titre": "Data Scientist",
-    "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
-    "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
-    "experienceRequise": 3,
-    "departement": "Analyse de données",
-    "datePublication": "2023-05-18",
-    "statut": "Ouvert",
-    "geolocalisation": "Yopougon",
-    "societe": "DataInsights CI",
+    "societe": "CyberShield CI",
     "motsCles": [
-      "data science",
-      "analyse de données",
-      "machine learning",
-      "statistiques"
+      { "id": 1, "mot": "cybersécurité" },
+      { "id": 2, "mot": "sécurité informatique" },
+      { "id": 3, "mot": "ethical hacking" },
+      { "id": 4, "mot": "analyse de risques" }
     ],
-    "type": "freelance"
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
   },
-
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "002",
-    "titre": "Designer UX/UI",
-    "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
-    "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
-    "experienceRequise": 2,
-    "departement": "Design",
-    "datePublication": "2023-05-16",
+    "id": "007",
+    "titre": "Administrateur Système",
+    "description": "Nous recherchons un administrateur système expérimenté pour gérer et maintenir notre infrastructure IT.",
+    "shortDescription": "Recherche d'un administrateur système pour gérer notre infrastructure IT.",
+    "competencesRequises": [
+      "Linux",
+      "Windows Server",
+      "Virtualisation",
+      "Scripting"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "IT",
+    "datePublication": "2023-05-21",
+    "statut": "Ouvert",
+    "geolocalisation": "Koumassi",
+    "societe": "SysAdmin CI",
+    "motsCles": [
+      { "id": 1, "mot": "administration système" },
+      { "id": 2, "mot": "infrastructure IT" },
+      { "id": 3, "mot": "Linux" },
+      { "id": 4, "mot": "virtualisation" }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": "008",
+    "titre": "Développeur Mobile",
+    "description": "Nous cherchons un développeur mobile pour créer des applications innovantes pour iOS et Android.",
+    "shortDescription": "Recherche d'un développeur mobile pour créer des applications iOS et Android.",
+    "competencesRequises": ["Swift", "Kotlin", "React Native", "Flutter"],
+    "experienceRequise": "Junior",
+    "departement": "Développement Mobile",
+    "datePublication": "2023-05-22",
+    "statut": "Ouvert",
+    "geolocalisation": "Cocody",
+    "societe": "MobileApp CI",
+    "motsCles": [
+      { "id": 1, "mot": "développement mobile" },
+      { "id": 2, "mot": "iOS" },
+      { "id": 3, "mot": "Android" },
+      { "id": 4, "mot": "React Native" }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": "009",
+    "titre": "Analyste Business Intelligence",
+    "description": "Nous recherchons un analyste BI pour transformer les données en insights stratégiques pour notre entreprise.",
+    "shortDescription": "Recherche d'un analyste BI pour transformer les données en insights stratégiques.",
+    "competencesRequises": ["SQL", "Tableau", "Power BI", "Excel avancé"],
+    "experienceRequise": "Junior",
+    "departement": "Business Intelligence",
+    "datePublication": "2023-05-23",
     "statut": "Ouvert",
     "geolocalisation": "Plateau",
-    "societe": "DesignMasters CI",
-    "motsCles": ["design", "UX/UI", "interface utilisateur", "prototypage"],
-    "type": "freelance"
+    "societe": "DataViz CI",
+    "motsCles": [
+      { "id": 1, "mot": "business intelligence" },
+      { "id": 2, "mot": "analyse de données" },
+      { "id": 3, "mot": "visualisation de données" },
+      { "id": 4, "mot": "SQL" }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "003",
-    "titre": "Ingénieur DevOps",
-    "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
-    "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    "experienceRequise": 4,
-    "departement": "Opérations",
-    "datePublication": "2023-05-17",
+    "id": "010",
+    "titre": "Chef de Projet IT",
+    "description": "Nous cherchons un chef de projet IT expérimenté pour gérer et coordonner nos projets technologiques.",
+    "shortDescription": "Recherche d'un chef de projet IT pour gérer nos projets technologiques.",
+    "competencesRequises": [
+      "Gestion de projet",
+      "Méthodologies Agile",
+      "Budgétisation",
+      "Communication"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "Gestion de Projet",
+    "datePublication": "2023-05-24",
     "statut": "Ouvert",
     "geolocalisation": "Marcory",
-    "societe": "CloudOps CI",
-    "motsCles": ["DevOps", "cloud", "automatisation", "CI/CD"],
-    "type": "temps plein"
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "004",
-    "titre": "Data Scientist",
-    "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
-    "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
-    "experienceRequise": 3,
-    "departement": "Analyse de données",
-    "datePublication": "2023-05-18",
-    "statut": "Ouvert",
-    "geolocalisation": "Yopougon",
-    "societe": "DataInsights CI",
+    "societe": "ProjectLead CI",
     "motsCles": [
-      "data science",
-      "analyse de données",
-      "machine learning",
-      "statistiques"
+      { "id": 1, "mot": "gestion de projet" },
+      { "id": 2, "mot": "IT" },
+      { "id": 3, "mot": "Agile" },
+      { "id": 4, "mot": "leadership" }
     ],
-    "type": "freelance"
+    "type": "Temps plein",
+    "typeDeContrat": "CDI"
   }
 ]
