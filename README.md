@@ -37,7 +37,3 @@ Les données (textes, liens, images) sont dans les fichiers .json, dans le dossi
 
 intégrer une API
 
-## Licence
-
-Ce projet est sous licence MIT.
-‡
