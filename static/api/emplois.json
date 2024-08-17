@@ -21,7 +21,8 @@
       { "id": 5, "mot": "Node.js" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 1254
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -44,7 +45,8 @@
       { "id": 4, "mot": "prototypage" }
     ],
     "type": "Freelance",
-    "typeDeContrat": "Freelance"
+    "typeDeContrat": "Freelance",
+    "nbvues": 876
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -67,7 +69,8 @@
       { "id": 4, "mot": "CI/CD" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 2103
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -90,7 +93,8 @@
       { "id": 4, "mot": "statistiques" }
     ],
     "type": "Freelance",
-    "typeDeContrat": "Freelance"
+    "typeDeContrat": "Freelance",
+    "nbvues": 1587
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -113,7 +117,8 @@
       { "id": 4, "mot": "Vue.js" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 932
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -141,7 +146,8 @@
       { "id": 4, "mot": "analyse de risques" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 1765
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -169,7 +175,8 @@
       { "id": 4, "mot": "virtualisation" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 1098
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -192,7 +199,8 @@
       { "id": 4, "mot": "React Native" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 1432
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -215,7 +223,8 @@
       { "id": 4, "mot": "SQL" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 789
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -243,6 +252,7 @@
       { "id": 4, "mot": "leadership" }
     ],
     "type": "Temps plein",
-    "typeDeContrat": "CDI"
+    "typeDeContrat": "CDI",
+    "nbvues": 2345
   }
 ]
