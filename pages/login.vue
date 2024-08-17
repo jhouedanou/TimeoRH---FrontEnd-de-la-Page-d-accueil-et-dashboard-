@@ -147,6 +147,12 @@ const hidePopup = () => {
   isPopupVisible.value = false;
 };
 onMounted(() => {
+  if (Cookies.get("user_authenticated") === "true") {
+    alert(
+      "Vous êtes déjà connecté, vous allez être redirigé vers le tableau de bord."
+    );
+    router.push("/dashboard");
+  }
   const savedEmail = Cookies.get("userEmail");
   const savedPassword = Cookies.get("userPassword");
   if (savedEmail && savedPassword) {
@@ -198,7 +204,8 @@ const login = () => {
     localStorage.setItem("user", JSON.stringify(user));
     router.push("/dashboard");
     //Enregistrement de l'utilisateur dans le localStorage
-    Cookies.set("user_authenticated", "true", { expires: 1 }); // expire après 1 jour
+    Cookies.set("user_authenticated", "true", { expires: 7 }); // expire après 7 jours
+    Cookies.set("recruiterName", user.nom, { expires: 7 });
     // Enregistrement des informations de connexion dans les cookies
     if (rememberMe.value) {
       Cookies.set("userEmail", email.value, { expires: 365 });

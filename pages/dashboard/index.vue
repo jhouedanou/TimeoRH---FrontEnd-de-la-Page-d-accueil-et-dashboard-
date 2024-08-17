@@ -2,12 +2,13 @@
   <div>
     <h1>Tableau de bord</h1>
     <!-- Ajoutez ici le contenu de votre tableau de bord -->
-    <DashboardSidebar />
   </div>
 </template>
+
 <script setup>
 definePageMeta({
   middleware: "auth",
+  layout: "dashboard",
 });
 </script>
 

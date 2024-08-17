@@ -1083,3 +1083,43 @@ $secondary: #012e61;
     text-align: center;
     color: #1629a2;
 }
+.header-content {
+    .column {
+        padding: 1em;
+        height: 102px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+.logo-wrapp {
+    padding: 0em;
+}
+.logo-dashboard {
+    width: 176px;
+    height: 47px;
+}
+.input-search-dahsboard {
+    border: solid 1px rgba(28, 28, 30, 0.48);
+    background-color: rgba(255, 255, 255, 0);
+    height: 60px;
+    width: 100%;
+    padding: 1em;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(28, 28, 30, 0.72);
+}
+.dashboard-sidebar {
+    padding: 1em;
+    box-shadow: 0 20px 50px 0 rgba(220, 224, 249, 0.5);
+    border-right: solid 1px #e8e8e8;
+    background-color: #fff;
+    height: 100%;
+}

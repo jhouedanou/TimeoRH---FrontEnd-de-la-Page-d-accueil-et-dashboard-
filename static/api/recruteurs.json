@@ -8,7 +8,10 @@
       "poste": "RH Manager",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2020-01-15",
-      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Safaricom"
     },
     {
       "id": "2",
@@ -18,7 +21,10 @@
       "poste": "Recruteur Senior",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2019-05-20",
-      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "MTN Group"
     },
     {
       "id": "3",
@@ -28,7 +34,10 @@
       "poste": "Chargé de recrutement",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2021-03-10",
-      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Dangote Group"
     },
     {
       "id": "4",
@@ -38,7 +47,10 @@
       "poste": "Assistante RH",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2022-09-01",
-      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Jumia"
     }
   ]
 }

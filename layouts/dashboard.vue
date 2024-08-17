@@ -1,13 +1,18 @@
 <template>
   <div class="dashboard-layout">
-    <header>
-      <h1>TimeoRH Dashboard</h1>
-      <nav><!-- Ajoutez ici la navigation du dashboard --></nav>
-    </header>
-    <main>
-      <slot />
-    </main>
-    <footer>© {{ currentYear }} TimeoRH</footer>
+    <DashboardHeader />
+    <div class="container dashboard-container">
+      <main class="dashboard-content">
+        <div class="columns">
+          <div class="column column is-3-desktop is-3-tablet is-12-mobile">
+            <DashboardSidebar />
+          </div>
+          <div class="column column is-9-desktop is-9-tablet is-12-mobile">
+            <slot />
+          </div>
+        </div>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -19,4 +24,7 @@ const currentYear = computed(() => new Date().getFullYear());
 
 <style scoped>
 /* Ajoutez ici vos styles pour le layout dashboard */
+.dashboard-content {
+  margin-top: 5px;
+}
 </style>
