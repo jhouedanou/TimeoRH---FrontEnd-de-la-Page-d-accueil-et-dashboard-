@@ -1,5 +1,6 @@
 import { ref, onMounted } from 'vue'
-import RecruteursJson from '@/static/api/Recruteurs.json'
+//recruteur.json
+import RecruteursJson from '@/static/api/recruteurs.json'
 
 export function useRecruteursJson() {
   const Recruteurs = ref(RecruteursJson)
