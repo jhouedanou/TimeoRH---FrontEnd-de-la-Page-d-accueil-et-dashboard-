@@ -3,7 +3,10 @@
     <div id="login">
       <div class="login-container">
         <form @submit.prevent="login" class="login-form">
-          <NuxtLink to="/">
+          <NuxtLink
+            to="/"
+            class="is-flex is-justify-content-center is-align-items-center"
+          >
             <nuxt-img
               class="loginlogin"
               src="/images/logosearch.svg"
