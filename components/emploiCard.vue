@@ -25,8 +25,10 @@
         <div class="popup-content">
           <h2>Postuler sur l'application</h2>
           <input type="email" v-model="email" placeholder="Votre email" />
-          <button @click="isPopupOpen = false">Annuler</button>
-          <button @click="sendApplication">Envoyer</button>
+          <div class="popup-buttons is-flex is-flex-wrap-wrap">
+            <button @click="isPopupOpen = false">Annuler</button>
+            <button @click="sendApplication">Envoyer</button>
+          </div>
         </div>
       </div>
     </Teleport>
@@ -76,7 +78,9 @@ const sendApplication = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(1, 46, 97, 0.88);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,10 +89,123 @@ const sendApplication = () => {
 
 .popup-content {
   background-color: white;
-  padding: 20px;
   border-radius: 8px;
   max-width: 500px;
   width: 100%;
   z-index: 1001;
+  .popup-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin: 1em auto;
+    width: 100%;
+    button {
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: solid 1px #e7e6e6;
+      background-color: #fafafa;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #012e61;
+      &:hover {
+        background-color: #012e61;
+        color: #fafafa;
+      }
+    }
+  }
+  h2 {
+    height: 50px;
+    background-color: #012e61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fafafa;
+  }
+  input {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: solid 1px #e7e6e6;
+    background-color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #aba3a9;
+    margin: 1em auto;
+  }
+  button {
+    &:nth-of-type(1) {
+      width: 166px;
+      height: 38px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      border: solid 1px #5e6368;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.06px;
+      text-align: left;
+      color: #1e1e1e;
+    }
+    &:nth-of-type(2) {
+      width: 166px;
+      height: 38px;
+      background-color: #012e61;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      border: solid 1px #5e6368;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.06px;
+      text-align: left;
+      color: white;
+    }
+  }
 }
 </style>
