@@ -1,38 +1,56 @@
 <template>
-  <form @submit.prevent="login" class="login-form">
-    <div class="form-field">
-      <label for="email">Adresse e-mail</label>
-      <input
-        id="email"
-        v-model="email"
-        type="email"
-        required
-        placeholder="Entrez votre adresse e-mail"
-      />
-    </div>
-    <div class="form-field password-field">
-      <label for="password">Mot de passe</label>
-      <input
-        id="password"
-        v-model="password"
-        :type="showPassword ? 'text' : 'password'"
-        required
-        placeholder="Entrez votre mot de passe"
-      />
-      <button type="button" @click="togglePassword" class="toggle-password">
-        <span class="material-icons">
-          {{ showPassword ? "visibility_off" : "visibility" }}
-        </span>
-      </button>
-    </div>
+  <div id="loginwrapper">
+    <div id="login">
+      <div class="login-container">
+        <form @submit.prevent="login" class="login-form">
+          <nuxt-img
+            class="loginlogin"
+            src="/images/logosearch.svg"
+            format="webp"
+            quality="80"
+            fallback="/images/logosearch.svg"
+            alt="Description de l'image"
+          />
+          <div class="form-field">
+            <label for="email">Adresse e-mail</label>
+            <input
+              id="email"
+              v-model="email"
+              type="email"
+              required
+              placeholder="Entrez votre adresse e-mail"
+            />
+          </div>
+          <div class="form-field password-field">
+            <label for="password">Mot de passe</label>
+            <input
+              id="password"
+              v-model="password"
+              :type="showPassword ? 'text' : 'password'"
+              required
+              placeholder="Entrez votre mot de passe"
+            />
+            <button
+              type="button"
+              @click="togglePassword"
+              class="toggle-password"
+            >
+              <span class="material-icons">
+                {{ showPassword ? "visibility_off" : "visibility" }}
+              </span>
+            </button>
+          </div>
 
-    <div class="form-field">
-      <input id="remember" v-model="rememberMe" type="checkbox" />
-      <label for="remember">Se souvenir de moi</label>
+          <div class="form-fieldz">
+            <input id="remember" v-model="rememberMe" type="checkbox" />
+            <label for="remember">Se souvenir de moi</label>
+          </div>
+          <button type="submit">Se connecter</button>
+          <button @click="forgotPassword">Mot de passe oublié</button>
+        </form>
+      </div>
     </div>
-    <button type="submit">Se connecter</button>
-    <button @click="forgotPassword">Mot de passe oublié</button>
-  </form>
+  </div>
 </template>
 
 <script setup>
@@ -105,7 +123,7 @@ const forgotPassword = () => {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .login-form {
   display: flex;
   flex-direction: column;
@@ -117,13 +135,6 @@ const forgotPassword = () => {
 }
 
 label {
-  position: absolute;
-  top: -12px;
-  left: 12px;
-  background-color: white;
-  padding: 0 4px;
-  font-size: 12px;
-  color: #666;
 }
 
 input {

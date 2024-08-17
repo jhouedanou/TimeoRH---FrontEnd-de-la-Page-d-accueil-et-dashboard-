@@ -911,3 +911,72 @@ $secondary: #012e61;
         }
     }
 }
+#loginwrapper {
+    background: url(images/3.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #login {
+        width: 520px;
+        height: 594px;
+        padding: 44px 99px 48px 94px;
+        border-radius: 10px;
+        box-shadow: 0 4px 62px 0 #000;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .loginlogin {
+        width: 103.4px;
+        height: 103.6px;
+        flex-grow: 0;
+        margin: 0 auto;
+    }
+    .form-field {
+        width: 327px;
+        height: 56px;
+        flex-grow: 0;
+        padding: 4px 33px 10px 29px;
+        border-radius: 32px;
+        border: solid 1px #cfcfcf;
+        background-color: #e6ebf0;
+        label {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.06px;
+            text-align: left;
+            color: #14304a;
+            position: absolute;
+            top: 5px;
+            left: 12px;
+            -webkit-transition: all 0.4s ease-in-out 0.2s;
+            -moz-transition: all 0.4s ease-in-out 0.2s;
+            -o-transition: all 0.4s ease-in-out 0.2s;
+            -ms-transition: all 0.4s ease-in-out 0.2s;
+            transition: all 0.4s ease-in-out 0.2s;
+        }
+        &:focus,
+        &:hover {
+            label {
+                top: -14px;
+                font-size: 10px;
+                color: #14304a;
+
+                -webkit-transition: all 0.4s ease-in-out 0.2s;
+                -moz-transition: all 0.4s ease-in-out 0.2s;
+                -o-transition: all 0.4s ease-in-out 0.2s;
+                -ms-transition: all 0.4s ease-in-out 0.2s;
+                transition: all 0.4s ease-in-out 0.2s;
+            }
+        }
+    }
+}
