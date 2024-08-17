@@ -8,45 +8,76 @@
           Trouvez le job correspondant à votre profil
         </div>
         <div class="columns kaihones">
-          <div class="column is-12-mobile w20">
+          <div class="column is-12-mobile w20 input-wrapper">
             <input
               v-model="filtres.titre"
               list="titres"
               placeholder="Titre du poste"
               id="titreinp"
             />
+            <span
+              v-if="filtres.titre"
+              class="clear-input"
+              @click="filtres.titre = ''"
+            >
+              <span class="material-icons">close</span>
+            </span>
             <datalist id="titres">
               <option v-for="titre in titres" :key="titre" :value="titre" />
             </datalist>
           </div>
 
-          <div class="column is-12-mobile w20">
+          <div class="column is-12-mobile w20 input-wrapper">
             <input
               v-model="filtres.geolocalisation"
               list="localisations"
               placeholder="Localisation"
               id="localisation"
             />
+            <span
+              v-if="filtres.geolocalisation"
+              class="clear-input"
+              @click="filtres.geolocalisation = ''"
+            >
+              <span class="material-icons">close</span>
+            </span>
             <datalist id="localisations">
               <option v-for="loc in localisations" :key="loc" :value="loc" />
             </datalist>
           </div>
-          <div class="column is-12-mobile w20">
+
+          <div class="column is-12-mobile w20 input-wrapper">
             <select id="typecont" v-model="filtres.type">
               <option value="">Type de contrat</option>
               <option v-for="type in types" :key="type" :value="type">
                 {{ type }}
               </option>
             </select>
+            <span
+              v-if="filtres.type"
+              class="clear-input"
+              @click="filtres.type = ''"
+            >
+              <span class="material-icons">close</span>
+            </span>
           </div>
-          <div class="column is-12-xmobil w20">
+
+          <div class="column is-12-xmobil w20 input-wrapper">
             <select id="exper" v-model="filtres.experiencerequise">
               <option value="">Expérience requise</option>
               <option v-for="exp in experiences" :key="exp" :value="exp">
                 {{ exp }}
               </option>
             </select>
+            <span
+              v-if="filtres.experiencerequise"
+              class="clear-input"
+              @click="filtres.experiencerequise = ''"
+            >
+              <span class="material-icons">close</span>
+            </span>
           </div>
+
           <div class="column">
             <button class="luka" type="submit">
               <img src="/images/searchBtn.svg" alt="Search bouton" />
@@ -380,7 +411,7 @@ onMounted(() => {
 const currentYear = computed(() => new Date().getFullYear());
 </script>
 
-<style>
+<style lang="scss">
 #HeaderFront {
   margin-top: 62px !important;
 }
@@ -425,5 +456,21 @@ const currentYear = computed(() => new Date().getFullYear());
   position: absolute;
   right: 5px;
   top: 0;
+}
+.input-wrapper {
+  position: relative;
+
+  .clear-input {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    .material-icons {
+      font-size: 18px;
+      color: #999;
+    }
+  }
 }
 </style>

@@ -3,14 +3,16 @@
     <div id="login">
       <div class="login-container">
         <form @submit.prevent="login" class="login-form">
-          <nuxt-img
-            class="loginlogin"
-            src="/images/logosearch.svg"
-            format="webp"
-            quality="80"
-            fallback="/images/logosearch.svg"
-            alt="Description de l'image"
-          />
+          <NuxtLink to="/">
+            <nuxt-img
+              class="loginlogin"
+              src="/images/logosearch.svg"
+              format="webp"
+              quality="80"
+              fallback="/images/logosearch.svg"
+              alt="Description de l'image"
+            />
+          </NuxtLink>
           <div class="form-field">
             <label for="email">Adresse e-mail</label>
             <input
