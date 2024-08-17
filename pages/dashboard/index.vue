@@ -37,7 +37,7 @@
               <th>Nom</th>
               <th>Prénom</th>
               <th>Offre d'emploi</th>
-              <th>Taux d'adéquation</th>
+              <th>Adéquation</th>
             </tr>
           </thead>
           <tbody>
@@ -55,12 +55,12 @@
       </div>
     </div>
     <div class="column is-4">
-      <div class="carte-stat">
+      <div class="carte-stat crack">
         <h3>Offres d’emploi les plus consultées</h3>
         <ul>
           <li v-for="job in topViewedJobs" :key="job.id">
             <NuxtLink :to="``">
-              {{ job.titre }} - {{ job.nbvues }} vues
+              {{ job.titre }} - <span>{{ job.nbvues }} vues</span>
             </NuxtLink>
           </li>
         </ul>
@@ -207,6 +207,29 @@ const topViewedJobs = computed(() => {
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  th {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    color: #949494;
+    padding: 0.5em;
+  }
+  td {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    padding: 0.5em;
+  }
   h3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -217,6 +240,7 @@ const topViewedJobs = computed(() => {
     letter-spacing: 0.16px;
     text-align: left;
     color: #343434;
+    margin-bottom: 10px;
   }
   p {
     font-family: "Inter", sans-serif;
@@ -246,6 +270,38 @@ const topViewedJobs = computed(() => {
     padding: 3px 4px;
     border-radius: 50px;
     background-color: rgba(35, 193, 10, 0.15);
+  }
+}
+.crack {
+  th {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    color: #949494;
+    padding: 0.5em;
+  }
+  a {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    padding: 0.5em;
+    span {
+      position: relative;
+      color: #16c098;
+      background: none !important;
+      top: 0;
+      left: 0;
+    }
   }
 }
 </style>
