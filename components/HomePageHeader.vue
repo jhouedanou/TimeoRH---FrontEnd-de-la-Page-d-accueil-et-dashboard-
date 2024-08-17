@@ -19,9 +19,9 @@
         class="column is-flex is-justify-content-flex-end is-align-items-center is-12-mobile"
       >
         <div class="buttons">
-          <button class="button is-primary login" @click="downloadApp">
+          <NuxtLink to="/login" class="button is-primary login">
             {{ data.buttonText }}
-          </button>
+          </NuxtLink>
           <a :href="data.googlePlayUrl" target="_blank">
             <figure class="image">
               <NuxtImg
