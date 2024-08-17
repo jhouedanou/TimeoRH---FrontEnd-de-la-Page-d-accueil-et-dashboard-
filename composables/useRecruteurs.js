@@ -1,29 +1,20 @@
-import { ref, onMounted, getCurrentInstance } from 'vue'
+import { ref, onMounted } from 'vue'
+import RecruteursJson from '@/static/api/Recruteurs.json'
 
-export default function useRecruteurs() {
-  const recruteurs = ref([])
+export function useRecruteursJson() {
+  const Recruteurs = ref(RecruteursJson)
 
-  const fetchRecruteurs = async () => {
-    const response = await fetch('/api/recruteurs')
-    const data = await response.json()
-    recruteurs.value = data
+  const fetchRecruteurs = () => {
+    try {
+      Recruteurs.value = RecruteursJson
+    } catch (error) {
+      console.error('Erreur lors de la récupération des données globales:', error)
+    }
   }
 
-  const addRecruteur = async (recruteur) => {
-    const response = await fetch('/api/recruteurs', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(recruteur),
-    })
-    const data = await response.json()
-    recruteurs.value.push(data)
-  }
+  onMounted(fetchRecruteurs)
 
   return {
-    recruteurs,
-    fetchRecruteurs,
-    addRecruteur
+    data: Recruteurs
   }
 }

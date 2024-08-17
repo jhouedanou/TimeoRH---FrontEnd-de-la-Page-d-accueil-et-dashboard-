@@ -1,13 +1,44 @@
 {
   "recruteurs": [
     {
-      "id": "string",
-      "nom": "string",
-      "prenom": "string",
-      "email": "string",
-      "poste": "string",
-      "departement": "string",
-      "dateEmbauche": "date"
+      "id": "1",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "jean.dupont@example.com",
+      "poste": "RH Manager",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2020-01-15",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+    },
+    {
+      "id": "2",
+      "nom": "Martin",
+      "prenom": "Sophie",
+      "email": "sophie.martin@example.com",
+      "poste": "Recruteur Senior",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2019-05-20",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+    },
+    {
+      "id": "3",
+      "nom": "Leroy",
+      "prenom": "Pierre",
+      "email": "pierre.leroy@example.com",
+      "poste": "Chargé de recrutement",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2021-03-10",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
+    },
+    {
+      "id": "4",
+      "nom": "Dubois",
+      "prenom": "Marie",
+      "email": "marie.dubois@example.com",
+      "poste": "Assistante RH",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2022-09-01",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3"
     }
   ]
 }

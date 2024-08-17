@@ -41,9 +41,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxt/image',
-
-
+    '@nuxt/image'
   ],
   image: {
     quality: 80,
@@ -56,9 +54,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['js-cookie','md5']
+
   },
   compabilityDate: '2024-07-03',
   typescript: {
     strict: false
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/api/auth/login', method: 'post' },
+          logout: { url: '/api/auth/logout', method: 'post' },
+          user: { url: '/api/auth/user', method: 'get' }
+        }
+      }
+    }
   }
 }
