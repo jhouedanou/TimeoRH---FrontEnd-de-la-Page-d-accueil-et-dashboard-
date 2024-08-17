@@ -58,19 +58,27 @@
 import { useRouter } from "vue-router";
 import { useCookie } from "#app";
 import { useRecruteursJson } from "@/composables/useRecruteurs";
-import Cookies from "js-cookie";
-
+const recruteurId = useCookie("recruteurId");
 const { data: recruteurs } = useRecruteursJson();
 const router = useRouter();
-
-const recruiterName = useCookie("recruiterName", {
-  default: () => "Recruteur",
-});
 const recruiterInfo = computed(() => {
+  // console.log("recruteurs.value:", recruteurs.value);
+  // console.log("recruteurId.value:", recruteurId.value);
+
   if (recruteurs.value && recruteurs.value.recruteurs) {
     const recruiter = recruteurs.value.recruteurs.find(
-      (r) => r.nom === recruiterName.value
+      (r) => r.id === recruteurId.value
     );
+    // console.log("Found recruiter:", recruiter);
+    // console.log(
+    //   "Recruiter IDs:",
+    //   recruteurs.value.recruteurs.map((r) => r.id)
+    // );
+    // console.log("Searching for ID:", recruteurId.value);
+    // console.log("ID types:", {
+    //   arrayIdType: typeof recruteurs.value.recruteurs[0].id,
+    //   searchIdType: typeof recruteurId.value,
+    // });
     if (recruiter) {
       return {
         nom: recruiter.nom,
@@ -81,6 +89,8 @@ const recruiterInfo = computed(() => {
       };
     }
   }
+
+  // console.log("No matching recruiter found, returning default values");
   return {
     nom: "Recruteur",
     prenom: "",
@@ -88,7 +98,7 @@ const recruiterInfo = computed(() => {
   };
 });
 
-console.log("Informations du recruteur:", recruiterInfo.value);
+//console.log("Final recruiterInfo:", recruiterInfo.value);
 
 const logout = () => {
   if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")) {

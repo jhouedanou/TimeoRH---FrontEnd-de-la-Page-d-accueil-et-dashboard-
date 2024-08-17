@@ -22,7 +22,17 @@
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "nbvues": 1254
+    "id_recruteur": 2,
+    "pourvu": true,
+    "nbvues": 1254,
+    "candidatures": [
+      { "id": 1, "adequation": 87 },
+      { "id": 2, "adequation": 95 },
+      { "id": 3, "adequation": 72 },
+      { "id": 4, "adequation": 63 }
+    ],
+    "evolutionCandidatures": 75,
+    "vueDesOffres": -12
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -46,7 +56,17 @@
     ],
     "type": "Freelance",
     "typeDeContrat": "Freelance",
-    "nbvues": 876
+    "id_recruteur": 2,
+    "pourvu": true,
+    "nbvues": 876,
+    "candidatures": [
+      { "id": 1, "adequation": 92 },
+      { "id": 2, "adequation": 78 },
+      { "id": 3, "adequation": 85 },
+      { "id": 4, "adequation": 69 }
+    ],
+    "evolutionCandidatures": 32,
+    "vueDesOffres": 45
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -70,7 +90,17 @@
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "nbvues": 2103
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 2103,
+    "candidatures": [
+      { "id": 1, "adequation": 88 },
+      { "id": 2, "adequation": 76 },
+      { "id": 3, "adequation": 94 },
+      { "id": 4, "adequation": 81 }
+    ],
+    "evolutionCandidatures": 95,
+    "vueDesOffres": 28
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -94,7 +124,17 @@
     ],
     "type": "Freelance",
     "typeDeContrat": "Freelance",
-    "nbvues": 1587
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 1587,
+    "candidatures": [
+      { "id": 1, "adequation": 79 },
+      { "id": 2, "adequation": 91 },
+      { "id": 3, "adequation": 86 },
+      { "id": 4, "adequation": 73 }
+    ],
+    "evolutionCandidatures": -5,
+    "vueDesOffres": 52
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -118,7 +158,17 @@
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "nbvues": 932
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 932,
+    "candidatures": [
+      { "id": 1, "adequation": 83 },
+      { "id": 2, "adequation": 97 },
+      { "id": 3, "adequation": 75 },
+      { "id": 4, "adequation": 89 }
+    ],
+    "evolutionCandidatures": 62,
+    "vueDesOffres": -8
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -147,7 +197,15 @@
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "nbvues": 1765
+    "id_recruteur": 1,
+    "pourvu": false,
+    "nbvues": 1765,
+    "candidatures": [
+      { "id": 3, "adequation": 90 },
+      { "id": 4, "adequation": 100 }
+    ],
+    "evolutionCandidatures": 88,
+    "vueDesOffres": 37
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -176,83 +234,16 @@
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "nbvues": 1098
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "008",
-    "titre": "Développeur Mobile",
-    "description": "Nous cherchons un développeur mobile pour créer des applications innovantes pour iOS et Android.",
-    "shortDescription": "Recherche d'un développeur mobile pour créer des applications iOS et Android.",
-    "competencesRequises": ["Swift", "Kotlin", "React Native", "Flutter"],
-    "experienceRequise": "Junior",
-    "departement": "Développement Mobile",
-    "datePublication": "2023-05-22",
-    "statut": "Ouvert",
-    "geolocalisation": "Cocody",
-    "societe": "MobileApp CI",
-    "motsCles": [
-      { "id": 1, "mot": "développement mobile" },
-      { "id": 2, "mot": "iOS" },
-      { "id": 3, "mot": "Android" },
-      { "id": 4, "mot": "React Native" }
+    "id_recruteur": 1,
+    "pourvu": false,
+    "nbvues": 1098,
+    "candidatures": [
+      { "id": 1, "adequation": 84 },
+      { "id": 2, "adequation": 93 },
+      { "id": 3, "adequation": 71 },
+      { "id": 4, "adequation": 88 }
     ],
-    "type": "Temps plein",
-    "typeDeContrat": "CDI",
-    "nbvues": 1432
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "009",
-    "titre": "Analyste Business Intelligence",
-    "description": "Nous recherchons un analyste BI pour transformer les données en insights stratégiques pour notre entreprise.",
-    "shortDescription": "Recherche d'un analyste BI pour transformer les données en insights stratégiques.",
-    "competencesRequises": ["SQL", "Tableau", "Power BI", "Excel avancé"],
-    "experienceRequise": "Junior",
-    "departement": "Business Intelligence",
-    "datePublication": "2023-05-23",
-    "statut": "Ouvert",
-    "geolocalisation": "Plateau",
-    "societe": "DataViz CI",
-    "motsCles": [
-      { "id": 1, "mot": "business intelligence" },
-      { "id": 2, "mot": "analyse de données" },
-      { "id": 3, "mot": "visualisation de données" },
-      { "id": 4, "mot": "SQL" }
-    ],
-    "type": "Temps plein",
-    "typeDeContrat": "CDI",
-    "nbvues": 789
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": "010",
-    "titre": "Chef de Projet IT",
-    "description": "Nous cherchons un chef de projet IT expérimenté pour gérer et coordonner nos projets technologiques.",
-    "shortDescription": "Recherche d'un chef de projet IT pour gérer nos projets technologiques.",
-    "competencesRequises": [
-      "Gestion de projet",
-      "Méthodologies Agile",
-      "Budgétisation",
-      "Communication"
-    ],
-    "experienceRequise": "Senior",
-    "departement": "Gestion de Projet",
-    "datePublication": "2023-05-24",
-    "statut": "Ouvert",
-    "geolocalisation": "Marcory",
-    "societe": "ProjectLead CI",
-    "motsCles": [
-      { "id": 1, "mot": "gestion de projet" },
-      { "id": 2, "mot": "IT" },
-      { "id": 3, "mot": "Agile" },
-      { "id": 4, "mot": "leadership" }
-    ],
-    "type": "Temps plein",
-    "typeDeContrat": "CDI",
-    "nbvues": 2345
+    "evolutionCandidatures": 12,
+    "vueDesOffres": 18
   }
 ]

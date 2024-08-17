@@ -1,54 +1,52 @@
 {
   "recruteurs": [
     {
-      "id": "1",
-      "nom": "Dupont",
-      "prenom": "Jean",
-      "email": "jean.dupont@example.com",
+      "id": 1,
+      "nom": "Diallo",
+      "prenom": "Amadou",
+      "email": "amadou.diallo@example.com",
       "poste": "RH Manager",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2020-01-15",
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
-
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Safaricom"
     },
     {
-      "id": "2",
-      "nom": "Martin",
-      "prenom": "Sophie",
-      "email": "sophie.martin@example.com",
+      "id": 2,
+      "nom": "Nkosi",
+      "prenom": "Thandi",
+      "email": "thandi.nkosi@example.com",
       "poste": "Recruteur Senior",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2019-05-20",
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
-
       "image": "https://dummyimage.com/50x50",
       "compagnie": "MTN Group"
     },
     {
-      "id": "3",
-      "nom": "Leroy",
-      "prenom": "Pierre",
-      "email": "pierre.leroy@example.com",
+      "id": 3,
+
+      "nom": "Okafor",
+      "prenom": "Chidi",
+      "email": "chidi.okafor@example.com",
       "poste": "Chargé de recrutement",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2021-03-10",
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
-
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Dangote Group"
     },
     {
-      "id": "4",
-      "nom": "Dubois",
-      "prenom": "Marie",
-      "email": "marie.dubois@example.com",
+      "id": 4,
+
+      "nom": "Keita",
+      "prenom": "Aminata",
+      "email": "aminata.keita@example.com",
       "poste": "Assistante RH",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2022-09-01",
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
-
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Jumia"
     }

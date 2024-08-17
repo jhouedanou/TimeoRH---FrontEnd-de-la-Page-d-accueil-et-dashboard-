@@ -1,29 +1,18 @@
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import CandidatsJson from '@/static/api/candidats.json'
+export function useCandidatsJson() {
+  const Candidats = ref(CandidatsJson)
 
-export default function useCandidats() {
-  const candidats = ref([])
-
-  const fetchCandidats = async () => {
-    const response = await fetch('/api/candidats')
-    const data = await response.json()
-    candidats.value = data
+  const fetchCandidats = () => {
+    try {
+      Candidats.value = CandidatsJson
+    } catch (error) {
+      console.error('Erreur lors de la récupération des données globales:', error)
+    }
   }
-
-  const addCandidat = async (candidat) => {
-    const response = await fetch('/api/candidats', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(candidat),
-    })
-    const data = await response.json()
-    candidats.value.push(data)
-  }
-
+  onMounted(fetchCandidats)
   return {
-    candidats,
-    fetchCandidats,
-    addCandidat
+    data: Candidats
   }
+
 }

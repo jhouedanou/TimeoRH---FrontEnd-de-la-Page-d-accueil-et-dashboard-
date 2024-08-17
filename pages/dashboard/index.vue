@@ -1,7 +1,74 @@
 <template>
-  <div>
-    <h1>Tableau de bord</h1>
-    <!-- Ajoutez ici le contenu de votre tableau de bord -->
+  <div class="columns is-flex is-flex-wrap-wrap">
+    <div class="column is-3">
+      <div class="carte-stat candidatures">
+        <h3>Candidatures</h3>
+        <p>{{ totalCandidatures }}</p>
+        <span>{{ moyenneEvolutionCandidatures }}</span>
+      </div>
+    </div>
+    <div class="column is-3">
+      <div class="carte-stat vuedesoffres">
+        <h3>Total des vues</h3>
+        <p>{{ totalVues }}</p>
+        <span>{{ moyenneVuesOffres }}</span>
+      </div>
+    </div>
+    <div class="column is-3">
+      <div class="carte-stat">
+        <h3>Postes pourvus</h3>
+        <p>{{ statsPostes.pourvus.nombre }}</p>
+        <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
+      </div>
+    </div>
+    <div class="column is-3">
+      <div class="carte-stat">
+        <h3>Postes non pourvus</h3>
+        <p>{{ statsPostes.nonPourvus.nombre }}</p>
+        <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
+      </div>
+    </div>
+    <div class="column is-5">
+      <div class="carte-stat">
+        <h3>Candidatures intéressantes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Offre d'emploi</th>
+              <th>Taux d'adéquation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="candidate in highAdequacyCandidates"
+              :key="`${candidate.nom}-${candidate.prenom}-${candidate.offreEmploi}`"
+            >
+              <td>{{ candidate.nom }}</td>
+              <td>{{ candidate.prenom }}</td>
+              <td>{{ candidate.offreEmploi }}</td>
+              <td>{{ candidate.adequation }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="column is-4">
+      <div class="carte-stat">
+        <h3>Offres d’emploi les plus consultées</h3>
+        <ul>
+          <li v-for="job in topViewedJobs" :key="job.id">
+            <NuxtLink :to="``">
+              {{ job.titre }} - {{ job.nbvues }} vues
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="column is-3">
+      <div class="carte-stat"></div>
+    </div>
   </div>
 </template>
 
@@ -10,8 +77,175 @@ definePageMeta({
   middleware: "auth",
   layout: "dashboard",
 });
+
+import { useEmploisJson } from "@/composables/useEmplois";
+import { useRecruteursJson } from "@/composables/useRecruteurs";
+import { useCandidatsJson } from "@/composables/useCandidats";
+const { data: recruteurs } = useRecruteursJson();
+const { data: emplois } = useEmploisJson();
+const { data: candidats } = useCandidatsJson();
+
+//console.log("Recruteurs:", recruteurs.value);
+//console.log("Emplois:", emplois.value);
+
+const recruteurId = useCookie("recruteurId");
+//console.log("RecruteurId from cookie:", recruteurId.value);
+
+const filteredJobs = computed(() => {
+  // console.log("Filtering jobs for recruteurId:", recruteurId.value);
+  if (!recruteurId.value) {
+    // console.log("No recruteurId, returning empty array");
+    return [];
+  }
+  const filtered = emplois.value.filter(
+    (job) => job.id_recruteur === recruteurId.value
+  );
+  //console.log("Filtered jobs:", filtered);
+  return filtered;
+});
+
+// console.log("FilteredJobs computed value:", filteredJobs.value);
+//total des candidatures
+const totalCandidatures = computed(() => {
+  return filteredJobs.value.reduce((total, job) => {
+    return total + (job.candidatures ? job.candidatures.length : 0);
+  }, 0);
+});
+const moyenneEvolutionCandidatures = computed(() => {
+  const sum = filteredJobs.value.reduce(
+    (total, job) => total + parseFloat(job.evolutionCandidatures),
+    0
+  );
+  return filteredJobs.value.length
+    ? (sum / filteredJobs.value.length).toFixed(2) + "%"
+    : "0%";
+});
+//total des vues
+const totalVues = computed(() => {
+  return filteredJobs.value.reduce((total, job) => total + job.nbvues, 0);
+});
+
+const moyenneVues = computed(() => {
+  return filteredJobs.value.length
+    ? (totalVues.value / filteredJobs.value.length).toFixed(2)
+    : 0;
+});
+const moyenneVuesEnPourcentage = computed(() => {
+  const totalVues = filteredJobs.value.reduce(
+    (total, job) => total + job.vueDesOffres,
+    0
+  );
+  const moyenne = filteredJobs.value.length
+    ? totalVues / filteredJobs.value.length
+    : 0;
+  return (moyenne * 100).toFixed(2) + "%";
+});
+const moyenneVuesOffres = computed(() => {
+  const totalVues = filteredJobs.value.reduce(
+    (total, job) => total + job.vueDesOffres,
+    0
+  );
+  return filteredJobs.value.length
+    ? (totalVues / filteredJobs.value.length).toFixed(2) + "%"
+    : "0";
+});
+
+//pourcetage des emplois pourvus et vice cersa
+const statsPostes = computed(() => {
+  const total = filteredJobs.value.length;
+  const pourvus = filteredJobs.value.filter((job) => job.pourvu).length;
+  const nonPourvus = total - pourvus;
+
+  return {
+    pourvus: {
+      nombre: pourvus,
+      pourcentage: total ? (pourvus / total) * 100 + "%" : "0%",
+    },
+    nonPourvus: {
+      nombre: nonPourvus,
+      pourcentage: total ? (nonPourvus / total) * 100 + "%" : "0%",
+    },
+  };
+});
+
+//candidats adéquats
+const highAdequacyCandidates = computed(() => {
+  return filteredJobs.value.flatMap((job) =>
+    job.candidatures
+      .filter((candidature) => candidature.adequation > 90)
+      .map((candidature) => {
+        const candidate = candidats.value.candidats.find(
+          (c) => c.id === candidature.id
+        );
+        return candidate
+          ? {
+              nom: candidate.nom,
+              prenom: candidate.prenom,
+              offreEmploi: job.titre,
+              adequation: candidature.adequation,
+            }
+          : null;
+      })
+      .filter(Boolean)
+  );
+});
+//top 5 offres d'emploi
+const topViewedJobs = computed(() => {
+  return filteredJobs.value.sort((a, b) => b.nbvues - a.nbvues).slice(0, 5);
+});
 </script>
 
-<style scoped>
-/* Ajoutez ici vos styles spécifiques à cette page */
+<style lang="scss" scoped>
+.carte-stat {
+  border-radius: 6px;
+  border: solid 2px #eceef6;
+  background-color: #fff;
+  padding: 1em;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    text-align: left;
+    color: #343434;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-align: left;
+    color: #232323;
+  }
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-align: left;
+    color: #0b8a00;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    gap: 3px;
+    padding: 3px 4px;
+    border-radius: 50px;
+    background-color: rgba(35, 193, 10, 0.15);
+  }
+}
 </style>

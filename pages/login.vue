@@ -35,11 +35,6 @@
               required
               placeholder="Entrez votre mot de passe"
             />
-            <button id="quc" type="button" @click.prevent="forgotPassword">
-              Mot de passe oublié
-            </button>
-          </div>
-          <div class="form-fieldz">
             <button
               type="button"
               @click="togglePassword"
@@ -49,7 +44,11 @@
                 {{ showPassword ? "visibility_off" : "visibility" }}
               </span>
             </button>
+            <button id="quc" type="button" @click.prevent="forgotPassword">
+              Mot de passe oublié
+            </button>
           </div>
+          <div class="form-fieldz"></div>
           <div class="form-fieldz">
             <button id="rez" type="submit">Se connecter</button>
           </div>
@@ -161,7 +160,9 @@ onMounted(() => {
     rememberMe.value = true;
   }
 });
-
+const togglePassword = () => {
+  showPassword.value = !showPassword.value;
+};
 const validateLoginForm = () => {
   if (!email.value || !password.value) {
     alert("Veuillez remplir tous les champs");
@@ -205,7 +206,8 @@ const login = () => {
     router.push("/dashboard");
     //Enregistrement de l'utilisateur dans le localStorage
     Cookies.set("user_authenticated", "true", { expires: 7 }); // expire après 7 jours
-    Cookies.set("recruiterName", user.nom, { expires: 7 });
+    // Cookies.set("recruiterName", user.nom, { expires: 7 });
+    Cookies.set("recruteurId", user.id, { expires: 7 });
     // Enregistrement des informations de connexion dans les cookies
     if (rememberMe.value) {
       Cookies.set("userEmail", email.value, { expires: 365 });

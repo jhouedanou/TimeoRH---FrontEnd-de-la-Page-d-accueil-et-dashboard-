@@ -1,25 +1,18 @@
-import { ref, onMounted, getCurrentInstance } from 'vue'
+import { ref, onMounted } from 'vue'
+import EmploisJson from '@/static/api/emplois.json'
+export function useEmploisJson() {
+  const Emplois = ref(EmploisJson)
 
-
-
-
-export default function useEmplois() {
-  const { $axios } = useContext()
-  const emplois = ref([])
-
-  const fetchEmplois = async () => {
-    const { data } = await $axios.get('/api/emplois')
-    emplois.value = data
+  const fetchEmplois = () => {
+    try {
+      Emplois.value = EmploisJson
+    } catch (error) {
+      console.error('Erreur lors de la récupération des données globales:', error)
+    }
   }
-
-  const addEmploi = async (emploi) => {
-    const { data } = await $axios.post('/api/emplois', emploi)
-    emplois.value.push(data)
-  }
-
+  onMounted(fetchEmplois)
   return {
-    emplois,
-    fetchEmplois,
-    addEmploi
+    data: Emplois
   }
+
 }
