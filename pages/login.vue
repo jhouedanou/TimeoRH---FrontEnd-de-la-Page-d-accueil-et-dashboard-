@@ -30,6 +30,10 @@
               required
               placeholder="Entrez votre mot de passe"
             />
+            <button type="button" @click.prevent="forgotPassword">
+              Mot de passe oublié
+            </button>
+
             <button
               type="button"
               @click="togglePassword"
@@ -46,7 +50,6 @@
             <label for="remember">Se souvenir de moi</label>
           </div>
           <button type="submit">Se connecter</button>
-          <button @click="forgotPassword">Mot de passe oublié</button>
         </form>
       </div>
     </div>
@@ -135,14 +138,6 @@ const forgotPassword = () => {
 }
 
 label {
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
 }
 
 input:focus {
