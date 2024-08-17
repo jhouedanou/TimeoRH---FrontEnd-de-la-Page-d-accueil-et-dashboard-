@@ -4,38 +4,43 @@
   <div class="offremploi-container container">
     <div class="offres-emploi">
       <form @submit.prevent="appliquerFiltres" class="filtres">
-        <div class="columns">
-          <div class="column is-one-third-desktop is-12-mobile">
+        <div class="Trouvez-le-job-correspondant-votre-profil">
+          Trouvez le job correspondant à votre profil
+        </div>
+        <div class="columns kaihones">
+          <div class="column is-12-mobile w20">
             <input
               v-model="filtres.titre"
               list="titres"
               placeholder="Titre du poste"
+              id="titreinp"
             />
             <datalist id="titres">
               <option v-for="titre in titres" :key="titre" :value="titre" />
             </datalist>
           </div>
 
-          <div class="column is-one-third-desktop is-12-mobile">
+          <div class="column is-12-mobile w20">
             <input
               v-model="filtres.geolocalisation"
               list="localisations"
               placeholder="Localisation"
+              id="localisation"
             />
             <datalist id="localisations">
               <option v-for="loc in localisations" :key="loc" :value="loc" />
             </datalist>
           </div>
-          <div class="column is-one-third-desktop is-12-mobile">
-            <select v-model="filtres.type">
+          <div class="column is-12-mobile w20">
+            <select id="typecont" v-model="filtres.type">
               <option value="">Type de contrat</option>
               <option v-for="type in types" :key="type" :value="type">
                 {{ type }}
               </option>
             </select>
           </div>
-          <div class="column is-one-third-desktop is-12-mobile">
-            <select v-model="filtres.experiencerequise">
+          <div class="column is-12-xmobil w20">
+            <select id="exper" v-model="filtres.experiencerequise">
               <option value="">Expérience requise</option>
               <option v-for="exp in experiences" :key="exp" :value="exp">
                 {{ exp }}
@@ -43,13 +48,8 @@
             </select>
           </div>
           <div class="column">
-            <button type="submit">Filtrer</button>
-
-            <button
-              @click="reinitialiserFiltres"
-              class="btn btn-secondary mt-3"
-            >
-              Réinitialiser tous les filtres
+            <button class="luka" type="submit">
+              <img src="/images/searchBtn.svg" alt="Search bouton" />
             </button>
           </div>
         </div>
@@ -57,44 +57,63 @@
 
       <div class="columns">
         <div class="filtrewrapper column is-4-desktop">
+          <h3 class="apro">Filtres</h3>
           <div class="accordion">
             <div class="accordion-item">
               <button class="accordion-header" @click="toggleAccordion($event)">
                 Type de contrat
+                <span class="arrow-icon">&#9662;</span>
               </button>
               <div class="accordion-content">
-                <div v-for="type in types" :key="type" class="form-check">
+                <div
+                  v-for="type in typesWithCount"
+                  :key="type.value"
+                  class="form-check"
+                >
                   <input
                     type="checkbox"
-                    :id="type"
+                    :id="type.value"
                     v-model="filtres.typeCheckbox"
-                    :value="type"
+                    :value="type.value"
                   />
-                  <label :for="type">{{ type }}</label>
+                  <label :for="type.value"
+                    >{{ type.value }} ({{ type.count }})</label
+                  >
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <button class="accordion-header" @click="toggleAccordion($event)">
                 Niveau d'expérience
+                <span class="arrow-icon">&#9662;</span>
               </button>
               <div class="accordion-content">
-                <div v-for="exp in experiences" :key="exp" class="form-check">
+                <div
+                  v-for="exp in experiencesWithCount"
+                  :key="exp.value"
+                  class="form-check"
+                >
                   <input
                     type="checkbox"
-                    :id="exp"
+                    :id="exp.value"
                     v-model="filtres.experiencerequisecheckbox"
-                    :value="exp"
+                    :value="exp.value"
                   />
-                  <label :for="exp">{{ exp }}</label>
+                  <label :for="exp.value"
+                    >{{ exp.value }} ({{ exp.count }})</label
+                  >
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <button class="accordion-header" @click="toggleAccordion($event)">
-                Mots-clés
+                Compétences
+                <span class="arrow-icon">&#9662;</span>
               </button>
               <div class="accordion-content">
+                <p class="mango">
+                  Veuillez saisir une ou plusieurs compétences
+                </p>
                 <div class="keywords-input">
                   <div
                     v-for="(keyword, index) in filtres.motsCles"
@@ -121,7 +140,10 @@
               </div>
             </div>
           </div>
-          <button @click="reinitialiserFiltres" class="btn btn-secondary mt-3">
+          <button
+            @click="reinitialiserFiltres"
+            class="btn paulgeorge btn-secondary mt-3"
+          >
             Réinitialiser tous les filtres
           </button>
         </div>
@@ -172,6 +194,20 @@
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="columns is-desktop">
+      <div
+        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
+      >
+        <p>© {{ currentYear }} TimeoRH</p>
+      </div>
+      <div
+        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
+      >
+        <p>Fait avec ❤️ en Côte d'Ivoire</p>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup>
@@ -297,10 +333,14 @@ const reinitialiserFiltres = () => {
 };
 
 const toggleAccordion = (event) => {
-  const content = event.target.nextElementSibling;
-  content.style.maxHeight = content.style.maxHeight
-    ? null
-    : content.scrollHeight + "px";
+  const header = event.currentTarget;
+  header.classList.toggle("active");
+  const content = header.nextElementSibling;
+  if (content) {
+    content.style.maxHeight = content.style.maxHeight
+      ? null
+      : `${content.scrollHeight}px`;
+  }
 };
 
 const addKeyword = () => {
@@ -314,6 +354,19 @@ const removeKeyword = (index) => {
   filtres.value.motsCles.splice(index, 1);
 };
 const noResults = computed(() => emploisFiltres.value.total === 0);
+const typesWithCount = computed(() => {
+  return types.value.map((type) => ({
+    value: type,
+    count: emplois.value.filter((e) => e.typeDeContrat === type).length,
+  }));
+});
+
+const experiencesWithCount = computed(() => {
+  return experiences.value.map((exp) => ({
+    value: exp,
+    count: emplois.value.filter((e) => e.experienceRequise === exp).length,
+  }));
+});
 
 onMounted(() => {
   document.body.id = "offres";
@@ -324,6 +377,7 @@ onMounted(() => {
     appliquerFiltres();
   }
 });
+const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <style>
@@ -335,12 +389,9 @@ onMounted(() => {
 }
 
 .filtres {
-  display: flex;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-.emplois-liste {
+  margin-top: -86px;
 }
 
 .pagination {
@@ -350,54 +401,29 @@ onMounted(() => {
   align-items: center;
   gap: 10px;
 }
-
-.accordion-header {
-  background-color: #f1f1f1;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
+.form-check input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #e7e6e6;
+  background-color: #fdfeff;
+  appearance: none;
+  -webkit-appearance: none;
   outline: none;
-  transition: 0.4s;
-}
-
-.accordion-header:hover {
-  background-color: #ddd;
-}
-
-.accordion-content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.keywords-input {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.keyword-chip {
-  background-color: #e0e0e0;
-  padding: 5px 10px;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.remove-keyword {
-  background: none;
-  border: none;
   cursor: pointer;
-  margin-left: 5px;
 }
-.nombre-posts {
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
+
+.form-check input[type="checkbox"]:checked {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.form-check input[type="checkbox"]:checked::before {
+  content: "\2714";
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  right: 5px;
+  top: 0;
 }
 </style>
