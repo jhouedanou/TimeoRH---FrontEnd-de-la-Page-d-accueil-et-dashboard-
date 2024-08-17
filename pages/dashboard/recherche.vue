@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Tableau de bord</h1>
+    <h1>Recherhce</h1>
     <!-- Ajoutez ici le contenu de votre tableau de bord -->
     <DashboardSidebar />
   </div>
