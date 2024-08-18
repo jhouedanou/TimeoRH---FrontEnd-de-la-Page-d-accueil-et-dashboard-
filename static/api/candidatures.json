@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "emploi_id": 1,
+    "candidat_ids": [3, 7],
+    "recruteur_id": 2
+  },
+  {
+    "id": 2,
+    "emploi_id": 2,
+    "candidat_ids": [1, 5],
+    "recruteur_id": 1
+  },
+  {
+    "id": 3,
+    "emploi_id": 3,
+    "candidat_ids": [2, 6],
+    "recruteur_id": 3
+  }
+]
