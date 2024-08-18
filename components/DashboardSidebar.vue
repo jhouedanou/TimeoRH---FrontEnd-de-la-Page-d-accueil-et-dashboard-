@@ -67,7 +67,7 @@ const recruiterInfo = computed(() => {
 
   if (recruteurs.value && recruteurs.value.recruteurs) {
     const recruiter = recruteurs.value.recruteurs.find(
-      (r) => r.id === recruteurId.value
+      (r) => r.recruteur_id === recruteurId.value
     );
     // console.log("Found recruiter:", recruiter);
     // console.log(

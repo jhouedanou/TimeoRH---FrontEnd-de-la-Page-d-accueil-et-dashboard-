@@ -1,5 +1,4 @@
 import { ref, onMounted } from 'vue'
-//recruteur.json
 import RecruteursJson from '@/static/api/recruteurs.json'
 
 export function useRecruteursJson() {
@@ -9,7 +8,7 @@ export function useRecruteursJson() {
     try {
       Recruteurs.value = RecruteursJson
     } catch (error) {
-      console.error('Erreur lors de la récupération des données globales:', error)
+      console.error('Erreur lors de la récupération des données des recruteurs:', error)
     }
   }
 

@@ -1123,3 +1123,28 @@ $secondary: #012e61;
     background-color: #fff;
     height: 100%;
 }
+.grph {
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 0 16px 27.8px 10px;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: #f6f6f6;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.14px;
+        text-align: center;
+        color: #1a2b88;
+    }
+}

@@ -28,6 +28,12 @@
         <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
       </div>
     </div>
+    <div class="column is-12">
+      <div class="carte-stat grph">
+        <h3>Vues vs Candidatures</h3>
+        <graphique-home-page></graphique-home-page>
+      </div>
+    </div>
     <div class="column is-5">
       <div class="carte-stat">
         <h3>Candidatures intéressantes</h3>
@@ -54,20 +60,24 @@
         </table>
       </div>
     </div>
-    <div class="column is-4">
+    <div class="column is-3">
       <div class="carte-stat crack">
         <h3>Offres d’emploi les plus consultées</h3>
         <ul>
           <li v-for="job in topViewedJobs" :key="job.id">
             <NuxtLink :to="``">
-              {{ job.titre }} - <span>{{ job.nbvues }} vues</span>
+              {{ job.titre }} <br />
+              <span>{{ job.nbvues }} vues</span>
             </NuxtLink>
           </li>
         </ul>
       </div>
     </div>
-    <div class="column is-3">
-      <div class="carte-stat"></div>
+    <div class="column is-4">
+      <div class="carte-stat tauxApprentissage">
+        <h3>Taux d'apprentissage</h3>
+        <tauxApprentissage :recruteurId="recruteurId" />
+      </div>
     </div>
   </div>
 </template>
