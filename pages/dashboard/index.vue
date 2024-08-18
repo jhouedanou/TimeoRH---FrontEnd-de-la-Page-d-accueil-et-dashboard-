@@ -34,7 +34,7 @@
         <graphique-home-page></graphique-home-page>
       </div>
     </div>
-    <div class="column is-5">
+    <div class="column is-4" style="min-height: 400px">
       <div class="carte-stat">
         <h3>Candidatures intéressantes</h3>
         <table>
@@ -43,7 +43,7 @@
               <th>Nom</th>
               <th>Prénom</th>
               <th>Offre d'emploi</th>
-              <th>Adéquation</th>
+              <th>Taux</th>
             </tr>
           </thead>
           <tbody>
@@ -60,7 +60,7 @@
         </table>
       </div>
     </div>
-    <div class="column is-3">
+    <div class="column is-4" style="min-height: 400px">
       <div class="carte-stat crack">
         <h3>Offres d’emploi les plus consultées</h3>
         <ul>
@@ -73,7 +73,7 @@
         </ul>
       </div>
     </div>
-    <div class="column is-4">
+    <div class="column is-4" style="min-height: 400px">
       <div class="carte-stat tauxApprentissage">
         <h3>Taux d'apprentissage</h3>
         <tauxApprentissage :recruteurId="recruteurId" />
@@ -180,25 +180,29 @@ const statsPostes = computed(() => {
 
 //candidats adéquats
 const highAdequacyCandidates = computed(() => {
-  return filteredJobs.value.flatMap((job) =>
-    job.candidatures
-      .filter((candidature) => candidature.adequation > 90)
-      .map((candidature) => {
-        const candidate = candidats.value.candidats.find(
-          (c) => c.id === candidature.id
-        );
-        return candidate
-          ? {
-              nom: candidate.nom,
-              prenom: candidate.prenom,
-              offreEmploi: job.titre,
-              adequation: candidature.adequation,
-            }
-          : null;
-      })
-      .filter(Boolean)
-  );
+  return filteredJobs.value
+    .flatMap((job) =>
+      job.candidatures
+        .filter((candidature) => candidature.adequation > 90)
+        .map((candidature) => {
+          const candidate = candidats.value.candidats.find(
+            (c) => c.id === candidature.id
+          );
+          return candidate
+            ? {
+                nom: candidate.nom,
+                prenom: candidate.prenom,
+                offreEmploi: job.titre,
+                adequation: candidature.adequation,
+              }
+            : null;
+        })
+        .filter(Boolean)
+    )
+    .sort((a, b) => b.adequation - a.adequation)
+    .slice(0, 5); // Limite aux 5 premiers résultats
 });
+
 //top 5 offres d'emploi
 const topViewedJobs = computed(() => {
   return filteredJobs.value.sort((a, b) => b.nbvues - a.nbvues).slice(0, 5);
@@ -206,6 +210,11 @@ const topViewedJobs = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+.is-4 {
+  .carte-stat {
+    min-height: 340px;
+  }
+}
 .carte-stat {
   border-radius: 6px;
   border: solid 2px #eceef6;

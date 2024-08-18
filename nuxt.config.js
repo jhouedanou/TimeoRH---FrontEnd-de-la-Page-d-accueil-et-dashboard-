@@ -41,7 +41,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxt/image'
+    '@nuxt/image',
   ],
   image: {
     quality: 80,
