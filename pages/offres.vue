@@ -305,7 +305,9 @@ const emploisFiltres = computed(() => {
       filtres.value.motsCles.length === 0 ||
       filtres.value.motsCles.some((mot) =>
         emploi.motsCles.some((mc) =>
-          mc.mot.toLowerCase().includes(mot.toLowerCase())
+          new RegExp(mot.toLowerCase().replace(/\*/g, ".*"), "i").test(
+            mc.mot.toLowerCase()
+          )
         )
       );
 
@@ -376,7 +378,7 @@ const toggleAccordion = (event) => {
 
 const addKeyword = () => {
   if (newKeyword.value.trim()) {
-    filtres.value.motsCles.push(newKeyword.value.trim());
+    filtres.value.motsCles.push(newKeyword.value.trim().toLowerCase());
     newKeyword.value = "";
   }
 };
