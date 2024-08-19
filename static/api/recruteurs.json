@@ -11,7 +11,24 @@
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Safaricom",
-      "apprentissageComplete": 30
+      "apprentissageComplete": 30,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Nouvelle candidature",
+          "content": "Un nouveau candidat a postulé pour le poste de Développeur Web"
+        },
+        {
+          "id": 2,
+          "title": "Entretien planifié",
+          "content": "Entretien prévu avec Marie Dupont pour le poste de Chef de projet"
+        },
+        {
+          "id": 3,
+          "title": "Offre d'emploi expirée",
+          "content": "L'offre pour le poste de Designer UX/UI a expiré"
+        }
+      ]
     },
     {
       "recruteur_id": 2,

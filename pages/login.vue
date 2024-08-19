@@ -191,7 +191,7 @@ const login = () => {
   const hashedPassword = MD5(password.value).toString();
   // console.log("Mot de passe haché:", hashedPassword);
 
-  // console.log("Recruteurs:", recruteurs.value.recruteurs);
+  console.log("Recruteurs:", recruteurs.value.recruteurs);
 
   const user = recruteurs.value.recruteurs.find(
     (u) => u.email === email.value && u.motdepasse === hashedPassword
@@ -207,7 +207,9 @@ const login = () => {
     //Enregistrement de l'utilisateur dans le localStorage
     Cookies.set("user_authenticated", "true", { expires: 7 }); // expire après 7 jours
     // Cookies.set("recruiterName", user.nom, { expires: 7 });
-    Cookies.set("recruteurId", user.id, { expires: 7 });
+    Cookies.set("recruteurId", user.recruteur_id, { expires: 7 });
+    localStorage.setItem("recruteurId", user.recruteur_id);
+
     // Enregistrement des informations de connexion dans les cookies
     if (rememberMe.value) {
       Cookies.set("userEmail", email.value, { expires: 365 });

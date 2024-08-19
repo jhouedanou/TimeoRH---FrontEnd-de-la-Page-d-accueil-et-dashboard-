@@ -21,7 +21,7 @@
                 <input
                   v-model="searchQuery"
                   type="text"
-                  placeholder="Recherche d’un profil ou de compétences...."
+                  placeholder="Recherche d'un profil ou de compétences...."
                 />
                 <button class="search-button">
                   <span class="material-icons">search</span>
@@ -54,9 +54,20 @@
             </div>
             <div class="dropdown-menu" id="dropdown-menu" role="menu">
               <div class="dropdown-content">
-                <a href="#" class="dropdown-item"> Notification 1 </a>
-                <a href="#" class="dropdown-item"> Notification 2 </a>
-                <a href="#" class="dropdown-item"> Notification 3 </a>
+                <div class="dropdown-content">
+                  <a
+                    v-for="notif in notifications"
+                    :key="notif.id"
+                    href="#"
+                    class="dropdown-item"
+                    @click.prevent="
+                      showPopup(notif);
+                      deleteNotification(notif.id);
+                    "
+                  >
+                    {{ notif.title }}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -64,26 +75,76 @@
       </div>
     </div>
   </header>
+  <teleport to="body">
+    <div v-if="showPopupContent" class="modal is-active">
+      <div class="modal-background" @click="closePopup"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3 class="title is-4">{{ currentNotification.title }}</h3>
+          <p>{{ currentNotification.content }}</p>
+        </div>
+      </div>
+      <button
+        class="modal-close is-large"
+        aria-label="close"
+        @click="closePopup"
+      ></button>
+    </div>
+  </teleport>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
-
 import { useGlobalData } from "@/composables/useGlobalData";
+import { useRecruteursJson } from "@/composables/useRecruteurs";
 const { data: globalData } = useGlobalData();
+const { data: recruteurs } = useRecruteursJson();
 const router = useRouter();
 const isNotificationDropdownActive = ref(false);
-const hasNotifications = ref(false);
-
-const redirectToSearch = (event) => {
-  const searchTerm = event.target.value;
-  router.push({ name: "search", query: { q: searchTerm } });
+const notifications = computed(() => {
+  const recruteur = recruteurs.value.recruteurs.find(
+    (r) => r.recruteur_id === 1
+  );
+  return recruteur ? recruteur.notifications : [];
+});
+const showPopupContent = ref(false);
+const currentNotification = ref({});
+const updateNotificationStatus = () => {
+  hasNotifications.value = notifications.value.length > 0;
 };
 
-const toggleNotificationDropdown = () => {
+const showPopup = (notification) => {
+  currentNotification.value = notification;
+  showPopupContent.value = true;
+};
+
+const closePopup = () => {
+  showPopupContent.value = false;
+};
+
+const searchQuery = ref("");
+const hasNotifications = computed(() => notifications.value.length > 0);
+
+function toggleNotificationDropdown() {
   isNotificationDropdownActive.value = !isNotificationDropdownActive.value;
+}
+
+const removeNotification = (event) => {
+  event.target.remove();
+  updateNotificationStatus();
 };
+
+const deleteNotification = (notificationId) => {
+  notifications.value = notifications.value.filter(
+    (n) => n.id !== notificationId
+  );
+  updateNotificationStatus();
+};
+
+function redirectToSearch() {
+  router.push({ name: "search", query: { q: searchQuery.value } });
+}
 
 onMounted(() => {
   const dropdownContent = document.querySelector(".dropdown-content");
