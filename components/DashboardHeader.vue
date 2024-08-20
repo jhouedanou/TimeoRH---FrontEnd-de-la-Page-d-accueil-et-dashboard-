@@ -31,7 +31,7 @@
           </div>
         </div>
         <div
-          class="column is-1-desktop is-1-tablet is-12-mobile is-flex is-justify-content-center"
+          class="column is-1-desktop is-1-tablet is-12-mobile is-flex is-justify-content-center is-align-items-end"
         >
           <div
             class="dropdown is-right"

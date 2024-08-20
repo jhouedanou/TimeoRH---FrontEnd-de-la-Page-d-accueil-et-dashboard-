@@ -1,58 +1,110 @@
 [
   {
     "id": 1,
+    "date": "29 juin 2024",
     "titre": "Vidéo 1",
+    "description": "Description de la vidéo 1",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+1",
     "categorie": "Formation",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 2,
+    "date": "29 juin 2024",
     "titre": "Vidéo 2",
+    "description": "Description de la vidéo 2",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+2",
-    "categorie": "Tutoriel",
+    "categorie": "Formation",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 3,
+    "date": "29 juin 2024",
     "titre": "Vidéo 3",
+    "description": "Description de la vidéo 3",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+3",
     "categorie": "Démonstration",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 4,
+    "date": "29 juin 2024",
     "titre": "Vidéo 4",
+    "description": "Description de la vidéo 4",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+4",
     "categorie": "Entretien",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 5,
+    "date": "29 juin 2024",
     "titre": "Vidéo 5",
+    "description": "Description de la vidéo 5",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+5",
     "categorie": "Conférence",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 6,
+    "date": "29 juin 2024",
     "titre": "Vidéo 6",
+    "description": "Description de la vidéo 6",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+6",
     "categorie": "Présentation",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 7,
+    "date": "29 juin 2024",
     "titre": "Vidéo 7",
+    "description": "Description de la vidéo 7",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+7",
     "categorie": "Atelier",
     "youtubeId": "dQw4w9WgXcQ"
   },
   {
     "id": 8,
+    "date": "29 juin 2024",
     "titre": "Vidéo 8",
+    "description": "Description de la vidéo 8",
     "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+8",
     "categorie": "Cours",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 9,
+    "date": "29 juin 2024",
+    "titre": "Vidéo 9",
+    "description": "Description de la vidéo 9",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+9",
+    "categorie": "Tutoriel",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 10,
+    "date": "29 juin 2024",
+    "titre": "Vidéo 10",
+    "description": "Description de la vidéo 10",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+10",
+    "categorie": "Webinaire",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 11,
+    "date": "29 juin 2024",
+    "titre": "Vidéo 11",
+    "description": "Description de la vidéo 11",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+11",
+    "categorie": "Interview",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 12,
+    "date": "29 juin 2024",
+    "titre": "Vidéo 12",
+    "description": "Description de la vidéo 12",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+12",
+    "categorie": "Démonstration",
     "youtubeId": "dQw4w9WgXcQ"
   }
 ]
