@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titre": "Vidéo 1",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+1",
+    "categorie": "Formation",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 2,
+    "titre": "Vidéo 2",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+2",
+    "categorie": "Tutoriel",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 3,
+    "titre": "Vidéo 3",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+3",
+    "categorie": "Démonstration",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 4,
+    "titre": "Vidéo 4",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+4",
+    "categorie": "Entretien",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 5,
+    "titre": "Vidéo 5",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+5",
+    "categorie": "Conférence",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 6,
+    "titre": "Vidéo 6",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+6",
+    "categorie": "Présentation",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 7,
+    "titre": "Vidéo 7",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+7",
+    "categorie": "Atelier",
+    "youtubeId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": 8,
+    "titre": "Vidéo 8",
+    "miniature": "https://dummyimage.com/300x200/000/fff&text=Video+8",
+    "categorie": "Cours",
+    "youtubeId": "dQw4w9WgXcQ"
+  }
+]
