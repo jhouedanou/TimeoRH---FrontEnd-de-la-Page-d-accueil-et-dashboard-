@@ -1,16 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Material+Icons&display=swap");
-:root {
-    --primary-color: rgb(0, 123, 255);
-    --secondary-color: rgb(1, 46, 97);
-    --text-color: rgb(51, 51, 51);
-    --primary-color-rgb: 248, 249, 250;
-    --secondary-color-rgb: 1, 46, 97;
-}
 body {
     background-color: #f2f2f2;
-    font-family: "Inter", sans-serif;
 }
-.c .poppins-thin {
+.poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -200,8 +192,15 @@ body {
 
     font-style: normal;
 }
-$primary: #007bff;
+$primary: #dc9756;
 $secondary: #012e61;
+:root {
+    --primary-color: rgb(220, 151, 86);
+    --secondary-color: rgb(1, 46, 97);
+    --text-color: rgb(51, 51, 51);
+    --primary-color-rgb: 248, 249, 250;
+    --secondary-color-rgb: 1, 46, 97;
+}
 
 .herowrapper {
     min-height: 90vh;

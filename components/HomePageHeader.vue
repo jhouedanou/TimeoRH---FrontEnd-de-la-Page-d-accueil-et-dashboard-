@@ -20,7 +20,7 @@
       >
         <div class="buttons">
           <NuxtLink to="/login" class="button is-primary login">
-            {{ data.buttonText }}
+            {{ isAuthenticated ? "Dashboard" : "Connexion" }}
           </NuxtLink>
           <a :href="data.googlePlayUrl" target="_blank">
             <figure class="image">
@@ -53,6 +53,15 @@
 <script setup>
 import { useGlobalData } from "@/composables/useGlobalData";
 const { data } = useGlobalData();
+
+import { ref, onMounted } from "vue";
+import { useCookie } from "#app";
+const isAuthenticated = ref(false);
+onMounted(() => {
+  const userAuthenticatedCookie = useCookie("user_authenticated");
+  console.log(userAuthenticatedCookie.value);
+  isAuthenticated.value = userAuthenticatedCookie.value;
+});
 </script>
 
 <style scoped lang="scss">
