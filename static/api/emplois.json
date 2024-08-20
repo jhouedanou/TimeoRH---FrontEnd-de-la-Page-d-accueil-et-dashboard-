@@ -6,19 +6,40 @@
     "titre": "Développeur Full Stack",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "competencesRequises": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB"
+    ],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Inactif",
     "geolocalisation": "Cocody",
     "societe": "TechInnovate CI",
     "motsCles": [
-      { "id": 1, "mot": "développement web" },
-      { "id": 2, "mot": "full stack" },
-      { "id": 3, "mot": "JavaScript" },
-      { "id": 4, "mot": "React" },
-      { "id": 5, "mot": "Node.js" }
+      {
+        "id": 1,
+        "mot": "développement web"
+      },
+      {
+        "id": 2,
+        "mot": "full stack"
+      },
+      {
+        "id": 3,
+        "mot": "JavaScript"
+      },
+      {
+        "id": 4,
+        "mot": "React"
+      },
+      {
+        "id": 5,
+        "mot": "Node.js"
+      }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
@@ -26,10 +47,22 @@
     "pourvu": true,
     "nbvues": 1254,
     "candidatures": [
-      { "id": 1, "adequation": 87 },
-      { "id": 2, "adequation": 95 },
-      { "id": 3, "adequation": 72 },
-      { "id": 4, "adequation": 63 }
+      {
+        "id": 1,
+        "adequation": 87
+      },
+      {
+        "id": 2,
+        "adequation": 95
+      },
+      {
+        "id": 3,
+        "adequation": 72
+      },
+      {
+        "id": 4,
+        "adequation": 63
+      }
     ],
     "evolutionCandidatures": 75,
     "vueDesOffres": -12
@@ -41,29 +74,59 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
+    "competencesRequises": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Prototypage"
+    ],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
     "geolocalisation": "Plateau",
     "societe": "DesignMasters CI",
     "motsCles": [
-      { "id": 1, "mot": "design" },
-      { "id": 2, "mot": "UX/UI" },
-      { "id": 3, "mot": "interface utilisateur" },
-      { "id": 4, "mot": "prototypage" }
+      {
+        "id": 1,
+        "mot": "design"
+      },
+      {
+        "id": 2,
+        "mot": "UX/UI"
+      },
+      {
+        "id": 3,
+        "mot": "interface utilisateur"
+      },
+      {
+        "id": 4,
+        "mot": "prototypage"
+      }
     ],
     "type": "Freelance",
     "typeDeContrat": "Freelance",
-    "id_recruteur": 2,
+    "id_recruteur": 1,
     "pourvu": true,
     "nbvues": 876,
     "candidatures": [
-      { "id": 1, "adequation": 92 },
-      { "id": 2, "adequation": 78 },
-      { "id": 3, "adequation": 85 },
-      { "id": 4, "adequation": 69 }
+      {
+        "id": 1,
+        "adequation": 92
+      },
+      {
+        "id": 2,
+        "adequation": 78
+      },
+      {
+        "id": 3,
+        "adequation": 85
+      },
+      {
+        "id": 4,
+        "adequation": 69
+      }
     ],
     "evolutionCandidatures": 32,
     "vueDesOffres": 45
@@ -75,18 +138,36 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
+    "competencesRequises": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD"
+    ],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
     "geolocalisation": "Marcory",
     "societe": "CloudOps CI",
     "motsCles": [
-      { "id": 1, "mot": "DevOps" },
-      { "id": 2, "mot": "cloud" },
-      { "id": 3, "mot": "automatisation" },
-      { "id": 4, "mot": "CI/CD" }
+      {
+        "id": 1,
+        "mot": "DevOps"
+      },
+      {
+        "id": 2,
+        "mot": "cloud"
+      },
+      {
+        "id": 3,
+        "mot": "automatisation"
+      },
+      {
+        "id": 4,
+        "mot": "CI/CD"
+      }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
@@ -94,10 +175,22 @@
     "pourvu": true,
     "nbvues": 2103,
     "candidatures": [
-      { "id": 1, "adequation": 88 },
-      { "id": 2, "adequation": 76 },
-      { "id": 3, "adequation": 94 },
-      { "id": 4, "adequation": 81 }
+      {
+        "id": 1,
+        "adequation": 88
+      },
+      {
+        "id": 2,
+        "adequation": 76
+      },
+      {
+        "id": 3,
+        "adequation": 94
+      },
+      {
+        "id": 4,
+        "adequation": 81
+      }
     ],
     "evolutionCandidatures": 95,
     "vueDesOffres": 28
@@ -109,18 +202,36 @@
     "titre": "Data Scientist",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
+    "competencesRequises": [
+      "Python",
+      "R",
+      "Machine Learning",
+      "SQL"
+    ],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
     "geolocalisation": "Yopougon",
     "societe": "DataInsights CI",
     "motsCles": [
-      { "id": 1, "mot": "data science" },
-      { "id": 2, "mot": "analyse de données" },
-      { "id": 3, "mot": "machine learning" },
-      { "id": 4, "mot": "statistiques" }
+      {
+        "id": 1,
+        "mot": "data science"
+      },
+      {
+        "id": 2,
+        "mot": "analyse de données"
+      },
+      {
+        "id": 3,
+        "mot": "machine learning"
+      },
+      {
+        "id": 4,
+        "mot": "statistiques"
+      }
     ],
     "type": "Freelance",
     "typeDeContrat": "Freelance",
@@ -128,10 +239,22 @@
     "pourvu": true,
     "nbvues": 1587,
     "candidatures": [
-      { "id": 1, "adequation": 79 },
-      { "id": 2, "adequation": 91 },
-      { "id": 3, "adequation": 86 },
-      { "id": 4, "adequation": 73 }
+      {
+        "id": 1,
+        "adequation": 79
+      },
+      {
+        "id": 2,
+        "adequation": 91
+      },
+      {
+        "id": 3,
+        "adequation": 86
+      },
+      {
+        "id": 4,
+        "adequation": 73
+      }
     ],
     "evolutionCandidatures": -5,
     "vueDesOffres": 52
@@ -143,18 +266,36 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "competencesRequises": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vue.js"
+    ],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
     "geolocalisation": "Treichville",
     "societe": "WebFront CI",
     "motsCles": [
-      { "id": 1, "mot": "développement web" },
-      { "id": 2, "mot": "front-end" },
-      { "id": 3, "mot": "JavaScript" },
-      { "id": 4, "mot": "Vue.js" }
+      {
+        "id": 1,
+        "mot": "développement web"
+      },
+      {
+        "id": 2,
+        "mot": "front-end"
+      },
+      {
+        "id": 3,
+        "mot": "JavaScript"
+      },
+      {
+        "id": 4,
+        "mot": "Vue.js"
+      }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
@@ -162,10 +303,22 @@
     "pourvu": true,
     "nbvues": 932,
     "candidatures": [
-      { "id": 1, "adequation": 83 },
-      { "id": 2, "adequation": 97 },
-      { "id": 3, "adequation": 75 },
-      { "id": 4, "adequation": 89 }
+      {
+        "id": 1,
+        "adequation": 83
+      },
+      {
+        "id": 2,
+        "adequation": 97
+      },
+      {
+        "id": 3,
+        "adequation": 75
+      },
+      {
+        "id": 4,
+        "adequation": 89
+      }
     ],
     "evolutionCandidatures": 62,
     "vueDesOffres": -8
@@ -186,14 +339,27 @@
     "experienceRequise": "Senior",
     "departement": "Sécurité IT",
     "datePublication": "2023-05-20",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Inactif",
     "geolocalisation": "Plateau",
     "societe": "CyberShield CI",
     "motsCles": [
-      { "id": 1, "mot": "cybersécurité" },
-      { "id": 2, "mot": "sécurité informatique" },
-      { "id": 3, "mot": "ethical hacking" },
-      { "id": 4, "mot": "analyse de risques" }
+      {
+        "id": 1,
+        "mot": "cybersécurité"
+      },
+      {
+        "id": 2,
+        "mot": "sécurité informatique"
+      },
+      {
+        "id": 3,
+        "mot": "ethical hacking"
+      },
+      {
+        "id": 4,
+        "mot": "analyse de risques"
+      }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
@@ -201,8 +367,14 @@
     "pourvu": false,
     "nbvues": 1765,
     "candidatures": [
-      { "id": 3, "adequation": 90 },
-      { "id": 4, "adequation": 100 }
+      {
+        "id": 3,
+        "adequation": 90
+      },
+      {
+        "id": 4,
+        "adequation": 100
+      }
     ],
     "evolutionCandidatures": 88,
     "vueDesOffres": 37
@@ -223,14 +395,27 @@
     "experienceRequise": "Senior",
     "departement": "IT",
     "datePublication": "2023-05-21",
-    "statut": "Ouvert",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
     "geolocalisation": "Koumassi",
     "societe": "SysAdmin CI",
     "motsCles": [
-      { "id": 1, "mot": "administration système" },
-      { "id": 2, "mot": "infrastructure IT" },
-      { "id": 3, "mot": "Linux" },
-      { "id": 4, "mot": "virtualisation" }
+      {
+        "id": 1,
+        "mot": "administration système"
+      },
+      {
+        "id": 2,
+        "mot": "infrastructure IT"
+      },
+      {
+        "id": 3,
+        "mot": "Linux"
+      },
+      {
+        "id": 4,
+        "mot": "virtualisation"
+      }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
@@ -238,12 +423,141 @@
     "pourvu": false,
     "nbvues": 1098,
     "candidatures": [
-      { "id": 1, "adequation": 84 },
-      { "id": 2, "adequation": 93 },
-      { "id": 3, "adequation": 71 },
-      { "id": 4, "adequation": 88 }
+      {
+        "id": 1,
+        "adequation": 84
+      },
+      {
+        "id": 2,
+        "adequation": 93
+      },
+      {
+        "id": 3,
+        "adequation": 71
+      },
+      {
+        "id": 4,
+        "adequation": 88
+      }
     ],
     "evolutionCandidatures": 12,
     "vueDesOffres": 18
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 8,
+    "titre": "Développeur Full Stack",
+    "description": "Nous recherchons un développeur Full Stack talentueux pour rejoindre notre équipe dynamique et travailler sur des projets innovants.",
+    "shortDescription": "Recherche d'un développeur Full Stack pour des projets innovants.",
+    "competencesRequises": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Git"
+    ],
+    "experienceRequise": "Intermédiaire",
+    "departement": "Développement",
+    "datePublication": "2023-06-01",
+    "dateExpiration": "2023-12-31",
+    "statut": "Actif",
+    "geolocalisation": "Abidjan",
+    "societe": "TechInno CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "développement web"
+      },
+      {
+        "id": 2,
+        "mot": "full stack"
+      },
+      {
+        "id": 3,
+        "mot": "JavaScript"
+      },
+      {
+        "id": 4,
+        "mot": "React"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 2,
+    "pourvu": false,
+    "nbvues": 850,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 92
+      },
+      {
+        "id": 2,
+        "adequation": 88
+      }
+    ],
+    "evolutionCandidatures": 15,
+    "vueDesOffres": 25
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 9,
+    "titre": "Responsable Marketing Digital",
+    "description": "Nous cherchons un responsable marketing digital expérimenté pour diriger notre stratégie de marketing en ligne et accroître notre présence numérique.",
+    "shortDescription": "Recherche d'un responsable marketing digital pour diriger notre stratégie en ligne.",
+    "competencesRequises": [
+      "SEO/SEM",
+      "Réseaux sociaux",
+      "Analyse de données",
+      "Gestion de campagnes"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "Marketing",
+    "datePublication": "2023-06-05",
+    "dateExpiration": "2024-01-15",
+    "statut": "Actif",
+    "geolocalisation": "Yamoussoukro",
+    "societe": "DigitalBoost CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "marketing digital"
+      },
+      {
+        "id": 2,
+        "mot": "stratégie en ligne"
+      },
+      {
+        "id": 3,
+        "mot": "SEO"
+      },
+      {
+        "id": 4,
+        "mot": "réseaux sociaux"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 3,
+    "pourvu": false,
+    "nbvues": 720,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 95
+      },
+      {
+        "id": 2,
+        "adequation": 87
+      },
+      {
+        "id": 3,
+        "adequation": 91
+      }
+    ],
+    "evolutionCandidatures": 20,
+    "vueDesOffres": 30
   }
 ]

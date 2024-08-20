@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <h1>Tableau de bord</h1>
-    <!-- Ajoutez ici le contenu de votre tableau de bord -->
-    <DashboardSidebar />
+  <div class="offres-emploi-page">
+    <h1 class="title">Offres d'emploi</h1>
+    <OffresEmploi />
   </div>
 </template>
+
 <script setup>
+import OffresEmploi from "@/components/OffresEmploi.vue";
+
 definePageMeta({
   middleware: "auth",
+  layout: "dashboard",
 });
 </script>
-
-<style scoped>
-/* Ajoutez ici vos styles spécifiques à cette page */
-</style>
