@@ -84,7 +84,7 @@
     "departement": "Design",
     "datePublication": "2023-05-16",
     "dateExpiration": "2024-09-02",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Plateau",
     "societe": "DesignMasters CI",
     "motsCles": [
@@ -212,7 +212,7 @@
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
     "dateExpiration": "2024-09-02",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Yopougon",
     "societe": "DataInsights CI",
     "motsCles": [
@@ -276,7 +276,7 @@
     "departement": "Développement",
     "datePublication": "2023-05-19",
     "dateExpiration": "2024-09-02",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Treichville",
     "societe": "WebFront CI",
     "motsCles": [
