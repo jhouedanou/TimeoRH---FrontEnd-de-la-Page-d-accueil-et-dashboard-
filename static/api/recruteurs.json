@@ -41,25 +41,42 @@
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
       "image": "https://dummyimage.com/50x50",
       "compagnie": "MTN Group",
-      "apprentissageComplete": 20
+      "apprentissageComplete": 20,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Candidature acceptée",
+          "content": "La candidature de Samuel Nkrumah pour le poste de Data Analyst a été acceptée."
+        }
+      ]
     },
     {
       "recruteur_id": 3,
-
       "nom": "Okafor",
-      "prenom": "Chrecruteur_idi",
-      "email": "chrecruteur_idi.okafor@example.com",
+      "prenom": "Chidi",
+      "email": "chidi.okafor@example.com",
       "poste": "Chargé de recrutement",
       "departement": "Ressources Humaines",
       "dateEmbauche": "2021-03-10",
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Dangote Group",
-      "apprentissageComplete": 50
+      "apprentissageComplete": 50,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Entretien annulé",
+          "content": "L'entretien avec Alice Akinola pour le poste de Responsable Marketing a été annulé."
+        },
+        {
+          "id": 2,
+          "title": "Nouvelle offre d'emploi",
+          "content": "Une nouvelle offre pour le poste de Comptable est disponible sur la plateforme."
+        }
+      ]
     },
     {
       "recruteur_id": 4,
-
       "nom": "Keita",
       "prenom": "Aminata",
       "email": "aminata.keita@example.com",
@@ -69,7 +86,124 @@
       "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
       "image": "https://dummyimage.com/50x50",
       "compagnie": "Jumia",
-      "apprentissageComplete": 20
+      "apprentissageComplete": 20,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Candidature reçue",
+          "content": "Une candidature pour le poste de Gestionnaire de projet a été reçue."
+        },
+        {
+          "id": 2,
+          "title": "Progrès du recrutement",
+          "content": "Le processus de recrutement pour le poste de Designer Graphique est en cours."
+        }
+      ]
+    },
+    {
+      "recruteur_id": 5,
+      "nom": "Osei",
+      "prenom": "Kwame",
+      "email": "kwame.osei@example.com",
+      "poste": "Consultant en recrutement",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2018-11-05",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Vodafone Ghana",
+      "apprentissageComplete": 40,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Candidature en attente",
+          "content": "La candidature de Kofi Mensah pour le poste de Technicien IT est en attente."
+        }
+      ]
+    },
+    {
+      "recruteur_id": 6,
+      "nom": "Kouadio",
+      "prenom": "Jean",
+      "email": "jean.kouadio@example.com",
+      "poste": "Responsable Recrutement",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2021-07-20",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Orange CI",
+      "apprentissageComplete": 25,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Offre d'emploi publiée",
+          "content": "Une nouvelle offre pour le poste de Responsable de la Communication a été publiée."
+        }
+      ]
+    },
+    {
+      "recruteur_id": 7,
+      "nom": "Adewale",
+      "prenom": "Titi",
+      "email": "titi.adewale@example.com",
+      "poste": "Spécialiste en recrutement",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2022-01-12",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Kenya Airways",
+      "apprentissageComplete": 35,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Entretien confirmé",
+          "content": "L'entretien avec Nana Adom pour le poste de Gestionnaire des Ressources Humaines est confirmé pour demain."
+        }
+      ]
+    },
+    {
+      "recruteur_id": 8,
+      "nom": "Bamba",
+      "prenom": "Issa",
+      "email": "issa.bamba@example.com",
+      "poste": "Coordinateur RH",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2020-09-16",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "CFAO",
+      "apprentissageComplete": 30,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Candidature rejetée",
+          "content": "La candidature de Fatoumata Diallo pour le poste de Secrétaire de Direction a été rejetée."
+        }
+      ]
+    },
+    {
+      "recruteur_id": 9,
+      "nom": "Zongo",
+      "prenom": "Aissatou",
+      "email": "aissatou.zongo@example.com",
+      "poste": "Responsable Talent Acquisition",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2019-12-01",
+      "motdepasse": "fcec6292ab938bc1f615f73009a712f3",
+      "image": "https://dummyimage.com/50x50",
+      "compagnie": "Ecobank",
+      "apprentissageComplete": 45,
+      "notifications": [
+        {
+          "id": 1,
+          "title": "Résumé reçu",
+          "content": "Le résumé de Moussa Touré pour le poste de Développeur Java a été reçu."
+        },
+        {
+          "id": 2,
+          "title": "Offre d'emploi expirée",
+          "content": "L'offre pour le poste de Conseiller Clientèle a expiré."
+        }
+      ]
     }
   ]
 }

@@ -10,9 +10,9 @@
         />
       </div>
       <div class="actions">
-        <button class="button is-primary" @click="ajouterOffre">
-          Ajouter une offre
-        </button>
+        <NuxtLink class="button is-primary" to="/dashboard/ajouter-offre"
+          >Ajouuter une offre</NuxtLink
+        >
       </div>
     </div>
     <div class="table-container">
@@ -382,7 +382,7 @@ th {
   padding: 1em;
   border-radius: 5px;
   background-color: #fff;
-  button {
+  .button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
