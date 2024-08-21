@@ -1,18 +1,19 @@
 <template>
   <div class="offres-emploi">
-    <div class="actions">
-      <button class="button is-primary" @click="ajouterOffre">
-        Ajouter une offre
-      </button>
-    </div>
-
     <div class="filters">
-      <input v-model="filtreTitle" placeholder="Filtrer par titre" />
-      <input
-        v-model="filtreDate"
-        type="date"
-        placeholder="Filtrer par date d'expiration"
-      />
+      <div class="spaghetti">
+        <input v-model="filtreTitle" placeholder="Filtrer par titre" />
+        <input
+          v-model="filtreDate"
+          type="date"
+          placeholder="Filtrer par date d'expiration"
+        />
+      </div>
+      <div class="actions">
+        <button class="button is-primary" @click="ajouterOffre">
+          Ajouter une offre
+        </button>
+      </div>
     </div>
     <div class="table-container">
       <table class="table is-fullwidth is-striped is-hoverable">
@@ -46,12 +47,21 @@
             <td>{{ offre.dateExpiration }}</td>
             <td>{{ offre.statut }}</td>
             <td>
-              <button @click="editerOffre(offre)">Éditer</button>
-              <button @click="planifierRecrutement(offre)">
+              <button class="editemploi" @click="editerOffre(offre)">
+                Éditer
+              </button>
+              <button
+                class="planifierrecrutement"
+                @click="planifierRecrutement(offre)"
+              >
                 Planifier le recrutement
               </button>
-              <button @click="changerStatut(offre)">Changer le statut</button>
-              <button @click="supprimerOffre(offre)">Supprimer</button>
+              <button class="changerstatut" @click="changerStatut(offre)">
+                Changer le statut
+              </button>
+              <button class="supprimeroffre" @click="supprimerOffre(offre)">
+                Supprimer
+              </button>
             </td>
           </tr>
         </tbody>
@@ -226,7 +236,7 @@ const supprimerOffre = (offre) => {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 th {
   cursor: pointer;
 }
@@ -237,7 +247,6 @@ th:hover {
   margin: 20px;
 }
 
-.actions,
 .filters {
   margin-bottom: 20px;
 }
@@ -269,6 +278,84 @@ th:hover {
   font-size: 0.9em;
   color: #666;
 }
+.table-container {
+  padding: 1em;
+  border-radius: 6px;
+  border: solid 2px #eceef6;
+  background-color: #fff;
+  table {
+  }
+}
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 0.9em;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.5em 0.75em;
+  }
+}
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+
+.pagination button.is-active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.offres-emploi-container {
+  overflow-x: auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-info {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.table-container {
+  padding: 1em;
+  border-radius: 6px;
+  border: solid 2px #eceef6;
+  background-color: #fff;
+}
+
+.table {
+  background-color: white;
+}
+th {
+  padding: 1em !important;
+}
+td {
+  border: none !important;
+  padding: 1em !important;
+}
+td,
+th {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #292d32 !important;
+}
+.table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+  background-color: #f5f5f5;
+}
 
 @media screen and (max-width: 768px) {
   .table {
@@ -279,5 +366,66 @@ th:hover {
   .table th {
     padding: 0.5em 0.75em;
   }
+}
+.table.is-hoverable tbody tr:not(.is-selected):hover,
+.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
+  background-color: var(--primary-color) !important;
+}
+.filters {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #fff;
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0 4px 604px;
+    padding: 11px 19px;
+    border-radius: 32px;
+    background-color: #012e61;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.11px;
+    text-align: center;
+    color: #fff;
+  }
+}
+.spaghetti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px #e7e6e6;
+    background-color: #fafafa;
+    margin-right: 10px;
+    padding: 1em;
+  }
+}
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #dc9756;
 }
 </style>

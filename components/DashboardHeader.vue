@@ -102,6 +102,9 @@ const { data: globalData } = useGlobalData();
 const { data: recruteurs } = useRecruteursJson();
 const router = useRouter();
 const isNotificationDropdownActive = ref(false);
+
+//const hasNotifications = computed(() => notifications.value.length > 0);
+const hasNotifications = ref(false);
 const notifications = computed(() => {
   const recruteur = recruteurs.value.recruteurs.find(
     (r) => r.recruteur_id === 1
@@ -124,7 +127,6 @@ const closePopup = () => {
 };
 
 const searchQuery = ref("");
-const hasNotifications = computed(() => notifications.value.length > 0);
 
 function toggleNotificationDropdown() {
   isNotificationDropdownActive.value = !isNotificationDropdownActive.value;
@@ -150,6 +152,7 @@ onMounted(() => {
   const dropdownContent = document.querySelector(".dropdown-content");
   hasNotifications.value = dropdownContent.children.length > 0;
   console.log(hasNotifications.value);
+  updateNotificationStatus();
 });
 </script>
 

@@ -18,7 +18,7 @@
       <div class="carte-stat">
         <h3>Postes pourvus</h3>
         <p>{{ statsPostes.pourvus.nombre }}</p>
-        <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
+        <span>{{ statsPostes.pourvus.pourcentage }}</span>
       </div>
     </div>
     <div class="column is-3">
@@ -54,7 +54,7 @@
               <td>{{ candidate.nom }}</td>
               <td>{{ candidate.prenom }}</td>
               <td>{{ candidate.offreEmploi }}</td>
-              <td>{{ candidate.adequation }}%</td>
+              <td>{{ candidate.adequation.toFixed(2) }}%</td>
             </tr>
           </tbody>
         </table>
@@ -62,7 +62,7 @@
     </div>
     <div class="column is-4" style="min-height: 400px">
       <div class="carte-stat crack">
-        <h3>Offres d’emploi les plus consultées</h3>
+        <h3>Offres d'emploi les plus consultées</h3>
         <ul>
           <li v-for="job in topViewedJobs" :key="job.id">
             <NuxtLink :to="``">
@@ -95,32 +95,24 @@ const { data: recruteurs } = useRecruteursJson();
 const { data: emplois } = useEmploisJson();
 const { data: candidats } = useCandidatsJson();
 
-//console.log("Recruteurs:", recruteurs.value);
-//console.log("Emplois:", emplois.value);
-
 const recruteurId = useCookie("recruteurId");
-//console.log("RecruteurId from cookie:", recruteurId.value);
 
 const filteredJobs = computed(() => {
-  // console.log("Filtering jobs for recruteurId:", recruteurId.value);
   if (!recruteurId.value) {
-    // console.log("No recruteurId, returning empty array");
     return [];
   }
   const filtered = emplois.value.filter(
     (job) => job.id_recruteur === recruteurId.value
   );
-  //console.log("Filtered jobs:", filtered);
   return filtered;
 });
 
-// console.log("FilteredJobs computed value:", filteredJobs.value);
-//total des candidatures
 const totalCandidatures = computed(() => {
   return filteredJobs.value.reduce((total, job) => {
     return total + (job.candidatures ? job.candidatures.length : 0);
   }, 0);
 });
+
 const moyenneEvolutionCandidatures = computed(() => {
   const sum = filteredJobs.value.reduce(
     (total, job) => total + parseFloat(job.evolutionCandidatures),
@@ -128,9 +120,9 @@ const moyenneEvolutionCandidatures = computed(() => {
   );
   return filteredJobs.value.length
     ? (sum / filteredJobs.value.length).toFixed(2) + "%"
-    : "0%";
+    : "0.00%";
 });
-//total des vues
+
 const totalVues = computed(() => {
   return filteredJobs.value.reduce((total, job) => total + job.nbvues, 0);
 });
@@ -138,8 +130,9 @@ const totalVues = computed(() => {
 const moyenneVues = computed(() => {
   return filteredJobs.value.length
     ? (totalVues.value / filteredJobs.value.length).toFixed(2)
-    : 0;
+    : "0.00";
 });
+
 const moyenneVuesEnPourcentage = computed(() => {
   const totalVues = filteredJobs.value.reduce(
     (total, job) => total + job.vueDesOffres,
@@ -150,6 +143,7 @@ const moyenneVuesEnPourcentage = computed(() => {
     : 0;
   return (moyenne * 100).toFixed(2) + "%";
 });
+
 const moyenneVuesOffres = computed(() => {
   const totalVues = filteredJobs.value.reduce(
     (total, job) => total + job.vueDesOffres,
@@ -157,10 +151,9 @@ const moyenneVuesOffres = computed(() => {
   );
   return filteredJobs.value.length
     ? (totalVues / filteredJobs.value.length).toFixed(2) + "%"
-    : "0";
+    : "0.00%";
 });
 
-//pourcetage des emplois pourvus et vice cersa
 const statsPostes = computed(() => {
   const total = filteredJobs.value.length;
   const pourvus = filteredJobs.value.filter((job) => job.pourvu).length;
@@ -169,16 +162,17 @@ const statsPostes = computed(() => {
   return {
     pourvus: {
       nombre: pourvus,
-      pourcentage: total ? (pourvus / total) * 100 + "%" : "0%",
+      pourcentage: total ? ((pourvus / total) * 100).toFixed(2) + "%" : "0.00%",
     },
     nonPourvus: {
       nombre: nonPourvus,
-      pourcentage: total ? (nonPourvus / total) * 100 + "%" : "0%",
+      pourcentage: total
+        ? ((nonPourvus / total) * 100).toFixed(2) + "%"
+        : "0.00%",
     },
   };
 });
 
-//candidats adéquats
 const highAdequacyCandidates = computed(() => {
   return filteredJobs.value
     .flatMap((job) =>
@@ -200,10 +194,9 @@ const highAdequacyCandidates = computed(() => {
         .filter(Boolean)
     )
     .sort((a, b) => b.adequation - a.adequation)
-    .slice(0, 5); // Limite aux 5 premiers résultats
+    .slice(0, 5);
 });
 
-//top 5 offres d'emploi
 const topViewedJobs = computed(() => {
   return filteredJobs.value.sort((a, b) => b.nbvues - a.nbvues).slice(0, 5);
 });

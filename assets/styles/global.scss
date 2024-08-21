@@ -1158,3 +1158,139 @@ $secondary: #012e61;
 .dashboard-container {
     max-width: 1480px !important;
 }
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #dc9756;
+    color: #fff;
+}
+.table-info {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #b5b7c0;
+}
+
+.editemploi {
+    font-family: "Inter", sans-serif;
+    margin-right: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 97px;
+    height: 35px;
+    flex-grow: 0;
+    border-radius: 50px;
+    border: solid 1px #012e61;
+    color: #012e61;
+    &:hover {
+        background: #012e61;
+        color: #fff;
+    }
+    &:active {
+    }
+    &:focus {
+    }
+}
+.planifierrecrutement {
+    font-family: "Inter", sans-serif;
+    margin-right: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    height: 35px;
+    flex-grow: 0;
+    border-radius: 50px;
+    border: solid 1px #206101;
+    color: #206101;
+    padding: 0 10px;
+    &:hover {
+        background: #206101;
+        color: #fff;
+    }
+    &:active {
+    }
+    &:focus {
+    }
+}
+.changerstatut {
+    font-family: "Inter", sans-serif;
+    margin-right: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 172px;
+    height: 35px;
+    flex-grow: 0;
+    border-radius: 50px;
+    border: solid 1px #dc9756;
+    color: #dc9756;
+    &:hover {
+        background: #dc9756;
+        color: #fff;
+    }
+    &:active {
+    }
+    &:focus {
+    }
+}
+.supprimeroffre {
+    font-family: "Inter", sans-serif;
+    margin-right: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 97px;
+    height: 35px;
+    flex-grow: 0;
+    border-radius: 50px;
+    border: solid 1px #f31414;
+    color: #f31414;
+    &:hover {
+        background: #f31414;
+        color: #fff;
+    }
+    &:active {
+    }
+    &:focus {
+    }
+}
