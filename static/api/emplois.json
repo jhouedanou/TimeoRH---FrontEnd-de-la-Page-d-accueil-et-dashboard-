@@ -6,12 +6,7 @@
     "titre": "Développeur Full Stack",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB"
-    ],
+    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
@@ -65,7 +60,16 @@
       }
     ],
     "evolutionCandidatures": 75,
-    "vueDesOffres": -12
+    "vueDesOffres": -12,
+    "typeDeSociete": "Startup technologique",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Programmation orientée objet",
+      "Gestion de bases de données",
+      "Développement d'API"
+    ],
+    "profilRecherche": "Développeur expérimenté avec une solide expérience en développement full stack et une passion pour les nouvelles technologies."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -74,12 +78,7 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": [
-      "Figma",
-      "Adobe XD",
-      "Sketch",
-      "Prototypage"
-    ],
+    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
@@ -129,7 +128,16 @@
       }
     ],
     "evolutionCandidatures": 32,
-    "vueDesOffres": 45
+    "vueDesOffres": 45,
+    "typeDeSociete": "Agence de design",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": [
+      "Conception d'interfaces",
+      "Principes de l'UX",
+      "Créativité"
+    ],
+    "profilRecherche": "Designer créatif avec une bonne compréhension des principes de l'UX/UI et une capacité à créer des interfaces intuitives et esthétiques."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -138,12 +146,7 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": [
-      "Docker",
-      "Kubernetes",
-      "AWS",
-      "CI/CD"
-    ],
+    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
@@ -193,7 +196,16 @@
       }
     ],
     "evolutionCandidatures": 95,
-    "vueDesOffres": 28
+    "vueDesOffres": 28,
+    "typeDeSociete": "Entreprise de services cloud",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Administration système",
+      "Scripting",
+      "Gestion de configuration"
+    ],
+    "profilRecherche": "Ingénieur expérimenté en DevOps avec une solide compréhension des pratiques d'intégration et de déploiement continus."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -202,12 +214,7 @@
     "titre": "Data Scientist",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": [
-      "Python",
-      "R",
-      "Machine Learning",
-      "SQL"
-    ],
+    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
@@ -257,7 +264,16 @@
       }
     ],
     "evolutionCandidatures": -5,
-    "vueDesOffres": 52
+    "vueDesOffres": 52,
+    "typeDeSociete": "Entreprise d'analyse de données",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Statistiques",
+      "Programmation",
+      "Visualisation de données"
+    ],
+    "profilRecherche": "Data Scientist junior avec une solide formation en statistiques et en programmation, capable d'extraire des insights à partir de grands ensembles de données."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
@@ -266,12 +282,7 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Vue.js"
-    ],
+    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
@@ -321,107 +332,348 @@
       }
     ],
     "evolutionCandidatures": 62,
-    "vueDesOffres": -8
+    "vueDesOffres": -8,
+    "typeDeSociete": "Agence web",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": ["HTML5", "CSS3", "JavaScript ES6+"],
+    "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 5,
+    "titre": "Responsable Marketing",
+    "description": "Nous recherchons un Responsable Marketing pour développer et mettre en œuvre des stratégies de marketing innovantes.",
+    "shortDescription": "Recherche d'un Responsable Marketing pour développer des stratégies innovantes. Compétences requises : stratégie, communication, analyse de marché.",
+    "competencesRequises": [
+      "Stratégie marketing",
+      "Communication",
+      "Analyse de marché",
+      "Gestion de projet"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "Marketing",
+    "datePublication": "2023-06-01",
+    "dateExpiration": "2024-10-01",
+    "statut": "Actif",
+    "geolocalisation": "Abidjan",
+    "societe": "MarketLeaders CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "marketing"
+      },
+      {
+        "id": 2,
+        "mot": "stratégie"
+      },
+      {
+        "id": 3,
+        "mot": "communication"
+      },
+      {
+        "id": 4,
+        "mot": "analyse"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 2,
+    "pourvu": false,
+    "nbvues": 1345,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 85
+      },
+      {
+        "id": 2,
+        "adequation": 90
+      },
+      {
+        "id": 3,
+        "adequation": 78
+      },
+      {
+        "id": 4,
+        "adequation": 82
+      }
+    ],
+    "evolutionCandidatures": 40,
+    "vueDesOffres": 15,
+    "typeDeSociete": "Entreprise de marketing",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Gestion de la marque",
+      "Campagnes publicitaires",
+      "Analyse de données"
+    ],
+    "profilRecherche": "Responsable marketing expérimenté avec des compétences en stratégie, communication et analyse de marché."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 6,
-    "titre": "Ingénieur en Sécurité Informatique",
-    "description": "Nous cherchons un ingénieur en sécurité informatique pour protéger nos systèmes et données contre les menaces cybernétiques.",
-    "shortDescription": "Recherche d'un ingénieur en sécurité informatique pour protéger nos systèmes et données.",
+    "titre": "Chef de Projet IT",
+    "description": "Nous cherchons un Chef de Projet IT pour gérer des projets technologiques complexes de la conception à la mise en œuvre.",
+    "shortDescription": "Recherche d'un Chef de Projet IT pour gérer des projets technologiques. Compétences requises : gestion de projet, développement logiciel, leadership.",
     "competencesRequises": [
-      "Cybersécurité",
-      "Analyse de risques",
-      "Cryptographie",
-      "Ethical Hacking"
+      "Gestion de projet",
+      "Développement logiciel",
+      "Leadership",
+      "Analyse des besoins"
     ],
     "experienceRequise": "Senior",
-    "departement": "Sécurité IT",
-    "datePublication": "2023-05-20",
-    "dateExpiration": "2024-09-02",
+    "departement": "IT",
+    "datePublication": "2023-06-10",
+    "dateExpiration": "2024-10-10",
     "statut": "Actif",
-    "geolocalisation": "Plateau",
-    "societe": "CyberShield CI",
+    "geolocalisation": "Bouaké",
+    "societe": "TechSolutions CI",
     "motsCles": [
       {
         "id": 1,
-        "mot": "cybersécurité"
+        "mot": "gestion de projet"
       },
       {
         "id": 2,
-        "mot": "sécurité informatique"
+        "mot": "IT"
       },
       {
         "id": 3,
-        "mot": "ethical hacking"
+        "mot": "développement"
       },
       {
         "id": 4,
-        "mot": "analyse de risques"
+        "mot": "leadership"
       }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "id_recruteur": 1,
+    "id_recruteur": 3,
     "pourvu": false,
-    "nbvues": 1765,
+    "nbvues": 1023,
     "candidatures": [
       {
+        "id": 1,
+        "adequation": 80
+      },
+      {
+        "id": 2,
+        "adequation": 85
+      },
+      {
         "id": 3,
-        "adequation": 90
+        "adequation": 75
       },
       {
         "id": 4,
-        "adequation": 100
+        "adequation": 70
       }
     ],
-    "evolutionCandidatures": 88,
-    "vueDesOffres": 37
+    "evolutionCandidatures": 55,
+    "vueDesOffres": 35,
+    "typeDeSociete": "Entreprise IT",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Planification de projet",
+      "Coordination d'équipe",
+      "Gestion des risques"
+    ],
+    "profilRecherche": "Chef de projet IT expérimenté avec une solide expérience en gestion de projet technologique et leadership."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 7,
-    "titre": "Administrateur Système",
-    "description": "Nous recherchons un administrateur système expérimenté pour gérer et maintenir notre infrastructure IT.",
-    "shortDescription": "Recherche d'un administrateur système pour gérer notre infrastructure IT.",
+    "titre": "Développeur Mobile",
+    "description": "Nous recrutons un Développeur Mobile pour créer des applications mobiles innovantes et performantes.",
+    "shortDescription": "Recherche d'un Développeur Mobile pour créer des applications innovantes. Compétences requises : iOS, Android, Flutter.",
     "competencesRequises": [
-      "Linux",
-      "Windows Server",
-      "Virtualisation",
-      "Scripting"
+      "iOS",
+      "Android",
+      "Flutter",
+      "Développement d'applications"
     ],
-    "experienceRequise": "Senior",
-    "departement": "IT",
-    "datePublication": "2023-05-21",
-    "dateExpiration": "2024-09-02",
-    "statut": "Inactif",
-    "geolocalisation": "Koumassi",
-    "societe": "SysAdmin CI",
+    "experienceRequise": "Intermédiaire",
+    "departement": "Développement",
+    "datePublication": "2023-06-20",
+    "dateExpiration": "2024-10-20",
+    "statut": "Actif",
+    "geolocalisation": "San Pedro",
+    "societe": "MobileInnovate CI",
     "motsCles": [
       {
         "id": 1,
-        "mot": "administration système"
+        "mot": "développement mobile"
       },
       {
         "id": 2,
-        "mot": "infrastructure IT"
+        "mot": "iOS"
       },
       {
         "id": 3,
-        "mot": "Linux"
+        "mot": "Android"
       },
       {
         "id": 4,
-        "mot": "virtualisation"
+        "mot": "Flutter"
       }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "id_recruteur": 1,
+    "id_recruteur": 4,
     "pourvu": false,
-    "nbvues": 1098,
+    "nbvues": 980,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 88
+      },
+      {
+        "id": 2,
+        "adequation": 84
+      },
+      {
+        "id": 3,
+        "adequation": 79
+      },
+      {
+        "id": 4,
+        "adequation": 72
+      }
+    ],
+    "evolutionCandidatures": 60,
+    "vueDesOffres": 22,
+    "typeDeSociete": "Startup mobile",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+4",
+    "competencesDeBase": [
+      "Développement d'applications",
+      "Optimisation mobile",
+      "UI/UX design"
+    ],
+    "profilRecherche": "Développeur mobile avec une expérience en création d'applications innovantes pour iOS et Android."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 8,
+    "titre": "Assistant Administratif",
+    "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des opérations quotidiennes.",
+    "shortDescription": "Recherche d'un Assistant Administratif pour gérer les tâches administratives et opérationnelles. Compétences requises : organisation, communication, gestion des documents.",
+    "competencesRequises": [
+      "Organisation",
+      "Gestion des documents",
+      "Communication",
+      "Bureautique"
+    ],
+    "experienceRequise": "Débutant",
+    "departement": "Administration",
+    "datePublication": "2023-07-01",
+    "dateExpiration": "2024-11-01",
+    "statut": "Actif",
+    "geolocalisation": "Dabou",
+    "societe": "OfficeSupport CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "administration"
+      },
+      {
+        "id": 2,
+        "mot": "assistance"
+      },
+      {
+        "id": 3,
+        "mot": "gestion"
+      },
+      {
+        "id": 4,
+        "mot": "organisation"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDD",
+    "id_recruteur": 5,
+    "pourvu": false,
+    "nbvues": 1150,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 78
+      },
+      {
+        "id": 2,
+        "adequation": 82
+      },
+      {
+        "id": 3,
+        "adequation": 74
+      },
+      {
+        "id": 4,
+        "adequation": 80
+      }
+    ],
+    "evolutionCandidatures": 25,
+    "vueDesOffres": 10,
+    "typeDeSociete": "Entreprise de services",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+2",
+    "competencesDeBase": [
+      "Gestion des agendas",
+      "Rédaction de documents",
+      "Accueil des visiteurs"
+    ],
+    "profilRecherche": "Assistant administratif avec des compétences en organisation, gestion des documents et communication."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 9,
+    "titre": "Chargé de Communication",
+    "description": "Nous recherchons un Chargé de Communication pour élaborer des stratégies de communication efficaces et gérer les relations publiques.",
+    "shortDescription": "Recherche d'un Chargé de Communication pour développer des stratégies de communication. Compétences requises : rédaction, relations publiques, gestion de crise.",
+    "competencesRequises": [
+      "Rédaction",
+      "Relations publiques",
+      "Gestion de crise",
+      "Stratégie de communication"
+    ],
+    "experienceRequise": "Intermédiaire",
+    "departement": "Communication",
+    "datePublication": "2023-07-15",
+    "dateExpiration": "2024-11-15",
+    "statut": "Actif",
+    "geolocalisation": "Yamoussoukro",
+    "societe": "CommsPro CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "communication"
+      },
+      {
+        "id": 2,
+        "mot": "relations publiques"
+      },
+      {
+        "id": 3,
+        "mot": "stratégie"
+      },
+      {
+        "id": 4,
+        "mot": "gestion de crise"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 6,
+    "pourvu": false,
+    "nbvues": 1250,
     "candidatures": [
       {
         "id": 1,
@@ -429,135 +681,226 @@
       },
       {
         "id": 2,
-        "adequation": 93
+        "adequation": 88
       },
       {
         "id": 3,
-        "adequation": 71
-      },
-      {
-        "id": 4,
-        "adequation": 88
+        "adequation": 76
       }
     ],
-    "evolutionCandidatures": 12,
-    "vueDesOffres": 18
+    "evolutionCandidatures": 35,
+    "vueDesOffres": 18,
+    "typeDeSociete": "Agence de communication",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": [
+      "Rédaction de contenu",
+      "Gestion des médias sociaux",
+      "Planification de campagnes"
+    ],
+    "profilRecherche": "Chargé de communication expérimenté avec des compétences en rédaction, relations publiques et gestion de crise."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": 8,
-    "titre": "Développeur Full Stack",
-    "description": "Nous recherchons un développeur Full Stack talentueux pour rejoindre notre équipe dynamique et travailler sur des projets innovants.",
-    "shortDescription": "Recherche d'un développeur Full Stack pour des projets innovants.",
+    "id": 10,
+    "titre": "Analyste Financier",
+    "description": "Nous cherchons un Analyste Financier pour analyser les données financières et fournir des recommandations stratégiques.",
+    "shortDescription": "Recherche d'un Analyste Financier pour analyser les données financières et fournir des recommandations. Compétences requises : analyse des données, prévisions financières, reporting.",
     "competencesRequises": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Git"
-    ],
-    "experienceRequise": "Intermédiaire",
-    "departement": "Développement",
-    "datePublication": "2023-06-01",
-    "dateExpiration": "2023-12-31",
-    "statut": "Actif",
-    "geolocalisation": "Abidjan",
-    "societe": "TechInno CI",
-    "motsCles": [
-      {
-        "id": 1,
-        "mot": "développement web"
-      },
-      {
-        "id": 2,
-        "mot": "full stack"
-      },
-      {
-        "id": 3,
-        "mot": "JavaScript"
-      },
-      {
-        "id": 4,
-        "mot": "React"
-      }
-    ],
-    "type": "Temps plein",
-    "typeDeContrat": "CDI",
-    "id_recruteur": 2,
-    "pourvu": false,
-    "nbvues": 850,
-    "candidatures": [
-      {
-        "id": 1,
-        "adequation": 92
-      },
-      {
-        "id": 2,
-        "adequation": 88
-      }
-    ],
-    "evolutionCandidatures": 15,
-    "vueDesOffres": 25
-  },
-  {
-    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
-    "id": 9,
-    "titre": "Responsable Marketing Digital",
-    "description": "Nous cherchons un responsable marketing digital expérimenté pour diriger notre stratégie de marketing en ligne et accroître notre présence numérique.",
-    "shortDescription": "Recherche d'un responsable marketing digital pour diriger notre stratégie en ligne.",
-    "competencesRequises": [
-      "SEO/SEM",
-      "Réseaux sociaux",
-      "Analyse de données",
-      "Gestion de campagnes"
+      "Analyse des données",
+      "Prévisions financières",
+      "Reporting",
+      "Analyse des risques"
     ],
     "experienceRequise": "Senior",
-    "departement": "Marketing",
-    "datePublication": "2023-06-05",
-    "dateExpiration": "2024-01-15",
+    "departement": "Finance",
+    "datePublication": "2023-07-25",
+    "dateExpiration": "2024-11-25",
     "statut": "Actif",
-    "geolocalisation": "Yamoussoukro",
-    "societe": "DigitalBoost CI",
+    "geolocalisation": "Korhogo",
+    "societe": "FinanceExperts CI",
     "motsCles": [
       {
         "id": 1,
-        "mot": "marketing digital"
+        "mot": "finance"
       },
       {
         "id": 2,
-        "mot": "stratégie en ligne"
+        "mot": "analyse"
       },
       {
         "id": 3,
-        "mot": "SEO"
+        "mot": "reporting"
       },
       {
         "id": 4,
-        "mot": "réseaux sociaux"
+        "mot": "prévisions"
       }
     ],
     "type": "Temps plein",
     "typeDeContrat": "CDI",
-    "id_recruteur": 3,
+    "id_recruteur": 7,
     "pourvu": false,
-    "nbvues": 720,
+    "nbvues": 1080,
     "candidatures": [
       {
         "id": 1,
-        "adequation": 95
+        "adequation": 90
       },
       {
         "id": 2,
-        "adequation": 87
+        "adequation": 85
       },
       {
         "id": 3,
-        "adequation": 91
+        "adequation": 80
+      },
+      {
+        "id": 4,
+        "adequation": 88
+      }
+    ],
+    "evolutionCandidatures": 50,
+    "vueDesOffres": 28,
+    "typeDeSociete": "Cabinet de conseil financier",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Analyse financière",
+      "Gestion des budgets",
+      "Prévisions économiques"
+    ],
+    "profilRecherche": "Analyste financier avec une solide expérience en analyse des données financières et prévisions économiques."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 11,
+    "titre": "Graphiste",
+    "description": "Nous recrutons un Graphiste pour créer des visuels innovants pour nos supports marketing et de communication.",
+    "shortDescription": "Recherche d'un Graphiste pour créer des visuels innovants. Compétences requises : design graphique, maîtrise des outils Adobe, créativité.",
+    "competencesRequises": [
+      "Design graphique",
+      "Maîtrise des outils Adobe",
+      "Créativité",
+      "Gestion de projet"
+    ],
+    "experienceRequise": "Débutant",
+    "departement": "Création",
+    "datePublication": "2023-08-01",
+    "dateExpiration": "2024-12-01",
+    "statut": "Actif",
+    "geolocalisation": "Gagnoa",
+    "societe": "DesignCreative CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "graphisme"
+      },
+      {
+        "id": 2,
+        "mot": "design"
+      },
+      {
+        "id": 3,
+        "mot": "Adobe"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDD",
+    "id_recruteur": 8,
+    "pourvu": false,
+    "nbvues": 1400,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 78
+      },
+      {
+        "id": 2,
+        "adequation": 82
       }
     ],
     "evolutionCandidatures": 20,
-    "vueDesOffres": 30
+    "vueDesOffres": 30,
+    "typeDeSociete": "Agence de design",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+2",
+    "competencesDeBase": [
+      "Création visuelle",
+      "Maîtrise des logiciels",
+      "Développement de concepts"
+    ],
+    "profilRecherche": "Graphiste débutant avec une bonne maîtrise des outils de design et une forte créativité."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 12,
+    "titre": "Responsable RH",
+    "description": "Nous recherchons un Responsable RH pour gérer les ressources humaines et développer des politiques de gestion du personnel.",
+    "shortDescription": "Recherche d'un Responsable RH pour gérer les ressources humaines. Compétences requises : gestion des talents, développement organisationnel, législation du travail.",
+    "competencesRequises": [
+      "Gestion des talents",
+      "Développement organisationnel",
+      "Législation du travail",
+      "Gestion des conflits"
+    ],
+    "experienceRequise": "Senior",
+    "departement": "Ressources Humaines",
+    "datePublication": "2023-08-15",
+    "dateExpiration": "2024-12-15",
+    "statut": "Actif",
+    "geolocalisation": "Abengourou",
+    "societe": "HRManagement CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "ressources humaines"
+      },
+      {
+        "id": 2,
+        "mot": "gestion des talents"
+      },
+      {
+        "id": 3,
+        "mot": "développement"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 9,
+    "pourvu": false,
+    "nbvues": 980,
+    "candidatures": [
+      {
+        "id": 1,
+        "adequation": 88
+      },
+      {
+        "id": 2,
+        "adequation": 85
+      },
+      {
+        "id": 3,
+        "adequation": 82
+      },
+      {
+        "id": 4,
+        "adequation": 90
+      }
+    ],
+    "evolutionCandidatures": 45,
+    "vueDesOffres": 22,
+    "typeDeSociete": "Entreprise de gestion des ressources humaines",
+    "paysdelaSociete": "Côte d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Gestion des ressources humaines",
+      "Développement des politiques",
+      "Relations avec les employés"
+    ],
+    "profilRecherche": "Responsable RH senior avec une expérience en gestion des talents, développement organisationnel et législation du travail."
   }
 ]

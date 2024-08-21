@@ -216,7 +216,14 @@
             <button @click="prevPage" :disabled="currentPage === 1">
               Précédent
             </button>
-            <span>Page {{ currentPage }} sur {{ totalPages }}</span>
+            <button
+              v-for="page in totalPages"
+              :key="page"
+              @click="currentPage = page"
+              :class="{ active: currentPage === page }"
+            >
+              {{ page }}
+            </button>
             <button @click="nextPage" :disabled="currentPage === totalPages">
               Suivant
             </button>
