@@ -340,6 +340,7 @@ th {
 td {
   border: none !important;
   padding: 1em !important;
+  vertical-align: middle;
 }
 td,
 th {
@@ -352,6 +353,7 @@ th {
   letter-spacing: -0.14px;
   text-align: left;
   color: #292d32 !important;
+  vertical-align: middle;
 }
 .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
   background-color: #f5f5f5;
@@ -369,7 +371,7 @@ th {
 }
 .table.is-hoverable tbody tr:not(.is-selected):hover,
 .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
-  background-color: var(--primary-color) !important;
+  background-color: #ccc !important;
 }
 .filters {
   flex-grow: 0;
