@@ -55,7 +55,7 @@
 
         <NuxtLink
           class="andrewtateisanidiot"
-          :to="`/cv/${candidat.candidat_id}`"
+          :to="`/dashboard/cv/${candidat.candidat_id}`"
           >Afficher le CV</NuxtLink
         >
         <CV :candidat="candidat" :adequation="adequation" />
@@ -71,6 +71,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: "auth",
+  layout: "dashboard",
+});
 import { computed, ref } from "vue";
 const showPopup = ref(false);
 
