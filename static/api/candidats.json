@@ -11,7 +11,11 @@
     "competences": ["Java", "Python", "SQL"],
     "experience": 5,
     "dateInscription": "2023-05-15",
-    "education": "Master en Informatique",
+    "education": [
+      "Master en Informatique",
+      "Licence en Génie Logiciel",
+      "DUT en Informatique"
+    ],
     "geolocalisation": "Cocody, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Polyvalence",
@@ -35,7 +39,11 @@
     "competences": ["JavaScript", "React", "Node.js"],
     "experience": 3,
     "dateInscription": "2023-05-16",
-    "education": "Licence en Développement Web",
+    "education": [
+      "Licence en Développement Web",
+      "DUT en Informatique",
+      "Baccalauréat Scientifique"
+    ],
     "geolocalisation": "Plateau, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Expertise en développement front-end",
@@ -59,7 +67,11 @@
     "competences": ["C++", "C#", "Unity"],
     "experience": 7,
     "dateInscription": "2023-05-17",
-    "education": "Doctorat en Informatique",
+    "education": [
+      "Doctorat en Informatique",
+      "Master en Développement de Jeux",
+      "Licence en Mathématiques Appliquées"
+    ],
     "geolocalisation": "Marcory, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Expertise en développement de jeux",
@@ -83,7 +95,11 @@
     "competences": ["PHP", "Laravel", "MySQL"],
     "experience": 4,
     "dateInscription": "2023-05-18",
-    "education": "DUT Informatique",
+    "education": [
+      "DUT Informatique",
+      "Licence en Systèmes d'Information",
+      "Certification en Développement Web"
+    ],
     "geolocalisation": "Yopougon, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Développement back-end solide",
@@ -107,7 +123,11 @@
     "competences": ["Ruby", "Rails", "PostgreSQL"],
     "experience": 6,
     "dateInscription": "2023-05-19",
-    "education": "Master en Génie Logiciel",
+    "education": [
+      "Master en Génie Logiciel",
+      "Licence en Informatique",
+      "Certification Ruby on Rails"
+    ],
     "geolocalisation": "Abobo, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Expertise en Ruby on Rails",
@@ -131,7 +151,11 @@
     "competences": ["Angular", "TypeScript", "MongoDB"],
     "experience": 2,
     "dateInscription": "2023-05-20",
-    "education": "Licence en Systèmes d'Information",
+    "education": [
+      "Licence en Systèmes d'Information",
+      "DUT en Réseaux et Télécommunications",
+      "Certification Angular"
+    ],
     "geolocalisation": "Koumassi, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Développement front-end moderne",
@@ -155,7 +179,11 @@
     "competences": ["Swift", "iOS", "Firebase"],
     "experience": 4,
     "dateInscription": "2023-05-21",
-    "education": "DUT en Développement Mobile",
+    "education": [
+      "DUT en Développement Mobile",
+      "Licence en Informatique",
+      "Certification Apple Developer"
+    ],
     "geolocalisation": "Treichville, Abidjan, Côte d'Ivoire",
     "points_forts": [
       "Expertise en développement iOS",

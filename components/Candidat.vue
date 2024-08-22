@@ -52,15 +52,30 @@
         <p :class="['levraimatch', matchColorClass]">
           Match à {{ adequation }} %
         </p>
-        <NuxtLink class="andrewtateisanidiot" to="">Afficher le CV</NuxtLink>
+
+        <NuxtLink
+          class="andrewtateisanidiot"
+          :to="`/cv/${candidat.candidat_id}`"
+          >Afficher le CV</NuxtLink
+        >
+        <CV :candidat="candidat" :adequation="adequation" />
+        <div v-if="showPopup" class="popup">
+          <div class="popup-content">
+            <button @click="showPopup = false">Fermer</button>
+            <CV :candidat="candidat" :adequation="adequation" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
+const showPopup = ref(false);
 
+import { useEmploisJson } from "@/composables/useEmplois";
+import { useCandidatsJson } from "@/composables/useCandidats";
 const props = defineProps({
   candidat: Object,
   adequation: {
@@ -77,6 +92,26 @@ const matchColorClass = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
 .candidat {
   /* Styles pour le conteneur du candidat */
 }
