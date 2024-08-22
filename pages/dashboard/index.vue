@@ -95,14 +95,9 @@ const { data: recruteurs } = useRecruteursJson();
 const { data: emplois } = useEmploisJson();
 const { data: candidats } = useCandidatsJson();
 
-//console.log("Recruteurs:", recruteurs.value);
-//console.log("Emplois:", emplois.value);
-
 const recruteurId = useCookie("recruteurId");
-//console.log("RecruteurId from cookie:", recruteurId.value);
 
 const filteredJobs = computed(() => {
-  // console.log("Filtering jobs for recruteurId:", recruteurId.value);
   if (!recruteurId.value) {
     // console.log("No recruteurId, returning empty array");
     return [];
@@ -110,12 +105,9 @@ const filteredJobs = computed(() => {
   const filtered = emplois.value.filter(
     (job) => job.id_recruteur === recruteurId.value
   );
-  //console.log("Filtered jobs:", filtered);
   return filtered;
 });
 
-// console.log("FilteredJobs computed value:", filteredJobs.value);
-//total des candidatures
 const totalCandidatures = computed(() => {
   return filteredJobs.value.reduce((total, job) => {
     return total + (job.candidatures ? job.candidatures.length : 0);
@@ -180,13 +172,17 @@ const statsPostes = computed(() => {
 
 //candidats adéquats
 const highAdequacyCandidates = computed(() => {
+  if (!filteredJobs.value || !candidats.value) return [];
+
   return filteredJobs.value
-    .flatMap((job) =>
-      job.candidatures
-        .filter((candidature) => candidature.adequation > 90)
+    .flatMap((job) => {
+      if (!job.candidatures) return [];
+
+      return job.candidatures
+        .filter((candidature) => candidature && candidature.adequation > 90)
         .map((candidature) => {
-          const candidate = candidats.value.candidats.find(
-            (c) => c.id === candidature.id
+          const candidate = candidats.value.find(
+            (c) => c && c.candidat_id === candidature.candidat_id
           );
           return candidate
             ? {
@@ -197,10 +193,10 @@ const highAdequacyCandidates = computed(() => {
               }
             : null;
         })
-        .filter(Boolean)
-    )
+        .filter(Boolean);
+    })
     .sort((a, b) => b.adequation - a.adequation)
-    .slice(0, 5); // Limite aux 5 premiers résultats
+    .slice(0, 5);
 });
 
 //top 5 offres d'emploi

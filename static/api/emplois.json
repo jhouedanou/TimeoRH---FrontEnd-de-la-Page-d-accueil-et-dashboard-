@@ -6,12 +6,7 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB"
-    ],
+    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
@@ -48,19 +43,19 @@
     "nbvues": 1254,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 87
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 95
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 72
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 63
       }
     ],
@@ -83,19 +78,14 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": [
-      "Figma",
-      "Adobe XD",
-      "Sketch",
-      "Prototypage"
-    ],
+    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
     "dateExpiration": "2024-09-02",
     "statut": "Inactif",
     "geolocalisation": "Plateau",
-    "societe": "DesignMasters CI",
+    "societe": "Design Masters CI",
     "motsCles": [
       {
         "id": 1,
@@ -121,19 +111,19 @@
     "nbvues": 876,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 92
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 78
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 85
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 69
       }
     ],
@@ -156,12 +146,7 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": [
-      "Docker",
-      "Kubernetes",
-      "AWS",
-      "CI/CD"
-    ],
+    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
@@ -194,19 +179,19 @@
     "nbvues": 2103,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 88
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 76
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 94
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 81
       }
     ],
@@ -229,12 +214,7 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": [
-      "Python",
-      "R",
-      "Machine Learning",
-      "SQL"
-    ],
+    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
@@ -267,19 +247,19 @@
     "nbvues": 1587,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 79
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 91
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 86
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 73
       }
     ],
@@ -302,12 +282,7 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Vue.js"
-    ],
+    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
@@ -340,19 +315,19 @@
     "nbvues": 932,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 83
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 97
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 75
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 89
       }
     ],
@@ -361,11 +336,7 @@
     "typeDeSociete": "Agence web",
     "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
-    "competencesDeBase": [
-      "HTML5",
-      "CSS3",
-      "JavaScript ES6+"
-    ],
+    "competencesDeBase": ["HTML5", "CSS3", "JavaScript ES6+"],
     "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
   },
   {
@@ -413,19 +384,19 @@
     "nbvues": 1345,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 85
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 90
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 78
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 82
       }
     ],
@@ -486,19 +457,19 @@
     "nbvues": 1023,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 80
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 85
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 75
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 70
       }
     ],
@@ -559,19 +530,19 @@
     "nbvues": 980,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 88
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 84
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 79
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 72
       }
     ],
@@ -632,19 +603,19 @@
     "nbvues": 1150,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 78
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 82
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 74
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 80
       }
     ],
@@ -705,16 +676,20 @@
     "nbvues": 1250,
     "candidatures": [
       {
-        "id": 1,
-        "adequation": 84
+        "candidat_id": 1,
+        "adequation": 90
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 88
       },
       {
-        "id": 3,
-        "adequation": 76
+        "candidat_id": 3,
+        "adequation": 60
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 46
       }
     ],
     "evolutionCandidatures": 35,
@@ -774,19 +749,19 @@
     "nbvues": 1080,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 90
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 85
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 80
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 88
       }
     ],
@@ -843,11 +818,11 @@
     "nbvues": 1400,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 78
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 82
       }
     ],
@@ -904,19 +879,19 @@
     "nbvues": 980,
     "candidatures": [
       {
-        "id": 1,
+        "candidat_id": 1,
         "adequation": 88
       },
       {
-        "id": 2,
+        "candidat_id": 2,
         "adequation": 85
       },
       {
-        "id": 3,
+        "candidat_id": 3,
         "adequation": 82
       },
       {
-        "id": 4,
+        "candidat_id": 4,
         "adequation": 90
       }
     ],

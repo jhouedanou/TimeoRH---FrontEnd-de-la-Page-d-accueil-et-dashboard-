@@ -60,13 +60,12 @@
                 @close="editingOffreId = null"
                 @save="saveEditedOffre"
               />
-
-              <button
+              <NuxtLink
                 class="planifierrecrutement"
-                @click="planifierRecrutement(offre)"
+                :to="`/dashboard/planifier-recrutement/${offre.id}`"
               >
                 Planifier le recrutement
-              </button>
+              </NuxtLink>
               <button class="changerstatut" @click="changerStatut(offre)">
                 Changer le statut
               </button>

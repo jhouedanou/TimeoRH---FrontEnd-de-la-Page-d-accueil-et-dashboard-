@@ -33,7 +33,12 @@
         <li>
           <NuxtLink
             to="/dashboard/vos-offres-emploi"
-            :class="{ active: $route.path === '/dashboard/vos-offres-emploi' }"
+            :class="{
+              active:
+                $route.path.startsWith('/dashboard/vos-offres-emploi') ||
+                $route.path.includes('planifier-recrutement') ||
+                $route.path.includes('ajouter-offre'),
+            }"
           >
             <img src="/images/dashboardsidebar/offremploi.svg" alt="" />
             Vos offres d'emploi

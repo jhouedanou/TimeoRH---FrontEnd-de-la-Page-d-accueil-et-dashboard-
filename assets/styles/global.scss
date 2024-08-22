@@ -1229,12 +1229,16 @@ $secondary: #012e61;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    height: 35px;
     flex-grow: 0;
     border-radius: 50px;
     border: solid 1px #206101;
     color: #206101;
     padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 35px;
     &:hover {
         background: #206101;
         color: #fff;

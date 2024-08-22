@@ -602,6 +602,16 @@ button:hover {
 .secondecarte {
   margin-top: 2em;
   padding: 1em;
+
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
   p {
     margin-bottom: 1em;
   }
@@ -616,15 +626,6 @@ button:hover {
     text-align: left;
     color: #012f61;
   }
-  font-size: 15px;
-  line-height: 1.5;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
 }
 .preview-panel {
   h3 {
