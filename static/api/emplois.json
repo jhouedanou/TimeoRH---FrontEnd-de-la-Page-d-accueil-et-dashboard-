@@ -575,7 +575,7 @@
     "departement": "Administration",
     "datePublication": "2023-07-01",
     "dateExpiration": "2024-11-01",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Dabou",
     "societe": "OfficeSupport CI",
     "motsCles": [
@@ -717,7 +717,7 @@
     "departement": "Finance",
     "datePublication": "2023-07-25",
     "dateExpiration": "2024-11-25",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Korhogo",
     "societe": "FinanceExperts CI",
     "motsCles": [
@@ -851,7 +851,7 @@
     "departement": "Ressources Humaines",
     "datePublication": "2023-08-15",
     "dateExpiration": "2024-12-15",
-    "statut": "Actif",
+    "statut": "Inactif",
     "geolocalisation": "Abengourou",
     "societe": "HRManagement CI",
     "motsCles": [

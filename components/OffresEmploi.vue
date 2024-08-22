@@ -140,7 +140,7 @@ const totalEntrees = computed(() => offresFiltered.value.length);
 const sortKey = ref("titre");
 const sortOrder = ref("asc");
 
-const { data: emplois, updateEmploi } = useEmploisJson();
+const { data: emplois, updateEmploiStatusDansLaListe } = useEmploisJson();
 const recruteurId = useCookie("recruteur_id").value;
 const filtreTitle = ref("");
 const filtreDate = ref("");
@@ -210,8 +210,8 @@ const saveStatus = async () => {
   console.log("Début de saveStatus");
   console.log("Offre sélectionnée:", selectedOffre.value);
   try {
-    const result = await updateEmploi(selectedOffre.value);
-    console.log("Résultat de updateEmploi:", result);
+    const result = await updateEmploiStatusDansLaListe(selectedOffre.value);
+    console.log("Résultat de updateEmploiStatusDansLaListe:", result);
     if (result.success) {
       const index = emplois.value.findIndex(
         (o) => o.id === selectedOffre.value.id

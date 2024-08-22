@@ -1,0 +1,20 @@
+[
+  { "id": 1, "name": "Python" },
+  { "id": 2, "name": "JavaScript" },
+  { "id": 3, "name": "Java" },
+  { "id": 4, "name": "C++" },
+  { "id": 5, "name": "React" },
+  { "id": 6, "name": "Node.js" },
+  { "id": 7, "name": "Angular" },
+  { "id": 8, "name": "Vue.js" },
+  { "id": 9, "name": "Docker" },
+  { "id": 10, "name": "Kubernetes" },
+  { "id": 11, "name": "AWS" },
+  { "id": 12, "name": "Azure" },
+  { "id": 13, "name": "Machine Learning" },
+  { "id": 14, "name": "Deep Learning" },
+  { "id": 15, "name": "Data Science" },
+  { "id": 16, "name": "Blockchain" },
+  { "id": 17, "name": "DevOps" },
+  { "id": 18, "name": "Cybersécurité" }
+]

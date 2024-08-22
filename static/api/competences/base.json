@@ -1,0 +1,20 @@
+[
+  { "id": 1, "name": "Office" },
+  { "id": 2, "name": "MySQL Workbench" },
+  { "id": 3, "name": "Heidi SQL" },
+  { "id": 4, "name": "PowerPoint" },
+  { "id": 5, "name": "Excel" },
+  { "id": 6, "name": "Word" },
+  { "id": 7, "name": "Outlook" },
+  { "id": 8, "name": "Google Docs" },
+  { "id": 9, "name": "Google Sheets" },
+  { "id": 10, "name": "Google Slides" },
+  { "id": 11, "name": "Photoshop" },
+  { "id": 12, "name": "Illustrator" },
+  { "id": 13, "name": "Canva" },
+  { "id": 14, "name": "Trello" },
+  { "id": 15, "name": "Slack" },
+  { "id": 16, "name": "Zoom" },
+  { "id": 17, "name": "Teams" },
+  { "id": 18, "name": "Skype" }
+]
