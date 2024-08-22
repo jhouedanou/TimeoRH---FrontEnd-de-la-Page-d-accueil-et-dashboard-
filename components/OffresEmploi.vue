@@ -1,4 +1,8 @@
 <template>
+  <div v-if="showAlert" class="notification is-success">
+    {{ alertMessage }}
+  </div>
+
   <div class="offres-emploi">
     <div class="filters">
       <div class="spaghetti">
@@ -11,7 +15,7 @@
       </div>
       <div class="actions">
         <NuxtLink class="button is-primary" to="/dashboard/ajouter-offre"
-          >Ajouuter une offre</NuxtLink
+          >Ajouter une offre</NuxtLink
         >
       </div>
     </div>
@@ -50,6 +54,13 @@
               <button class="editemploi" @click="editerOffre(offre)">
                 Éditer
               </button>
+              <EditOffrePopup
+                v-if="editingOffreId === offre.id"
+                :offre="offre"
+                @close="editingOffreId = null"
+                @save="saveEditedOffre"
+              />
+
               <button
                 class="planifierrecrutement"
                 @click="planifierRecrutement(offre)"
@@ -125,10 +136,16 @@
 import { ref, computed, onMounted } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
 import { useCookie } from "#app";
+import EditOffrePopup from "./EditOffrePopup.vue";
+const showAlert = ref(false);
+const alertMessage = ref("");
+
 //CRUDS
 const showStatusPopup = ref(false);
 const selectedOffre = ref(null);
-
+const showEditPopup = ref(false);
+const offreToEdit = ref(null);
+const editingOffreId = ref(null);
 const debutAffichage = computed(
   () => (pageCourante.value - 1) * offresParPage + 1
 );
@@ -193,7 +210,40 @@ const ajouterOffre = () => {
 };
 
 const editerOffre = (offre) => {
-  // Logique pour éditer une offre
+  editingOffreId.value = offre.id;
+  offreToEdit.value = { ...offre };
+  showEditPopup.value = true;
+};
+const saveEditedOffre = async (editedOffre) => {
+  try {
+    const response = await fetch("/api/emploi/update", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(editedOffre),
+    });
+
+    if (response.ok) {
+      const updatedOffre = await response.json();
+      const index = emplois.value.findIndex((o) => o.id === updatedOffre.id);
+      if (index !== -1) {
+        emplois.value[index] = updatedOffre;
+        alertMessage.value = "L'offre d'emploi a été mise à jour avec succès !";
+        showAlert.value = true;
+        setTimeout(() => {
+          showAlert.value = false;
+        }, 3000);
+      }
+      showEditPopup.value = false;
+      editingOffreId.value = null;
+    }
+  } catch (error) {
+    console.error("Erreur lors de la sauvegarde de l'offre:", error);
+    alertMessage.value = "Erreur lors de la mise à jour de l'offre d'emploi.";
+    showAlert.value = true;
+    setTimeout(() => {
+      showAlert.value = false;
+    }, 3000);
+  }
 };
 
 const planifierRecrutement = (offre) => {
@@ -231,8 +281,21 @@ const saveStatus = async () => {
   selectedOffre.value = null;
 };
 
-const supprimerOffre = (offre) => {
-  // Logique pour supprimer une offre
+const supprimerOffre = async (offre) => {
+  if (confirm("Êtes-vous sûr de vouloir supprimer cette offre ?")) {
+    try {
+      const response = await fetch(`/api/emploi/${offre.id}`, {
+        method: "DELETE",
+      });
+      if (response.ok) {
+        emplois.value = emplois.value.filter((e) => e.id !== offre.id);
+        alertMessage.value = "L'offre a été supprimée avec succès";
+        showAlert.value = true;
+      }
+    } catch (error) {
+      console.error("Erreur lors de la suppression de l'offre:", error);
+    }
+  }
 };
 </script>
 

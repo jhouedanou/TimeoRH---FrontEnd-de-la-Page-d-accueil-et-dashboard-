@@ -4,7 +4,7 @@ import { resolve } from 'path'
 export default defineEventHandler(async (event) => {
   if (event.node.req.method === 'POST') {
     const body = await readBody(event)
-    const filePath = resolve('static/api/emplois.json')
+    const filePath = resolve('./static/api/emplois.json')
     
     let emplois = JSON.parse(readFileSync(filePath, 'utf-8'))
     
