@@ -53,21 +53,76 @@
           Match à {{ adequation }} %
         </p>
 
-        <NuxtLink
-          class="andrewtateisanidiot"
-          :to="`/dashboard/cv/${candidat.candidat_id}`"
-          >Afficher le CV</NuxtLink
-        >
-        <CV :candidat="candidat" :adequation="adequation" />
-        <div v-if="showPopup" class="popup">
-          <div class="popup-content">
-            <button @click="showPopup = false">Fermer</button>
-            <CV :candidat="candidat" :adequation="adequation" />
-          </div>
-        </div>
+        <button @click="showPopup = true" class="andrewtateisanidiot">
+          Afficher le CV
+        </button>
       </div>
     </div>
   </div>
+
+  <teleport to="body">
+    <div v-if="showPopup" class="popup" @click="showPopup = false">
+      <div class="popup-content">
+        <div class="columns infordetaillecandidat">
+          <div
+            class="macine column is-5-desktop is-12-mobile is-flex is-flex-direction-row"
+          >
+            <div class="columns">
+              <div
+                class="trunks is-flex is-flex-direction-row column is-9-desktop is-12-mobile"
+              >
+                <img :src="candidat.image" alt="" />
+                <div class="neay is-flex is-flex-direction-column">
+                  <h2>{{ candidat.nom }} {{ candidat.prenom }}</h2>
+                  <p v-if="adequation > 80" class="candidat-parfait">
+                    Candidat parfait
+                  </p>
+                  <p class="localisation">
+                    <span class="material-icons">location_on</span>
+                    {{ candidat.geolocalisation }}
+                  </p>
+                </div>
+              </div>
+              <div
+                class="vegeta is-flex is-flex-direction-row column is-3-desktop is-12-mobile"
+              >
+                <div :class="['match', matchColorClass]">
+                  <span class="brad"> {{ adequation }}</span>
+                  <p>adéquation par rapport au poste</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-7-desktop is-12-mobile"></div>
+        </div>
+        <h2>Informations détaillées du candidat</h2>
+        <p><strong>Nom:</strong></p>
+        <p><strong>Titre:</strong> {{ candidat.titre }}</p>
+        <p><strong>Expérience:</strong> {{ candidat.experience }} ans</p>
+        <p><strong>Email:</strong> {{ candidat.email }}</p>
+        <p><strong>Téléphone:</strong> {{ candidat.telephone }}</p>
+        <p>
+          <strong>Date d'inscription:</strong> {{ candidat.dateInscription }}
+        </p>
+        <p><strong>Géolocalisation:</strong> {{ candidat.geolocalisation }}</p>
+        <h3>Points forts</h3>
+        <ul>
+          <li v-for="(point, index) in candidat.points_forts" :key="index">
+            {{ point }}
+          </li>
+        </ul>
+        <h3>Compétences</h3>
+        <ul>
+          <li v-for="(competence, index) in candidat.competences" :key="index">
+            {{ competence }}
+          </li>
+        </ul>
+        <h3>Appréciation</h3>
+        <p>{{ candidat.appreciation }}</p>
+        <button @click="showPopup = false">Fermer</button>
+      </div>
+    </div>
+  </teleport>
 </template>
 
 <script setup>
@@ -87,7 +142,9 @@ const props = defineProps({
     required: true,
   },
 });
-
+const closePopup = () => {
+  showPopup.value = false;
+};
 const matchColorClass = computed(() => {
   if (props.adequation >= 80) return "match-green";
   if (props.adequation >= 60) return "match-orange";
@@ -96,7 +153,7 @@ const matchColorClass = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-popup {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,16 +163,20 @@ popup {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .popup-content {
-  background-color: white;
+  background-color: #f3f3f3;
   padding: 20px;
   border-radius: 5px;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 100%;
+  height: 100%;
   overflow: auto;
 }
+
 .candidat {
   /* Styles pour le conteneur du candidat */
 }
@@ -133,6 +194,9 @@ popup {
   letter-spacing: normal;
   text-align: right;
   color: #012e61;
+  background: none;
+  border: none;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -308,6 +372,167 @@ popup {
       z-index: 10;
       top: 0;
       right: 0;
+    }
+  }
+}
+.trunks {
+  img {
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+  }
+}
+.macine {
+  border-radius: 6px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 2px #d7d7d7;
+  background-color: #fff;
+  padding: 1em;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #012e61;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 14px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9297a6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+.neay {
+  padding-left: 10px;
+}
+.candidat-parfait {
+  width: 151px;
+  height: 30px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 1.5em;
+  background: rgba(249, 231, 190, 0.42) url(/images/star-svgrepo-com.svg) center
+    left no-repeat;
+}
+.brad {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: -0.48px;
+  text-align: left;
+  color: #012e61;
+}
+.vegeta {
+  p {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #18191c;
+    position: relative;
+    margin-top: 1em;
+  }
+  .match {
+    position: relative;
+  }
+  .match-green {
+    .brad {
+      position: relative;
+      width: 71px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &::after {
+        background: url("/images/201.svg");
+        width: 71px;
+        height: 72px;
+        content: "";
+        display: block;
+        position: absolute;
+
+        position: absolute;
+        top: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .match-orange {
+    .brad {
+      position: relative;
+      width: 71px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &::after {
+        background: url("/images/200.svg");
+        width: 71px;
+        height: 72px;
+        content: "";
+        display: block;
+        position: absolute;
+
+        position: absolute;
+        top: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .match-red {
+    .brad {
+      position: relative;
+      width: 71px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &::after {
+        background: url("/images/202.svg");
+        width: 71px;
+        height: 72px;
+        content: "";
+        display: block;
+        position: absolute;
+
+        position: absolute;
+        top: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }
