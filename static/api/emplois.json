@@ -6,7 +6,12 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "competencesRequises": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB"
+    ],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
@@ -154,7 +159,12 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
+    "competencesRequises": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Prototypage"
+    ],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
@@ -281,7 +291,12 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
+    "competencesRequises": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD"
+    ],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
@@ -408,7 +423,12 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
+    "competencesRequises": [
+      "Python",
+      "R",
+      "Machine Learning",
+      "SQL"
+    ],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
@@ -535,7 +555,12 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "competencesRequises": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vue.js"
+    ],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
@@ -648,7 +673,11 @@
     "typeDeSociete": "Agence web",
     "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
-    "competencesDeBase": ["HTML5", "CSS3", "JavaScript ES6+"],
+    "competencesDeBase": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+"
+    ],
     "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
   },
   {
@@ -1328,8 +1357,8 @@
     "departement": "Finance",
     "datePublication": "2023-07-25",
     "dateExpiration": "2024-11-25",
-    "statut": "Actif",
-    "geolocalisation": "Korhogo",
+    "statut": "Inactif",
+    "geolocalisation": "Korhogos",
     "societe": "Finance Experts Côte d'Ivoire",
     "motsCles": [
       {
@@ -1375,6 +1404,20 @@
             "heure": "16:00",
             "raison": "Technical Test Interview 2",
             "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 3,
+            "date": "2222-12-22",
+            "heure": "12:00",
+            "raison": "lmùdmùl,dzlm,",
+            "lien": "https://google.com"
+          },
+          {
+            "id": 4,
+            "date": "2222-02-21",
+            "heure": "12:22",
+            "raison": "ada",
+            "lien": "http://google.com"
           }
         ]
       },
@@ -1428,7 +1471,23 @@
         "candidat_id": 4,
         "adequation": 88,
         "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation"
+        "necorrespondantpas": "Géolocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-01-02",
+            "heure": "13:00",
+            "raison": "PAM",
+            "lien": "https://houedanou.com"
+          },
+          {
+            "id": 2,
+            "date": "2000-12-12",
+            "heure": "13:00",
+            "raison": "PAM",
+            "lien": "https://google.com"
+          }
+        ]
       }
     ],
     "evolutionCandidatures": 50,

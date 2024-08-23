@@ -3,10 +3,17 @@
     <div v-if="emploi">
       <h2 id="bing">Candidatures pour le poste {{ emploi.titre }}</h2>
       <div v-for="candidature in candidaturesAffichees" :key="candidature.id">
+        <div
+          v-if="alert"
+          :class="['alert', alert.success ? 'alert-success' : 'alert-danger']"
+        >
+          {{ alert.message }}
+        </div>
         <Candidat
           :candidat="candidature.candidat"
           :adequation="candidature.adequation"
           :emploiId="emploiId"
+          @interviewAdded="handleInterviewAdded"
         />
       </div>
       <button class="ericDraven" v-if="afficherPlus" @click="chargerPlus">
@@ -18,7 +25,7 @@
 
 <script setup>
 definePageMeta({
-  middleware: "auth",
+  middleware: ["auth"],
   layout: "dashboard",
 });
 import { ref, onMounted, computed } from "vue";
@@ -33,6 +40,14 @@ const { data: emplois } = useEmploisJson();
 const { data: candidats } = useCandidatsJson();
 
 const emploi = computed(() => emplois.value.find((e) => e.id === emploiId));
+const alert = ref(null);
+
+const handleInterviewAdded = (result) => {
+  alert.value = result;
+  setTimeout(() => {
+    alert.value = null;
+  }, 3000);
+};
 const candidatures = computed(() => {
   if (!emploi.value) return [];
   return emploi.value.candidatures.map((c) => ({
@@ -63,6 +78,19 @@ const chargerPlus = () => {
 </script>
 
 <style lang="scss">
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
 .ericDraven {
   background-color: var(--primary-color);
   color: #fff;

@@ -1392,6 +1392,7 @@ $secondary: #012e61;
             text-align: left;
             color: rgba(0, 0, 0, 0.7);
             display: flex;
+            min-width: 150px;
         }
         ul {
             text-align: right;
@@ -1413,42 +1414,42 @@ $secondary: #012e61;
 }
 
 .raison {
-
-    
     font-size: 15.2px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18191c;
-    padding:.45em 0;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #18191c;
+    padding: 0.45em 0;
 }
 
-.major{.date {
-      font-size: 10.9px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.8;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18191c;
+.major {
+    .date {
+        font-size: 10.9px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.8;
+        letter-spacing: normal;
+        text-align: left;
+        color: #18191c;
+    }
+    hr {
+        height: 1px;
+        background-color: #eee;
+    }
 }
-    hr{
-        height:1px;
-        background-color: #EEE  }
-}
-.add-interview-form{
-    form{
-        padding:1em;
-        border:1px #EEE solid;
-        label{
-            color:black;
+.add-interview-form {
+    form {
+        padding: 1em;
+        border: 1px #eee solid;
+        label {
+            color: black;
         }
     }
-    button{
-        background:$primary;
+    button {
+        background: $primary;
     }
 }

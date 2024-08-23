@@ -18,7 +18,7 @@
 import OffresEmploi from "@/components/OffresEmploi.vue";
 
 definePageMeta({
-  middleware: "auth",
+  middleware: ["auth"],
   layout: "dashboard",
 });
 </script>

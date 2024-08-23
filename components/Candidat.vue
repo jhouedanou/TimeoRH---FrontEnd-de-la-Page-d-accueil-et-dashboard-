@@ -161,7 +161,7 @@ utilise des styles Sass pour la mise en forme. */
 
             <div class="ligne4cv">
               <div class="lacie">
-                <h3>Compétences</h3>
+                <h3>Compétences :</h3>
                 <ul>
                   <li
                     v-for="(competence, index) in candidat.competences"
@@ -173,7 +173,7 @@ utilise des styles Sass pour la mise en forme. */
                 </ul>
               </div>
               <div class="lacie">
-                <h3>Diplôme</h3>
+                <h3>Diplômes :</h3>
                 <ul>
                   <li
                     v-for="(diplome, index) in candidat.education"
@@ -185,7 +185,7 @@ utilise des styles Sass pour la mise en forme. */
                 </ul>
               </div>
               <div class="lacie">
-                <h3>Expérience professionnelle</h3>
+                <h3>Expérience professionnelle :</h3>
                 <p>{{ candidat.experience }} ans</p>
               </div>
               <div class="documentsducandidat">
@@ -349,35 +349,9 @@ utilise des styles Sass pour la mise en forme. */
 </template>
 
 <script setup>
-definePageMeta({
-  middleware: "auth",
-  layout: "dashboard",
-});
 import { computed, ref, watchEffect } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
-const showPopup = ref(false);
-const activeTab = ref("interview");
-const showAddInterviewForm = ref(false);
-const newInterview = ref({
-  date: "",
-  heure: "",
-  raison: "",
-  lien: "",
-});
-const toggleAddInterviewForm = () => {
-  showAddInterviewForm.value = !showAddInterviewForm.value;
-};
 
-const submitInterview = () => {
-  addInterview(newInterview.value);
-  newInterview.value = {
-    date: "",
-    heure: "",
-    raison: "",
-    lien: "",
-  };
-  showAddInterviewForm.value = false;
-};
 const props = defineProps({
   candidat: Object,
   adequation: {
@@ -386,6 +360,48 @@ const props = defineProps({
   },
   emploiId: Number,
 });
+const { updateEmploiStatusDansLaListe } = useEmploisJson();
+const newInterview = ref({
+  date: "",
+  heure: "",
+  raison: "",
+  lien: "",
+});
+
+const submitInterview = async () => {
+  try {
+    const response = await fetch("/api/interview/add", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        emploiId: props.emploiId,
+        candidatId: props.candidat.candidat_id,
+        ...newInterview.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      updateEmploiStatusDansLaListe(result.emploi);
+      newInterview.value = { date: "", heure: "", raison: "", lien: "" };
+      alert("Interview ajoutée avec succès");
+    } else {
+      alert(result.message || "Erreur lors de l'ajout de l'interview");
+    }
+  } catch (error) {
+    console.error("Erreur lors de l'ajout de l'interview:", error);
+    alert("Erreur lors de l'ajout de l'interview");
+  }
+};
+const showPopup = ref(false);
+const activeTab = ref("interview");
+const showAddInterviewForm = ref(false);
+
+const toggleAddInterviewForm = () => {
+  showAddInterviewForm.value = !showAddInterviewForm.value;
+};
+
 const { data: emplois } = useEmploisJson();
 const candidatInfo = computed(() => {
   const emploi = emplois.value.find((e) => e.id === props.emploiId);
@@ -1080,5 +1096,15 @@ const matchColorClass = computed(() => {
     color: #18191c;
     border-bottom: 1px solid #e6e6e6;
   }
+}
+#decision {
+  font-family: "Brush Script MT", cursive;
+  background-color: #ffff99;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-size: 21px;
+  color: #333;
 }
 </style>

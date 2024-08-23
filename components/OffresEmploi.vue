@@ -268,11 +268,12 @@ const saveStatus = async () => {
       console.log("Index trouvé:", index);
       if (index !== -1) {
         emplois.value[index] = result.emploi;
-        console.log("Emploi mis à jour dans le tableau local");
+        alert("Statut mis à jour avec succès");
       }
     }
   } catch (error) {
     console.error("Erreur dans saveStatus:", error);
+    alert("Une erreur est survenue lors de la mise à jour du statut");
   }
 
   console.log("Fermeture de la popup");

@@ -54,11 +54,13 @@ const saveOffre = async () => {
     const result = await response.json();
     if (result.success) {
       emit("save", result.emploi);
+      alert("Offre mise à jour avec succès");
     } else {
-      console.error("Erreur lors de la sauvegarde:", result.message);
+      alert("Erreur lors de la sauvegarde: " + result.message);
     }
   } catch (error) {
     console.error("Erreur lors de la requête:", error);
+    //alert("Erreur lors de la mise à jour de l'offre");
   }
 };
 </script>

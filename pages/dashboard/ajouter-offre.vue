@@ -227,7 +227,7 @@ import { useSkills } from "@/composables/useSkills";
 import { useCookie } from "#app";
 import Cookies from "js-cookie";
 definePageMeta({
-  middleware: "auth",
+  middleware: ["auth"],
   layout: "dashboard",
 });
 const showSuccessPopup = ref(false);

@@ -67,7 +67,7 @@ import { ref, computed } from "vue";
 import { useVideos } from "@/composables/useVideos";
 
 definePageMeta({
-  middleware: "auth",
+  middleware: ["auth"],
   layout: "dashboard",
 });
 const itemsPerPage = 8;
