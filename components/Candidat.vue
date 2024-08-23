@@ -320,7 +320,25 @@ utilise des styles Sass pour la mise en forme. */
 
             <div class="peyton" id="decision" v-if="activeTab === 'decision'">
               <h3>Décision</h3>
-              {{ candidatInfo.decision }}
+              <form @submit.prevent="submitDecision">
+                <div class="field">
+                  <label class="label">Décision</label>
+                  <div class="control">
+                    <textarea
+                      v-model="newDecision"
+                      class="textarea"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" class="button is-primary">
+                      Envoyer la décision
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -394,6 +412,35 @@ const submitInterview = async () => {
     alert("Erreur lors de l'ajout de l'interview");
   }
 };
+
+const newDecision = ref("");
+
+const submitDecision = async () => {
+  try {
+    const response = await fetch("/api/decision/add", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        emploiId: props.emploiId,
+        candidatId: props.candidat.candidat_id,
+        decision: newDecision.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      alert("Décision envoyée avec succès");
+      newDecision.value = "";
+    } else {
+      alert("Erreur lors de l'envoi de la décision: " + result.message);
+    }
+  } catch (error) {
+    console.error("Erreur lors de l'envoi de la décision:", error);
+    alert("Erreur lors de l'envoi de la décision");
+  }
+};
+
 const showPopup = ref(false);
 const activeTab = ref("interview");
 const showAddInterviewForm = ref(false);
@@ -1098,13 +1145,5 @@ const matchColorClass = computed(() => {
   }
 }
 #decision {
-  font-family: "Brush Script MT", cursive;
-  background-color: #ffff99;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  line-height: 1.6;
-  font-size: 21px;
-  color: #333;
 }
 </style>
