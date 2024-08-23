@@ -29,12 +29,31 @@ yarn dev
 
 L'application sera accessible à l'adresse http://localhost:3000.
 
-## Données
+## Mise à jour des données
 
-Les données (textes, liens, images) sont dans les fichiers .json, dans le dossier static/api
+Pour mettre à jour les données de l'application, vous devez modifier les fichiers JSON situés dans le dossier `static/api/`. Voici les étapes à suivre :
 
-## Gestion des données de l'application :
+1. Naviguez vers le dossier `static/api/` dans votre projet.
 
-1. Créez une API dans votre application Laravel, en vous basant sur la structure des fichiers .json contenus dans le dossier /static/api/
-2. Mettre le lien de l'API dans le composable approprié ( @/composables)
-3. Au besoin, modifiez les méthodes HTTP appropriées (GET pour la lecture, POST/PUT pour la mise à jour).
+2. Ouvrez le fichier JSON que vous souhaitez modifier (par exemple, `candidats.json` ou `recruteurs.json`).
+
+3. Modifiez les données selon vos besoins. Assurez-vous de respecter la structure JSON existante.
+
+4. Sauvegardez le fichier après vos modifications.
+
+5. Redémarrez votre serveur de développement pour que les changements soient pris en compte.
+
+Exemple de modification du fichier `candidats.json` :
+
+```json
+[
+  {
+    "candidat_id": 1,
+    "nom": "Nouveau Nom",
+    "prenom": "Nouveau Prénom",
+    "titre": "Nouveau Titre",
+    ...
+  },
+  ...
+]
+```
