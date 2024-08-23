@@ -1144,6 +1144,20 @@ const matchColorClass = computed(() => {
     border-bottom: 1px solid #e6e6e6;
   }
 }
-#decision {
+.peyton {
+  input,
+  textarea {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    border-radius: 3px;
+    border: solid 1px #a4a4a4;
+    background-color: #fff;
+  }
 }
 </style>
