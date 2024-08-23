@@ -6,7 +6,12 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "competencesRequises": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB"
+    ],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
@@ -78,12 +83,17 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
+    "competencesRequises": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Prototypage"
+    ],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
     "dateExpiration": "2024-09-02",
-    "statut": "Inactif",
+    "statut": "Actif",
     "geolocalisation": "Plateau",
     "societe": "Design Masters CI",
     "motsCles": [
@@ -146,7 +156,12 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
+    "competencesRequises": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD"
+    ],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
@@ -214,7 +229,12 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
+    "competencesRequises": [
+      "Python",
+      "R",
+      "Machine Learning",
+      "SQL"
+    ],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
@@ -282,12 +302,17 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "competencesRequises": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vue.js"
+    ],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
     "dateExpiration": "2024-09-02",
-    "statut": "Inactif",
+    "statut": "Actif",
     "geolocalisation": "Treichville",
     "societe": "Web Front CI",
     "motsCles": [
@@ -336,7 +361,11 @@
     "typeDeSociete": "Agence web",
     "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
-    "competencesDeBase": ["HTML5", "CSS3", "JavaScript ES6+"],
+    "competencesDeBase": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+"
+    ],
     "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
   },
   {
@@ -575,7 +604,7 @@
     "departement": "Administration",
     "datePublication": "2023-07-01",
     "dateExpiration": "2024-11-01",
-    "statut": "Inactif",
+    "statut": "Actif",
     "geolocalisation": "Dabou",
     "societe": "OfficeSupport CI",
     "motsCles": [

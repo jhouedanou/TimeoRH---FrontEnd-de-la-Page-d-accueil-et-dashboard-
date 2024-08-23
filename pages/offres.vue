@@ -62,7 +62,7 @@
             </span>
           </div>
 
-          <div class="column is-12-xmobil w20 input-wrapper">
+          <div class="column is-12-mobile w20 input-wrapper">
             <select id="exper" v-model="filtres.experiencerequise">
               <option value="">Expérience requise</option>
               <option v-for="exp in experiences" :key="exp" :value="exp">
@@ -87,7 +87,7 @@
       </form>
 
       <div class="columns">
-        <div class="filtrewrapper column is-4-desktop">
+        <div class="filtrewrapper column is-3-desktop">
           <h3 class="apro">Filtres</h3>
           <div class="accordion">
             <div class="accordion-item">
@@ -179,7 +179,7 @@
           </button>
         </div>
 
-        <div class="column is-8-desktop">
+        <div class="column is-9-desktop">
           <div class="nombre-posts">
             Postes correspondants : {{ emploisFiltres.total }}
           </div>
@@ -207,7 +207,7 @@
                 :geolocalisation="emploi.geolocalisation"
                 :experienceRequise="emploi.experienceRequise"
                 :typeDeContrat="emploi.typeDeContrat"
-                class="column is-6-desktop is-12-tablet is-12-mobile"
+                class="column is-4-desktop is-12-tablet is-12-mobile"
               />
             </div>
           </div>
@@ -271,7 +271,7 @@ const filtres = ref({
 });
 
 const currentPage = ref(1);
-const emploisPerPage = 4;
+const emploisPerPage = 6;
 const newKeyword = ref("");
 
 const titres = computed(() => [...new Set(emplois.value.map((e) => e.titre))]);
@@ -481,5 +481,18 @@ const currentYear = computed(() => new Date().getFullYear());
       color: #999;
     }
   }
+}
+.clear-input {
+  background: #eee;
+  color: #999;
+  display: flex;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  right: 16px !important;
 }
 </style>
