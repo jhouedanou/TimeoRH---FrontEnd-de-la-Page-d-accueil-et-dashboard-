@@ -67,10 +67,14 @@ utilise des styles Sass pour la mise en forme. */
   </div>
 
   <teleport to="body">
-    <div v-if="showPopup" class="popup" @click="showPopup = false">
+    <div v-if="showPopup" class="popup">
       <div class="popup-content">
+        <button class="todd" @click="showPopup = false">
+          <span class="material-icons">close</span>
+        </button>
+
         <div class="columns infordetaillecandidat">
-          <div class="macine column is-5-desktop is-12-mobile is-flex">
+          <div class="macine column is-6-desktop is-12-mobile is-flex">
             <div class="ligne1cv columns is-12 coleen">
               <div
                 class="trunks is-flex is-flex-direction-row column is-9-desktop is-12-mobile"
@@ -81,9 +85,21 @@ utilise des styles Sass pour la mise en forme. */
                   <p v-if="adequation > 80" class="candidat-parfait">
                     Candidat parfait
                   </p>
+                  <p>
+                    <span class="material-icons">person</span
+                    >{{ candidat.titre }}
+                  </p>
                   <p class="localisation">
                     <span class="material-icons">location_on</span>
                     {{ candidat.geolocalisation }}
+                  </p>
+                  <p class="telephone">
+                    <span class="material-icons">phone</span
+                    >{{ candidat.telephone }}
+                  </p>
+                  <p class="email">
+                    <span class="material-icons">email</span
+                    >{{ candidat.email }}
                   </p>
                 </div>
               </div>
@@ -200,14 +216,38 @@ utilise des styles Sass pour la mise en forme. */
               </div>
             </div>
           </div>
-          <div class="column is-7-desktop is-12-mobile"></div>
+          <div class="interviewdecision column is-6-desktop is-12-mobile">
+            <ul class="tabs">
+              <li
+                @click="activeTab = 'interview'"
+                :class="{ active: activeTab === 'interview' }"
+              >
+                Interview
+              </li>
+              <li
+                @click="activeTab = 'decision'"
+                :class="{ active: activeTab === 'decision' }"
+              >
+                Décision
+              </li>
+            </ul>
+
+            <div class="peyton" id="interview" v-if="activeTab === 'interview'">
+              <h3>Interviews</h3>
+            </div>
+
+            <div class="peyton" id="decision" v-if="activeTab === 'decision'">
+              <h3>Décision</h3>
+            </div>
+          </div>
         </div>
+        <!-- pour reference 
         <h2>Informations détaillées du candidat</h2>
         <p><strong>Nom:</strong></p>
-        <p><strong>Titre:</strong> {{ candidat.titre }}</p>
+        <p><strong>Titre:</strong></p>
         <p><strong>Expérience:</strong> {{ candidat.experience }} ans</p>
         <p><strong>Email:</strong> {{ candidat.email }}</p>
-        <p><strong>Téléphone:</strong> {{ candidat.telephone }}</p>
+        <p><strong>Téléphone:</strong></p>
         <p>
           <strong>Date d'inscription:</strong> {{ candidat.dateInscription }}
         </p>
@@ -218,10 +258,8 @@ utilise des styles Sass pour la mise en forme. */
             {{ point }}
           </li>
         </ul>
-
         <h3>Appréciation</h3>
-        <p>{{ candidat.appreciation }}</p>
-        <button @click="showPopup = false">Fermer</button>
+        <p>{{ candidat.appreciation }}</p> -->
       </div>
     </div>
   </teleport>
@@ -235,6 +273,8 @@ definePageMeta({
 import { computed, ref, watchEffect } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
 const showPopup = ref(false);
+const activeTab = ref("interview");
+
 const props = defineProps({
   candidat: Object,
   adequation: {
@@ -476,7 +516,7 @@ const matchColorClass = computed(() => {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 1px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -500,6 +540,7 @@ const matchColorClass = computed(() => {
   }
 }
 .macine {
+  margin-top: 1em;
   border-radius: 6px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: solid 2px #d7d7d7;
@@ -529,6 +570,7 @@ const matchColorClass = computed(() => {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    margin-bottom: 0.45rem;
   }
 }
 .neay {
@@ -577,7 +619,7 @@ const matchColorClass = computed(() => {
     font-style: normal;
     line-height: 1.08;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #18191c;
     position: relative;
     margin-top: 1em;
@@ -738,10 +780,19 @@ const matchColorClass = computed(() => {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
-  padding: 1em 0;
-  button {
+  flex-direction: column;
+  padding: 1em;
+  background-color: #f9f8ff;
+  border-radius: 5px;
+  border: solid 1px #a5aab5;
+  background-color: #fff;
+  .h4 {
     font-family: "Open Sans", sans-serif;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -749,34 +800,180 @@ const matchColorClass = computed(() => {
     line-height: 2;
     letter-spacing: normal;
     text-align: left;
-    color: #005bbe;
-    height: 33px;
+    color: #747474;
+  }
+  .wrapperdoc {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    border: solid 1px #005bbe;
-    background-color: #f9f9f9;
-    margin-right: 1em;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1px;
+    a {
+      &:nth-of-type(3) {
+        button {
+          border: #d62828 1px solid !important;
+          color: #d62828 !important;
 
-    &:hover {
-      background: #005bbe;
-      border: #005bbe 1px solid;
-      color: white;
-    }
-    &:nth-of-type(3) {
-      border: #d62828 1px solid !important;
-      color: #d62828 !important;
+          &:hover {
+            background-color: #d62828 !important;
+            border: #d62828 1px solid !important;
+            color: white !important;
+          }
+        }
+      }
+      button {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #005bbe;
+        height: 33px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        border: solid 1px #005bbe;
+        background-color: #f9f9f9;
+        margin-right: 1em;
 
-      &:hover {
-        background-color: #d62828 !important;
-        border: #d62828 1px solid !important;
-        color: white !important;
+        &:hover {
+          background: #005bbe;
+          border: #005bbe 1px solid;
+          color: white;
+        }
       }
     }
+    .doc {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 1em;
+      .doc-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1em;
+        .doc-icon-img {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          gap: 1em;
+        }
+      }
+    }
+  }
+}
+.popup-content {
+  position: relative;
+  padding: 3em;
+}
+.todd {
+  background: rgb(152, 152, 152);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  filter: alpha(opacity=50); /* internet explorer */
+  -khtml-opacity: 0.5; /* khtml, old safari */
+  -moz-opacity: 0.5; /* mozilla, netscape */
+  opacity: 0.5; /* fx, safari, opera */
+  &:hover {
+    filter: alpha(opacity=100); /* internet explorer */
+    -khtml-opacity: 1; /* khtml, old safari */
+    -moz-opacity: 1; /* mozilla, netscape */
+    opacity: 1; /* fx, safari, opera */
+  }
+}
+.neay {
+  span {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+.interviewdecision {
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-bottom: 1em;
+    li {
+      cursor: pointer;
+    }
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 1em;
+      padding: 10px;
+      border-radius: 4px;
+      border: solid 1px #005bbe;
+      background-color: #f9f9f9;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #005bbe;
+      &:hover {
+        background: #005bbe;
+        border: #005bbe 1px solid;
+        color: white;
+      }
+    }
+  }
+}
+.tabs {
+  border-radius: 7.6px;
+  border: solid 1.1px #c6c6c6;
+  background-color: #fff;
+  li {
+    padding: 1em;
+    color: black;
+
+    &.active,
+    &:hover {
+      border-radius: 7.6px;
+      background-color: #dc9756;
+      color: black;
+    }
+  }
+}
+.peyton {
+  border-radius: 6.5px;
+  border: solid 1.1px #e6e6e6;
+  background-color: #fff;
+
+  padding: 1em;
+  h3 {
+    font-size: 15.2px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #18191c;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 </style>

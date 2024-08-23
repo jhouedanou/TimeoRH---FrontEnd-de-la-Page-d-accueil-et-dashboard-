@@ -11,7 +11,7 @@
     "departement": "Développement",
     "datePublication": "2023-05-15",
     "dateExpiration": "2024-09-02",
-    "statut": "Inactif",
+    "statut": "Actif",
     "geolocalisation": "Cocody",
     "societe": "TechInnovate CI",
     "motsCles": [
@@ -46,25 +46,61 @@
         "candidat_id": 1,
         "adequation": 87,
         "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation"
+        "necorrespondantpas": "Géolocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
       },
       {
         "candidat_id": 2,
         "adequation": 95,
         "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation"
+        "necorrespondantpas": "Géolocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
       },
       {
         "candidat_id": 3,
         "adequation": 72,
         "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation"
+        "necorrespondantpas": "Géolocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
       },
       {
         "candidat_id": 4,
         "adequation": 63,
         "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation"
+        "necorrespondantpas": "Géolocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
       }
     ],
     "evolutionCandidatures": 75,

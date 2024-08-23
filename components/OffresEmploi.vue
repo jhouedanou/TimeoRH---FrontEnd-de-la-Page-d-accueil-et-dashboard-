@@ -450,7 +450,6 @@ th {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    margin: 4px 0 4px 604px;
     padding: 11px 19px;
     border-radius: 32px;
     background-color: #012e61;
@@ -473,6 +472,7 @@ th {
   input {
     width: 100%;
     height: 50px;
+    min-width: 150px;
     border-radius: 10px;
     border: solid 1px #e7e6e6;
     background-color: #fafafa;

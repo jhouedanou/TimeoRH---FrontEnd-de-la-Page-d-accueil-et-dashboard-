@@ -1302,58 +1302,112 @@ $secondary: #012e61;
 .coleen {
     display: block;
     clear: both;
-    width:100%;
+    width: 100%;
 }
 
-.quan{
-          font-size: 10px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #008000;
-    
+.quan {
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #008000;
 }
 
-.buan{
-         font-size: 10px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #bc6969; 
-    }
+.buan {
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bc6969;
+}
 
 .trap {
     margin-top: 1em;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     margin-bottom: 1em;
-    img{
-        height:40px;
-        width:auto;
-        
+    img {
+        height: 40px;
+        width: auto;
     }
 }
 
 .kemiss {
     display: flex;
     flex-direction: column;
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 .morez {
     font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.ligne4cv {
+    background-color: #f9f8ff;
+    padding: 1em;
+    .lacie {
+        border-bottom: solid 1px #d7d7d7;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 5px;
+        height: 45px;
+        p {
+            font-family: "Open Sans", sans-serif !important;
+            font-size: 14px !important;
+            font-weight: normal !important;
+            font-stretch: normal !important;
+            font-style: normal !important;
+            line-height: 2 !important;
+            letter-spacing: normal !important;
+            text-align: right !important;
+            margin-right: 5px !important;
+            color: #18191c !important;
+            display: inline !important;
+        }
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.7);
+            display: flex;
+        }
+        ul {
+            text-align: right;
+            li {
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.82;
+                letter-spacing: normal;
+                text-align: right;
+                margin-right: 5px;
+                color: #18191c;
+                display: inline;
+            }
+        }
+    }
 }

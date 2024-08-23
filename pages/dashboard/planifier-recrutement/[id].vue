@@ -48,7 +48,7 @@ const candidaturesTries = computed(() => {
   return [...candidatures.value].sort((a, b) => b.adequation - a.adequation);
 });
 
-const nombreAffiche = ref(3);
+const nombreAffiche = ref(12);
 const candidaturesAffichees = computed(() => {
   return candidaturesTries.value.slice(0, nombreAffiche.value);
 });
