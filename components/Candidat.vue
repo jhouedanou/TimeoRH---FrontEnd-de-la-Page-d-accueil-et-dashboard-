@@ -234,10 +234,93 @@ utilise des styles Sass pour la mise en forme. */
 
             <div class="peyton" id="interview" v-if="activeTab === 'interview'">
               <h3>Interviews</h3>
+              <div class="interview-list">
+                <ul>
+                  <li
+                    class="major"
+                    v-for="(interview, index) in candidatInfo.interviews"
+                  >
+                    <p class="raison">{{ interview.raison }}</p>
+                    <p class="date">
+                      {{ interview.date }} - {{ interview.heure }}
+                    </p>
+                    <p class="date" v-if="interview.lien">
+                      meet link
+                      <a :href="interview.lien">{{ interview.lien }}</a>
+                    </p>
+                    <hr />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="add-interview-section">
+                <a @click="toggleAddInterviewForm" class="add-interview-link">
+                  {{
+                    showAddInterviewForm ? "Annuler" : "Ajouter une interview"
+                  }}
+                </a>
+
+                <div v-if="showAddInterviewForm" class="add-interview-form">
+                  <form @submit.prevent="submitInterview">
+                    <div class="field">
+                      <label class="label">Date</label>
+                      <div class="control">
+                        <input
+                          v-model="newInterview.date"
+                          type="date"
+                          class="input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Heure</label>
+                      <div class="control">
+                        <input
+                          v-model="newInterview.heure"
+                          type="time"
+                          class="input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Raison</label>
+                      <div class="control">
+                        <input
+                          v-model="newInterview.raison"
+                          type="text"
+                          class="input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Lien</label>
+                      <div class="control">
+                        <input
+                          v-model="newInterview.lien"
+                          type="url"
+                          class="input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <button type="submit" class="button is-primary">
+                          Ajouter l'interview
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
 
             <div class="peyton" id="decision" v-if="activeTab === 'decision'">
               <h3>Décision</h3>
+              {{ candidatInfo.decision }}
             </div>
           </div>
         </div>
@@ -274,7 +357,27 @@ import { computed, ref, watchEffect } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
 const showPopup = ref(false);
 const activeTab = ref("interview");
+const showAddInterviewForm = ref(false);
+const newInterview = ref({
+  date: "",
+  heure: "",
+  raison: "",
+  lien: "",
+});
+const toggleAddInterviewForm = () => {
+  showAddInterviewForm.value = !showAddInterviewForm.value;
+};
 
+const submitInterview = () => {
+  addInterview(newInterview.value);
+  newInterview.value = {
+    date: "",
+    heure: "",
+    raison: "",
+    lien: "",
+  };
+  showAddInterviewForm.value = false;
+};
 const props = defineProps({
   candidat: Object,
   adequation: {
@@ -294,6 +397,8 @@ const candidatInfo = computed(() => {
       return {
         correspondant: candidature.correspondant,
         necorrespondantpas: candidature.necorrespondantpas,
+        interviews: candidature.interviews || [],
+        decision: candidature.decision,
       };
     }
   }
@@ -516,7 +621,7 @@ const matchColorClass = computed(() => {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    font-size: 1px;
+    font-size: 13px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
