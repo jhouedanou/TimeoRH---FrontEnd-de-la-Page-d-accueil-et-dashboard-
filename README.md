@@ -32,13 +32,8 @@ L'application sera accessible à l'adresse http://localhost:3000.
 
 Les données (textes, liens, images) sont dans les fichiers .json, dans le dossier static/api
 
-## Gestion des données d'emplois
+## Gestion des données de l'application :
 
-Les données d'emplois sont maintenant gérées côté serveur pour une meilleure sécurité.
-
-### Pour les développeurs Laravel :
-
-1. Créez une API dans votre application Laravel qui interagit avec le fichier `server/data/*****.json`.
-2. Implémentez des routes pour la lecture et la mise à jour des données d'emplois.
-3. Utilisez des méthodes HTTP appropriées (GET pour la lecture, POST/PUT pour la mise à jour).
-4. Assurez-vous d'implémenter une authentification et une autorisation adéquates pour sécuriser l'accès à l'API.
+1. Créez une API dans votre application Laravel, en vous basant sur la structure des fichiers .json contenus dans le dossier /static/api/
+2. Mettre le lien de l'API dans le composable approprié ( @/composables)
+3. Au besoin, modifiez les méthodes HTTP appropriées (GET pour la lecture, POST/PUT pour la mise à jour).
