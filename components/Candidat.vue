@@ -1,3 +1,9 @@
+/** * Le composant Candidat affiche les informations détaillées d'un candidat, y
+compris son image, son nom, son titre, son expérience, ses coordonnées, ses
+points forts, ses compétences et une appréciation générale. Il affiche également
+un pourcentage d'adéquation du candidat par rapport au poste, ainsi qu'un bouton
+pour afficher un popup avec plus d'informations sur le candidat. * Le composant
+utilise des styles Sass pour la mise en forme. */
 <template>
   <div class="candidat">
     <div class="columns">
@@ -64,10 +70,8 @@
     <div v-if="showPopup" class="popup" @click="showPopup = false">
       <div class="popup-content">
         <div class="columns infordetaillecandidat">
-          <div
-            class="macine column is-5-desktop is-12-mobile is-flex is-flex-direction-row"
-          >
-            <div class="columns">
+          <div class="macine column is-5-desktop is-12-mobile is-flex">
+            <div class="ligne1cv columns is-12 coleen">
               <div
                 class="trunks is-flex is-flex-direction-row column is-9-desktop is-12-mobile"
               >
@@ -87,8 +91,52 @@
                 class="vegeta is-flex is-flex-direction-row column is-3-desktop is-12-mobile"
               >
                 <div :class="['match', matchColorClass]">
-                  <span class="brad"> {{ adequation }}</span>
-                  <p>adéquation par rapport au poste</p>
+                  <span class="brad"> {{ adequation }}%</span>
+                  <p>d'adéquation par rapport au poste</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ligne2cv is-12 coleen">
+              <p>Taux de remplissage du profil professionnel</p>
+              <div class="progress-bar-container">
+                <div
+                  class="progress-bar"
+                  :style="{
+                    width: candidat.taux_remplissage_profil + '%',
+                    transition: 'width 1s ease-out',
+                    transformOrigin: 'left',
+                  }"
+                ></div>
+                <span
+                  class="progress-text"
+                  :style="{
+                    position: 'absolute',
+                    left: candidat.taux_remplissage_profil + '%',
+                    top: 0,
+                    bottom: 0,
+                    transform: 'translateX(-50%)',
+                    transition: 'left 1s ease-out',
+                  }"
+                >
+                  {{ candidat.taux_remplissage_profil }}%
+                </span>
+              </div>
+            </div>
+
+            <div class="ligne3cv">
+              <div class="correspondant trap">
+                <img src="/images/checked-success-svgrepo-com.svg" alt="" />
+                <div class="kemiss ccp">
+                  <span>Correspondant au poste</span>
+                  {{ candidatInfo.correspondant }}
+                </div>
+              </div>
+              <div class="necorrespondantpas trap">
+                <img src="/images/checked-success-alt-svgrepo-com.svg" alt="" />
+                <div class="kemiss ncp">
+                  <span>Ne correspondant au poste</span>
+                  {{ candidatInfo.necorrespondantpas }}
                 </div>
               </div>
             </div>
@@ -130,17 +178,32 @@ definePageMeta({
   middleware: "auth",
   layout: "dashboard",
 });
-import { computed, ref } from "vue";
-const showPopup = ref(false);
-
+import { computed, ref, watchEffect } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
-import { useCandidatsJson } from "@/composables/useCandidats";
+const showPopup = ref(false);
 const props = defineProps({
   candidat: Object,
   adequation: {
     type: Number,
     required: true,
   },
+  emploiId: Number,
+});
+const { data: emplois } = useEmploisJson();
+const candidatInfo = computed(() => {
+  const emploi = emplois.value.find((e) => e.id === props.emploiId);
+  if (emploi) {
+    const candidature = emploi.candidatures.find(
+      (c) => c.candidat_id === props.candidat.candidat_id
+    );
+    if (candidature) {
+      return {
+        correspondant: candidature.correspondant,
+        necorrespondantpas: candidature.necorrespondantpas,
+      };
+    }
+  }
+  return null;
 });
 const closePopup = () => {
   showPopup.value = false;
@@ -388,6 +451,7 @@ const matchColorClass = computed(() => {
   border: solid 2px #d7d7d7;
   background-color: #fff;
   padding: 1em;
+  flex-direction: column;
   h2 {
     font-size: 20px;
     font-weight: bold;
@@ -432,16 +496,26 @@ const matchColorClass = computed(() => {
 }
 .brad {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.92;
   letter-spacing: -0.48px;
-  text-align: left;
+  text-align: center;
   color: #012e61;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .vegeta {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   p {
     font-size: 13px;
     font-weight: 500;
@@ -533,6 +607,76 @@ const matchColorClass = computed(() => {
         bottom: 0;
         left: 0;
       }
+    }
+  }
+}
+.progress-bar-container {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #d7d7d7;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+  }
+}
+.progress-bar {
+  z-index: 1;
+  height: 100%;
+  background-color: #dc9756;
+  border-radius: 10px;
+  height: 10px;
+  transition: width 1s ease-in-out;
+}
+.progress-text {
+  z-index: 2;
+  width: 33px;
+  height: 29px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-weight: bold;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.55;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.coleen {
+  &:nth-of-type(2) {
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.7);
     }
   }
 }

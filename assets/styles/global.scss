@@ -1298,3 +1298,52 @@ $secondary: #012e61;
     &:focus {
     }
 }
+
+.coleen {
+    display: block;
+    clear: both;
+    width:100%;
+}
+
+.ccp {
+    span{
+          font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: #008000;
+    }
+}
+
+.ncp {
+    span{
+         font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bc6969; 
+    }
+}
+
+.trap {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    img{
+        height:40px;
+        width:auto;
+        
+    }
+}
+
+.kemiss {
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+}

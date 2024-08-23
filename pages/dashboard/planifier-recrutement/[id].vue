@@ -6,6 +6,7 @@
         <Candidat
           :candidat="candidature.candidat"
           :adequation="candidature.adequation"
+          :emploiId="emploiId"
         />
       </div>
       <button class="ericDraven" v-if="afficherPlus" @click="chargerPlus">

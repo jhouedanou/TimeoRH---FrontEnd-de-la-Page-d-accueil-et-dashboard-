@@ -6,12 +6,7 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "competencesRequises": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB"
-    ],
+    "competencesRequises": ["JavaScript", "React", "Node.js", "MongoDB"],
     "experienceRequise": "Senior",
     "departement": "Développement",
     "datePublication": "2023-05-15",
@@ -49,19 +44,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 87
+        "adequation": 87,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 95
+        "adequation": 95,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 72
+        "adequation": 72,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 63
+        "adequation": 63,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 75,
@@ -83,12 +86,7 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "competencesRequises": [
-      "Figma",
-      "Adobe XD",
-      "Sketch",
-      "Prototypage"
-    ],
+    "competencesRequises": ["Figma", "Adobe XD", "Sketch", "Prototypage"],
     "experienceRequise": "Junior",
     "departement": "Design",
     "datePublication": "2023-05-16",
@@ -122,19 +120,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 92
+        "adequation": 92,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 78
+        "adequation": 78,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 85
+        "adequation": 85,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 69
+        "adequation": 69,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 32,
@@ -156,12 +162,7 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "competencesRequises": [
-      "Docker",
-      "Kubernetes",
-      "AWS",
-      "CI/CD"
-    ],
+    "competencesRequises": ["Docker", "Kubernetes", "AWS", "CI/CD"],
     "experienceRequise": "Senior",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
@@ -195,19 +196,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 88
+        "adequation": 88,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 76
+        "adequation": 76,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 94
+        "adequation": 94,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 81
+        "adequation": 81,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 95,
@@ -229,12 +238,7 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "competencesRequises": [
-      "Python",
-      "R",
-      "Machine Learning",
-      "SQL"
-    ],
+    "competencesRequises": ["Python", "R", "Machine Learning", "SQL"],
     "experienceRequise": "Junior",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
@@ -268,19 +272,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 79
+        "adequation": 79,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 91
+        "adequation": 91,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 86
+        "adequation": 86,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 73
+        "adequation": 73,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": -5,
@@ -302,12 +314,7 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "competencesRequises": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Vue.js"
-    ],
+    "competencesRequises": ["HTML", "CSS", "JavaScript", "Vue.js"],
     "experienceRequise": "Junior",
     "departement": "Développement",
     "datePublication": "2023-05-19",
@@ -341,19 +348,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 83
+        "adequation": 83,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 97
+        "adequation": 97,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 75
+        "adequation": 75,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 89
+        "adequation": 89,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 62,
@@ -361,11 +376,7 @@
     "typeDeSociete": "Agence web",
     "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
-    "competencesDeBase": [
-      "HTML5",
-      "CSS3",
-      "JavaScript ES6+"
-    ],
+    "competencesDeBase": ["HTML5", "CSS3", "JavaScript ES6+"],
     "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
   },
   {
@@ -414,19 +425,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 85
+        "adequation": 85,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 90
+        "adequation": 90,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 78
+        "adequation": 78,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 82
+        "adequation": 82,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 40,
@@ -487,19 +506,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 80
+        "adequation": 80,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 85
+        "adequation": 85,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 75
+        "adequation": 75,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 70
+        "adequation": 70,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 55,
@@ -560,19 +587,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 88
+        "adequation": 88,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 84
+        "adequation": 84,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 79
+        "adequation": 79,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 72
+        "adequation": 72,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 60,
@@ -633,19 +668,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 78
+        "adequation": 48,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 82
+        "adequation": 82,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 74
+        "adequation": 74,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 80
+        "adequation": 80,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 25,
@@ -706,19 +749,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 90
+        "adequation": 90,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 88
+        "adequation": 88,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 60
+        "adequation": 60,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 46
+        "adequation": 46,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 35,
@@ -779,19 +830,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 90
+        "adequation": 90,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 85
+        "adequation": 85,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 80
+        "adequation": 80,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 88
+        "adequation": 88,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 50,
@@ -848,11 +907,15 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 78
+        "adequation": 78,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 82
+        "adequation": 82,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 20,
@@ -909,19 +972,27 @@
     "candidatures": [
       {
         "candidat_id": 1,
-        "adequation": 88
+        "adequation": 88,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 2,
-        "adequation": 85
+        "adequation": 85,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 3,
-        "adequation": 82
+        "adequation": 82,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       },
       {
         "candidat_id": 4,
-        "adequation": 90
+        "adequation": 90,
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 45,

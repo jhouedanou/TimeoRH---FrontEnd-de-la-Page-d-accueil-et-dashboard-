@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "candidature_id": 1,
     "emploi_id": 1,
     "candidat_ids": [3, 7],
     "recruteur_id": 2
