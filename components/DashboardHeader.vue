@@ -22,10 +22,35 @@
                   v-model="searchQuery"
                   type="text"
                   placeholder="Recherche d'un profil ou de compétences...."
+                  @keyup.enter="redirectToSearch"
+                  @focus="showSuggestions = true"
+                  @blur="hideSuggestionsDelayed"
                 />
-                <button class="search-button">
+                <button class="search-button" @click="redirectToSearch">
                   <span class="material-icons">search</span>
                 </button>
+                <div v-if="showSuggestions" class="suggestions">
+                  <h4>Recherches récentes</h4>
+                  <ul>
+                    <li
+                      v-for="(search, index) in recentSearches"
+                      :key="index"
+                      @click="selectSearch(search)"
+                    >
+                      {{ search }}
+                    </li>
+                  </ul>
+                  <h4>Compétences</h4>
+                  <ul>
+                    <li
+                      v-for="(competence, index) in uniqueCompetences"
+                      :key="index"
+                      @click="selectSearch(competence)"
+                    >
+                      {{ competence }}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -96,13 +121,20 @@
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
+import Cookies from "js-cookie";
+
 import { useGlobalData } from "@/composables/useGlobalData";
 import { useRecruteursJson } from "@/composables/useRecruteurs";
+const router = useRouter();
+const showSuggestions = ref(false);
+const recentSearches = ref([]);
+const isNotificationDropdownActive = ref(false);
 const { data: globalData } = useGlobalData();
 const { data: recruteurs } = useRecruteursJson();
-const router = useRouter();
-const isNotificationDropdownActive = ref(false);
-
+const uniqueCompetences = computed(() => {
+  if (!candidats.value) return [];
+  return [...new Set(candidats.value.flatMap((c) => c.competences))];
+});
 //const hasNotifications = computed(() => notifications.value.length > 0);
 const hasNotifications = ref(false);
 const notifications = computed(() => {
@@ -128,6 +160,35 @@ const closePopup = () => {
 
 const searchQuery = ref("");
 
+function redirectToSearch() {
+  if (searchQuery.value.trim()) {
+    addRecentSearch(searchQuery.value);
+    router.push({
+      path: "/dashboard/recherche",
+      query: { q: searchQuery.value },
+    });
+  }
+}
+
+function addRecentSearch(search) {
+  recentSearches.value.unshift(search);
+  if (recentSearches.value.length > 5) {
+    recentSearches.value.pop();
+  }
+  Cookies.set("recentSearches", JSON.stringify(recentSearches.value), {
+    expires: 365,
+  });
+}
+function selectSearch(search) {
+  searchQuery.value = search;
+  redirectToSearch();
+}
+
+function hideSuggestionsDelayed() {
+  setTimeout(() => {
+    showSuggestions.value = false;
+  }, 200);
+}
 function toggleNotificationDropdown() {
   isNotificationDropdownActive.value = !isNotificationDropdownActive.value;
 }
@@ -144,15 +205,15 @@ const deleteNotification = (notificationId) => {
   updateNotificationStatus();
 };
 
-function redirectToSearch() {
-  router.push({ name: "search", query: { q: searchQuery.value } });
-}
-
 onMounted(() => {
   const dropdownContent = document.querySelector(".dropdown-content");
   hasNotifications.value = dropdownContent.children.length > 0;
   console.log(hasNotifications.value);
   updateNotificationStatus();
+  const savedSearches = Cookies.get("recentSearches");
+  if (savedSearches) {
+    recentSearches.value = JSON.parse(savedSearches);
+  }
 });
 </script>
 
