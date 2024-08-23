@@ -128,15 +128,74 @@ utilise des styles Sass pour la mise en forme. */
               <div class="correspondant trap">
                 <img src="/images/checked-success-svgrepo-com.svg" alt="" />
                 <div class="kemiss ccp">
-                  <span>Correspondant au poste</span>
-                  {{ candidatInfo.correspondant }}
+                  <span class="quan">Correspondant au poste</span>
+                  <span class="morez">{{ candidatInfo.correspondant }}</span>
                 </div>
               </div>
               <div class="necorrespondantpas trap">
                 <img src="/images/checked-success-alt-svgrepo-com.svg" alt="" />
                 <div class="kemiss ncp">
-                  <span>Ne correspondant au poste</span>
-                  {{ candidatInfo.necorrespondantpas }}
+                  <span class="buan">Ne correspondant au poste</span>
+                  <span class="morez">{{
+                    candidatInfo.necorrespondantpas
+                  }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ligne4cv">
+              <div class="lacie">
+                <h3>Compétences</h3>
+                <ul>
+                  <li
+                    v-for="(competence, index) in candidat.competences"
+                    :key="index"
+                  >
+                    {{ competence
+                    }}{{ index !== candidat.competences.length - 1 ? "," : "" }}
+                  </li>
+                </ul>
+              </div>
+              <div class="lacie">
+                <h3>Diplôme</h3>
+                <ul>
+                  <li
+                    v-for="(diplome, index) in candidat.education"
+                    :key="index"
+                  >
+                    {{ diplome
+                    }}{{ index !== candidat.education.length - 1 ? "," : "" }}
+                  </li>
+                </ul>
+              </div>
+              <div class="lacie">
+                <h3>Expérience professionnelle</h3>
+                <p>{{ candidat.experience }} ans</p>
+              </div>
+              <div class="documentsducandidat">
+                <div class="h4">Documents</div>
+                <div class="wrapperdoc">
+                  <a
+                    :href="candidat.cv"
+                    target="_blank"
+                    class="document-button"
+                  >
+                    <button>CV</button>
+                  </a>
+                  <a
+                    :href="candidat.lettre_motivation"
+                    target="_blank"
+                    class="document-button"
+                  >
+                    <button>Lettre de motivation</button>
+                  </a>
+                  <a
+                    :href="candidat.portfolio"
+                    target="_blank"
+                    class="document-button"
+                  >
+                    <button>Portfolio</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -159,12 +218,7 @@ utilise des styles Sass pour la mise en forme. */
             {{ point }}
           </li>
         </ul>
-        <h3>Compétences</h3>
-        <ul>
-          <li v-for="(competence, index) in candidat.competences" :key="index">
-            {{ competence }}
-          </li>
-        </ul>
+
         <h3>Appréciation</h3>
         <p>{{ candidat.appreciation }}</p>
         <button @click="showPopup = false">Fermer</button>
@@ -677,6 +731,51 @@ const matchColorClass = computed(() => {
       letter-spacing: normal;
       text-align: left;
       color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+.documentsducandidat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 1em 0;
+  button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #005bbe;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px #005bbe;
+    background-color: #f9f9f9;
+    margin-right: 1em;
+
+    &:hover {
+      background: #005bbe;
+      border: #005bbe 1px solid;
+      color: white;
+    }
+    &:nth-of-type(3) {
+      border: #d62828 1px solid !important;
+      color: #d62828 !important;
+
+      &:hover {
+        background-color: #d62828 !important;
+        border: #d62828 1px solid !important;
+        color: white !important;
+      }
     }
   }
 }

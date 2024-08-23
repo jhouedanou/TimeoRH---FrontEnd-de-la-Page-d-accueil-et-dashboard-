@@ -1305,36 +1305,35 @@ $secondary: #012e61;
     width:100%;
 }
 
-.ccp {
-    span{
+.quan{
           font-size: 10px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.8;
+  line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
   color: #008000;
-    }
+    
 }
 
-.ncp {
-    span{
+.buan{
          font-size: 10px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.8;
+  line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
   color: #bc6969; 
     }
-}
 
 .trap {
+    margin-top: 1em;
     display:flex;
     flex-direction: row;
     align-items:center;
+    margin-bottom: 1em;
     img{
         height:40px;
         width:auto;
@@ -1346,4 +1345,15 @@ $secondary: #012e61;
     display: flex;
     flex-direction: column;
     padding-left:10px;
+}
+
+.morez {
+    font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
 }
