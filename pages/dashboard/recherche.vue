@@ -329,16 +329,19 @@ definePageMeta({
   layout: "dashboard",
 });
 
-import { ref, computed } from "vue";
-import { useRoute } from "vue-router";
+import { ref, computed, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import { useCandidatsJson } from "@/composables/useCandidats";
+
 const route = useRoute();
+const router = useRouter();
 const searchQuery = ref("");
 const { data } = useCandidatsJson();
 const sortKey = ref("titre");
 const sortOrder = ref("asc");
 const showPopup = ref(false);
 const selectedCandidat = ref(null);
+const competenceFilter = ref("");
 
 //filtres par barre latérale
 const filters = ref({
@@ -441,8 +444,16 @@ const filteredCandidats = computed(() => {
       Object.values(candidat).some((value) =>
         String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
       );
+    const matchesCompetence =
+      !competenceFilter.value ||
+      candidat.competences.includes(competenceFilter.value);
 
+    const matchesSearch = Object.values(candidat).some((value) =>
+      String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
+    );
     return (
+      matchesSearch &&
+      matchesCompetence &&
       educationMatch &&
       geoMatch &&
       expMatch &&
@@ -487,6 +498,7 @@ const prevPage = () => {
 //reinitailiser filters
 const isAnyFilterActive = computed(() => {
   return (
+    Object.keys(route.query).length > 0 ||
     Object.values(dropdownFilters.value).some((value) => value !== "") ||
     Object.values(filters.value).some((filter) => filter.selected.length > 0) ||
     searchQuery.value !== ""
@@ -494,6 +506,8 @@ const isAnyFilterActive = computed(() => {
 });
 
 const resetFilters = () => {
+  router.push({ path: route.path });
+
   Object.keys(dropdownFilters.value).forEach((key) => {
     dropdownFilters.value[key] = "";
   });
@@ -508,10 +522,12 @@ const nextPage = () => {
   }
 };
 watch(
-  () => route.query.q,
+  () => route.query,
   (newQuery) => {
-    searchQuery.value = newQuery || "";
-  }
+    searchQuery.value = newQuery.q || "";
+    competenceFilter.value = newQuery.competence || "";
+  },
+  { immediate: true }
 );
 
 onMounted(() => {

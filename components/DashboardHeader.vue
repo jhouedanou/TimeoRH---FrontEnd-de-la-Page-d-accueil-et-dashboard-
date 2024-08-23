@@ -14,6 +14,7 @@
             />
           </NuxtLink>
         </div>
+
         <div class="column is-9-desktop is-9-tablet is-12-mobile">
           <div class="field">
             <div class="control">
@@ -35,7 +36,7 @@
                     <li
                       v-for="(search, index) in recentSearches"
                       :key="index"
-                      @click="selectSearch(search)"
+                      @mousedown="selectSearch(search)"
                     >
                       {{ search }}
                     </li>
@@ -45,7 +46,7 @@
                     <li
                       v-for="(competence, index) in uniqueCompetences"
                       :key="index"
-                      @click="selectSearch(competence)"
+                      @mousedown="selectCompetence(competence)"
                     >
                       {{ competence }}
                     </li>
@@ -125,12 +126,16 @@ import Cookies from "js-cookie";
 
 import { useGlobalData } from "@/composables/useGlobalData";
 import { useRecruteursJson } from "@/composables/useRecruteurs";
+import { useCandidatsJson } from "@/composables/useCandidats";
+
 const router = useRouter();
 const showSuggestions = ref(false);
 const recentSearches = ref([]);
 const isNotificationDropdownActive = ref(false);
 const { data: globalData } = useGlobalData();
 const { data: recruteurs } = useRecruteursJson();
+const { data: candidats } = useCandidatsJson();
+
 const uniqueCompetences = computed(() => {
   if (!candidats.value) return [];
   return [...new Set(candidats.value.flatMap((c) => c.competences))];
@@ -179,11 +184,17 @@ function addRecentSearch(search) {
     expires: 365,
   });
 }
+
 function selectSearch(search) {
   searchQuery.value = search;
   redirectToSearch();
 }
-
+function selectCompetence(competence) {
+  router.push({
+    path: "/dashboard/recherche",
+    query: { competence: competence },
+  });
+}
 function hideSuggestionsDelayed() {
   setTimeout(() => {
     showSuggestions.value = false;
@@ -218,6 +229,45 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions h4 {
+  padding: 10px;
+  margin: 0;
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #f0f0f0;
+}
+
+.input-wrapper {
+  position: relative;
+}
 .dropdown-trigger {
   button {
     background: white;
