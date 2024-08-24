@@ -204,6 +204,8 @@ $secondary: #012e61;
 
 .herowrapper {
     min-height: 90vh;
+
+    background: url(/images/3.webp) center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1368,7 +1370,7 @@ $secondary: #012e61;
         align-items: center;
         align-content: center;
         padding: 5px;
-        height: 45px;
+        min-height: 45px;
         p {
             font-family: "Open Sans", sans-serif !important;
             font-size: 14px !important;

@@ -43,49 +43,53 @@
         >
           Réinitialiser les filtres
         </button>
-
-        <table class="table is-fullwidth is-striped" v-if="data">
-          <thead>
-            <tr>
-              <th @click="sortBy('nom')">Nom et Prénom</th>
-              <th @click="sortBy('titre')">Titre</th>
-              <th @click="sortBy('education')">Niveau d'éducation</th>
-              <th @click="sortBy('experience')">Expérience</th>
-              <th @click="sortBy('geolocalisation')">Géolocalisation</th>
-              <th @click="sortBy('situationProfessionnelle')">
-                Situation Professionnelle
-              </th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="candidat in paginatedCandidats" :key="candidat.id">
-              <td>{{ `${candidat.nom} ${candidat.prenom}` }}</td>
-              <td>{{ candidat.titre }}</td>
-              <td>{{ candidat.education.join(", ") }}</td>
-              <td>{{ candidat.experience }} ans</td>
-              <td>{{ candidat.geolocalisation }}</td>
-              <td>{{ candidat.situationProfessionnelle }}</td>
-              <td>
-                <button @click="openPopup(candidat)" class="button is-primary">
-                  Voir le profil
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="pagination">
-          <button @click="prevPage" :disabled="currentPage === 1">
-            Précédent
-          </button>
-          <span>Page {{ currentPage }} sur {{ totalPages }}</span>
-          <button @click="nextPage" :disabled="currentPage === totalPages">
-            Suivant
-          </button>
-        </div>
-        <div class="total-elements">
-          Affichage de {{ startIndex + 1 }}-{{ endIndex }} sur
-          {{ totalElements }} éléments
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped" v-if="data">
+            <thead>
+              <tr>
+                <th @click="sortBy('nom')">Nom et Prénom</th>
+                <th @click="sortBy('titre')">Titre</th>
+                <th @click="sortBy('education')">Niveau d'éducation</th>
+                <th @click="sortBy('experience')">Expérience</th>
+                <th @click="sortBy('geolocalisation')">Géolocalisation</th>
+                <th @click="sortBy('situationProfessionnelle')">
+                  Situation Professionnelle
+                </th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="candidat in paginatedCandidats" :key="candidat.id">
+                <td>{{ `${candidat.nom} ${candidat.prenom}` }}</td>
+                <td>{{ candidat.titre }}</td>
+                <td>{{ candidat.education.join(", ") }}</td>
+                <td>{{ candidat.experience }} ans</td>
+                <td>{{ candidat.geolocalisation }}</td>
+                <td>{{ candidat.situationProfessionnelle }}</td>
+                <td>
+                  <button
+                    @click="openPopup(candidat)"
+                    class="button is-primary"
+                  >
+                    Voir le profil
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <button @click="prevPage" :disabled="currentPage === 1">
+              Précédent
+            </button>
+            <span>Page {{ currentPage }} sur {{ totalPages }}</span>
+            <button @click="nextPage" :disabled="currentPage === totalPages">
+              Suivant
+            </button>
+          </div>
+          <div class="total-elements">
+            Affichage de {{ startIndex + 1 }}-{{ endIndex }} sur
+            {{ totalElements }} éléments
+          </div>
         </div>
       </div>
       <div class="searchFilters column is-3-desktop is-12-mobile">
@@ -598,7 +602,7 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .raptor {
   width: 100%;
   margin: 1em 0;
@@ -1509,24 +1513,53 @@ onMounted(() => {
 .arrow-down {
   transform: rotate(0deg);
 }
-th {
-  font-size: 11px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.11px;
-  text-align: left;
-  color: #292d32;
+.table {
+  th {
+    font-size: 11px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    text-align: left;
+    color: #292d32;
+  }
+  td {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #292d32;
+    button {
+      width: 107.8px;
+      height: 37px;
+      flex-grow: 0;
+      padding: 9.5px 8.9px 9.5px 10px;
+      border-radius: 19px;
+      border: solid 1px #012e61;
+      background: rgba(255, 255, 255, 0);
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #012e61;
+      &:hover {
+        background: #012e61;
+        color: white;
+      }
+    }
+  }
 }
-td {
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.14px;
-  text-align: left;
-  color: #292d32;
+.table-container {
+  padding: 1em;
+  border-radius: 6px;
+  border: solid 2px #eceef6;
+  background-color: #fff;
 }
 </style>

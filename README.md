@@ -57,3 +57,47 @@ Exemple de modification du fichier `candidats.json` :
   ...
 ]
 ```
+
+## Association des candidatures à l'emploi
+
+Pour associer les candidatures à un emploi spécifique, suivez ces étapes :
+
+1. Ouvrez le fichier `static/api/emplois.json`.
+
+2. Localisez l'objet emploi auquel vous souhaitez associer des candidatures.
+
+3. Dans cet objet, trouvez ou ajoutez la propriété "candidatures". C'est un tableau qui contiendra les informations sur chaque candidature.
+
+4. Pour chaque candidature, ajoutez un objet avec les propriétés suivantes :
+
+   - `candidat_id`: l'identifiant unique du candidat
+   - `adequation`: le pourcentage d'adéquation du candidat au poste
+   - `correspondant`: les aspects du profil qui correspondent au poste
+   - `necorrespondantpas`: les aspects du profil qui ne correspondent pas au poste
+   - `decision`: la décision prise concernant cette candidature
+   - `interviews`: un tableau d'objets représentant les entretiens planifiés
+
+5. Sauvegardez le fichier après vos modifications.
+
+Exemple d'une candidature associée à un emploi :
+
+```json
+"candidatures": [
+  {
+    "candidat_id": 1,
+    "adequation": 87,
+    "correspondant": "Diplômes, Expérience",
+    "necorrespondantpas": "Géolocalisation",
+    "decision": "En cours d'évaluation",
+    "interviews": [
+      {
+        "id": 1,
+        "date": "2023-05-15",
+        "heure": "14:00",
+        "raison": "Entretien technique",
+        "lien": "https://www.zoom.com/meeting123"
+      }
+    ]
+  }
+]
+```
