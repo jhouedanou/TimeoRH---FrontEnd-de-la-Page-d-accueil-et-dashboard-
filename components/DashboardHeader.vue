@@ -235,30 +235,67 @@ onMounted(() => {
   left: 0;
   right: 0;
   background: white;
-  border: 1px solid #ccc;
   border-top: none;
   max-height: 300px;
   overflow-y: auto;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 20px 32px 0 rgba(96, 97, 112, 0.24),
+    0 2px 8px 0 rgba(40, 41, 61, 0.08);
+  background-color: #fff;
 }
 
 .suggestions h4 {
-  padding: 10px;
-  margin: 0;
+  font-size: 16px;
   font-weight: bold;
-  background: #f0f0f0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1c1c1e;
+}
+.header-content {
+  .input-wrapper {
+    position: relative;
+    text-align: center;
+    input {
+      position: a;
+      z-index: 1000;
+    }
+  }
 }
 
 .suggestions ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  flex-direction: column;
 }
 
 .suggestions li {
   padding: 10px;
+  width: 100%;
   cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1c1c1e;
 }
 
 .suggestions li:hover {

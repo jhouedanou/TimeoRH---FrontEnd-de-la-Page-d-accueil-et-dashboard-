@@ -1,54 +1,55 @@
 <template>
   <div>
+    <div class="poste">
+      <div class="bull">{{ searchTerms.join(", ") }}</div>
+      <div class="shi">Profils correspondants : {{ totalElements }}</div>
+    </div>
+    <div class="wholefilters">
+      <select v-model="dropdownFilters.education">
+        <option value="">Tous les niveaux d'éducation</option>
+        <option v-for="edu in uniqueEducations" :key="edu" :value="edu">
+          {{ edu }}
+        </option>
+      </select>
+      <select v-model="dropdownFilters.geolocalisation">
+        <option value="">Toutes les localisations</option>
+        <option v-for="geo in uniqueGeolocalisations" :key="geo" :value="geo">
+          {{ geo }}
+        </option>
+      </select>
+      <select v-model="dropdownFilters.experience">
+        <option value="">Toutes les expériences</option>
+        <option v-for="exp in uniqueExperiences" :key="exp" :value="exp">
+          {{ exp }} ans
+        </option>
+      </select>
+      <select v-model="dropdownFilters.situationProfessionnelle">
+        <option value="">Toutes les situations professionnelles</option>
+        <option
+          v-for="sit in uniqueSituationsProfessionnelles"
+          :key="sit"
+          :value="sit"
+        >
+          {{ sit }}
+        </option>
+      </select>
+    </div>
     <div id="dave" class="columns">
-      <div class="column is-8 desktop is-12-mobile">
+      <div class="column is-9-desktop is-12-mobile">
         <button
           @click="resetFilters"
           :disabled="!isAnyFilterActive"
-          class="button is-info"
+          class="button is-info raptor"
         >
           Réinitialiser les filtres
         </button>
 
-        <div class="wholefilters">
-          <select v-model="dropdownFilters.education">
-            <option value="">Tous les niveaux d'éducation</option>
-            <option v-for="edu in uniqueEducations" :key="edu" :value="edu">
-              {{ edu }}
-            </option>
-          </select>
-          <select v-model="dropdownFilters.geolocalisation">
-            <option value="">Toutes les localisations</option>
-            <option
-              v-for="geo in uniqueGeolocalisations"
-              :key="geo"
-              :value="geo"
-            >
-              {{ geo }}
-            </option>
-          </select>
-          <select v-model="dropdownFilters.experience">
-            <option value="">Toutes les expériences</option>
-            <option v-for="exp in uniqueExperiences" :key="exp" :value="exp">
-              {{ exp }} ans
-            </option>
-          </select>
-          <select v-model="dropdownFilters.situationProfessionnelle">
-            <option value="">Toutes les situations professionnelles</option>
-            <option
-              v-for="sit in uniqueSituationsProfessionnelles"
-              :key="sit"
-              :value="sit"
-            >
-              {{ sit }}
-            </option>
-          </select>
-        </div>
-        <table class="table is-fullwidth" v-if="data">
+        <table class="table is-fullwidth is-striped" v-if="data">
           <thead>
             <tr>
-              <th @click="sortBy('titre')">Titre</th>
               <th @click="sortBy('nom')">Nom et Prénom</th>
+              <th @click="sortBy('titre')">Titre</th>
+              <th @click="sortBy('education')">Niveau d'éducation</th>
               <th @click="sortBy('experience')">Expérience</th>
               <th @click="sortBy('geolocalisation')">Géolocalisation</th>
               <th @click="sortBy('situationProfessionnelle')">
@@ -59,9 +60,10 @@
           </thead>
           <tbody>
             <tr v-for="candidat in paginatedCandidats" :key="candidat.id">
-              <td>{{ candidat.titre }}</td>
               <td>{{ `${candidat.nom} ${candidat.prenom}` }}</td>
-              <td>{{ candidat.experience }}</td>
+              <td>{{ candidat.titre }}</td>
+              <td>{{ candidat.education.join(", ") }}</td>
+              <td>{{ candidat.experience }} ans</td>
               <td>{{ candidat.geolocalisation }}</td>
               <td>{{ candidat.situationProfessionnelle }}</td>
               <td>
@@ -86,11 +88,20 @@
           {{ totalElements }} éléments
         </div>
       </div>
-      <div class="searchFilters column is-4-desktop">
+      <div class="searchFilters column is-3-desktop is-12-mobile">
         <div class="filter-section">
           <h3 @click="toggleFilter('education')" class="filter-title">
             Éducation
+            <span
+              class="arrow"
+              :class="{
+                'arrow-up': !filters.education.isOpen,
+                'arrow-down': filters.education.isOpen,
+              }"
+              >▼</span
+            >
           </h3>
+
           <div v-if="filters.education.isOpen" class="filter-content">
             <div v-for="edu in uniqueEducations" :key="edu">
               <label>
@@ -108,6 +119,14 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('geolocalisation')" class="filter-title">
             Géolocalisation
+            <span
+              class="arrow"
+              :class="{
+                'arrow-up': !filters.geolocalisation.isOpen,
+                'arrow-down': filters.geolocalisation.isOpen,
+              }"
+              >▼</span
+            >
           </h3>
           <div v-if="filters.geolocalisation.isOpen" class="filter-content">
             <div v-for="geo in uniqueGeolocalisations" :key="geo">
@@ -126,6 +145,14 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('experience')" class="filter-title">
             Expérience
+            <span
+              class="arrow"
+              :class="{
+                'arrow-up': !filters.experience.isOpen,
+                'arrow-down': filters.experience.isOpen,
+              }"
+              >▼</span
+            >
           </h3>
           <div v-if="filters.experience.isOpen" class="filter-content">
             <div v-for="exp in uniqueExperiences" :key="exp">
@@ -144,6 +171,14 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('competences')" class="filter-title">
             Compétences
+            <span
+              class="arrow"
+              :class="{
+                'arrow-up': !filters.competences.isOpen,
+                'arrow-down': filters.competences.isOpen,
+              }"
+              >▼</span
+            >
           </h3>
           <div v-if="filters.competences.isOpen" class="filter-content">
             <div v-for="comp in uniqueCompetences" :key="comp" class="chip">
@@ -342,10 +377,38 @@ const sortOrder = ref("asc");
 const showPopup = ref(false);
 const selectedCandidat = ref(null);
 const competenceFilter = ref("");
+const isCollapsed = ref(true);
 
-//filtres par barre latérale
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
+};
+
+const searchTerms = computed(() => {
+  const terms = [];
+
+  // Termes de l'URL
+  if (route.query.q) terms.push(route.query.q);
+  if (route.query.competence) terms.push(route.query.competence);
+
+  // Filtres de la barre latérale
+  Object.entries(filters.value).forEach(([key, filter]) => {
+    if (filter.selected && filter.selected.length > 0) {
+      terms.push(...filter.selected);
+    }
+  });
+
+  // Filtres déroulants
+  Object.entries(dropdownFilters.value).forEach(([key, value]) => {
+    if (value) {
+      terms.push(value);
+    }
+  });
+
+  return [...new Set(terms)]; // Éliminer les doublons
+});
+
 const filters = ref({
-  education: { isOpen: false, selected: [] },
+  education: { isOpen: true, selected: [] },
   geolocalisation: { isOpen: false, selected: [] },
   experience: { isOpen: false, selected: [] },
   competences: { isOpen: false, selected: [] },
@@ -536,6 +599,18 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.raptor {
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:disabled {
+    display: none;
+  }
+}
+
 .wholefilters {
   display: flex;
   justify-content: space-between;
@@ -1245,5 +1320,213 @@ onMounted(() => {
     border: solid 1px #a4a4a4;
     background-color: #fff;
   }
+}
+.filter-content input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 30px;
+  min-height: 30px;
+  border: 2px solid #e7e6e6;
+  border-radius: 3px;
+  background-color: #fdfeff;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 8px;
+  display: block;
+}
+
+.filter-content input[type="checkbox"]:checked {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.filter-content input[type="checkbox"]:checked::after {
+  content: "\2714";
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-content label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.filter-content {
+  padding: 1em;
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5e6368;
+  }
+}
+.searchFilters {
+  border-radius: 10px;
+  border: solid 1px #e7e6e6;
+  background-color: #fff;
+  padding: 0em;
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #5e6368;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid #e7e6e6;
+    padding: 1em;
+  }
+}
+.filter-section {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin: 0;
+  padding: 0; /* Espace pour la barre de défilement */
+}
+
+/* Style de la barre de défilement pour macOS */
+.filter-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-section::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.filter-section::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;
+}
+
+.filter-section::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+.wholefilters {
+  select {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit; /* Pour conserver la police du parent */
+    padding: 8px 12px; /* Pour un meilleur espacement */
+    border-radius: 4px; /* Pour des coins arrondis */
+    border: 1px solid #ccc; /* Une bordure légère */
+    background-color: #fff; /* Fond blanc */
+    color: #333; /* Couleur de texte foncée */
+    appearance: none; /* Supprime l'apparence par défaut sur certains navigateurs */
+    -webkit-appearance: none; /* Pour Safari */
+    -moz-appearance: none; /* Pour Firefox */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    &::placeholder {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.28px;
+      color: rgba(28, 28, 30, 0.72);
+    }
+    option {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.28px;
+      color: rgba(28, 28, 30, 0.72);
+    }
+  }
+}
+.filter-section {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.filter-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-section::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.filter-section::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;
+}
+
+.filter-section::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+}
+th {
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.11px;
+  text-align: left;
+  color: #292d32;
+}
+td {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #292d32;
 }
 </style>
