@@ -44,7 +44,10 @@
           Réinitialiser les filtres
         </button>
         <div class="table-container">
-          <table class="table is-fullwidth is-striped" v-if="data">
+          <table
+            class="table is-fullwidth is-striped is-responsive"
+            v-if="data"
+          >
             <thead>
               <tr>
                 <th @click="sortBy('nom')">Nom et Prénom</th>
@@ -1561,5 +1564,10 @@ onMounted(() => {
   border-radius: 6px;
   border: solid 2px #eceef6;
   background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto !important;
+  }
 }
 </style>

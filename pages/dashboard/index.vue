@@ -37,7 +37,7 @@
     <div class="column is-4" style="min-height: 400px">
       <div class="carte-stat">
         <h3>Candidatures intéressantes</h3>
-        <table>
+        <table class="table is-responsive">
           <thead>
             <tr>
               <th>Nom</th>

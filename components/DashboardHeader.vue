@@ -383,4 +383,29 @@ onMounted(() => {
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  .logo-wrapp {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .dashboard-sidebar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: top 0.3s ease;
+    z-index: 999;
+
+    &.is-active {
+      top: 0;
+    }
+  }
+}
 </style>

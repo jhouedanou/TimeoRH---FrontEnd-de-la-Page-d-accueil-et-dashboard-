@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="table-container">
-      <table class="table is-fullwidth is-striped is-hoverable">
+      <table class="table is-fullwidth is-striped is-hoverable is-responsive">
         <thead>
           <tr>
             <th @click="changeSort('titre')">
@@ -492,5 +492,10 @@ th {
   letter-spacing: 0.4px;
   text-align: left;
   color: #dc9756;
+}
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto !important;
+  }
 }
 </style>

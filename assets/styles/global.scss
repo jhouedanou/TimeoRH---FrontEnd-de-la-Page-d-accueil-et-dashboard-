@@ -2,6 +2,11 @@
 body {
     background-color: #f2f2f2;
 }
+@media screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: auto !important;
+    }
+}
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -1513,4 +1518,31 @@ $secondary: #012e61;
     text-align: center;
     color: #012e61;
     background: white;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+    .logo-wrapp {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .header-content {
+        .is-1-desktop {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+            height: 0px;
+            margin: 0;
+            padding: 0;
+            .dropdown {
+                position: fixed;
+                top: 7px;
+                right: 13%;
+            }
+        }
+    }
 }
