@@ -179,7 +179,7 @@
           </button>
         </div>
 
-        <div class="column is-9-desktop">
+        <div id="pensakola" class="column is-9-desktop">
           <div class="nombre-posts">
             Postes correspondants : {{ emploisFiltres.total }}
           </div>
@@ -357,6 +357,13 @@ const prevPage = () => {
 const appliquerFiltres = () => {
   currentPage.value = 1;
   console.log("Filtres appliqués:", filtres.value);
+  //smooth scroll dans la div des emplois filtrés
+  nextTick(() => {
+    const pensakola = document.getElementById("pensakola");
+    if (pensakola) {
+      pensakola.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
 };
 
 const reinitialiserFiltres = () => {

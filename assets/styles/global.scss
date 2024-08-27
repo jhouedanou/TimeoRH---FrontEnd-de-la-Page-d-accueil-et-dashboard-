@@ -1561,6 +1561,10 @@ $secondary: #012e61;
                     align-items: center;
                     justify-content: center;
                     flex-direction: row !important;
+                    a {
+                        max-width: 172px !important;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -1613,6 +1617,17 @@ $secondary: #012e61;
     }
     .Rectangle-2 {
         max-width: 80vw !important;
+        input {
+            font-size: 12px !important;
+            &::placeholder {
+                font-size: 12px !important;
+            }
+        }
+
+        a {
+            width: 25px !important;
+            height: 25px !important;
+        }
     }
     .candidat {
         padding: 1rem;
@@ -1629,6 +1644,13 @@ $secondary: #012e61;
 
     .twoz {
         padding: 1rem 0;
+    }
+    #pensakola {
+        .btn {
+            background: $primary;
+            color: black;
+            padding: 1em;
+        }
     }
 }
 @media (max-width: 1024px) {
