@@ -8,6 +8,11 @@ const backgroundStyle = computed(() => ({
 const performSearch = () => {
   console.log("Recherche pour:", searchQuery.value);
 };
+const handleEnterKey = () => {
+  if (searchQuery.value.trim()) {
+    navigateTo({ path: "/offres", query: { titre: searchQuery.value } });
+  }
+};
 </script>
 
 <template>
@@ -21,6 +26,7 @@ const performSearch = () => {
           :placeholder="data.searchbox"
           class="input is-medium"
           v-model="searchQuery"
+          @keyup.enter="handleEnterKey"
         />
         <NuxtLink
           class="button is-primary is-medium"
