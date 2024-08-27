@@ -342,25 +342,6 @@ utilise des styles Sass pour la mise en forme. */
             </div>
           </div>
         </div>
-        <!-- pour reference 
-        <h2>Informations détaillées du candidat</h2>
-        <p><strong>Nom:</strong></p>
-        <p><strong>Titre:</strong></p>
-        <p><strong>Expérience:</strong> {{ candidat.experience }} ans</p>
-        <p><strong>Email:</strong> {{ candidat.email }}</p>
-        <p><strong>Téléphone:</strong></p>
-        <p>
-          <strong>Date d'inscription:</strong> {{ candidat.dateInscription }}
-        </p>
-        <p><strong>Géolocalisation:</strong> {{ candidat.geolocalisation }}</p>
-        <h3>Points forts</h3>
-        <ul>
-          <li v-for="(point, index) in candidat.points_forts" :key="index">
-            {{ point }}
-          </li>
-        </ul>
-        <h3>Appréciation</h3>
-        <p>{{ candidat.appreciation }}</p> -->
       </div>
     </div>
   </teleport>

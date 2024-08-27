@@ -65,6 +65,11 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+@media screen and (max-width: 768px) {
+  #HeaderFront {
+    margin-top: 0px !important;
+  }
+}
 .logo {
   width: 209px;
   height: 57px;
