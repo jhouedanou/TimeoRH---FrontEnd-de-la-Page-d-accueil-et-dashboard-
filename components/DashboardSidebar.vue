@@ -313,8 +313,9 @@ const logout = () => {
     left: 0;
     width: 100%;
     height: 100vh;
-    transition: top 0.3s ease;
+    transition: left 0.3s ease;
     z-index: 999;
+    padding: 4em 1em 1em 1em !important;
 
     &.is-active {
       top: 0;

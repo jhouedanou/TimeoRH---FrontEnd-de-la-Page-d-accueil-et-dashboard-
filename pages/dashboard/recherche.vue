@@ -240,13 +240,20 @@
                         <span class="material-icons">location_on</span>
                         {{ selectedCandidat.geolocalisation }}
                       </p>
+
                       <p class="telephone">
+                        <a :href="'tel:' + selectedCandidat.telephone"></a>
                         <span class="material-icons">phone</span
                         >{{ selectedCandidat.telephone }}
                       </p>
                       <p class="email">
-                        <span class="material-icons">email</span
-                        >{{ selectedCandidat.email }}
+                        <a
+                          :href="'mailto:' + selectedCandidat.email"
+                          target="_blank"
+                        >
+                          <span class="material-icons">email</span>
+                          {{ selectedCandidat.email }}
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -1568,6 +1575,17 @@ onMounted(() => {
 @media screen and (max-width: 768px) {
   .table-container {
     overflow-x: auto !important;
+  }
+  .wrapperdoc {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    a {
+      display: block !important;
+      width: 100% !important;
+      margin-bottom: 1em !important;
+    }
   }
 }
 </style>

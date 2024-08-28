@@ -469,6 +469,13 @@ h2 {
 }
 
 @media (max-width: 1023px) {
+  .main-content {
+    background: white;
+
+    .column {
+      margin-bottom: 4em !important;
+    }
+  }
   #oneside,
   #twoside {
     flex: 0 0 100%;

@@ -127,4 +127,10 @@ a {
     }
   }
 }
+a {
+  img {
+    max-width: 72px !important;
+    height: auto !important;
+  }
+}
 </style>

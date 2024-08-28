@@ -548,4 +548,18 @@ $white: #ffffff;
     }
   }
 }
+@media (max-width: 1024px) {
+  .login-form {
+    align-items: center;
+    justify-content: center;
+  }
+  .Rectangle-152 {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>

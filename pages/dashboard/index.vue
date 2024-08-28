@@ -1,34 +1,34 @@
 <template>
   <div class="columns is-flex is-flex-wrap-wrap">
-    <div class="column is-3">
+    <div class="column is-3 is-6-mobile">
       <div class="carte-stat candidatures">
         <h3>Candidatures</h3>
         <p>{{ totalCandidatures }}</p>
         <span>{{ moyenneEvolutionCandidatures }}</span>
       </div>
     </div>
-    <div class="column is-3">
+    <div class="column is-3 is-6-mobile">
       <div class="carte-stat vuedesoffres">
         <h3>Total des vues</h3>
         <p>{{ totalVues }}</p>
         <span>{{ moyenneVuesOffres }}</span>
       </div>
     </div>
-    <div class="column is-3">
+    <div class="column is-3 is-6-mobile">
       <div class="carte-stat">
         <h3>Postes pourvus</h3>
         <p>{{ statsPostes.pourvus.nombre }}</p>
         <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
       </div>
     </div>
-    <div class="column is-3">
+    <div class="column is-3 is-6-mobile">
       <div class="carte-stat">
         <h3>Postes non pourvus</h3>
         <p>{{ statsPostes.nonPourvus.nombre }}</p>
         <span>{{ statsPostes.nonPourvus.pourcentage }}</span>
       </div>
     </div>
-    <div class="column is-12">
+    <div class="column is-12 is-12-mobile">
       <div class="carte-stat grph">
         <h3>Vues vs Candidatures</h3>
         <graphique-home-page></graphique-home-page>

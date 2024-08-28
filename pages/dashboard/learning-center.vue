@@ -254,4 +254,12 @@ const closeVideo = () => {
   background-color: #012e61;
   margin: 1em;
 }
+@media screen and (max-width: 768px) {
+  .filters {
+    overflow-x: scroll;
+  }
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 </style>

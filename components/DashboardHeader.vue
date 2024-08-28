@@ -262,7 +262,6 @@ onMounted(() => {
     position: relative;
     text-align: center;
     input {
-      position: a;
       z-index: 1000;
     }
   }
@@ -383,7 +382,18 @@ onMounted(() => {
     opacity: 1;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .is-9-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0;
+    input {
+      margin: 0 auto;
+      max-width: 90vw !important;
+    }
+  }
   .logo-wrapp {
     display: flex !important;
     align-items: center !important;

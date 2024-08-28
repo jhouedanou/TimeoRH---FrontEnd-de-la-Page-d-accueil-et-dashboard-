@@ -1,6 +1,7 @@
 export default {
   
   target: 'static',
+  compabilityDate: '2024-08-28',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -58,7 +59,6 @@ export default {
     transpile: ['js-cookie','md5']
 
   },
-  compabilityDate: '2024-07-03',
   typescript: {
     strict: false
   },

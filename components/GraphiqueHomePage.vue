@@ -42,7 +42,7 @@ const chartOptions = computed(() => ({
   colors: ["#012e61", "#dc9756"],
   plotOptions: {
     bar: {
-      columnWidth: "72px",
+      columnWidth: "80%",
       borderRadius: 10,
     },
   },

@@ -94,12 +94,15 @@ utilise des styles Sass pour la mise en forme. */
                     {{ candidat.geolocalisation }}
                   </p>
                   <p class="telephone">
+                    <a :href="'tel:' + candidat.telephone"></a>
                     <span class="material-icons">phone</span
                     >{{ candidat.telephone }}
                   </p>
                   <p class="email">
-                    <span class="material-icons">email</span
-                    >{{ candidat.email }}
+                    <a :href="'mailto:' + candidat.email" target="_blank">
+                      <span class="material-icons">email</span>
+                      {{ candidat.email }}
+                    </a>
                   </p>
                 </div>
               </div>

@@ -423,13 +423,22 @@ th {
 }
 
 @media screen and (max-width: 768px) {
+  .offres-emploi {
+    margin: 0em !important;
+  }
   .table {
     font-size: 0.9em;
   }
 
   .table td,
   .table th {
+    vertical-align: middle;
     padding: 0.5em 0.75em;
+    button,
+    a {
+      margin-bottom: 1em !important;
+      width: 100% !important;
+    }
   }
 }
 .table.is-hoverable tbody tr:not(.is-selected):hover,
