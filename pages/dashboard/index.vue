@@ -34,7 +34,7 @@
         <graphique-home-page></graphique-home-page>
       </div>
     </div>
-    <div class="column is-4" style="min-height: 400px">
+    <div class="column is-4 is-12-mobile" style="min-height: 400px">
       <div class="carte-stat">
         <h3>Candidatures intéressantes</h3>
         <table class="table is-responsive">
@@ -60,7 +60,7 @@
         </table>
       </div>
     </div>
-    <div class="column is-4" style="min-height: 400px">
+    <div class="column is-4 is-12-mobile" style="min-height: 400px">
       <div class="carte-stat crack">
         <h3>Offres d’emploi les plus consultées</h3>
         <ul>
@@ -73,7 +73,7 @@
         </ul>
       </div>
     </div>
-    <div class="column is-4" style="min-height: 400px">
+    <div class="column is-4 is-12-mobile" style="min-height: 400px">
       <div class="carte-stat tauxApprentissage">
         <h3>Taux d'apprentissage</h3>
         <tauxApprentissage :recruteurId="recruteurId" />
