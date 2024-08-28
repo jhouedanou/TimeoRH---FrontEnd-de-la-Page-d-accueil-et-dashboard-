@@ -1573,8 +1573,10 @@ onMounted(() => {
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  .select {
-    width: 50% !important;
+  .wholefilters {
+    .select {
+      width: 50% !important;
+    }
   }
   .table-container {
     overflow-x: auto !important;
