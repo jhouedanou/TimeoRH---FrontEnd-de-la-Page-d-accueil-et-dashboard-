@@ -388,7 +388,8 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 1em 0;
+    margin: 0em !important;
+    padding: 0em !important;
     input {
       margin: 0 auto;
       max-width: 90vw !important;

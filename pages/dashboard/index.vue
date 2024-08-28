@@ -222,28 +222,33 @@ const topViewedJobs = computed(() => {
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  table {
+    background: white !important;
+  }
   th {
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    text-align: left;
-    color: #949494;
-    padding: 0.5em;
+    font-family: "Inter", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    text-align: left !important;
+    color: #949494 !important;
+    border: none !important;
+    padding: 0.5em !important;
   }
   td {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    padding: 0.5em;
+    font-family: "Inter", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: left !important;
+    color: #000 !important;
+    padding: 0.5em !important;
+    border: none !important;
   }
   h3 {
     font-family: "Inter", sans-serif;
