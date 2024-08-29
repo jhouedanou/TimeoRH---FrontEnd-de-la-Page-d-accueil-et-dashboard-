@@ -126,11 +126,12 @@ a {
       width: 100%;
     }
   }
-}
-a {
-  img {
-    max-width: 72px !important;
-    height: auto !important;
+  a {
+    img {
+      max-width: 72px !important;
+      height: auto !important;
+    }
   }
 }
+
 </style>
