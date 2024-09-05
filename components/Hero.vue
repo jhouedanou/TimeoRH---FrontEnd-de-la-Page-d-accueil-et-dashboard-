@@ -20,6 +20,7 @@ const handleEnterKey = () => {
     <div id="hero" class="container">
       <h1 class="inter mt-6 mb-6" v-html="data.titre"></h1>
       <h4 class="inter mb-6" v-html="data.soustitre"></h4>
+   
       <div class="search-container Rectangle-2">
         <input
           type="text"
@@ -35,8 +36,26 @@ const handleEnterKey = () => {
           <img src="/images/searchBtn.svg" alt="Search bouton" />
         </NuxtLink>
       </div>
+      <ul class="row">
+        <li class="col-md-4 col-lg-12"v-for="(section, index) in data.sousSections" :key="index">
+          {{ section }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+.sous-sections {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+</style>

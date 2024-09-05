@@ -1,0 +1,98 @@
+TimeoRH - FrontEnd de la Page d'accueil et dashboard:
+
+Page d'accueil:
+  ☐ Modifier la phrase d'accroche en : "Votre carrière professionnelle débute ici et maintenant"
+  ☐ Supprimer les éléments explicatifs en dessous de la phrase d'accroche
+  ☐ Ajouter sous l'accroche recruteur : "Grâce à TimeoRH, optimisez votre processus de recrutement"
+    ☐ Ajouter les sous-sections : Recrutement simplifié, Mise en relation professionnelle, Promotion de votre marque employeur
+  ☐ Appliquer un dégradé comme sur la version responsive
+  ☐ Ne conserver que le taux d'apprentissage
+  ☐ Ajouter une bande à droite pour afficher les types de profils
+  ☐ Ajouter l'effet "ciel" demandé dans l'interface
+
+Footer:
+  ☐ Modifier le footer pour afficher "fait en Afrique" -
+
+Recherche d'emploi:
+  ☐ Organiser les filtres de recherche à gauche, dans l'ordre suivant:
+    ☐ Intitulé du poste
+    ☐ Diplômes/niveau d'études
+    ☐ Expérience professionnelle requise
+    ☐ Type de contrat
+    ☐ Compétences techniques requises
+    ☐ Secteur d'activité
+    ☐ Localisation
+
+Interface recruteur:
+  ☐ Mettre à jour les rubriques de l'interface:
+    ☐ Accueil
+    ☐ Recherche
+    ☐ Offres d'emploi et candidatures
+    ☐ Centre de formation
+  ☐ Ajouter une phrase explicative sous "Recherche" : "Sélectionnez et contactez partout dans le monde les profils professionnels dont votre entreprise a besoin"
+  ☐ Positionner les filtres à droite et les aligner sur les rubriques du CV TimeoRH:
+    ☐ Intitulé du poste
+    ☐ Diplôme et niveau d'étude
+    ☐ Nombre d'années d'expérience professionnelle globale
+    ☐ Nombre d'années d'expérience spécifique dans un domaine précis
+    ☐ Nombre d'années d'expérience à un poste de manager
+    ☐ Mission principale
+    ☐ Activités liées au poste
+    ☐ Autres compétences/savoir-faire
+    ☐ Langues : mode d'expression et niveau
+
+Offres d'emploi et candidatures:
+  ☐ Structurer les rubriques du tableau de bord (de gauche à droite):
+    ☐ Intitulé du poste
+    ☐ Nombre de postes à pourvoir
+    ☐ Date de publication
+    ☐ Date d'expiration
+    ☐ Candidatures reçues
+    ☐ Candidatures sélectionnées
+    ☐ Planification des entretiens
+    ☐ Candidats retenus
+  ☐ Modifier les boutons:
+    ☐ Remplacer "Ajouter une offre" par "Publier une offre"
+    ☐ Remplacer "Ajouter une nouvelle offre" par "Rédiger et publier une nouvelle offre d'emploi"
+  ☐ Ajouter une étape 1/3 pour les informations relatives à l'entreprise:
+    ☐ Nom de l'entreprise
+    ☐ Email de réception des candidatures
+    ☐ Secteur d'activité de l'entreprise
+    ☐ Lieu d'exercice de l'activité
+  ☐ Ajouter une étape 2/3 pour la description du poste:
+    ☐ Remplacer la section "Description" par une nouvelle formulation plus claire
+  ☐ Afficher le nombre de personnes ayant postulé dans une colonne
+  ☐ Permettre de cliquer sur le chiffre pour afficher la page de recherche correspondante
+  ☐ Renommer "Offres d'emploi" en "Gestion des offres d'emploi et des candidatures"
+
+Tableau de bord recruteur (Accueil):
+  ☐ Afficher des visuels indiquant:
+    ☐ Nombre de profils enregistrés par catégories (excellence, premium, privilège, élite)
+    ☐ Nombre de recherches ponctuelles de profil effectuées par l'entreprise
+    ☐ Nombre de mises en relation effectuées par TimeoRH
+    ☐ Nombre d'offres d'emploi publiées
+    ☐ Nombre total de candidatures reçues
+    ☐ Nombre total de candidats retenus
+    ☐ Nombre de postes pourvus
+    ☐ Nombre de postes non pourvus
+    ☐ Nombre d'annonces publicitaires diffusées
+    ☐ Nombre de vidéos de formation visualisées
+
+Planifier le recrutement:
+  ☐ Créer un panier des candidats retenus
+  ☐ Permettre la sélection de ces personnes dans la section "planifier"
+  ☐ Créer une short list de 10 candidats avec un bouton "ajouter à la short list"
+  ☐ Ajouter un champ "short list" dans le JSON des candidatures
+  ☐ Ajouter une colonne avec les candidats retenus une fois la short list établie
+  ☐ Créer un tableau avec les entretiens
+  ☐ Permettre la sélection d'une date d'entretien dans le tableau
+
+Graphique de la page d'accueil:
+  ☐ Ajouter deux barres : Postes pourvus et Postes non pourvus
+  ☐ Permettre le filtrage en fonction des offres sur le graphique
+
+Accès et paiement:
+  ☐ Rendre seule la page d'accueil gratuite
+  ☐ Ajouter un niveau d'accès dans le JSON (premium)
+  ☐ Implémenter un paywall sur les fonctionnalités payantes
+  ☐ Exclure l'utilisateur Diallo Mamadou du paywall

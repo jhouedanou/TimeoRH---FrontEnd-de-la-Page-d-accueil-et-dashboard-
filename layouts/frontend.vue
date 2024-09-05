@@ -14,7 +14,7 @@
         <div
           class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
         >
-          <p>Fait avec ❤️ en Côte d'Ivoire</p>
+          <p>Fait avec ❤️ en Afrique</p>
         </div>
       </div>
     </footer>
