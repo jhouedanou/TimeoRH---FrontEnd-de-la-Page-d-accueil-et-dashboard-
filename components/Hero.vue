@@ -13,6 +13,9 @@ const handleEnterKey = () => {
     navigateTo({ path: "/offres", query: { titre: searchQuery.value } });
   }
 };
+//icones pour les sous secrtions 
+const icons = ["people_outline", "handshake", "trending_up"];
+
 </script>
 
 <template>
@@ -36,26 +39,72 @@ const handleEnterKey = () => {
           <img src="/images/searchBtn.svg" alt="Search bouton" />
         </NuxtLink>
       </div>
-      <ul class="row">
-        <li class="col-md-4 col-lg-12"v-for="(section, index) in data.sousSections" :key="index">
-          {{ section }}
-        </li>
+      <ul class="columns sous-sections">
+        <li class="is-4-desktop is-12-mobile" v-for="(section, index) in data.sousSections" :key="index">
+    <span class="material-icons">{{ icons[index] }}</span>
+    <p>{{ section }}</p>
+    
+  </li>
       </ul>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-
+#hero{
+  position: relative;
+  .columns{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+}
 .sous-sections {
   list-style-type: none;
   padding: 0;
   margin-bottom: 20px;
-  
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto -5em auto;
   li {
     margin-bottom: 10px;
     font-size: 18px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;  
+    p{
+font-family: "Inter", sans-serif;
+font-size: 18px;
+font-weight: 800;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.56;
+letter-spacing: normal;
+text-align: center;
+color: #000;
+margin: 1em 0;
+text-align: center;
+  }
+    .material-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 140px;
+      height: 140px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      color: #022C5E;
+      margin-right: 10px;
+      font-size: 4em;
+      border: 4px solid transparent;
+      box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    
+    }
   }
 }
+
 </style>

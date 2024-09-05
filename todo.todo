@@ -1,10 +1,11 @@
 TimeoRH - FrontEnd de la Page d'accueil et dashboard:
 
 Page d'accueil:
-  ☐ Modifier la phrase d'accroche en : "Votre carrière professionnelle débute ici et maintenant"
-  ☐ Supprimer les éléments explicatifs en dessous de la phrase d'accroche
-  ☐ Ajouter sous l'accroche recruteur : "Grâce à TimeoRH, optimisez votre processus de recrutement"
+  ✔ Modifier la phrase d'accroche en : "Votre carrière professionnelle débute ici et maintenant" @done(24-09-05 15:43)
+  ✔ Supprimer les éléments explicatifs en dessous de la phrase d'accroche @done(24-09-05 15:43)
+  ☐ Ajouter sous l'accroche recruteur : "Grâce à TimeoRHoptimisez votre processus de recrutement"
     ☐ Ajouter les sous-sections : Recrutement simplifié, Mise en relation professionnelle, Promotion de votre marque employeur
+    ☐ Mettre en forme la section  sous sections
   ☐ Appliquer un dégradé comme sur la version responsive
   ☐ Ne conserver que le taux d'apprentissage
   ☐ Ajouter une bande à droite pour afficher les types de profils
