@@ -55,9 +55,11 @@ const icons = ["people_outline", "handshake", "trending_up"];
   position: relative;
   .columns{
     position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
+    left: 0;
+    right: 0;
+    bottom: -145px;
+    z-index: 10000;
+    justify-content: space-evenly;
   }
 }
 .sous-sections {
@@ -89,6 +91,7 @@ text-align: center;
 color: #000;
 margin: 1em 0;
 text-align: center;
+max-width:200px;
   }
     .material-icons {
       display: flex;

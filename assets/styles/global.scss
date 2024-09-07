@@ -230,7 +230,7 @@ $secondary: #012e61;
 }
 .herowrapper {
     min-height: 90vh;
-
+    padding:0 0 10em 0;
     background: url(/images/3.webp) center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1721,4 +1721,25 @@ $secondary: #012e61;
             }
         }
     }
+}
+.jobscarousel {
+    position: relative;
+    background-color: #f2f2f2;
+    padding:7em 0 0 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -93px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #f2f2f2;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        z-index: 1;
+        -webkit-border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        -moz-border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        -ms-border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        -o-border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    
+}  
 }
