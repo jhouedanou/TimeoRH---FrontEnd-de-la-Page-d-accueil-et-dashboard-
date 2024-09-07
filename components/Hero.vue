@@ -68,6 +68,7 @@ const icons = ["people_outline", "handshake", "trending_up"];
   left:0;
   right:0;
   margin:0 auto -5em auto;
+  display: flex;align-items:center;justify-content: center;flex-direction: row;
   li {
     margin-bottom: 10px;
     font-size: 18px;
@@ -75,6 +76,7 @@ const icons = ["people_outline", "handshake", "trending_up"];
     display: flex;
     align-items: center;
     flex-wrap: wrap;  
+    flex-direction: column;
     p{
 font-family: "Inter", sans-serif;
 font-size: 18px;

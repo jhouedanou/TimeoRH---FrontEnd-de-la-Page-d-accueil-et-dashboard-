@@ -70,17 +70,27 @@ onMounted(() => {
     margin-top: 0px !important;
   }
 }
+
 .logo {
   width: 209px;
   height: 57px;
   flex-grow: 0;
   object-fit: contain;
 }
-#HeaderFront {
+header{
+
   position: absolute;
+  width: 100vw !important;
+  max-width:100vw !important;
+  margin:0 auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255,0.67) 0%, rgba(255, 255, 255, 0) 100%) !important;
+  min-height: 83px;
+  overflow:hidden;
+}
+#HeaderFront {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 62px;
+  margin-top: 0px;
   min-height: 83px;
   display: flex;
   z-index: 100;
@@ -91,7 +101,7 @@ onMounted(() => {
   justify-content: flex-start;
   align-items: center;
   padding: 13px 16px;
-  background-color: #fff;
+
 }
 .login {
   width: 130px;
@@ -114,6 +124,12 @@ onMounted(() => {
 a {
   img {
     height: 52px;
+  }
+}
+.sous-sections{
+  &:hover {
+    background: #012e61;
+    color: white;
   }
 }
 @media (max-width: 1024px) {

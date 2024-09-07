@@ -428,9 +428,6 @@ const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <style lang="scss">
-#HeaderFront {
-  margin-top: 62px !important;
-}
 .offres-emploi {
   padding: 20px;
 }
