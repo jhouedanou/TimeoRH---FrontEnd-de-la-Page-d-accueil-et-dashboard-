@@ -195,10 +195,8 @@
               :class="{ 'arrow-up': !filters.anneesExperience.isOpen, 'arrow-down': filters.anneesExperience.isOpen }">▼</span>
           </h3>
           <div v-if="filters.anneesExperience.isOpen" class="filter-content">
-            <input v-model="filters.anneesExperience.min" type="range" min="0" max="100" step="1">
-            <span>Min: {{ filters.anneesExperience.min }}</span>
-            <input v-model="filters.anneesExperience.max" type="range" min="0" max="100" step="1">
-            <span>Max: {{ filters.anneesExperience.max }}</span>
+            <input v-model="filters.anneesExperience.max" type="range" min="0" max="50" step="1">
+            <span>Max: {{ filters.anneesExperience.max }} ans</span>
           </div>
         </div>
 
@@ -210,12 +208,11 @@
               :class="{ 'arrow-up': !filters.anneesExperienceManager.isOpen, 'arrow-down': filters.anneesExperienceManager.isOpen }">▼</span>
           </h3>
           <div v-if="filters.anneesExperienceManager.isOpen" class="filter-content">
-            <input v-model="filters.anneesExperienceManager.min" type="range" min="0" max="100" step="1">
-            <span>Min: {{ filters.anneesExperienceManager.min }}</span>
-            <input v-model="filters.anneesExperienceManager.max" type="range" min="0" max="100" step="1">
-            <span>Max: {{ filters.anneesExperienceManager.max }}</span>
+            <input v-model="filters.anneesExperienceManager.max" type="range" min="0" max="50" step="1">
+            <span>Max: {{ filters.anneesExperienceManager.max }} ans</span>
           </div>
         </div>
+
 
         <!-- Mission principale -->
         <div class="filter-section">
@@ -616,12 +613,11 @@ const filteredCandidats = computed(() => {
       candidat.education.some(e => filters.value.education.selected.includes(e.diplome));
 
     const totalExperience = candidat.experienceSpecifique.reduce((sum, exp) => sum + exp.duree, 0);
-    const matchAnneesExperience = (!filters.value.anneesExperience.min || totalExperience >= filters.value.anneesExperience.min) &&
-      (!filters.value.anneesExperience.max || totalExperience <= filters.value.anneesExperience.max);
-
+    const matchAnneesExperience = !filters.value.anneesExperience.max || totalExperience <= filters.value.anneesExperience.max;
     const totalManagerExperience = candidat.experienceSpecifique.filter(exp => exp.manager).reduce((sum, exp) => sum + exp.duree, 0);
-    const matchAnneesExperienceManager = (!filters.value.anneesExperienceManager.min || totalManagerExperience >= filters.value.anneesExperienceManager.min) &&
-      (!filters.value.anneesExperienceManager.max || totalManagerExperience <= filters.value.anneesExperienceManager.max);
+    const matchAnneesExperienceManager = !filters.value.anneesExperienceManager.max || totalManagerExperience <= filters.value.anneesExperienceManager.max;
+
+
 
     const matchMissionPrincipale = filters.value.missionPrincipale.selected.length === 0 ||
       filters.value.missionPrincipale.selected.includes(candidat.mission_principale);
