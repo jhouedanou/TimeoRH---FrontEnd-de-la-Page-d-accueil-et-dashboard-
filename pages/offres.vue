@@ -87,97 +87,96 @@
       </form>
 
       <div class="columns">
+   
         <div class="filtrewrapper column is-3-desktop">
-          <h3 class="apro">Filtres</h3>
-          <div class="accordion">
-            <div class="accordion-item">
-              <button class="accordion-header" @click="toggleAccordion($event)">
-                Type de contrat
-                <span class="arrow-icon">&#9662;</span>
-              </button>
-              <div class="accordion-content">
-                <div
-                  v-for="type in typesWithCount"
-                  :key="type.value"
-                  class="form-check"
-                >
-                  <input
-                    type="checkbox"
-                    :id="type.value"
-                    v-model="filtres.typeCheckbox"
-                    :value="type.value"
-                  />
-                  <label :for="type.value"
-                    >{{ type.value }} ({{ type.count }})</label
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header" @click="toggleAccordion($event)">
-                Niveau d'expérience
-                <span class="arrow-icon">&#9662;</span>
-              </button>
-              <div class="accordion-content">
-                <div
-                  v-for="exp in experiencesWithCount"
-                  :key="exp.value"
-                  class="form-check"
-                >
-                  <input
-                    type="checkbox"
-                    :id="exp.value"
-                    v-model="filtres.experiencerequisecheckbox"
-                    :value="exp.value"
-                  />
-                  <label :for="exp.value"
-                    >{{ exp.value }} ({{ exp.count }})</label
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header" @click="toggleAccordion($event)">
-                Compétences
-                <span class="arrow-icon">&#9662;</span>
-              </button>
-              <div class="accordion-content">
-                <p class="mango">
-                  Veuillez saisir une ou plusieurs compétences
-                </p>
-                <div class="keywords-input">
-                  <div
-                    v-for="(keyword, index) in filtres.motsCles"
-                    :key="index"
-                    class="keyword-chip"
-                  >
-                    {{ keyword }}
-                    <button
-                      @click="removeKeyword(index)"
-                      class="remove-keyword"
-                    >
-                      ×
-                    </button>
-                  </div>
-                  <input
-                    type="text"
-                    v-model="newKeyword"
-                    @keyup.enter="addKeyword"
-                    @input="handleInput"
-                    placeholder="Entrez des mots-clés"
-                    class="form-control"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            @click="reinitialiserFiltres"
-            class="btn paulgeorge btn-secondary mt-3"
-          >
-            Réinitialiser tous les filtres
-          </button>
+    <h3 class="apro">Filtres</h3>
+    <div class="accordion">
+      <!-- Intitulé du poste -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Intitulé du poste
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <input v-model="filtres.titre" placeholder="Intitulé du poste" />
         </div>
+      </div>
+
+      <!-- Diplômes/niveau d'études -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Diplômes/niveau d'études
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <!-- Ajoutez ici les options pour les diplômes/niveau d'études -->
+        </div>
+      </div>
+
+      <!-- Expérience professionnelle requise -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Expérience professionnelle requise
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div v-for="exp in experiencesWithCount" :key="exp.value" class="form-check">
+            <input type="checkbox" :id="exp.value" v-model="filtres.experiencerequisecheckbox" :value="exp.value" />
+            <label :for="exp.value">{{ exp.value }} ({{ exp.count }})</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Type de contrat -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Type de contrat
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div v-for="type in typesWithCount" :key="type.value" class="form-check">
+            <input type="checkbox" :id="type.value" v-model="filtres.typeCheckbox" :value="type.value" />
+            <label :for="type.value">{{ type.value }} ({{ type.count }})</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compétences techniques requises -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Compétences techniques requises
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <p class="mango">Veuillez saisir une ou plusieurs compétences</p>
+          <div class="keywords-input">
+            <!-- ... code existant pour les mots-clés ... -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Secteur d'activité -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Secteur d'activité
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <!-- Ajoutez ici les options pour le secteur d'activité -->
+        </div>
+      </div>
+
+      <!-- Localisation -->
+      <div class="accordion-item">
+        <button class="accordion-header" @click="toggleAccordion($event)">
+          Localisation
+          <span class="arrow-icon">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <input v-model="filtres.geolocalisation" placeholder="Localisation" />
+        </div>
+      </div>
+    </div>      </div>
 
         <div id="pensakola" class="column is-9-desktop">
           <div class="nombre-posts">

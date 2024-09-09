@@ -1,10 +1,10 @@
 {
   "siteName": "TimeoRH",
   "titre": "Votre <span>carrière professionnelle</span><br/>commence <span>ici</span>",
-  "soustitre": "Optimisez votre processus Grâce à TimeoRH, optimisez votre processus de recrutement",
+  "soustitre": "Grâce à TimeoRH, optimisez votre processus de recrutement",
   "sousSections": [
-    "Recrutement simplifié",
-    "Mise en relation professionnelle",
+    "Recrutement\nsimplifié",
+    "Mise en relation\nprofessionnelle",
     "Promotion de votre marque employeur"
   ],
   "searchbox": "Trouvez le job correspondant à votre profil",

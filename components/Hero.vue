@@ -92,6 +92,7 @@ color: #000;
 margin: 1em 0;
 text-align: center;
 max-width:200px;
+white-space: pre-wrap;
   }
     .material-icons {
       display: flex;
@@ -107,6 +108,13 @@ max-width:200px;
       font-size: 4em;
       border: 4px solid transparent;
       box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      
+            &:hover {
+              background-color: #022C5E;
+              color: #ffffff;
+            }
+      
     
     }
   }

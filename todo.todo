@@ -3,17 +3,16 @@ TimeoRH - FrontEnd de la Page d'accueil et dashboard:
 Page d'accueil:
   ✔ Modifier la phrase d'accroche en : "Votre carrière professionnelle débute ici et maintenant" @done(24-09-05 15:43)
   ✔ Supprimer les éléments explicatifs en dessous de la phrase d'accroche @done(24-09-05 15:43)
-  ☐ Ajouter sous l'accroche recruteur : "Grâce à TimeoRHoptimisez votre processus de recrutement"
-    ☐ Ajouter les sous-sections : Recrutement simplifié, Mise en relation professionnelle, Promotion de votre marque employeur
-    ☐ Mettre en forme la section  sous sections
-  ☐ Appliquer un dégradé comme sur la version responsive
-  ☐ Ne conserver que le taux d'apprentissage
-  ☐ Ajouter une bande à droite pour afficher les types de profils
-  ☐ Ajouter l'effet "ciel" demandé dans l'interface
-
+  ✔ Ajouter sous l'accroche recruteur : "Grâce à TimeoRH, optimisez votre processus de recrutement" @done(24-09-07 10:40)
+    ✔ Ajouter les sous-sections : Recrutement simplifié, Mise en relation professionnelle, Promotion de votre marque employeur @done(24-09-07 10:40)
+    ✔ Mettre en forme la section  sous sections @done(24-09-07 10:40)
+  ✔ Appliquer un dégradé comme sur la version responsive @done(24-09-07 10:40)
+  ✔ Ajouter une bande à droite pour afficher les types de profils @done(24-09-07 10:40)
+  ✔ Ajouter l'effet "ciel" demandé dans l'interface @done(24-09-07 10:40)
+✔ @done(24-09-07 10:40)
 Footer:
-  ☐ Modifier le footer pour afficher "fait en Afrique" -
-
+  ✔ Modifier le footer pour afficher "fait en Afrique" - @done(24-09-07 10:40)
+✔ @done(24-09-07 10:40)
 Recherche d'emploi:
   ☐ Organiser les filtres de recherche à gauche, dans l'ordre suivant:
     ☐ Intitulé du poste
@@ -41,6 +40,7 @@ Interface recruteur:
     ☐ Activités liées au poste
     ☐ Autres compétences/savoir-faire
     ☐ Langues : mode d'expression et niveau
+    ☐ Ne conserver que le taux d'apprentissage
 
 Offres d'emploi et candidatures:
   ☐ Structurer les rubriques du tableau de bord (de gauche à droite):
