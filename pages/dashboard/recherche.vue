@@ -25,29 +25,18 @@
       </select>
       <select v-model="dropdownFilters.situationProfessionnelle">
         <option value="">Toutes les situations professionnelles</option>
-        <option
-          v-for="sit in uniqueSituationsProfessionnelles"
-          :key="sit"
-          :value="sit"
-        >
+        <option v-for="sit in uniqueSituationsProfessionnelles" :key="sit" :value="sit">
           {{ sit }}
         </option>
       </select>
     </div>
     <div id="dave" class="columns">
       <div class="column is-9-desktop is-12-mobile">
-        <button
-          @click="resetFilters"
-          :disabled="!isAnyFilterActive"
-          class="button is-info raptor"
-        >
+        <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
           Réinitialiser les filtres
         </button>
         <div class="table-container">
-          <table
-            class="table is-fullwidth is-striped is-responsive"
-            v-if="data"
-          >
+          <table class="table is-fullwidth is-striped is-responsive" v-if="data">
             <thead>
               <tr>
                 <th @click="sortBy('nom')">Nom et Prénom</th>
@@ -70,10 +59,7 @@
                 <td>{{ candidat.geolocalisation }}</td>
                 <td>{{ candidat.situationProfessionnelle }}</td>
                 <td>
-                  <button
-                    @click="openPopup(candidat)"
-                    class="button is-primary"
-                  >
+                  <button @click="openPopup(candidat)" class="button is-primary">
                     Voir le profil
                   </button>
                 </td>
@@ -99,24 +85,16 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('education')" class="filter-title">
             Éducation
-            <span
-              class="arrow"
-              :class="{
-                'arrow-up': !filters.education.isOpen,
-                'arrow-down': filters.education.isOpen,
-              }"
-              >▼</span
-            >
+            <span class="arrow" :class="{
+              'arrow-up': !filters.education.isOpen,
+              'arrow-down': filters.education.isOpen,
+            }">▼</span>
           </h3>
 
           <div v-if="filters.education.isOpen" class="filter-content">
             <div v-for="edu in uniqueEducations" :key="edu">
               <label>
-                <input
-                  type="checkbox"
-                  v-model="filters.education.selected"
-                  :value="edu"
-                />
+                <input type="checkbox" v-model="filters.education.selected" :value="edu" />
                 {{ edu }}
               </label>
             </div>
@@ -126,23 +104,15 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('geolocalisation')" class="filter-title">
             Géolocalisation
-            <span
-              class="arrow"
-              :class="{
-                'arrow-up': !filters.geolocalisation.isOpen,
-                'arrow-down': filters.geolocalisation.isOpen,
-              }"
-              >▼</span
-            >
+            <span class="arrow" :class="{
+              'arrow-up': !filters.geolocalisation.isOpen,
+              'arrow-down': filters.geolocalisation.isOpen,
+            }">▼</span>
           </h3>
           <div v-if="filters.geolocalisation.isOpen" class="filter-content">
             <div v-for="geo in uniqueGeolocalisations" :key="geo">
               <label>
-                <input
-                  type="checkbox"
-                  v-model="filters.geolocalisation.selected"
-                  :value="geo"
-                />
+                <input type="checkbox" v-model="filters.geolocalisation.selected" :value="geo" />
                 {{ geo }}
               </label>
             </div>
@@ -152,23 +122,15 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('experience')" class="filter-title">
             Expérience
-            <span
-              class="arrow"
-              :class="{
-                'arrow-up': !filters.experience.isOpen,
-                'arrow-down': filters.experience.isOpen,
-              }"
-              >▼</span
-            >
+            <span class="arrow" :class="{
+              'arrow-up': !filters.experience.isOpen,
+              'arrow-down': filters.experience.isOpen,
+            }">▼</span>
           </h3>
           <div v-if="filters.experience.isOpen" class="filter-content">
             <div v-for="exp in uniqueExperiences" :key="exp">
               <label>
-                <input
-                  type="checkbox"
-                  v-model="filters.experience.selected"
-                  :value="exp"
-                />
+                <input type="checkbox" v-model="filters.experience.selected" :value="exp" />
                 {{ exp }} ans
               </label>
             </div>
@@ -178,27 +140,17 @@
         <div class="filter-section">
           <h3 @click="toggleFilter('competences')" class="filter-title">
             Compétences
-            <span
-              class="arrow"
-              :class="{
-                'arrow-up': !filters.competences.isOpen,
-                'arrow-down': filters.competences.isOpen,
-              }"
-              >▼</span
-            >
+            <span class="arrow" :class="{
+              'arrow-up': !filters.competences.isOpen,
+              'arrow-down': filters.competences.isOpen,
+            }">▼</span>
           </h3>
           <div v-if="filters.competences.isOpen" class="filter-content">
             <div v-for="comp in uniqueCompetences" :key="comp" class="chip">
-              <label
-                :class="{
-                  selected: filters.competences.selected.includes(comp),
-                }"
-              >
-                <input
-                  type="checkbox"
-                  v-model="filters.competences.selected"
-                  :value="comp"
-                />
+              <label :class="{
+                selected: filters.competences.selected.includes(comp),
+              }">
+                <input type="checkbox" v-model="filters.competences.selected" :value="comp" />
                 {{ comp }}
               </label>
             </div>
@@ -214,14 +166,10 @@
             <span class="material-icons">close</span>
           </button>
 
-          <div
-            class="columns infordetaillecandidat is-flex is-flex-direction-column"
-          >
+          <div class="columns infordetaillecandidat is-flex is-flex-direction-column">
             <div class="macine column is-12-desktop is-12-mobile">
               <div class="ligne1cv columns is-12 coleen">
-                <div
-                  class="trunks is-flex is-flex-direction-row column is-12-desktop is-12-mobile"
-                >
+                <div class="trunks is-flex is-flex-direction-row column is-12-desktop is-12-mobile">
                   <img :src="selectedCandidat.image" alt="" />
                   <div class="neay is-flex is-flex-direction-column">
                     <h2>
@@ -233,8 +181,7 @@
                         Candidat parfait
                       </p>
                       <p>
-                        <span class="material-icons">person</span
-                        >{{ selectedCandidat.titre }}
+                        <span class="material-icons">person</span>{{ selectedCandidat.titre }}
                       </p>
                       <p class="localisation">
                         <span class="material-icons">location_on</span>
@@ -243,14 +190,10 @@
 
                       <p class="telephone">
                         <a :href="'tel:' + selectedCandidat.telephone"></a>
-                        <span class="material-icons">phone</span
-                        >{{ selectedCandidat.telephone }}
+                        <span class="material-icons">phone</span>{{ selectedCandidat.telephone }}
                       </p>
                       <p class="email">
-                        <a
-                          :href="'mailto:' + selectedCandidat.email"
-                          target="_blank"
-                        >
+                        <a :href="'mailto:' + selectedCandidat.email" target="_blank">
                           <span class="material-icons">email</span>
                           {{ selectedCandidat.email }}
                         </a>
@@ -263,25 +206,19 @@
               <div class="ligne2cv is-12 coleen">
                 <p>Taux de remplissage du profil professionnel</p>
                 <div class="progress-bar-container">
-                  <div
-                    class="progress-bar"
-                    :style="{
-                      width: selectedCandidat.taux_remplissage_profil + '%',
-                      transition: 'width 1s ease-out',
-                      transformOrigin: 'left',
-                    }"
-                  ></div>
-                  <span
-                    class="progress-text"
-                    :style="{
-                      position: 'absolute',
-                      left: selectedCandidat.taux_remplissage_profil + '%',
-                      top: 0,
-                      bottom: 0,
-                      transform: 'translateX(-50%)',
-                      transition: 'left 1s ease-out',
-                    }"
-                  >
+                  <div class="progress-bar" :style="{
+                    width: selectedCandidat.taux_remplissage_profil + '%',
+                    transition: 'width 1s ease-out',
+                    transformOrigin: 'left',
+                  }"></div>
+                  <span class="progress-text" :style="{
+                    position: 'absolute',
+                    left: selectedCandidat.taux_remplissage_profil + '%',
+                    top: 0,
+                    bottom: 0,
+                    transform: 'translateX(-50%)',
+                    transition: 'left 1s ease-out',
+                  }">
                     {{ selectedCandidat.taux_remplissage_profil }}%
                   </span>
                 </div>
@@ -291,12 +228,9 @@
                 <div class="lacie">
                   <h3>Compétences :</h3>
                   <ul>
-                    <li
-                      v-for="(
+                    <li v-for="(
                         competence, index
-                      ) in selectedCandidat.competences"
-                      :key="index"
-                    >
+                      ) in selectedCandidat.competences" :key="index">
                       {{ competence
                       }}{{
                         index !== selectedCandidat.competences.length - 1
@@ -309,10 +243,7 @@
                 <div class="lacie">
                   <h3>Diplômes :</h3>
                   <ul>
-                    <li
-                      v-for="(diplome, index) in selectedCandidat.education"
-                      :key="index"
-                    >
+                    <li v-for="(diplome, index) in selectedCandidat.education" :key="index">
                       {{ diplome
                       }}{{
                         index !== selectedCandidat.education.length - 1
@@ -325,10 +256,7 @@
                 <div class="lacie">
                   <h3>Points forts :</h3>
                   <ul>
-                    <li
-                      v-for="(point, index) in selectedCandidat.points_forts"
-                      :key="index"
-                    >
+                    <li v-for="(point, index) in selectedCandidat.points_forts" :key="index">
                       {{ point }}
                     </li>
                   </ul>
@@ -340,25 +268,13 @@
                 <div class="documentsducandidat">
                   <div class="h4">Documents</div>
                   <div class="wrapperdoc">
-                    <a
-                      :href="selectedCandidat.cv"
-                      target="_blank"
-                      class="document-button"
-                    >
+                    <a :href="selectedCandidat.cv" target="_blank" class="document-button">
                       <button>CV</button>
                     </a>
-                    <a
-                      :href="selectedCandidat.lettre_motivation"
-                      target="_blank"
-                      class="document-button"
-                    >
+                    <a :href="selectedCandidat.lettre_motivation" target="_blank" class="document-button">
                       <button>Lettre de motivation</button>
                     </a>
-                    <a
-                      :href="selectedCandidat.portfolio"
-                      target="_blank"
-                      class="document-button"
-                    >
+                    <a :href="selectedCandidat.portfolio" target="_blank" class="document-button">
                       <button>Portfolio</button>
                     </a>
                   </div>
@@ -514,7 +430,7 @@ const filteredCandidats = computed(() => {
     const sitMatch =
       !dropdownFilters.value.situationProfessionnelle ||
       candidat.situationProfessionnelle ===
-        dropdownFilters.value.situationProfessionnelle;
+      dropdownFilters.value.situationProfessionnelle;
 
     const searchMatch =
       !searchQuery.value ||
@@ -620,6 +536,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   &:disabled {
     display: none;
   }
@@ -634,6 +551,7 @@ onMounted(() => {
 .wholefilters select {
   width: 23%;
 }
+
 .filter-section {
   margin-bottom: 1rem;
 }
@@ -667,6 +585,7 @@ onMounted(() => {
 .chip input {
   display: none;
 }
+
 //fin
 .pagination {
   display: flex;
@@ -679,6 +598,7 @@ onMounted(() => {
   margin-top: 0.5rem;
   text-align: right;
 }
+
 .popup {
   position: fixed;
   top: 0;
@@ -720,6 +640,7 @@ onMounted(() => {
   font-weight: bold;
   color: #002160;
 }
+
 .candidat {
   border-radius: 8px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
@@ -728,14 +649,18 @@ onMounted(() => {
   margin-bottom: 4em;
   padding: 1.5em;
 }
+
 .onez {
   margin-bottom: 2em;
+
   img {
     object-fit: cover;
   }
 }
+
 .twoz {
   padding: 0 1em;
+
   h3 {
     font-size: 25px;
     font-weight: 500;
@@ -747,6 +672,7 @@ onMounted(() => {
     color: #000;
     margin-bottom: 0.5em;
   }
+
   .titre {
     font-size: 20px;
     font-weight: normal;
@@ -759,6 +685,7 @@ onMounted(() => {
     margin-bottom: 0.5em;
   }
 }
+
 .nfo {
   margin-bottom: 0.5em;
 
@@ -773,11 +700,14 @@ onMounted(() => {
     color: #002160;
   }
 }
+
 .skills-container {
   margin-bottom: 1.5em;
 }
+
 .points-forts {
   margin-bottom: 1.5em;
+
   h4 {
     font-size: 20px;
     font-weight: bold;
@@ -789,6 +719,7 @@ onMounted(() => {
     color: #002160;
     margin-bottom: 0.5em;
   }
+
   p {
     font-size: 16px;
     font-weight: normal;
@@ -801,6 +732,7 @@ onMounted(() => {
     margin-bottom: 0.5em;
   }
 }
+
 .levraimatch {
   font-size: 16px;
   font-weight: bold;
@@ -809,12 +741,15 @@ onMounted(() => {
   line-height: 1.9;
   letter-spacing: normal;
   text-align: right;
+
   &::after {
     position: absolute;
     z-index: 10;
   }
+
   &.match-green {
     color: green;
+
     &::after {
       content: "";
       display: block;
@@ -823,8 +758,10 @@ onMounted(() => {
       background: url("/images/100.svg");
     }
   }
+
   &.match-orange {
     color: orange;
+
     &::after {
       display: block;
       content: "";
@@ -833,8 +770,10 @@ onMounted(() => {
       background: url("/images/101.svg");
     }
   }
+
   &.match-red {
     color: red;
+
     &::after {
       display: block;
       content: "";
@@ -844,6 +783,7 @@ onMounted(() => {
     }
   }
 }
+
 .madjoua {
   display: flex;
   justify-content: flex-start;
@@ -852,6 +792,7 @@ onMounted(() => {
   flex-flow: row;
   flex-wrap: wrap;
   position: relative;
+
   p {
     width: 90%;
     height: 45px;
@@ -867,6 +808,7 @@ onMounted(() => {
     text-align: left;
     color: #002160;
     position: relative;
+
     &::after {
       position: absolute;
       z-index: 10;
@@ -875,6 +817,7 @@ onMounted(() => {
     }
   }
 }
+
 .trunks {
   img {
     width: 114px;
@@ -882,6 +825,7 @@ onMounted(() => {
     border-radius: 100%;
   }
 }
+
 .macine {
   margin-top: 1em;
   border-radius: 6px;
@@ -890,6 +834,7 @@ onMounted(() => {
   background-color: #fff;
   padding: 1em;
   flex-direction: column;
+
   h2 {
     font-size: 20px;
     font-weight: bold;
@@ -900,6 +845,7 @@ onMounted(() => {
     text-align: left;
     color: #012e61;
   }
+
   p {
     font-size: 14px;
     font-weight: 400;
@@ -916,9 +862,11 @@ onMounted(() => {
     margin-bottom: 0.45rem;
   }
 }
+
 .neay {
   padding-left: 10px;
 }
+
 .candidat-parfait {
   width: 151px;
   height: 30px;
@@ -930,9 +878,9 @@ onMounted(() => {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 1.5em;
-  background: rgba(249, 231, 190, 0.42) url(/images/star-svgrepo-com.svg) center
-    left no-repeat;
+  background: rgba(249, 231, 190, 0.42) url(/images/star-svgrepo-com.svg) center left no-repeat;
 }
+
 .brad {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -950,11 +898,13 @@ onMounted(() => {
   align-items: center;
   margin: 0 auto;
 }
+
 .vegeta {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+
   p {
     font-size: 13px;
     font-weight: 500;
@@ -967,9 +917,11 @@ onMounted(() => {
     position: relative;
     margin-top: 1em;
   }
+
   .match {
     position: relative;
   }
+
   .match-green {
     .brad {
       position: relative;
@@ -979,6 +931,7 @@ onMounted(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/201.svg");
         width: 71px;
@@ -996,6 +949,7 @@ onMounted(() => {
       }
     }
   }
+
   .match-orange {
     .brad {
       position: relative;
@@ -1005,6 +959,7 @@ onMounted(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/200.svg");
         width: 71px;
@@ -1022,6 +977,7 @@ onMounted(() => {
       }
     }
   }
+
   .match-red {
     .brad {
       position: relative;
@@ -1031,6 +987,7 @@ onMounted(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/202.svg");
         width: 71px;
@@ -1049,6 +1006,7 @@ onMounted(() => {
     }
   }
 }
+
 .progress-bar-container {
   width: 100%;
   height: 40px;
@@ -1059,6 +1017,7 @@ onMounted(() => {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+
   &::after {
     content: "";
     height: 2px;
@@ -1070,6 +1029,7 @@ onMounted(() => {
     position: absolute;
   }
 }
+
 .progress-bar {
   z-index: 1;
   height: 100%;
@@ -1078,6 +1038,7 @@ onMounted(() => {
   height: 10px;
   transition: width 1s ease-in-out;
 }
+
 .progress-text {
   z-index: 2;
   width: 33px;
@@ -1104,6 +1065,7 @@ onMounted(() => {
   text-align: left;
   color: #000;
 }
+
 .coleen {
   &:nth-of-type(2) {
     p {
@@ -1119,6 +1081,7 @@ onMounted(() => {
     }
   }
 }
+
 .documentsducandidat {
   display: flex;
   align-items: center;
@@ -1129,6 +1092,7 @@ onMounted(() => {
   border-radius: 5px;
   border: solid 1px #a5aab5;
   background-color: #fff;
+
   .h4 {
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -1145,12 +1109,14 @@ onMounted(() => {
     text-align: left;
     color: #747474;
   }
+
   .wrapperdoc {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
     gap: 1px;
+
     a {
       &:nth-of-type(3) {
         button {
@@ -1164,6 +1130,7 @@ onMounted(() => {
           }
         }
       }
+
       button {
         font-family: "Open Sans", sans-serif;
         font-size: 14px;
@@ -1193,18 +1160,21 @@ onMounted(() => {
         }
       }
     }
+
     .doc {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-direction: row;
       gap: 1em;
+
       .doc-icon {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 1em;
+
         .doc-icon-img {
           width: 30px;
           height: 30px;
@@ -1218,10 +1188,12 @@ onMounted(() => {
     }
   }
 }
+
 .popup-content {
   position: relative;
   padding: 3em;
 }
+
 .todd {
   background: rgb(152, 152, 152);
   color: white;
@@ -1230,23 +1202,34 @@ onMounted(() => {
   right: 10px;
   top: 10px;
 
-  filter: alpha(opacity=50); /* internet explorer */
-  -khtml-opacity: 0.5; /* khtml, old safari */
-  -moz-opacity: 0.5; /* mozilla, netscape */
-  opacity: 0.5; /* fx, safari, opera */
+  filter: alpha(opacity=50);
+  /* internet explorer */
+  -khtml-opacity: 0.5;
+  /* khtml, old safari */
+  -moz-opacity: 0.5;
+  /* mozilla, netscape */
+  opacity: 0.5;
+
+  /* fx, safari, opera */
   &:hover {
-    filter: alpha(opacity=100); /* internet explorer */
-    -khtml-opacity: 1; /* khtml, old safari */
-    -moz-opacity: 1; /* mozilla, netscape */
-    opacity: 1; /* fx, safari, opera */
+    filter: alpha(opacity=100);
+    /* internet explorer */
+    -khtml-opacity: 1;
+    /* khtml, old safari */
+    -moz-opacity: 1;
+    /* mozilla, netscape */
+    opacity: 1;
+    /* fx, safari, opera */
   }
 }
+
 .neay {
   span {
     font-size: 12px;
     margin-right: 10px;
   }
 }
+
 .interviewdecision {
   .tabs {
     display: flex;
@@ -1255,9 +1238,11 @@ onMounted(() => {
     justify-content: flex-start;
     gap: 1em;
     margin-bottom: 1em;
+
     li {
       cursor: pointer;
     }
+
     .tab {
       display: flex;
       align-items: center;
@@ -1277,6 +1262,7 @@ onMounted(() => {
       letter-spacing: normal;
       text-align: left;
       color: #005bbe;
+
       &:hover {
         background: #005bbe;
         border: #005bbe 1px solid;
@@ -1285,10 +1271,12 @@ onMounted(() => {
     }
   }
 }
+
 .tabs {
   border-radius: 7.6px;
   border: solid 1.1px #c6c6c6;
   background-color: #fff;
+
   li {
     padding: 1em;
     color: black;
@@ -1301,12 +1289,14 @@ onMounted(() => {
     }
   }
 }
+
 .peyton {
   border-radius: 6.5px;
   border: solid 1.1px #e6e6e6;
   background-color: #fff;
 
   padding: 1em;
+
   h3 {
     font-size: 15.2px;
     font-weight: 500;
@@ -1319,7 +1309,9 @@ onMounted(() => {
     border-bottom: 1px solid #e6e6e6;
   }
 }
+
 .peyton {
+
   input,
   textarea {
     font-size: 15px;
@@ -1335,6 +1327,7 @@ onMounted(() => {
     background-color: #fff;
   }
 }
+
 .filter-content input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -1371,8 +1364,10 @@ onMounted(() => {
   margin-bottom: 5px;
   cursor: pointer;
 }
+
 .filter-content {
   padding: 1em;
+
   label {
     font-size: 14px;
     font-weight: bold;
@@ -1384,11 +1379,13 @@ onMounted(() => {
     color: #5e6368;
   }
 }
+
 .searchFilters {
   border-radius: 10px;
   border: solid 1px #e7e6e6;
   background-color: #fff;
   padding: 0em;
+
   h3 {
     font-size: 14px;
     font-weight: bold;
@@ -1407,12 +1404,14 @@ onMounted(() => {
     padding: 1em;
   }
 }
+
 .filter-section {
   max-height: 300px;
   overflow-y: auto;
   padding-right: 10px;
   margin: 0;
-  padding: 0; /* Espace pour la barre de défilement */
+  padding: 0;
+  /* Espace pour la barre de défilement */
 }
 
 /* Style de la barre de défilement pour macOS */
@@ -1438,19 +1437,29 @@ onMounted(() => {
   select {
     font-size: 14px;
     font-weight: 600;
-    font-family: inherit; /* Pour conserver la police du parent */
-    padding: 8px 12px; /* Pour un meilleur espacement */
-    border-radius: 4px; /* Pour des coins arrondis */
-    border: 1px solid #ccc; /* Une bordure légère */
-    background-color: #fff; /* Fond blanc */
-    color: #333; /* Couleur de texte foncée */
-    appearance: none; /* Supprime l'apparence par défaut sur certains navigateurs */
-    -webkit-appearance: none; /* Pour Safari */
-    -moz-appearance: none; /* Pour Firefox */
+    font-family: inherit;
+    /* Pour conserver la police du parent */
+    padding: 8px 12px;
+    /* Pour un meilleur espacement */
+    border-radius: 4px;
+    /* Pour des coins arrondis */
+    border: 1px solid #ccc;
+    /* Une bordure légère */
+    background-color: #fff;
+    /* Fond blanc */
+    color: #333;
+    /* Couleur de texte foncée */
+    appearance: none;
+    /* Supprime l'apparence par défaut sur certains navigateurs */
+    -webkit-appearance: none;
+    /* Pour Safari */
+    -moz-appearance: none;
+    /* Pour Firefox */
     background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 50%;
+
     &::placeholder {
       height: 50px;
       display: flex;
@@ -1463,6 +1472,7 @@ onMounted(() => {
       letter-spacing: 0.28px;
       color: rgba(28, 28, 30, 0.72);
     }
+
     option {
       height: 50px;
       display: flex;
@@ -1481,6 +1491,7 @@ onMounted(() => {
     }
   }
 }
+
 .filter-section {
   max-height: 300px;
   overflow-y: auto;
@@ -1523,6 +1534,7 @@ onMounted(() => {
 .arrow-down {
   transform: rotate(0deg);
 }
+
 .table {
   th {
     font-size: 11px;
@@ -1534,6 +1546,7 @@ onMounted(() => {
     text-align: left;
     color: #292d32;
   }
+
   td {
     font-size: 14px;
     font-weight: 500;
@@ -1543,6 +1556,7 @@ onMounted(() => {
     letter-spacing: -0.14px;
     text-align: left;
     color: #292d32;
+
     button {
       width: 107.8px;
       height: 37px;
@@ -1559,6 +1573,7 @@ onMounted(() => {
       letter-spacing: normal;
       text-align: center;
       color: #012e61;
+
       &:hover {
         background: #012e61;
         color: white;
@@ -1566,26 +1581,31 @@ onMounted(() => {
     }
   }
 }
+
 .table-container {
   padding: 1em;
   border-radius: 6px;
   border: solid 2px #eceef6;
   background-color: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .wholefilters {
     .select {
       width: 50% !important;
     }
   }
+
   .table-container {
     overflow-x: auto !important;
   }
+
   .wrapperdoc {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
+
     a {
       display: block !important;
       width: 100% !important;
