@@ -682,8 +682,10 @@ const isAnyFilterActive = computed(() => {
     Object.keys(route.query).length > 0 ||
     Object.values(dropdownFilters.value).some((value) => value !== "") ||
     Object.values(filters.value).some((filter) =>
-      filter.selected && filter.selected.length > 0 ||
-      (typeof filter.value !== 'undefined' && filter.value !== '')
+      (filter.selected && filter.selected.length > 0) ||
+      (typeof filter.value !== 'undefined' && filter.value !== '') ||
+      (typeof filter.min !== 'undefined' && filter.min !== null) ||
+      (typeof filter.max !== 'undefined' && filter.max !== null)
     ) ||
     searchQuery.value !== ""
   );
@@ -696,7 +698,18 @@ const resetFilters = () => {
     dropdownFilters.value[key] = "";
   });
   Object.keys(filters.value).forEach((key) => {
-    filters.value[key].selected = [];
+    if (Array.isArray(filters.value[key].selected)) {
+      filters.value[key].selected = [];
+    }
+    if (typeof filters.value[key].value !== 'undefined') {
+      filters.value[key].value = '';
+    }
+    if (typeof filters.value[key].min !== 'undefined') {
+      filters.value[key].min = null;
+    }
+    if (typeof filters.value[key].max !== 'undefined') {
+      filters.value[key].max = null;
+    }
   });
   searchQuery.value = "";
 };
