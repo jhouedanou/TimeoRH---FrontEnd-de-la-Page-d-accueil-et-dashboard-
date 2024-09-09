@@ -208,10 +208,11 @@
               :class="{ 'arrow-up': !filters.missionPrincipale.isOpen, 'arrow-down': filters.missionPrincipale.isOpen }">▼</span>
           </h3>
           <div v-if="filters.missionPrincipale.isOpen" class="filter-content">
-            <div v-for="mission in uniqueMissionsPrincipales" :key="mission" class="form-check">
-              <input type="checkbox" :id="mission" v-model="filters.missionPrincipale.selected" :value="mission">
-              <label :for="mission">{{ mission }}</label>
-            </div>
+            <input v-model="filters.missionPrincipale.value" list="missionsPrincipales"
+              placeholder="Mission principale">
+            <datalist id="missionsPrincipales">
+              <option v-for="mission in uniqueMissionsPrincipales" :key="mission" :value="mission" />
+            </datalist>
           </div>
         </div>
 
@@ -223,12 +224,13 @@
               :class="{ 'arrow-up': !filters.activitesLiees.isOpen, 'arrow-down': filters.activitesLiees.isOpen }">▼</span>
           </h3>
           <div v-if="filters.activitesLiees.isOpen" class="filter-content">
-            <div v-for="activite in uniqueActivitesLiees" :key="activite" class="form-check">
-              <input type="checkbox" :id="activite" v-model="filters.activitesLiees.selected" :value="activite">
-              <label :for="activite">{{ activite }}</label>
-            </div>
+            <input v-model="filters.activitesLiees.value" list="activitesLiees" placeholder="Activités liées">
+            <datalist id="activitesLiees">
+              <option v-for="activite in uniqueActivitesLiees" :key="activite" :value="activite" />
+            </datalist>
           </div>
         </div>
+
 
         <!-- Compétences -->
         <div class="filter-section">
@@ -499,8 +501,9 @@ const initializeFilters = () => {
     experienceSpecifiqueTitre: { isOpen: false, value: '' },
     anneesExperience: { isOpen: false, min: null, max: null },
     anneesExperienceManager: { isOpen: false, min: null, max: null },
-    missionPrincipale: { isOpen: false, selected: [] },
-    activitesLiees: { isOpen: false, selected: [] },
+
+    missionPrincipale: { isOpen: false, value: '' },
+    activitesLiees: { isOpen: false, value: '' },
     langues: {
       isOpen: false,
       selected: Object.fromEntries(uniqueLangues.value.map(lang => [lang, { expression: '', niveau: '' }]))
@@ -611,13 +614,13 @@ const filteredCandidats = computed(() => {
     const totalManagerExperience = candidat.experienceSpecifique.filter(exp => exp.manager).reduce((sum, exp) => sum + exp.duree, 0);
     const matchAnneesExperienceManager = !filters.value.anneesExperienceManager.max || totalManagerExperience <= filters.value.anneesExperienceManager.max;
 
+    const matchMissionPrincipale = !filters.value.missionPrincipale.value ||
+      (candidat.mission_principale && candidat.mission_principale.toLowerCase().includes(filters.value.missionPrincipale.value.toLowerCase()));
+    const matchActivitesLiees = !filters.value.activitesLiees.value ||
+      (Array.isArray(candidat.activites_liees_au_poste) && candidat.activites_liees_au_poste.some(activite =>
+        activite.toLowerCase().includes(filters.value.activitesLiees.value.toLowerCase())
+      ));
 
-
-    const matchMissionPrincipale = filters.value.missionPrincipale.selected.length === 0 ||
-      filters.value.missionPrincipale.selected.includes(candidat.mission_principale);
-
-    const matchActivitesLiees = filters.value.activitesLiees.selected.length === 0 ||
-      filters.value.activitesLiees.selected.every(activite => candidat.activites_liees_au_poste.includes(activite));
 
     const matchCompetences = filters.value.competences.selected.length === 0 ||
       filters.value.competences.selected.every(comp => candidat.competences.includes(comp));
@@ -682,10 +685,8 @@ const isAnyFilterActive = computed(() => {
     Object.keys(route.query).length > 0 ||
     Object.values(dropdownFilters.value).some((value) => value !== "") ||
     Object.values(filters.value).some((filter) =>
-      (filter.selected && filter.selected.length > 0) ||
-      (typeof filter.value !== 'undefined' && filter.value !== '') ||
-      (typeof filter.min !== 'undefined' && filter.min !== null) ||
-      (typeof filter.max !== 'undefined' && filter.max !== null)
+      filter.selected && filter.selected.length > 0 ||
+      (typeof filter.value !== 'undefined' && filter.value !== '')
     ) ||
     searchQuery.value !== ""
   );
@@ -698,18 +699,7 @@ const resetFilters = () => {
     dropdownFilters.value[key] = "";
   });
   Object.keys(filters.value).forEach((key) => {
-    if (Array.isArray(filters.value[key].selected)) {
-      filters.value[key].selected = [];
-    }
-    if (typeof filters.value[key].value !== 'undefined') {
-      filters.value[key].value = '';
-    }
-    if (typeof filters.value[key].min !== 'undefined') {
-      filters.value[key].min = null;
-    }
-    if (typeof filters.value[key].max !== 'undefined') {
-      filters.value[key].max = null;
-    }
+    filters.value[key].selected = [];
   });
   searchQuery.value = "";
 };
@@ -1609,7 +1599,14 @@ onMounted(() => {
   }
 }
 
-
+.filter-section {
+  //   max-height: 300px;
+  //   overflow-y: auto;
+  //   padding-right: 10px;
+  //   margin: 0;
+  //   padding: 0;
+  /* Espace pour la barre de défilement */
+}
 
 /* Style de la barre de défilement pour macOS */
 .filter-section::-webkit-scrollbar {
