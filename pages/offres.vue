@@ -8,18 +8,9 @@
           Trouvez le job correspondant à votre profil
         </div>
         <div class="columns kaihones">
-          <div class="column is-12-mobile w20 input-wrapper">
-            <input
-              v-model="filtres.titre"
-              list="titres"
-              placeholder="Titre du poste"
-              id="titreinp"
-            />
-            <span
-              v-if="filtres.titre"
-              class="clear-input"
-              @click="filtres.titre = ''"
-            >
+          <div class="column is-11-desktop is-12-mobile input-wrapper">
+            <input v-model="filtres.titre" list="titres" placeholder="Titre du poste" id="titreinp" />
+            <span v-if="filtres.titre" class="clear-input" @click="filtres.titre = ''">
               <span class="material-icons">close</span>
             </span>
             <datalist id="titres">
@@ -27,18 +18,10 @@
             </datalist>
           </div>
 
-          <div class="column is-12-mobile w20 input-wrapper">
-            <input
-              v-model="filtres.geolocalisation"
-              list="localisations"
-              placeholder="Localisation"
-              id="localisation"
-            />
-            <span
-              v-if="filtres.geolocalisation"
-              class="clear-input"
-              @click="filtres.geolocalisation = ''"
-            >
+          <!-- <div class="column is-12-mobile w20 input-wrapper">
+            <input v-model="filtres.geolocalisation" list="localisations" placeholder="Localisation"
+              id="localisation" />
+            <span v-if="filtres.geolocalisation" class="clear-input" @click="filtres.geolocalisation = ''">
               <span class="material-icons">close</span>
             </span>
             <datalist id="localisations">
@@ -53,11 +36,7 @@
                 {{ type }}
               </option>
             </select>
-            <span
-              v-if="filtres.type"
-              class="clear-input"
-              @click="filtres.type = ''"
-            >
+            <span v-if="filtres.type" class="clear-input" @click="filtres.type = ''">
               <span class="material-icons">close</span>
             </span>
           </div>
@@ -69,16 +48,12 @@
                 {{ exp }}
               </option>
             </select>
-            <span
-              v-if="filtres.experiencerequise"
-              class="clear-input"
-              @click="filtres.experiencerequise = ''"
-            >
+            <span v-if="filtres.experiencerequise" class="clear-input" @click="filtres.experiencerequise = ''">
               <span class="material-icons">close</span>
             </span>
-          </div>
+          </div> -->
 
-          <div class="column">
+          <div class="column is-1-desktop is-12-mobile">
             <button class="luka" type="submit">
               <img src="/images/searchBtn.svg" alt="Search bouton" />
             </button>
@@ -87,96 +62,127 @@
       </form>
 
       <div class="columns">
-   
+
         <div class="filtrewrapper column is-3-desktop">
-    <h3 class="apro">Filtres</h3>
-    <div class="accordion">
-      <!-- Intitulé du poste -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Intitulé du poste
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <input v-model="filtres.titre" placeholder="Intitulé du poste" />
-        </div>
-      </div>
+          <h3 class="apro">Filtres</h3>
+          <div class="accordion">
+            <!-- intitulé du poste -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">Intitulé du poste <span
+                  class="arrow-icon">&#9662;</span>
+              </button>
+              <div class="accordion-content">
+                <input v-model="filtres.titre" list="titres" placeholder="Titre du poste" id="titreinp" />
+                <span v-if="filtres.titre" class="clear-input" @click="filtres.titre = ''">
+                  <span class="material-icons">close</span>
+                </span>
+                <datalist id="titres">
+                  <option v-for="titre in titres" :key="titre" :value="titre" />
+                </datalist>
+              </div>
+            </div>
+            <!-- diplome/niveau d'études -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Diplômes/niveau d'études
+                <span class="arrow-icon">▾</span>
+              </button>
+              <div class="accordion-content">
+                <div v-for="diplome in diplomesWithCount" :key="diplome.value" class="form-check">
+                  <input type="checkbox" :id="diplome.value" v-model="filtres.diplomeCheckbox" :value="diplome.value" />
+                  <label :for="diplome.value">{{ diplome.value }} ({{ diplome.count }})</label>
+                </div>
+              </div>
+            </div>
+            <!-- expérience professionnelle requise -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Expérience professionnelle requise
+                <span class="arrow-icon">&#9662;</span>
+              </button>
+              <div class="accordion-content">
+                <div v-for="exp in experiencesWithCount" :key="exp.value" class="form-check">
+                  <input type="checkbox" :id="exp.value" v-model="filtres.experiencerequisecheckbox"
+                    :value="exp.value" />
+                  <label :for="exp.value">{{ exp.value }} ({{ exp.count }})</label>
+                </div>
+              </div>
+            </div>
+            <!-- type de contrat -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Type de contrat
+                <span class="arrow-icon">▾</span>
+              </button>
+              <div class="accordion-content">
+                <div v-for="type in typesWithCount" :key="type.value" class="form-check">
+                  <input type="checkbox" :id="type.value" v-model="filtres.typeCheckbox" :value="type.value" />
+                  <label :for="type.value">{{ type.value }} ({{ type.count }})</label>
+                </div>
+              </div>
+            </div>
+            <!-- competences techniques requises -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Compétences techniques requises
+                <span class="arrow-icon">&#9662;</span>
+              </button>
+              <div class="accordion-content">
+                <p class="mango">
+                  Veuillez saisir une ou plusieurs compétences
+                </p>
+                <div class="keywords-input">
+                  <div v-for="(keyword, index) in filtres.motsCles" :key="index" class="keyword-chip">
+                    {{ keyword }}
+                    <button @click="removeKeyword(index)" class="remove-keyword">
+                      ×
+                    </button>
+                  </div>
+                  <input type="text" v-model="newKeyword" @keyup.enter="addKeyword" @input="handleInput"
+                    placeholder="Entrez des mots-clés" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <!-- secteur d'activité -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Secteur d'activité
+                <span class="arrow-icon">▾</span>
+              </button>
+              <div class="accordion-content">
+                <input v-model="filtres.typeSociete" list="types-societe-list" placeholder="Type de société" />
+                <datalist id="types-societe-list">
+                  <option v-for="type in typesSocieteWithCount" :key="type.value" :value="type.value">
+                    {{ type.value }} ({{ type.count }})
+                  </option>
+                </datalist>
+              </div>
+            </div>
+            <!-- localisation -->
+            <div class="accordion-item">
+              <button class="accordion-header" @click="toggleAccordion($event)">
+                Localisation
+                <span class="arrow-icon">▾</span>
+              </button>
+              <div class="accordion-content">
+                <input v-model="filtres.geolocalisation" list="localisations" placeholder="Localisation"
+                  id="localisation" />
+                <span v-if="filtres.geolocalisation" class="clear-input" @click="filtres.geolocalisation = ''">
+                  <span class="material-icons">close</span>
+                </span>
+                <datalist id="localisations">
+                  <option v-for="loc in localisations" :key="loc" :value="loc" />
+                </datalist>
+              </div>
+            </div>
 
-      <!-- Diplômes/niveau d'études -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Diplômes/niveau d'études
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <!-- Ajoutez ici les options pour les diplômes/niveau d'études -->
-        </div>
-      </div>
-
-      <!-- Expérience professionnelle requise -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Expérience professionnelle requise
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <div v-for="exp in experiencesWithCount" :key="exp.value" class="form-check">
-            <input type="checkbox" :id="exp.value" v-model="filtres.experiencerequisecheckbox" :value="exp.value" />
-            <label :for="exp.value">{{ exp.value }} ({{ exp.count }})</label>
           </div>
+          <button @click="reinitialiserFiltres" class="btn paulgeorge btn-secondary mt-3">
+            Réinitialiser tous les filtres
+          </button>
         </div>
-      </div>
 
-      <!-- Type de contrat -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Type de contrat
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <div v-for="type in typesWithCount" :key="type.value" class="form-check">
-            <input type="checkbox" :id="type.value" v-model="filtres.typeCheckbox" :value="type.value" />
-            <label :for="type.value">{{ type.value }} ({{ type.count }})</label>
-          </div>
-        </div>
-      </div>
 
-      <!-- Compétences techniques requises -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Compétences techniques requises
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <p class="mango">Veuillez saisir une ou plusieurs compétences</p>
-          <div class="keywords-input">
-            <!-- ... code existant pour les mots-clés ... -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Secteur d'activité -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Secteur d'activité
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <!-- Ajoutez ici les options pour le secteur d'activité -->
-        </div>
-      </div>
-
-      <!-- Localisation -->
-      <div class="accordion-item">
-        <button class="accordion-header" @click="toggleAccordion($event)">
-          Localisation
-          <span class="arrow-icon">&#9662;</span>
-        </button>
-        <div class="accordion-content">
-          <input v-model="filtres.geolocalisation" placeholder="Localisation" />
-        </div>
-      </div>
-    </div>      </div>
 
         <div id="pensakola" class="column is-9-desktop">
           <div class="nombre-posts">
@@ -185,29 +191,18 @@
           <div v-if="noResults" class="alert alert-warning">
             Aucun poste ne correspond aux critères de recherche. Veuillez
             modifier vos filtres.
-            <button
-              @click="reinitialiserFiltres"
-              class="btn btn-secondary mt-3"
-            >
+            <button @click="reinitialiserFiltres" class="btn btn-secondary mt-3">
               Réinitialiser tous les filtres
             </button>
           </div>
 
           <div v-if="!noResults" class="emplois-liste">
             <div class="columns ndjo is-flex is-flex-wrap-wrap">
-              <EmploiCard
-                v-for="emploi in emploisFiltres.emplois"
-                :key="emploi.id"
-                :imageHomepage="emploi.imageHomepage"
-                :titre="emploi.titre"
-                :societe="emploi.societe"
-                :shortDescription="emploi.shortDescription"
-                :type="emploi.type"
-                :geolocalisation="emploi.geolocalisation"
-                :experienceRequise="emploi.experienceRequise"
-                :typeDeContrat="emploi.typeDeContrat"
-                class="column is-4-desktop is-12-tablet is-12-mobile"
-              />
+              <EmploiCard v-for="emploi in emploisFiltres.emplois" :key="emploi.id"
+                :imageHomepage="emploi.imageHomepage" :titre="emploi.titre" :societe="emploi.societe"
+                :shortDescription="emploi.shortDescription" :type="emploi.type"
+                :geolocalisation="emploi.geolocalisation" :experienceRequise="emploi.experienceRequise"
+                :typeDeContrat="emploi.typeDeContrat" class="column is-4-desktop is-12-tablet is-12-mobile" />
             </div>
           </div>
 
@@ -215,12 +210,8 @@
             <button @click="prevPage" :disabled="currentPage === 1">
               Précédent
             </button>
-            <button
-              v-for="page in totalPages"
-              :key="page"
-              @click="currentPage = page"
-              :class="{ active: currentPage === page }"
-            >
+            <button v-for="page in totalPages" :key="page" @click="currentPage = page"
+              :class="{ active: currentPage === page }">
               {{ page }}
             </button>
             <button @click="nextPage" :disabled="currentPage === totalPages">
@@ -234,13 +225,11 @@
   <footer class="footer">
     <div class="columns is-desktop">
       <div
-        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
-      >
+        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn">
         <p>© {{ currentYear }} TimeoRH</p>
       </div>
       <div
-        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn"
-      >
+        class="column is-6-desktop is-12-mobile is-flex is-align-items-center is-flex-direction-column is-justify-content-center recruitcolumn">
         <p>Fait avec ❤️ en Afrique</p>
       </div>
     </div>
@@ -266,7 +255,9 @@ const filtres = ref({
   experiencerequise: "",
   typeCheckbox: [],
   experiencerequisecheckbox: [],
-  motsCles: [],
+  motsCles: [], diplomeCheckbox: [],
+  typeSociete: ''
+
 });
 
 const currentPage = ref(1);
@@ -286,6 +277,9 @@ const experiences = computed(() => [
 
 const emploisFiltres = computed(() => {
   const filtered = emplois.value.filter((emploi) => {
+    const matchTypeSociete = !filtres.value.typeSociete ||
+      emploi.typeDeSociete.toLowerCase() === filtres.value.typeSociete.toLowerCase();
+
     const matchTitre =
       !filtres.value.titre ||
       emploi.titre.toLowerCase().includes(filtres.value.titre.toLowerCase());
@@ -317,6 +311,11 @@ const emploisFiltres = computed(() => {
         )
       );
 
+    const matchDiplome =
+      !filtres.value.diplomeCheckbox?.length ||
+      filtres.value.diplomeCheckbox?.includes(emploi?.diplomeRequis);
+
+
     return (
       matchTitre &&
       matchGeo &&
@@ -324,7 +323,8 @@ const emploisFiltres = computed(() => {
       matchExp &&
       matchTypeCheckbox &&
       matchExpCheckbox &&
-      matchMotsCles
+      matchMotsCles &&
+      matchDiplome && matchTypeSociete
     );
   });
 
@@ -374,9 +374,12 @@ const reinitialiserFiltres = () => {
     typeCheckbox: [],
     experiencerequisecheckbox: [],
     motsCles: [],
+    diplomeRequis: [],
+    typeSociete: "",
   };
   appliquerFiltres();
 };
+
 
 const toggleAccordion = (event) => {
   const header = event.currentTarget;
@@ -414,6 +417,23 @@ const experiencesWithCount = computed(() => {
   }));
 });
 
+const diplomes = computed(() => [...new Set(emplois.value.map((e) => e.diplomeRequis))]);
+
+const diplomesWithCount = computed(() => {
+  return diplomes.value.map((diplome) => ({
+    value: diplome,
+    count: emplois.value.filter((e) => e.diplomeRequis === diplome).length,
+  }));
+});
+const typesSociete = computed(() => [...new Set(emplois.value.map(e => e.typeDeSociete))]);
+
+const typesSocieteWithCount = computed(() => {
+  return typesSociete.value.map((type) => ({
+    value: type,
+    count: emplois.value.filter((e) => e.typeDeSociete === type).length,
+  }));
+});
+
 onMounted(() => {
   document.body.id = "offres";
 
@@ -444,6 +464,7 @@ const currentYear = computed(() => new Date().getFullYear());
   align-items: center;
   gap: 10px;
 }
+
 .form-check input[type="checkbox"] {
   width: 30px;
   height: 30px;
@@ -469,6 +490,7 @@ const currentYear = computed(() => new Date().getFullYear());
   right: 5px;
   top: 0;
 }
+
 .input-wrapper {
   position: relative;
 
@@ -485,6 +507,7 @@ const currentYear = computed(() => new Date().getFullYear());
     }
   }
 }
+
 .clear-input {
   background: #eee;
   color: #999;
@@ -497,5 +520,13 @@ const currentYear = computed(() => new Date().getFullYear());
   justify-content: center;
   flex-direction: column;
   right: 16px !important;
+}
+
+.kaihones {
+  width: 100%;
+}
+
+#titreinp {
+  padding-left: 4em;
 }
 </style>

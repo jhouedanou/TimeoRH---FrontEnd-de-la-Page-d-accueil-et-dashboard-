@@ -6,6 +6,7 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
+    "diplomeRequis":"BAC+5",
     "competencesRequises": [
       "JavaScript",
       "React",
@@ -159,6 +160,7 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
+    "diplomeRequis":"BTS",
     "competencesRequises": [
       "Figma",
       "Adobe XD",
@@ -291,6 +293,7 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Docker",
       "Kubernetes",
@@ -423,6 +426,7 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Python",
       "R",
@@ -555,6 +559,7 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "HTML",
       "CSS",
@@ -687,6 +692,7 @@
     "titre": "Responsable Marketing",
     "description": "Nous recherchons un Responsable Marketing pour développer et mettre en œuvre des stratégies de marketing innovantes.",
     "shortDescription": "Recherche d'un Responsable Marketing pour développer des stratégies innovantes. Compétences requises : stratégie, communication, analyse de marché.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Stratégie marketing",
       "Communication",
@@ -819,6 +825,7 @@
     "titre": "Chef de Projet IT",
     "description": "Nous cherchons un Chef de Projet IT pour gérer des projets technologiques complexes de la conception à la mise en œuvre.",
     "shortDescription": "Recherche d'un Chef de Projet IT pour gérer des projets technologiques. Compétences requises : gestion de projet, développement logiciel, leadership.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Gestion de projet",
       "Développement logiciel",
@@ -951,6 +958,7 @@
     "titre": "Développeur Mobile",
     "description": "Nous recrutons un Développeur Mobile pour créer des applications mobiles innovantes et performantes.",
     "shortDescription": "Recherche d'un Développeur Mobile pour créer des applications innovantes. Compétences requises : iOS, Android, Flutter.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "iOS",
       "Android",
@@ -1083,6 +1091,7 @@
     "titre": "Assistant Administratif",
     "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des opérations quotidiennes.",
     "shortDescription": "Recherche d'un Assistant Administratif pour gérer les tâches administratives et opérationnelles. Compétences requises : organisation, communication, gestion des documents.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Organisation",
       "Gestion des documents",
@@ -1215,6 +1224,7 @@
     "titre": "Chargé de Communication",
     "description": "Nous recherchons un Chargé de Communication pour élaborer des stratégies de communication efficaces et gérer les relations publiques.",
     "shortDescription": "Recherche d'un Chargé de Communication pour développer des stratégies de communication. Compétences requises : rédaction, relations publiques, gestion de crise.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Rédaction",
       "Relations publiques",
@@ -1347,6 +1357,7 @@
     "titre": "Analyste Financier Senior ",
     "description": "Nous cherchons un Analyste Financier Senior pour analyser les données financières et fournir des recommandations stratégiques.",
     "shortDescription": "Recherche d'un Analyste Financier pour analyser les données financières et fournir des recommandations. Compétences requises : analyse des données, prévisions financières, reporting.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Analyse des données",
       "Prévisions financières",
@@ -1509,6 +1520,7 @@
     "titre": "Graphiste",
     "description": "Nous recrutons un Graphiste pour créer des visuels innovants pour nos supports marketing et de communication.",
     "shortDescription": "Recherche d'un Graphiste pour créer des visuels innovants. Compétences requises : design graphique, maîtrise des outils Adobe, créativité.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Design graphique",
       "Maîtrise des outils Adobe",
@@ -1591,6 +1603,7 @@
     "titre": "Responsable RH",
     "description": "Nous recherchons un Responsable RH pour gérer les ressources humaines et développer des politiques de gestion du personnel.",
     "shortDescription": "Recherche d'un Responsable RH pour gérer les ressources humaines. Compétences requises : gestion des talents, développement organisationnel, législation du travail.",
+    "diplomeRequis":"BAC+4",
     "competencesRequises": [
       "Gestion des talents",
       "Développement organisationnel",

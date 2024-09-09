@@ -14,14 +14,14 @@ Footer:
   ✔ Modifier le footer pour afficher "fait en Afrique" - @done(24-09-07 10:40)
 ✔ @done(24-09-07 10:40)
 Recherche d'emploi:
-  ☐ Organiser les filtres de recherche à gauche, dans l'ordre suivant:
-    ☐ Intitulé du poste
-    ☐ Diplômes/niveau d'études
-    ☐ Expérience professionnelle requise
-    ☐ Type de contrat
-    ☐ Compétences techniques requises
-    ☐ Secteur d'activité
-    ☐ Localisation
+  ✔ Organiser les filtres de recherche à gauche, dans l'ordre suivant: @done(24-09-09 09:42)
+    ✔ Intitulé du poste @done(24-09-09 09:42)
+    ✔ Diplômes/niveau d'études @done(24-09-09 10:02)
+    ✔ Expérience professionnelle requise @done(24-09-09 10:03)
+    ✔ Type de contrat @done(24-09-09 10:03)
+    ✔ Compétences techniques requises @done(24-09-09 10:10)
+    ✔ Secteur d'activité @done(24-09-09 10:24)
+    ✔ Localisation @done(24-09-09 10:30)
 
 Interface recruteur:
   ☐ Mettre à jour les rubriques de l'interface:

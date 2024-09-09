@@ -22,7 +22,6 @@ const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <style scoped>
-/* Ajoutez ici vos styles pour le layout dashboard */
 .dashboard-content {
   margin-top: 5px;
 }
