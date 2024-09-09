@@ -38,22 +38,22 @@ Recherche d'emploi:
         ☐ Ne conserver que le taux d'apprentissage
 
     Interface recruteur:
-  ☐ Mettre à jour les rubriques de l'interface:
-    ☐ Accueil
-    ☐ Recherche
-    ☐ Offres d'emploi et candidatures
-    ☐ Centre de formation
+  ✔ Mettre à jour les rubriques de l'interface: @done(24-09-09 15:50)
+    ✔ Accueil @done(24-09-09 15:50)
+    ✔ Recherche @done(24-09-09 15:50)
+    ✔ Offres d'emploi et candidatures @done(24-09-09 15:50)
+    ✔ Centre de formation @done(24-09-09 15:50)
     ✔ Ajouter une phrase explicative sous "Recherche" : "Sélectionnez et contactez partout dans le monde les profils professionnels dont votre entreprise a besoin" @done(24-09-09 11:10)
-    ☐ Positionner les filtres à droite et les aligner sur les rubriques du CV TimeoRH:
-    ☐ Intitulé du poste
-    ☐ Diplôme et niveau d'étude (education)
-    ☐ Nombre d'années d'expérience professionnelle globale
-    ☐ Nombre d'années d'expérience spécifique dans un domaine précis
-    ☐ Nombre d'années d'expérience à un poste de manager
-    ☐ Mission principale
-    ☐ Activités liées au poste
-    ☐ Autres compétences/savoir-faire
-    ☐ Langues : mode d'expression et niveau
+    ✔ Positionner les filtres à droite et les aligner sur les rubriques du CV TimeoRH: @done(24-09-09 15:28)
+    ✔ Intitulé du poste @done(24-09-09 15:28)
+    ✔ Diplôme et niveau d'étude (education) @done(24-09-09 15:28)
+    ✔ Nombre d'années d'expérience professionnelle globale @done(24-09-09 15:28)
+    ✔ Nombre d'années d'expérience spécifique dans un domaine précis @done(24-09-09 15:28)
+    ✔ Nombre d'années d'expérience à un poste de manager @done(24-09-09 15:28)
+    ✔ Mission principale @done(24-09-09 15:28)
+    ✔ Activités liées au poste @done(24-09-09 15:28)
+    ✔ Autres compétences/savoir-faire @done(24-09-09 15:28)
+    ✔ Langues : mode d'expression et niveau @done(24-09-09 15:28)
 
 
 Offres d'emploi et candidatures:

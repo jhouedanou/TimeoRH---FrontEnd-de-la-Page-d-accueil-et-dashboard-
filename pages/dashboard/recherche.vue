@@ -172,20 +172,6 @@
           </div>
         </div>
 
-        <!-- Education -->
-        <div class="filter-section">
-          <h3 @click="toggleFilter('education')" class="filter-title">
-            Éducation
-            <span class="arrow"
-              :class="{ 'arrow-up': !filters.education.isOpen, 'arrow-down': filters.education.isOpen }">▼</span>
-          </h3>
-          <div v-if="filters.education.isOpen" class="filter-content">
-            <div v-for="edu in uniqueEducations" :key="edu" class="form-check">
-              <input type="checkbox" :id="edu" v-model="filters.education.selected" :value="edu">
-              <label :for="edu">{{ edu }}</label>
-            </div>
-          </div>
-        </div>
 
         <!-- Années d'expérience professionnelle -->
         <div class="filter-section">
@@ -284,6 +270,7 @@
                   <option value="Courant">Courant</option>
                   <option value="Natif">Natif</option>
                 </select>
+
               </div>
             </div>
           </div>
@@ -440,61 +427,6 @@ const selectedCandidat = ref(null);
 const competenceFilter = ref("");
 const isCollapsed = ref(true);
 
-const toggleCollapse = () => {
-  isCollapsed.value = !isCollapsed.value;
-};
-
-const searchTerms = computed(() => {
-  const terms = [];
-
-  // Termes de l'URL
-  if (route.query.q) terms.push(route.query.q);
-  if (route.query.competence) terms.push(route.query.competence);
-
-  // Filtres de la barre latérale
-  Object.entries(filters.value).forEach(([key, filter]) => {
-    if (filter.selected && filter.selected.length > 0) {
-      terms.push(...filter.selected);
-    }
-  });
-
-  // Filtres déroulants
-  Object.entries(dropdownFilters.value).forEach(([key, value]) => {
-    if (value) {
-      terms.push(value);
-    }
-  });
-
-  return [...new Set(terms)]; // Éliminer les doublons
-});
-
-const filters = ref({
-  education: { isOpen: true, selected: [] },
-  geolocalisation: { isOpen: false, selected: [] },
-  experience: { isOpen: false, selected: [] },
-  competences: { isOpen: false, selected: [] },
-
-  experienceSpecifiqueTitre: { isOpen: false, value: '' },
-  education: { isOpen: false, selected: [] },
-  anneesExperience: { isOpen: false, min: null, max: null },
-  anneesExperienceManager: { isOpen: false, min: null, max: null },
-  missionPrincipale: { isOpen: false, selected: [] },
-  activitesLiees: { isOpen: false, selected: [] },
-  competences: { isOpen: false, selected: [] },
-  langues: { isOpen: false, selected: {} },
-});
-
-const dropdownFilters = ref({
-  education: "",
-  geolocalisation: "",
-  experience: "",
-  situationProfessionnelle: "",
-});
-
-const toggleFilter = (filterName) => {
-  filters.value[filterName].isOpen = !filters.value[filterName].isOpen;
-};
-
 const uniqueEducations = computed(() => {
   return [...new Set(data.value.flatMap((c) => c.education))];
 });
@@ -530,6 +462,68 @@ const uniqueActivitesLiees = computed(() => {
 const uniqueLangues = computed(() => {
   return [...new Set(data.value.flatMap(c => c.langues.map(l => l.langue)))];
 });
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
+};
+
+const searchTerms = computed(() => {
+  const terms = [];
+
+  // Termes de l'URL
+  if (route.query.q) terms.push(route.query.q);
+  if (route.query.competence) terms.push(route.query.competence);
+
+  // Filtres de la barre latérale
+  Object.entries(filters.value).forEach(([key, filter]) => {
+    if (filter.selected && filter.selected.length > 0) {
+      terms.push(...filter.selected);
+    }
+  });
+
+  // Filtres déroulants
+  Object.entries(dropdownFilters.value).forEach(([key, value]) => {
+    if (value) {
+      terms.push(value);
+    }
+  });
+
+  return [...new Set(terms)]; // Éliminer les doublons
+});
+
+const initializeFilters = () => {
+  return {
+    education: { isOpen: true, selected: [] },
+    geolocalisation: { isOpen: false, selected: [] },
+    experience: { isOpen: false, selected: [] },
+    competences: { isOpen: false, selected: [] },
+    experienceSpecifiqueTitre: { isOpen: false, value: '' },
+    anneesExperience: { isOpen: false, min: null, max: null },
+    anneesExperienceManager: { isOpen: false, min: null, max: null },
+    missionPrincipale: { isOpen: false, selected: [] },
+    activitesLiees: { isOpen: false, selected: [] },
+    langues: {
+      isOpen: false,
+      selected: Object.fromEntries(uniqueLangues.value.map(lang => [lang, { expression: '', niveau: '' }]))
+    },
+  };
+};
+
+const filters = ref(initializeFilters());
+
+const dropdownFilters = ref({
+  education: "",
+  geolocalisation: "",
+  experience: "",
+  situationProfessionnelle: "",
+});
+
+const toggleFilter = (filterName) => {
+  filters.value[filterName].isOpen = !filters.value[filterName].isOpen;
+
+
+
+};
+
 
 
 //popup
@@ -1690,8 +1684,8 @@ onMounted(() => {
 }
 
 .filter-section {
-  max-height: 300px;
-  overflow-y: auto;
+  // max-height: 300px;
+  // overflow-y: auto;
   padding-right: 10px;
 }
 
