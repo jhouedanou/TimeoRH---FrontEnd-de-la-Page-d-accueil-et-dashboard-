@@ -11,6 +11,22 @@
     "lettre_motivation": "lettre_motivation_aya_kouassi.pdf",
     "competences": ["Java", "Python", "SQL"],
     "experience": 5,
+    "experienceSpecifique": [
+      {
+        "titre": "Développeuse Full Stack",
+        "duree": 3,
+        "manager": true,
+        "mission_principale": "Développement et maintenance d'applications web complètes",
+        "activiteliees": ["Conception d'architecture logicielle", "Développement front-end et back-end", "Gestion de base de données", "Intégration continue"]
+      },
+      {
+        "titre": "Développeuse Back-end",
+        "duree": 2,
+        "manager": false,
+        "mission_principale": "Conception et implémentation de services back-end",
+        "activiteliees": ["Développement d'API RESTful", "Optimisation des performances", "Gestion de la sécurité", "Tests unitaires et d'intégration"]
+      }
+    ],
     "dateInscription": "2023-05-15",
     "education": [
       "Master en Informatique",
@@ -26,7 +42,19 @@
     "appreciation": "Excellente candidate avec une solide formation et une expérience diversifiée",
     "taux_remplissage_profil": 75,
     "image": "https://i.pravatar.cc/230?img=49",
-    "portfolio": "https://www.behance.net/jhouedanou"
+    "portfolio": "https://www.behance.net/jhouedanou",
+      "langues": [
+    {
+      "langue": "Français",
+      "expression": "Oral et écrit",
+      "niveau": "Natif"
+    },
+    {
+      "langue": "Anglais",
+      "expression": "Oral et écrit",
+      "niveau": "Courant"
+    }
+  ]
   },
   {
     "candidat_id": 2,
@@ -40,6 +68,22 @@
     "lettre_motivation": "lettre_motivation_mamadou_diallo.pdf",
     "competences": ["JavaScript", "React", "Node.js"],
     "experience": 3,
+    "experienceSpecifique": [
+      {
+        "titre": "Développeur Front-end",
+        "duree": 2,
+        "manager": false,
+        "mission_principale": "Création d'interfaces utilisateur réactives et performantes",
+        "activiteliees": ["Développement avec React", "Optimisation des performances front-end", "Intégration de designs", "Tests unitaires avec Jest"]
+      },
+      {
+        "titre": "Développeur Web Junior",
+        "duree": 1,
+        "manager": false,
+        "mission_principale": "Assistance au développement de sites web",
+        "activiteliees": ["Développement HTML/CSS", "Intégration de fonctionnalités JavaScript", "Maintenance de sites existants", "Collaboration avec l'équipe de design"]
+      }
+    ],
     "dateInscription": "2023-05-16",
     "education": [
       "Licence en Développement Web",
@@ -55,7 +99,19 @@
     "appreciation": "Développeur prometteur avec une excellente maîtrise des technologies web actuelles",
     "taux_remplissage_profil": 68,
     "image": "https://i.pravatar.cc/230?img=7",
-    "portfolio": "https://www.behance.net/jhouedanou"
+    "portfolio": "https://www.behance.net/jhouedanou",
+      "langues": [
+    {
+      "langue": "Français",
+      "expression": "Oral et écrit",
+      "niveau": "Natif"
+    },
+    {
+      "langue": "Anglais",
+      "expression": "Oral et écrit",
+      "niveau": "Courant"
+    }
+  ]
   },
   {
     "candidat_id": 3,
@@ -69,6 +125,22 @@
     "lettre_motivation": "lettre_motivation_aminata_ouattara.pdf",
     "competences": ["C++", "C#", "Unity"],
     "experience": 7,
+    "experienceSpecifique": [
+      {
+        "titre": "Développeuse de Jeux",
+        "duree": 5,
+        "manager": true,
+        "mission_principale": "Conception et développement de jeux vidéo",
+        "activiteliees": ["Programmation de gameplay", "Optimisation des performances", "Intégration d'assets", "Gestion d'équipe de développement"]
+      },
+      {
+        "titre": "Développeuse C++",
+        "duree": 2,
+        "manager": false,
+        "mission_principale": "Développement de logiciels bas niveau en C++",
+        "activiteliees": ["Développement de systèmes embarqués", "Optimisation de code", "Débogage avancé", "Implémentation d'algorithmes complexes"]
+      }
+    ],
     "dateInscription": "2023-05-17",
     "education": [
       "Doctorat en Informatique",
@@ -84,7 +156,19 @@
     "appreciation": "Candidate hautement qualifiée avec une expérience impressionnante dans le développement de logiciels complexes",
     "taux_remplissage_profil": 80,
     "image": "https://i.pravatar.cc/230?img=34",
-    "portfolio": "https://www.behance.net/jhouedanou"
+    "portfolio": "https://www.behance.net/jhouedanou",
+      "langues": [
+    {
+      "langue": "Français",
+      "expression": "Oral et écrit",
+      "niveau": "Natif"
+    },
+    {
+      "langue": "Anglais",
+      "expression": "Oral et écrit",
+      "niveau": "Courant"
+    }
+  ]
   },
   {
     "candidat_id": 4,
@@ -98,6 +182,22 @@
     "lettre_motivation": "lettre_motivation_seydou_kone.pdf",
     "competences": ["PHP", "Laravel", "MySQL"],
     "experience": 4,
+    "experienceSpecifique": [
+      {
+        "titre": "Développeur Back-end",
+        "duree": 3,
+        "manager": false,
+        "mission_principale": "Développement et optimisation de services back-end",
+        "activiteliees": ["Développement d'API RESTful", "Optimisation de requêtes SQL", "Mise en place de systèmes de cache", "Implémentation de systèmes d'authentification"]
+      },
+      {
+        "titre": "Développeur PHP Junior",
+        "duree": 1,
+        "manager": false,
+        "mission_principale": "Développement de fonctionnalités pour des sites web dynamiques",
+        "activiteliees": ["Création de modules PHP", "Intégration de templates", "Gestion de formulaires", "Débogage et maintenance de code"]
+      }
+    ],
     "dateInscription": "2023-05-18",
     "education": [
       "DUT Informatique",
@@ -113,7 +213,19 @@
     "appreciation": "Développeur fiable avec une bonne expérience dans les technologies web côté serveur",
     "taux_remplissage_profil": 72,
     "image": "https://i.pravatar.cc/230?img=64",
-    "portfolio": "https://www.behance.net/jhouedanou"
+    "portfolio": "https://www.behance.net/jhouedanou",
+      "langues": [
+    {
+      "langue": "Français",
+      "expression": "Oral et écrit",
+      "niveau": "Natif"
+    },
+    {
+      "langue": "Anglais",
+      "expression": "Oral et écrit",
+      "niveau": "Courant"
+    }
+  ]
   },
   {
     "candidat_id": 5,
@@ -127,6 +239,22 @@
     "lettre_motivation": "lettre_motivation_fanta_bamba.pdf",
     "competences": ["Ruby", "Rails", "PostgreSQL"],
     "experience": 6,
+    "experienceSpecifique": [
+      {
+        "titre": "Développeuse Ruby on Rails",
+        "duree": 4,
+        "manager": true,
+        "mission_principale": "Développement et maintenance d'applications web avec Ruby on Rails",
+        "activiteliees": ["Conception d'architecture MVC", "Développement de gems personnalisées", "Optimisation des performances", "Gestion de déploiements"]
+      },
+      {
+        "titre": "Développeuse Web Full Stack",
+        "duree": 2,
+        "manager": false,
+        "mission_principale": "Développement de solutions web complètes",
+        "activiteliees": ["Développement front-end avec JavaScript", "Création d'API RESTful", "Intégration de services tiers", "Gestion de bases de données relationnelles"]
+      }
+    ],
     "dateInscription": "2023-05-19",
     "education": [
       "Master en Génie Logiciel",
@@ -142,64 +270,18 @@
     "appreciation": "Développeuse expérimentée avec une excellente maîtrise des méthodologies de développement modernes",
     "taux_remplissage_profil": 78,
     "image": "https://i.pravatar.cc/230?img=16",
-    "portfolio": "https://www.behance.net/jhouedanou"
-  },
-  {
-    "candidat_id": 6,
-    "nom": "Touré",
-    "prenom": "Ibrahim",
-    "titre": "Développeur Angular",
-    "email": "ibrahim.toure@email.com",
-    "telephone": "0678901234",
-    "situationProfessionnelle": "En recherche active",
-    "cv": "cv_ibrahim_toure.pdf",
-    "lettre_motivation": "lettre_motivation_ibrahim_toure.pdf",
-    "competences": ["Angular", "TypeScript", "MongoDB"],
-    "experience": 2,
-    "dateInscription": "2023-05-20",
-    "education": [
-      "Licence en Systèmes d'Information",
-      "DUT en Réseaux et Télécommunications",
-      "Certification Angular"
-    ],
-    "geolocalisation": "Koumassi",
-    "points_forts": [
-      "Développement front-end moderne",
-      "Bases de données NoSQL",
-      "Apprentissage rapide"
-    ],
-    "appreciation": "Jeune développeur talentueux avec un fort potentiel dans les technologies web modernes",
-    "taux_remplissage_profil": 65,
-    "image": "https://i.pravatar.cc/230?img=7",
-    "portfolio": "https://www.behance.net/jhouedanou"
-  },
-  {
-    "candidat_id": 7,
-    "nom": "Diallo",
-    "prenom": "Fatou",
-    "titre": "Développeuse iOS",
-    "email": "fatou.diallo@email.com",
-    "telephone": "0789012345",
-    "situationProfessionnelle": "En recherche active",
-    "cv": "cv_fatou_diallo.pdf",
-    "lettre_motivation": "lettre_motivation_fatou_diallo.pdf",
-    "competences": ["Swift", "iOS", "Firebase"],
-    "experience": 4,
-    "dateInscription": "2023-05-21",
-    "education": [
-      "DUT en Développement Mobile",
-      "Licence en Informatique",
-      "Certification Apple Developer"
-    ],
-    "geolocalisation": "Treichville",
-    "points_forts": [
-      "Expertise en développement iOS",
-      "Intégration de services cloud",
-      "Design d'interface utilisateur"
-    ],
-    "appreciation": "Développeuse mobile compétente avec une solide expérience dans la création d'applications iOS",
-    "taux_remplissage_profil": 70,
-    "image": "https://i.pravatar.cc/230?img=46",
-    "portfolio": "https://www.behance.net/jhouedanou"
+    "portfolio": "https://www.behance.net/jhouedanou",
+      "langues": [
+    {
+      "langue": "Français",
+      "expression": "Oral et écrit",
+      "niveau": "Natif"
+    },
+    {
+      "langue": "Anglais",
+      "expression": "Oral et écrit",
+      "niveau": "Courant"
+    }
+  ]
   }
 ]

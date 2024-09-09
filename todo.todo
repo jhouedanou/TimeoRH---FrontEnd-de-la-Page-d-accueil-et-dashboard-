@@ -23,16 +23,30 @@ Recherche d'emploi:
     ✔ Secteur d'activité @done(24-09-09 10:24)
     ✔ Localisation @done(24-09-09 10:30)
 
-Interface recruteur:
+    Tableau de bord recruteur (Accueil):
+      ☐ Afficher des visuels indiquant:
+        ☐ Nombre de profils enregistrés par catégories (excellence, premium, privilège, élite)
+        ☐ Nombre de recherches ponctuelles de profil effectuées par l'entreprise
+        ☐ Nombre de mises en relation effectuées par TimeoRH
+        ☐ Nombre d'offres d'emploi publiées
+        ☐ Nombre total de candidatures reçues
+        ☐ Nombre total de candidats retenus
+        ☐ Nombre de postes pourvus
+        ☐ Nombre de postes non pourvus
+        ☐ Nombre d'annonces publicitaires diffusées
+        ☐ Nombre de vidéos de formation visualisées
+        ☐ Ne conserver que le taux d'apprentissage
+
+    Interface recruteur:
   ☐ Mettre à jour les rubriques de l'interface:
     ☐ Accueil
     ☐ Recherche
     ☐ Offres d'emploi et candidatures
     ☐ Centre de formation
-  ☐ Ajouter une phrase explicative sous "Recherche" : "Sélectionnez et contactez partout dans le monde les profils professionnels dont votre entreprise a besoin"
-  ☐ Positionner les filtres à droite et les aligner sur les rubriques du CV TimeoRH:
+    ✔ Ajouter une phrase explicative sous "Recherche" : "Sélectionnez et contactez partout dans le monde les profils professionnels dont votre entreprise a besoin" @done(24-09-09 11:10)
+    ☐ Positionner les filtres à droite et les aligner sur les rubriques du CV TimeoRH:
     ☐ Intitulé du poste
-    ☐ Diplôme et niveau d'étude
+    ☐ Diplôme et niveau d'étude (education)
     ☐ Nombre d'années d'expérience professionnelle globale
     ☐ Nombre d'années d'expérience spécifique dans un domaine précis
     ☐ Nombre d'années d'expérience à un poste de manager
@@ -40,7 +54,7 @@ Interface recruteur:
     ☐ Activités liées au poste
     ☐ Autres compétences/savoir-faire
     ☐ Langues : mode d'expression et niveau
-    ☐ Ne conserver que le taux d'apprentissage
+
 
 Offres d'emploi et candidatures:
   ☐ Structurer les rubriques du tableau de bord (de gauche à droite):
@@ -66,18 +80,6 @@ Offres d'emploi et candidatures:
   ☐ Permettre de cliquer sur le chiffre pour afficher la page de recherche correspondante
   ☐ Renommer "Offres d'emploi" en "Gestion des offres d'emploi et des candidatures"
 
-Tableau de bord recruteur (Accueil):
-  ☐ Afficher des visuels indiquant:
-    ☐ Nombre de profils enregistrés par catégories (excellence, premium, privilège, élite)
-    ☐ Nombre de recherches ponctuelles de profil effectuées par l'entreprise
-    ☐ Nombre de mises en relation effectuées par TimeoRH
-    ☐ Nombre d'offres d'emploi publiées
-    ☐ Nombre total de candidatures reçues
-    ☐ Nombre total de candidats retenus
-    ☐ Nombre de postes pourvus
-    ☐ Nombre de postes non pourvus
-    ☐ Nombre d'annonces publicitaires diffusées
-    ☐ Nombre de vidéos de formation visualisées
 
 Planifier le recrutement:
   ☐ Créer un panier des candidats retenus

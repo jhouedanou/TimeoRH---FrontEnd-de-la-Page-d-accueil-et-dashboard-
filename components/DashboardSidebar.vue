@@ -6,71 +6,58 @@
       <span></span>
     </button>
 
-    <aside
-      class="dashboard-sidebar p-0"
-      :class="{ 'is-active': sidebarActive }"
-    >
+    <aside class="dashboard-sidebar p-0" :class="{ 'is-active': sidebarActive }">
       <div class="recruiter-info p-2">
-        <img
-          :src="recruiterInfo.image"
-          alt="Recruteur"
-          height="52"
-          width="52"
-        />
+        <img :src="recruiterInfo.image" alt="Recruteur" height="52" width="52" />
         <p>
-          {{ recruiterInfo.prenom }} {{ recruiterInfo.nom }}<br /><span
-            >{{ recruiterInfo.poste }} à {{ recruiterInfo.compagnie }}</span
-          >
+          {{ recruiterInfo.prenom }} {{ recruiterInfo.nom }}<br /><span>{{ recruiterInfo.poste }} à {{
+            recruiterInfo.compagnie }}</span>
         </p>
       </div>
       <nav>
         <ul class="dashboard-sidebar-menu">
           <li>
-            <NuxtLink
-              @click="closeSidebar"
-              to="/dashboard"
-              :class="{ active: $route.path === '/dashboard' }"
-            >
+            <NuxtLink @click="closeSidebar" to="/dashboard" :class="{ active: $route.path === '/dashboard' }"
+              class="tooltip">
               <img src="/images/dashboardsidebar/home.svg" alt="" />
 
               Accueil
+              <span class="tooltiptext">Tableau de bord principal</span>
+
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              @click="closeSidebar"
-              to="/dashboard/recherche"
-              :class="{ active: $route.path === '/dashboard/recherche' }"
-            >
+            <NuxtLink @click="closeSidebar" to="/dashboard/recherche"
+              :class="{ active: $route.path === '/dashboard/recherche' }" class="tooltip">
               <img src="/images/dashboardsidebar/search.svg" alt="" />
 
               Recherche
+              <span class="tooltiptext">Sélectionnez et contactez partout dans le monde les profils professionnels dont
+                votre entreprise a besoin</span>
+
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              @click="closeSidebar"
-              to="/dashboard/vos-offres-emploi"
-              :class="{
-                active:
-                  $route.path.startsWith('/dashboard/vos-offres-emploi') ||
-                  $route.path.includes('planifier-recrutement') ||
-                  $route.path.includes('ajouter-offre'),
-              }"
-            >
+            <NuxtLink @click="closeSidebar" to="/dashboard/vos-offres-emploi" :class="{
+              active:
+                $route.path.startsWith('/dashboard/vos-offres-emploi') ||
+                $route.path.includes('planifier-recrutement') ||
+                $route.path.includes('ajouter-offre'),
+            }" class="tooltip">
               <img src="/images/dashboardsidebar/offremploi.svg" alt="" />
               Vos offres d'emploi
+              <span class="tooltiptext">Lister et gérer vos offres d'emploi</span>
+
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              @click="closeSidebar"
-              to="/dashboard/learning-center"
-              :class="{ active: $route.path === '/dashboard/learning-center' }"
-            >
+            <NuxtLink @click="closeSidebar" to="/dashboard/learning-center"
+              :class="{ active: $route.path === '/dashboard/learning-center' }" class="tooltip">
               <img src="/images/dashboardsidebar/learningcenter.svg" alt="" />
 
               Learning Center
+              <span class="tooltiptext">Vos apprentissages</span>
+
             </NuxtLink>
           </li>
         </ul>
@@ -162,16 +149,19 @@ const logout = () => {
 .dashboard-sidebar {
   position: relative;
 }
+
 .recruiter-info {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+
   img {
     border-radius: 100%;
     width: 52px;
     height: 52px;
   }
+
   p {
     margin-left: 10px;
     font-family: "Inter", sans-serif;
@@ -183,6 +173,7 @@ const logout = () => {
     letter-spacing: 0.18px;
     text-align: left;
     color: #000;
+
     span {
       font-size: 13px;
       font-weight: normal;
@@ -195,12 +186,15 @@ const logout = () => {
     }
   }
 }
+
 .active {
   /* Ajoutez vos styles pour le lien actif ici */
   font-weight: bold;
 }
+
 .dashboard-sidebar-menu {
   height: 70vh;
+
   li {
     a {
       height: 67px;
@@ -219,10 +213,12 @@ const logout = () => {
       color: #464646;
       padding: 10px 10px 10px 20px;
       position: relative;
+
       &.active,
       &:hover {
         background-color: #f8f8f8;
         color: #012e61;
+
         &:before {
           content: "";
           position: absolute;
@@ -238,6 +234,7 @@ const logout = () => {
           border-radius: 0 5px 5px 0;
         }
       }
+
       &:hover {
         &:before {
           content: "";
@@ -254,12 +251,14 @@ const logout = () => {
           border-radius: 0 5px 5px 0;
         }
       }
+
       img {
         margin-right: 15px;
       }
     }
   }
 }
+
 .logout-button {
   background: #a4a4a4;
   color: #012e61;
@@ -272,10 +271,12 @@ const logout = () => {
   display: flex;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
   &:hover {
     background-color: #0056b3;
   }
 }
+
 .hamburger-menu {
   display: none;
   position: fixed;
@@ -303,6 +304,7 @@ const logout = () => {
     justify-content: center !important;
     flex-direction: column !important;
   }
+
   .hamburger-menu {
     display: block;
   }
