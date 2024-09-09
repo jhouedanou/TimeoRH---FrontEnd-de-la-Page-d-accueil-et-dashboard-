@@ -1847,3 +1847,22 @@ $secondary: #012e61;
   .searchFilters::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
+  .dashboard-layout{
+    .form-check{
+        display: flex !important;
+        align-items: flex-start !important;
+        margin: 1em 0 !important;
+    }
+
+    label{
+        font-family: "Open Sans", sans-serif !important;
+        font-size: 16px !important;
+        font-weight: normal !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: normal !important;
+        letter-spacing: normal !important;
+        text-align: left !important;
+        color: #5e6368 !important;
+    }
+  }

@@ -1596,14 +1596,7 @@ onMounted(() => {
   }
 }
 
-.filter-section {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 10px;
-  margin: 0;
-  padding: 0;
-  /* Espace pour la barre de défilement */
-}
+
 
 /* Style de la barre de défilement pour macOS */
 .filter-section::-webkit-scrollbar {
