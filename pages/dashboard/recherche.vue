@@ -4,7 +4,7 @@
       <div class="bull">{{ searchTerms.join(", ") }}</div>
       <div class="shi">Profils correspondants : {{ totalElements }}</div>
     </div>
-    <div class="wholefilters">
+    <!-- <div class="wholefilters">
       <select v-model="dropdownFilters.education">
         <option value="">Tous les niveaux d'éducation</option>
         <option v-for="edu in uniqueEducations" :key="edu" :value="edu">
@@ -29,9 +29,9 @@
           {{ sit }}
         </option>
       </select>
-    </div>
+    </div> -->
     <div id="dave" class="columns">
-      <div class="column is-9-desktop is-12-mobile">
+      <div class="column is-8-desktop is-12-mobile">
         <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
           Réinitialiser les filtres
         </button>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div class="searchFilters column is-3-desktop is-12-mobile">
+      <div class="searchFilters column is-4-desktop is-12-mobile">
         <div class="filter-section">
           <h3 @click="toggleFilter('education')" class="filter-title">
             Éducation
@@ -156,9 +156,143 @@
             </div>
           </div>
         </div>
+        <!-- Experience Spécifique Titre -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('experienceSpecifiqueTitre')" class="filter-title">
+            Expérience Spécifique
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.experienceSpecifiqueTitre.isOpen, 'arrow-down': filters.experienceSpecifiqueTitre.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.experienceSpecifiqueTitre.isOpen" class="filter-content">
+            <input v-model="filters.experienceSpecifiqueTitre.value" list="experienceSpecifiqueTitres"
+              placeholder="Titre de l'expérience">
+            <datalist id="experienceSpecifiqueTitres">
+              <option v-for="titre in uniqueExperienceSpecifiqueTitres" :key="titre" :value="titre" />
+            </datalist>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('education')" class="filter-title">
+            Éducation
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.education.isOpen, 'arrow-down': filters.education.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.education.isOpen" class="filter-content">
+            <div v-for="edu in uniqueEducations" :key="edu" class="form-check">
+              <input type="checkbox" :id="edu" v-model="filters.education.selected" :value="edu">
+              <label :for="edu">{{ edu }}</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Années d'expérience professionnelle -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('anneesExperience')" class="filter-title">
+            Années d'expérience professionnelle
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.anneesExperience.isOpen, 'arrow-down': filters.anneesExperience.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.anneesExperience.isOpen" class="filter-content">
+            <input v-model="filters.anneesExperience.min" type="range" min="0" max="100" step="1">
+            <span>Min: {{ filters.anneesExperience.min }}</span>
+            <input v-model="filters.anneesExperience.max" type="range" min="0" max="100" step="1">
+            <span>Max: {{ filters.anneesExperience.max }}</span>
+          </div>
+        </div>
+
+        <!-- Années d'expérience en tant que manager -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('anneesExperienceManager')" class="filter-title">
+            Années d'expérience en tant que manager
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.anneesExperienceManager.isOpen, 'arrow-down': filters.anneesExperienceManager.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.anneesExperienceManager.isOpen" class="filter-content">
+            <input v-model="filters.anneesExperienceManager.min" type="range" min="0" max="100" step="1">
+            <span>Min: {{ filters.anneesExperienceManager.min }}</span>
+            <input v-model="filters.anneesExperienceManager.max" type="range" min="0" max="100" step="1">
+            <span>Max: {{ filters.anneesExperienceManager.max }}</span>
+          </div>
+        </div>
+
+        <!-- Mission principale -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('missionPrincipale')" class="filter-title">
+            Mission principale
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.missionPrincipale.isOpen, 'arrow-down': filters.missionPrincipale.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.missionPrincipale.isOpen" class="filter-content">
+            <div v-for="mission in uniqueMissionsPrincipales" :key="mission" class="form-check">
+              <input type="checkbox" :id="mission" v-model="filters.missionPrincipale.selected" :value="mission">
+              <label :for="mission">{{ mission }}</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activités liées -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('activitesLiees')" class="filter-title">
+            Activités liées
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.activitesLiees.isOpen, 'arrow-down': filters.activitesLiees.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.activitesLiees.isOpen" class="filter-content">
+            <div v-for="activite in uniqueActivitesLiees" :key="activite" class="form-check">
+              <input type="checkbox" :id="activite" v-model="filters.activitesLiees.selected" :value="activite">
+              <label :for="activite">{{ activite }}</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétences -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('competences')" class="filter-title">
+            Compétences
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.competences.isOpen, 'arrow-down': filters.competences.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.competences.isOpen" class="filter-content">
+            <div v-for="competence in uniqueCompetences" :key="competence" class="form-check">
+              <input type="checkbox" :id="competence" v-model="filters.competences.selected" :value="competence">
+              <label :for="competence">{{ competence }}</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="filter-section">
+          <h3 @click="toggleFilter('langues')" class="filter-title">
+            Langues
+            <span class="arrow"
+              :class="{ 'arrow-up': !filters.langues.isOpen, 'arrow-down': filters.langues.isOpen }">▼</span>
+          </h3>
+          <div v-if="filters.langues.isOpen" class="filter-content">
+            <div v-for="langue in uniqueLangues" :key="langue" class="langue-filter">
+              <h4>{{ langue }}</h4>
+              <div>
+                <select v-model="filters.langues.selected[langue].expression">
+                  <option value="">Expression</option>
+                  <option value="Oral">Oral</option>
+                  <option value="Écrit">Écrit</option>
+                  <option value="Oral et écrit">Oral et écrit</option>
+                </select>
+                <select v-model="filters.langues.selected[langue].niveau">
+                  <option value="">Niveau</option>
+                  <option value="Débutant">Débutant</option>
+                  <option value="Intermédiaire">Intermédiaire</option>
+                  <option value="Avancé">Avancé</option>
+                  <option value="Courant">Courant</option>
+                  <option value="Natif">Natif</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
     <teleport to="body">
       <div v-if="showPopup" class="popup">
         <div class="popup-content">
@@ -342,6 +476,15 @@ const filters = ref({
   geolocalisation: { isOpen: false, selected: [] },
   experience: { isOpen: false, selected: [] },
   competences: { isOpen: false, selected: [] },
+
+  experienceSpecifiqueTitre: { isOpen: false, value: '' },
+  education: { isOpen: false, selected: [] },
+  anneesExperience: { isOpen: false, min: null, max: null },
+  anneesExperienceManager: { isOpen: false, min: null, max: null },
+  missionPrincipale: { isOpen: false, selected: [] },
+  activitesLiees: { isOpen: false, selected: [] },
+  competences: { isOpen: false, selected: [] },
+  langues: { isOpen: false, selected: {} },
 });
 
 const dropdownFilters = ref({
@@ -373,6 +516,25 @@ const uniqueCompetences = computed(() => {
 const uniqueSituationsProfessionnelles = computed(() => {
   return [...new Set(data.value.map((c) => c.situationProfessionnelle))];
 });
+const uniqueExperienceSpecifiqueTitres = computed(() => {
+  return [...new Set(data.value.flatMap(c => c.experienceSpecifique.map(e => e.titre)))];
+});
+
+
+const uniqueMissionsPrincipales = computed(() => {
+  return [...new Set(data.value.map(c => c.mission_principale))];
+});
+
+const uniqueActivitesLiees = computed(() => {
+  return [...new Set(data.value.flatMap(c => c.activites_liees_au_poste))];
+});
+
+
+const uniqueLangues = computed(() => {
+  return [...new Set(data.value.flatMap(c => c.langues.map(l => l.langue)))];
+});
+
+
 //popup
 
 const openPopup = (candidat) => {
@@ -444,6 +606,40 @@ const filteredCandidats = computed(() => {
     const matchesSearch = Object.values(candidat).some((value) =>
       String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
     );
+
+
+
+    const matchExperienceSpecifiqueTitre = !filters.value.experienceSpecifiqueTitre.value ||
+      candidat.experienceSpecifique.some(e => e.titre.toLowerCase().includes(filters.value.experienceSpecifiqueTitre.value.toLowerCase()));
+
+    const matchEducation = filters.value.education.selected.length === 0 ||
+      candidat.education.some(e => filters.value.education.selected.includes(e.diplome));
+
+    const totalExperience = candidat.experienceSpecifique.reduce((sum, exp) => sum + exp.duree, 0);
+    const matchAnneesExperience = (!filters.value.anneesExperience.min || totalExperience >= filters.value.anneesExperience.min) &&
+      (!filters.value.anneesExperience.max || totalExperience <= filters.value.anneesExperience.max);
+
+    const totalManagerExperience = candidat.experienceSpecifique.filter(exp => exp.manager).reduce((sum, exp) => sum + exp.duree, 0);
+    const matchAnneesExperienceManager = (!filters.value.anneesExperienceManager.min || totalManagerExperience >= filters.value.anneesExperienceManager.min) &&
+      (!filters.value.anneesExperienceManager.max || totalManagerExperience <= filters.value.anneesExperienceManager.max);
+
+    const matchMissionPrincipale = filters.value.missionPrincipale.selected.length === 0 ||
+      filters.value.missionPrincipale.selected.includes(candidat.mission_principale);
+
+    const matchActivitesLiees = filters.value.activitesLiees.selected.length === 0 ||
+      filters.value.activitesLiees.selected.every(activite => candidat.activites_liees_au_poste.includes(activite));
+
+    const matchCompetences = filters.value.competences.selected.length === 0 ||
+      filters.value.competences.selected.every(comp => candidat.competences.includes(comp));
+
+    const matchLangues = Object.keys(filters.value.langues.selected).length === 0 ||
+      Object.entries(filters.value.langues.selected).every(([langue, criteria]) => {
+        const candidatLangue = candidat.langues.find(l => l.langue === langue);
+        return candidatLangue &&
+          (!criteria.expression || candidatLangue.expression === criteria.expression) &&
+          (!criteria.niveau || candidatLangue.niveau === criteria.niveau);
+      });
+
     return (
       matchesSearch &&
       matchesCompetence &&
@@ -452,7 +648,9 @@ const filteredCandidats = computed(() => {
       expMatch &&
       compMatch &&
       sitMatch &&
-      searchMatch
+      searchMatch && matchExperienceSpecifiqueTitre && matchEducation && matchAnneesExperience &&
+      matchAnneesExperienceManager && matchMissionPrincipale && matchActivitesLiees &&
+      matchCompetences && matchLangues
     );
   });
 });
@@ -493,7 +691,10 @@ const isAnyFilterActive = computed(() => {
   return (
     Object.keys(route.query).length > 0 ||
     Object.values(dropdownFilters.value).some((value) => value !== "") ||
-    Object.values(filters.value).some((filter) => filter.selected.length > 0) ||
+    Object.values(filters.value).some((filter) =>
+      filter.selected && filter.selected.length > 0 ||
+      (typeof filter.value !== 'undefined' && filter.value !== '')
+    ) ||
     searchQuery.value !== ""
   );
 });

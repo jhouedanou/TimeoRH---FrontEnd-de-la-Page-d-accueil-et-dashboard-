@@ -1792,8 +1792,8 @@ $secondary: #012e61;
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 320px;
-    background-color: #555;
-    color: #fff;
+    color:$primary;
+    background-color: $secondary;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -1811,4 +1811,7 @@ $secondary: #012e61;
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+  header{
+    z-index: 15;
   }
