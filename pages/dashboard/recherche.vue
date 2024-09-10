@@ -25,13 +25,17 @@
       </select>
       <select v-model="dropdownFilters.situationProfessionnelle">
         <option value="">Toutes les situations professionnelles</option>
-        <option v-for="sit in uniqueSituationsProfessionnelles" :key="sit" :value="sit">
+        <option
+          v-for="sit in uniqueSituationsProfessionnelles"
+          :key="sit"
+          :value="sit"
+        >
           {{ sit }}
         </option>
       </select>
     </div> -->
     <div id="dave" class="columns">
-      <div class="column is-8-desktop is-12-mobile">
+      <div class="column is-9-desktop is-12-mobile">
         <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
           Réinitialiser les filtres
         </button>
@@ -1600,11 +1604,11 @@ onMounted(() => {
 }
 
 .filter-section {
-  //   max-height: 300px;
-  //   overflow-y: auto;
-  //   padding-right: 10px;
-  //   margin: 0;
-  //   padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin: 0;
+  padding: 0;
   /* Espace pour la barre de défilement */
 }
 
