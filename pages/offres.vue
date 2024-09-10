@@ -3,7 +3,7 @@
   <Banner />
   <div class="offremploi-container container">
     <div class="offres-emploi">
-      <form @submit.prevent="appliquerFiltres" class="filtres">
+      <!-- <form @submit.prevent="appliquerFiltres" class="filtres">
         <div class="Trouvez-le-job-correspondant-votre-profil">
           Trouvez le job correspondant à votre profil
         </div>
@@ -18,7 +18,7 @@
             </datalist>
           </div>
 
-          <!-- <div class="column is-12-mobile w20 input-wrapper">
+          <div class="column is-12-mobile w20 input-wrapper">
             <input v-model="filtres.geolocalisation" list="localisations" placeholder="Localisation"
               id="localisation" />
             <span v-if="filtres.geolocalisation" class="clear-input" @click="filtres.geolocalisation = ''">
@@ -51,7 +51,7 @@
             <span v-if="filtres.experiencerequise" class="clear-input" @click="filtres.experiencerequise = ''">
               <span class="material-icons">close</span>
             </span>
-          </div> -->
+          </div> 
 
           <div class="column is-1-desktop is-12-mobile">
             <button class="luka" type="submit">
@@ -59,7 +59,7 @@
             </button>
           </div>
         </div>
-      </form>
+      </form> -->
 
       <div class="columns">
 
@@ -68,7 +68,7 @@
           <div class="accordion">
             <!-- intitulé du poste -->
             <div class="accordion-item">
-              <button class="accordion-header" @click="toggleAccordion($event)">Intitulé du poste <span
+              <button class="accordion-header active" @click="toggleAccordion($event)">Intitulé du poste <span
                   class="arrow-icon">&#9662;</span>
               </button>
               <div class="accordion-content">
@@ -434,6 +434,20 @@ const typesSocieteWithCount = computed(() => {
   }));
 });
 
+const initializeFirstAccordion = () => {
+  nextTick(() => {
+    const firstAccordionHeader = document.querySelector('.accordion-header');
+    if (firstAccordionHeader) {
+      firstAccordionHeader.classList.add('active');
+      const content = firstAccordionHeader.nextElementSibling;
+      if (content) {
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      }
+    }
+  });
+};
+
+
 onMounted(() => {
   document.body.id = "offres";
 
@@ -442,6 +456,8 @@ onMounted(() => {
     filtres.value.titre = searchQuery;
     appliquerFiltres();
   }
+  initializeFirstAccordion();
+
 });
 const currentYear = computed(() => new Date().getFullYear());
 </script>
@@ -496,7 +512,7 @@ const currentYear = computed(() => new Date().getFullYear());
 
   .clear-input {
     position: absolute;
-    right: 10px;
+    right: 10px !important;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;

@@ -4,7 +4,7 @@
       <div class="bull">{{ searchTerms.join(", ") }}</div>
       <div class="shi">Profils correspondants : {{ totalElements }}</div>
     </div>
-    <!-- <div class="wholefilters">
+    <div class="wholefilters">
       <select v-model="dropdownFilters.education">
         <option value="">Tous les niveaux d'éducation</option>
         <option v-for="edu in uniqueEducations" :key="edu" :value="edu">
@@ -25,15 +25,11 @@
       </select>
       <select v-model="dropdownFilters.situationProfessionnelle">
         <option value="">Toutes les situations professionnelles</option>
-        <option
-          v-for="sit in uniqueSituationsProfessionnelles"
-          :key="sit"
-          :value="sit"
-        >
+        <option v-for="sit in uniqueSituationsProfessionnelles" :key="sit" :value="sit">
           {{ sit }}
         </option>
       </select>
-    </div> -->
+    </div>
     <div id="dave" class="columns">
       <div class="column is-9-desktop is-12-mobile">
         <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
@@ -94,7 +90,6 @@
               'arrow-down': filters.education.isOpen,
             }">▼</span>
           </h3>
-
           <div v-if="filters.education.isOpen" class="filter-content">
             <div v-for="edu in uniqueEducations" :key="edu">
               <label>
@@ -103,6 +98,7 @@
               </label>
             </div>
           </div>
+
         </div>
 
         <div class="filter-section">
@@ -236,7 +232,7 @@
         </div>
 
 
-        <!-- Compétences -->
+        <!-- Compétences 
         <div class="filter-section">
           <h3 @click="toggleFilter('competences')" class="filter-title">
             Compétences
@@ -249,7 +245,7 @@
               <label :for="competence">{{ competence }}</label>
             </div>
           </div>
-        </div>
+        </div>-->
 
         <!-- Langues -->
         <div class="filter-section">
@@ -434,7 +430,7 @@ const competenceFilter = ref("");
 const isCollapsed = ref(true);
 
 const uniqueEducations = computed(() => {
-  return [...new Set(data.value.flatMap((c) => c.education))];
+  return [...new Set(data.value.flatMap(c => c.education))];
 });
 
 const uniqueGeolocalisations = computed(() => {
@@ -556,101 +552,91 @@ const sortBy = (key) => {
     sortOrder.value = "asc";
   }
 };
-
 const filteredCandidats = computed(() => {
+  console.log("Début du filtrage");
   return data.value.filter((candidat) => {
-    const educationMatch =
-      (filters.value.education.selected.length === 0 ||
-        candidat.education.some((edu) =>
-          filters.value.education.selected.includes(edu)
-        )) &&
-      (!dropdownFilters.value.education ||
-        candidat.education.includes(dropdownFilters.value.education));
+    console.log(`Filtrage du candidat: ${candidat.nom}`);
 
-    const geoMatch =
-      (filters.value.geolocalisation.selected.length === 0 ||
-        filters.value.geolocalisation.selected.includes(
-          candidat.geolocalisation
-        )) &&
-      (!dropdownFilters.value.geolocalisation ||
-        candidat.geolocalisation === dropdownFilters.value.geolocalisation);
+    const educationMatch = checkEducationMatch(candidat);
+    const experienceMatch = checkExperienceMatch(candidat);
+    const competenceMatch = checkCompetenceMatch(candidat);
+    const locationMatch = checkLocationMatch(candidat);
+    const searchMatch = checkSearchMatch(candidat);
+    const languageMatch = checkLanguageMatch(candidat);
 
-    const expMatch =
-      (filters.value.experience.selected.length === 0 ||
-        filters.value.experience.selected.includes(candidat.experience)) &&
-      (!dropdownFilters.value.experience ||
-        candidat.experience === parseInt(dropdownFilters.value.experience));
-
-    const compMatch =
-      filters.value.competences.selected.length === 0 ||
-      candidat.competences.some((comp) =>
-        filters.value.competences.selected.includes(comp)
-      );
-
-    const sitMatch =
-      !dropdownFilters.value.situationProfessionnelle ||
-      candidat.situationProfessionnelle ===
-      dropdownFilters.value.situationProfessionnelle;
-
-    const searchMatch =
-      !searchQuery.value ||
-      Object.values(candidat).some((value) =>
-        String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
-      );
-    const matchesCompetence =
-      !competenceFilter.value ||
-      candidat.competences.includes(competenceFilter.value);
-
-    const matchesSearch = Object.values(candidat).some((value) =>
-      String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
-    );
-
-
-
-    const matchExperienceSpecifiqueTitre = !filters.value.experienceSpecifiqueTitre.value ||
-      candidat.experienceSpecifique.some(e => e.titre.toLowerCase().includes(filters.value.experienceSpecifiqueTitre.value.toLowerCase()));
-
-    const matchEducation = filters.value.education.selected.length === 0 ||
-      candidat.education.some(e => filters.value.education.selected.includes(e.diplome));
-
-    const totalExperience = candidat.experienceSpecifique.reduce((sum, exp) => sum + exp.duree, 0);
-    const matchAnneesExperience = !filters.value.anneesExperience.max || totalExperience <= filters.value.anneesExperience.max;
-    const totalManagerExperience = candidat.experienceSpecifique.filter(exp => exp.manager).reduce((sum, exp) => sum + exp.duree, 0);
-    const matchAnneesExperienceManager = !filters.value.anneesExperienceManager.max || totalManagerExperience <= filters.value.anneesExperienceManager.max;
-
-    const matchMissionPrincipale = !filters.value.missionPrincipale.value ||
-      (candidat.mission_principale && candidat.mission_principale.toLowerCase().includes(filters.value.missionPrincipale.value.toLowerCase()));
-    const matchActivitesLiees = !filters.value.activitesLiees.value ||
-      (Array.isArray(candidat.activites_liees_au_poste) && candidat.activites_liees_au_poste.some(activite =>
-        activite.toLowerCase().includes(filters.value.activitesLiees.value.toLowerCase())
-      ));
-
-
-    const matchCompetences = filters.value.competences.selected.length === 0 ||
-      filters.value.competences.selected.every(comp => candidat.competences.includes(comp));
-
-    const matchLangues = Object.keys(filters.value.langues.selected).length === 0 ||
-      Object.entries(filters.value.langues.selected).every(([langue, criteria]) => {
-        const candidatLangue = candidat.langues.find(l => l.langue === langue);
-        return candidatLangue &&
-          (!criteria.expression || candidatLangue.expression === criteria.expression) &&
-          (!criteria.niveau || candidatLangue.niveau === criteria.niveau);
-      });
+    console.log(`Résultats pour ${candidat.nom}:`, {
+      educationMatch,
+      experienceMatch,
+      competenceMatch,
+      locationMatch,
+      searchMatch,
+      languageMatch
+    });
 
     return (
-      matchesSearch &&
-      matchesCompetence &&
       educationMatch &&
-      geoMatch &&
-      expMatch &&
-      compMatch &&
-      sitMatch &&
-      searchMatch && matchExperienceSpecifiqueTitre && matchEducation && matchAnneesExperience &&
-      matchAnneesExperienceManager && matchMissionPrincipale && matchActivitesLiees &&
-      matchCompetences && matchLangues
+      experienceMatch &&
+      competenceMatch &&
+      locationMatch &&
+      searchMatch &&
+      languageMatch
     );
   });
 });
+
+function checkLocationMatch(candidat) {
+  return filters.value.geolocalisation.selected.length === 0 ||
+    filters.value.geolocalisation.selected.includes(candidat.geolocalisation);
+}
+
+// Méthodes de filtrage séparées
+function checkEducationMatch(candidat) {
+  return filters.value.education.selected.length === 0 ||
+    filters.value.education.selected.some(edu => candidat.education.includes(edu));
+}
+
+function checkExperienceMatch(candidat) {
+  const totalExperience = candidat.experienceSpecifique?.reduce((sum, exp) => sum + exp.duree, 0) || 0;
+  return !filters.value.anneesExperience.max || totalExperience <= filters.value.anneesExperience.max;
+}
+
+function checkCompetenceMatch(candidat) {
+  return filters.value.competences.selected.length === 0 ||
+    filters.value.competences.selected.every(comp => candidat.competences?.includes(comp));
+}
+
+function checkSearchMatch(candidat) {
+  return !searchQuery.value ||
+    Object.values(candidat).some(value =>
+      String(value).toLowerCase().includes(searchQuery.value.toLowerCase())
+    );
+}
+
+function checkLanguageMatch(candidat) {
+  return Object.keys(filters.value.langues.selected).length === 0 ||
+    Object.entries(filters.value.langues.selected).every(([langue, criteria]) => {
+      const candidatLangue = candidat.langues?.find(l => l.langue === langue);
+      return candidatLangue &&
+        (!criteria.expression || candidatLangue.expression === criteria.expression) &&
+        (!criteria.niveau || candidatLangue.niveau === criteria.niveau);
+    });
+}
+
+// Assurez-vous que toutes les propriétés réactives sont correctement initialisées
+onMounted(() => {
+  console.log("Valeurs initiales des filtres:", filters.value);
+  console.log("Valeurs initiales des dropdownFilters:", dropdownFilters.value);
+});
+
+// Vérifiez la réactivité
+watch(filters, (newFilters) => {
+  console.log("Filtres mis à jour:", newFilters);
+}, { deep: true });
+
+watch(dropdownFilters, (newDropdownFilters) => {
+  console.log("DropdownFilters mis à jour:", newDropdownFilters);
+}, { deep: true });
+
 const sortedCandidats = computed(() => {
   return [...filteredCandidats.value].sort((a, b) => {
     let modifier = sortOrder.value === "desc" ? -1 : 1;
@@ -658,7 +644,6 @@ const sortedCandidats = computed(() => {
     if (a[sortKey.value] > b[sortKey.value]) return 1 * modifier;
     return 0;
   });
-  return filtered;
 });
 //pagination
 
@@ -1604,7 +1589,7 @@ onMounted(() => {
 }
 
 .filter-section {
-  max-height: 300px;
+  // max-height: 300px;
   overflow-y: auto;
   padding-right: 10px;
   margin: 0;
