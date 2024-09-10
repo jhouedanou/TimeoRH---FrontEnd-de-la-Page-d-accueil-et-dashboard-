@@ -6,14 +6,15 @@
     "titre": "Développeur Full Stack expérimenté",
     "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
     "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
-    "diplomeRequis":"BAC+5",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+5",
     "competencesRequises": [
       "JavaScript",
       "React",
       "Node.js",
       "MongoDB"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "2 ans",
     "departement": "Développement",
     "datePublication": "2023-05-15",
     "dateExpiration": "2024-09-02",
@@ -53,6 +54,7 @@
         "adequation": 87,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": true,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -76,6 +78,7 @@
         "adequation": 95,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -99,6 +102,7 @@
         "adequation": 72,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -122,6 +126,7 @@
         "adequation": 63,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -160,14 +165,15 @@
     "titre": "Designer UX/UI",
     "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
     "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
-    "diplomeRequis":"BTS",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BTS",
     "competencesRequises": [
       "Figma",
       "Adobe XD",
       "Sketch",
       "Prototypage"
     ],
-    "experienceRequise": "Junior",
+    "experienceRequise": "2 ans",
     "departement": "Design",
     "datePublication": "2023-05-16",
     "dateExpiration": "2024-09-02",
@@ -203,6 +209,7 @@
         "adequation": 92,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": true,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -226,6 +233,7 @@
         "adequation": 78,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -249,6 +257,7 @@
         "adequation": 85,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -293,14 +302,15 @@
     "titre": "Ingénieur DevOps",
     "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
     "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Docker",
       "Kubernetes",
       "AWS",
       "CI/CD"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "2 ans",
     "departement": "Opérations",
     "datePublication": "2023-05-17",
     "dateExpiration": "2024-09-02",
@@ -336,6 +346,7 @@
         "adequation": 88,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -359,6 +370,7 @@
         "adequation": 76,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -382,6 +394,7 @@
         "adequation": 94,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -426,14 +439,15 @@
     "titre": "Data Scientist, Spécialiste Python",
     "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
     "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Python",
       "R",
       "Machine Learning",
       "SQL"
     ],
-    "experienceRequise": "Junior",
+    "experienceRequise": "2 ans",
     "departement": "Analyse de données",
     "datePublication": "2023-05-18",
     "dateExpiration": "2024-09-02",
@@ -469,6 +483,7 @@
         "adequation": 79,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -492,6 +507,7 @@
         "adequation": 91,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -515,6 +531,7 @@
         "adequation": 86,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -559,14 +576,15 @@
     "titre": "Développeur Front-end",
     "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
     "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "HTML",
       "CSS",
       "JavaScript",
       "Vue.js"
     ],
-    "experienceRequise": "Junior",
+    "experienceRequise": "4 ans",
     "departement": "Développement",
     "datePublication": "2023-05-19",
     "dateExpiration": "2024-09-02",
@@ -602,6 +620,7 @@
         "adequation": 83,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -625,6 +644,7 @@
         "adequation": 97,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -648,6 +668,7 @@
         "adequation": 75,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -692,14 +713,15 @@
     "titre": "Responsable Marketing",
     "description": "Nous recherchons un Responsable Marketing pour développer et mettre en œuvre des stratégies de marketing innovantes.",
     "shortDescription": "Recherche d'un Responsable Marketing pour développer des stratégies innovantes. Compétences requises : stratégie, communication, analyse de marché.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Stratégie marketing",
       "Communication",
       "Analyse de marché",
       "Gestion de projet"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "8 ans",
     "departement": "Marketing",
     "datePublication": "2023-06-01",
     "dateExpiration": "2024-10-01",
@@ -735,6 +757,7 @@
         "adequation": 85,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -758,6 +781,7 @@
         "adequation": 90,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -781,6 +805,7 @@
         "adequation": 78,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -825,14 +850,15 @@
     "titre": "Chef de Projet IT",
     "description": "Nous cherchons un Chef de Projet IT pour gérer des projets technologiques complexes de la conception à la mise en œuvre.",
     "shortDescription": "Recherche d'un Chef de Projet IT pour gérer des projets technologiques. Compétences requises : gestion de projet, développement logiciel, leadership.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Gestion de projet",
       "Développement logiciel",
       "Leadership",
       "Analyse des besoins"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "12 ans",
     "departement": "IT",
     "datePublication": "2023-06-10",
     "dateExpiration": "2024-10-10",
@@ -868,6 +894,7 @@
         "adequation": 80,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -891,6 +918,7 @@
         "adequation": 85,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -914,6 +942,7 @@
         "adequation": 75,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -958,14 +987,15 @@
     "titre": "Développeur Mobile",
     "description": "Nous recrutons un Développeur Mobile pour créer des applications mobiles innovantes et performantes.",
     "shortDescription": "Recherche d'un Développeur Mobile pour créer des applications innovantes. Compétences requises : iOS, Android, Flutter.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "iOS",
       "Android",
       "Flutter",
       "Développement d'applications"
     ],
-    "experienceRequise": "Intermédiaire",
+    "experienceRequise": "6 ans",
     "departement": "Développement",
     "datePublication": "2023-06-20",
     "dateExpiration": "2024-10-20",
@@ -1001,6 +1031,7 @@
         "adequation": 88,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1024,6 +1055,7 @@
         "adequation": 84,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1047,6 +1079,7 @@
         "adequation": 79,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1091,14 +1124,15 @@
     "titre": "Assistant Administratif",
     "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des opérations quotidiennes.",
     "shortDescription": "Recherche d'un Assistant Administratif pour gérer les tâches administratives et opérationnelles. Compétences requises : organisation, communication, gestion des documents.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Organisation",
       "Gestion des documents",
       "Communication",
       "Bureautique"
     ],
-    "experienceRequise": "Débutant",
+    "experienceRequise": "0 ans",
     "departement": "Administration",
     "datePublication": "2023-07-01",
     "dateExpiration": "2024-11-01",
@@ -1134,6 +1168,7 @@
         "adequation": 48,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1157,6 +1192,7 @@
         "adequation": 82,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1180,6 +1216,7 @@
         "adequation": 74,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1224,14 +1261,15 @@
     "titre": "Chargé de Communication",
     "description": "Nous recherchons un Chargé de Communication pour élaborer des stratégies de communication efficaces et gérer les relations publiques.",
     "shortDescription": "Recherche d'un Chargé de Communication pour développer des stratégies de communication. Compétences requises : rédaction, relations publiques, gestion de crise.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Rédaction",
       "Relations publiques",
       "Gestion de crise",
       "Stratégie de communication"
     ],
-    "experienceRequise": "Intermédiaire",
+    "experienceRequise": "6 ans",
     "departement": "Communication",
     "datePublication": "2023-07-15",
     "dateExpiration": "2024-11-15",
@@ -1267,6 +1305,7 @@
         "adequation": 90,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1290,6 +1329,7 @@
         "adequation": 88,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1313,6 +1353,7 @@
         "adequation": 60,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1357,14 +1398,15 @@
     "titre": "Analyste Financier Senior ",
     "description": "Nous cherchons un Analyste Financier Senior pour analyser les données financières et fournir des recommandations stratégiques.",
     "shortDescription": "Recherche d'un Analyste Financier pour analyser les données financières et fournir des recommandations. Compétences requises : analyse des données, prévisions financières, reporting.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Analyse des données",
       "Prévisions financières",
       "Reporting",
       "Analyse des risques"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "12 ans",
     "departement": "Finance",
     "datePublication": "2023-07-25",
     "dateExpiration": "2024-11-25",
@@ -1400,6 +1442,7 @@
         "adequation": 90,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": true,
         "decision": "On l'embauche",
         "interviews": [
           {
@@ -1437,6 +1480,7 @@
         "adequation": 85,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1460,6 +1504,7 @@
         "adequation": 80,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1520,14 +1565,15 @@
     "titre": "Graphiste",
     "description": "Nous recrutons un Graphiste pour créer des visuels innovants pour nos supports marketing et de communication.",
     "shortDescription": "Recherche d'un Graphiste pour créer des visuels innovants. Compétences requises : design graphique, maîtrise des outils Adobe, créativité.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Design graphique",
       "Maîtrise des outils Adobe",
       "Créativité",
       "Gestion de projet"
     ],
-    "experienceRequise": "Débutant",
+    "experienceRequise": "2 ans",
     "departement": "Création",
     "datePublication": "2023-08-01",
     "dateExpiration": "2024-12-01",
@@ -1559,6 +1605,7 @@
         "adequation": 78,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1603,14 +1650,15 @@
     "titre": "Responsable RH",
     "description": "Nous recherchons un Responsable RH pour gérer les ressources humaines et développer des politiques de gestion du personnel.",
     "shortDescription": "Recherche d'un Responsable RH pour gérer les ressources humaines. Compétences requises : gestion des talents, développement organisationnel, législation du travail.",
-    "diplomeRequis":"BAC+4",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Gestion des talents",
       "Développement organisationnel",
       "Législation du travail",
       "Gestion des conflits"
     ],
-    "experienceRequise": "Senior",
+    "experienceRequise": "14 ans",
     "departement": "Ressources Humaines",
     "datePublication": "2023-08-15",
     "dateExpiration": "2024-12-15",
@@ -1642,6 +1690,7 @@
         "adequation": 88,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1665,6 +1714,7 @@
         "adequation": 85,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -1688,6 +1738,7 @@
         "adequation": 82,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {

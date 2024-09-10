@@ -7,16 +7,10 @@
     <div class="filters">
       <div class="spaghetti">
         <input v-model="filtreTitle" placeholder="Filtrer par titre" />
-        <input
-          v-model="filtreDate"
-          type="date"
-          placeholder="Filtrer par date d'expiration"
-        />
+        <input v-model="filtreDate" type="date" placeholder="Filtrer par date d'expiration" />
       </div>
       <div class="actions">
-        <NuxtLink class="button is-primary" to="/dashboard/ajouter-offre"
-          >Ajouter une offre</NuxtLink
-        >
+        <NuxtLink class="button is-primary" to="/dashboard/ajouter-offre">Publier une offre</NuxtLink>
       </div>
     </div>
     <div class="table-container">
@@ -27,20 +21,39 @@
               Intitulé du poste
               <span v-if="sortKey === 'titre'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
+            </th>
+            <th @click="changeSort('nombrePosteAPourvoir')">
+              Nombre de postes à pourvoir
+              <span v-if="sortKey === 'nombrePosteAPourvoir'">{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
+            </th>
+            <th @click="changeSort('datePublication')">
+              Date de publication <span v-if="sortKey === 'datePublication'">{{ sortOrder === 'asc' ? '▲' : '▼'
+                }}</span>
+
             </th>
             <th @click="changeSort('dateExpiration')">
               Date d'expiration
               <span v-if="sortKey === 'dateExpiration'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
             </th>
-            <th @click="changeSort('statut')">
+            <th @click="changeSort('nombreCandidatures')">Candidatures reçues <span
+                v-if="sortKey === 'nombreCandidatures'">{{ sortOrder === 'asc' ? '▲' : '▼'
+                }}</span>
+            </th>
+
+
+            <!-- <th @click="changeSort('statut')">
               Statut
               <span v-if="sortKey === 'statut'">{{
                 sortOrder === "asc" ? "▲" : "▼"
               }}</span>
-            </th>
+            </th> -->
+            <th>Planifier le recrutement</th>
+            <th @click="changeSort('candidaturesRetenues')">Candidats retenus<span
+                v-if="sortKey === 'candidaturesRetenues'">{{ sortOrder === 'asc' ? '▲' : '▼'
+                }}</span></th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -48,29 +61,32 @@
         <tbody>
           <tr v-for="offre in offresPageCourante" :key="offre.id">
             <td>{{ offre.titre }}</td>
+            <td>{{ offre.nombrePosteAPourvoir }}</td>
+
+            <td>{{ offre.datePublication }}</td>
             <td>{{ offre.dateExpiration }}</td>
-            <td>{{ offre.statut }}</td>
+            <td>{{ candidaturesParOffre[offre.id] }}</td>
+            <!-- <td>{{ offre.statut }}</td> -->
             <td>
-              <button class="editemploi" @click="editerOffre(offre)">
-                Éditer
-              </button>
-              <EditOffrePopup
-                v-if="editingOffreId === offre.id"
-                :offre="offre"
-                @close="editingOffreId = null"
-                @save="saveEditedOffre"
-              />
-              <NuxtLink
-                class="planifierrecrutement"
-                :to="`/dashboard/planifier-recrutement/${offre.id}`"
-              >
+              <NuxtLink class="planifierrecrutement" :to="`/dashboard/planifier-recrutement/${offre.id}`">
                 Planifier le recrutement
               </NuxtLink>
-              <button class="changerstatut" @click="changerStatut(offre)">
-                Changer le statut
+            </td>
+            <td>{{ candidaturesRetenuesParOffre[offre.id] }}</td>
+            <td>
+              <button class="editemploi" @click="editerOffre(offre)">
+
+                <span class="material-icons">edit</span>
+
               </button>
+              <EditOffrePopup v-if="editingOffreId === offre.id" :offre="offre" @close="editingOffreId = null"
+                @save="saveEditedOffre" />
+
+              <!-- <button class="changerstatut" @click="changerStatut(offre)">
+                <span class="material-icons">swap_horiz</span>
+              </button> -->
               <button class="supprimeroffre" @click="supprimerOffre(offre)">
-                Supprimer
+                <span class="material-icons">delete</span>
               </button>
             </td>
           </tr>
@@ -83,21 +99,13 @@
             <h2 class="title is-4">Changer le statut</h2>
             <div class="field">
               <label class="checkbox">
-                <input
-                  type="radio"
-                  v-model="selectedOffre.statut"
-                  value="Actif"
-                />
+                <input type="radio" v-model="selectedOffre.statut" value="Actif" />
                 Actif
               </label>
             </div>
             <div class="field">
               <label class="checkbox">
-                <input
-                  type="radio"
-                  v-model="selectedOffre.statut"
-                  value="Inactif"
-                />
+                <input type="radio" v-model="selectedOffre.statut" value="Inactif" />
                 Inactif
               </label>
             </div>
@@ -106,11 +114,7 @@
             </button>
           </div>
         </div>
-        <button
-          class="modal-close is-large"
-          aria-label="close"
-          @click="showStatusPopup = false"
-        ></button>
+        <button class="modal-close is-large" aria-label="close" @click="showStatusPopup = false"></button>
       </div>
       <div class="table-info">
         Affichage des données {{ debutAffichage }} à {{ finAffichage }} sur
@@ -119,12 +123,8 @@
     </div>
 
     <div class="pagination">
-      <button
-        v-for="page in nombrePages"
-        :key="page"
-        @click="changerPage(page)"
-        :class="{ 'is-active': page === pageCourante }"
-      >
+      <button v-for="page in nombrePages" :key="page" @click="changerPage(page)"
+        :class="{ 'is-active': page === pageCourante }">
         {{ page }}
       </button>
     </div>
@@ -175,12 +175,31 @@ const offresFiltered = computed(() => {
 
   return filtered.sort((a, b) => {
     let modifier = sortOrder.value === "desc" ? -1 : 1;
-    if (a[sortKey.value] < b[sortKey.value]) return -1 * modifier;
-    if (a[sortKey.value] > b[sortKey.value]) return 1 * modifier;
-    return 0;
+
+    if (sortKey.value === 'nombreCandidatures') {
+      return (candidaturesParOffre[a.id] - candidaturesParOffre[b.id]) * modifier;
+    } else if (sortKey.value === 'candidaturesRetenues') {
+      return (candidaturesRetenuesParOffre[a.id] - candidaturesRetenuesParOffre[b.id]) * modifier;
+    } else {
+      if (a[sortKey.value] < b[sortKey.value]) return -1 * modifier;
+      if (a[sortKey.value] > b[sortKey.value]) return 1 * modifier;
+      return 0;
+    }
   });
 });
-
+const candidaturesParOffre = computed(() => {
+  return emplois.value.reduce((acc, offre) => {
+    acc[offre.id] = offre.candidatures ? offre.candidatures.length : 0;
+    return acc;
+  }, {});
+});
+//nombre de candidatures retenue
+const candidaturesRetenuesParOffre = computed(() => {
+  return emplois.value.reduce((acc, offre) => {
+    acc[offre.id] = offre.candidatures ? offre.candidatures.filter(c => c.estretenu === true).length : 0;
+    return acc;
+  }, {});
+});
 const changeSort = (key) => {
   if (sortKey.value === key) {
     sortOrder.value = sortOrder.value === "asc" ? "desc" : "asc";
@@ -303,9 +322,11 @@ const supprimerOffre = async (offre) => {
 th {
   cursor: pointer;
 }
+
 th:hover {
   background-color: #f5f5f5;
 }
+
 .offres-emploi {
   margin: 20px;
 }
@@ -341,14 +362,16 @@ th:hover {
   font-size: 0.9em;
   color: #666;
 }
+
 .table-container {
   padding: 1em;
   border-radius: 6px;
   border: solid 2px #eceef6;
   background-color: #fff;
-  table {
-  }
+
+  table {}
 }
+
 @media screen and (max-width: 768px) {
   .table {
     font-size: 0.9em;
@@ -359,6 +382,7 @@ th:hover {
     padding: 0.5em 0.75em;
   }
 }
+
 .pagination {
   margin-top: 20px;
 }
@@ -397,14 +421,17 @@ th:hover {
 .table {
   background-color: white;
 }
+
 th {
   padding: 1em !important;
 }
+
 td {
   border: none !important;
   padding: 1em !important;
   vertical-align: middle;
 }
+
 td,
 th {
   font-family: "Inter", sans-serif;
@@ -418,6 +445,7 @@ th {
   color: #292d32 !important;
   vertical-align: middle;
 }
+
 .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
   background-color: #f5f5f5;
 }
@@ -426,6 +454,7 @@ th {
   .offres-emploi {
     margin: 0em !important;
   }
+
   .table {
     font-size: 0.9em;
   }
@@ -434,6 +463,7 @@ th {
   .table th {
     vertical-align: middle;
     padding: 0.5em 0.75em;
+
     button,
     a {
       margin-bottom: 1em !important;
@@ -441,10 +471,12 @@ th {
     }
   }
 }
+
 .table.is-hoverable tbody tr:not(.is-selected):hover,
 .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
   background-color: #ccc !important;
 }
+
 .filters {
   flex-grow: 0;
   display: flex;
@@ -454,6 +486,7 @@ th {
   padding: 1em;
   border-radius: 5px;
   background-color: #fff;
+
   .button {
     display: flex;
     flex-direction: column;
@@ -474,11 +507,13 @@ th {
     color: #fff;
   }
 }
+
 .spaghetti {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+
   input {
     width: 100%;
     height: 50px;
@@ -490,6 +525,7 @@ th {
     padding: 1em;
   }
 }
+
 .title {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -502,9 +538,27 @@ th {
   text-align: left;
   color: #dc9756;
 }
+
 @media screen and (max-width: 768px) {
   .table-container {
     overflow-x: auto !important;
+  }
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+
+  .col-titre {
+    width: 25%;
+  }
+
+  .col-date {
+    width: 15%;
+  }
+
+  .col-candidatures {
+    width: 10%;
   }
 }
 </style>

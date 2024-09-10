@@ -57,18 +57,17 @@ Recherche d'emploi:
 
 
 Offres d'emploi et candidatures:
-  ☐ Structurer les rubriques du tableau de bord (de gauche à droite):
+  ✔ Structurer les rubriques du tableau de bord (de gauche à droite): @done(24-09-10 15:20)
     ☐ Intitulé du poste
-    ☐ Nombre de postes à pourvoir
-    ☐ Date de publication
-    ☐ Date d'expiration
-    ☐ Candidatures reçues
-    ☐ Candidatures sélectionnées
-    ☐ Planification des entretiens
-    ☐ Candidats retenus
+    ✔ Nombre de postes à pourvoir @done(24-09-10 15:19)
+    ✔ Date de publication @done(24-09-10 15:19)
+    ✔ Date d'expiration @done(24-09-10 15:19)
+    ✔ Candidatures reçues @done(24-09-10 15:19)
+    ✔ Candidatures sélectionnées @done(24-09-10 15:19)
+    ✔ Planification des entretiens @done(24-09-10 15:19)
+    ✔ Candidats retenus @done(24-09-10 15:19)
   ☐ Modifier les boutons:
-    ☐ Remplacer "Ajouter une offre" par "Publier une offre"
-    ☐ Remplacer "Ajouter une nouvelle offre" par "Rédiger et publier une nouvelle offre d'emploi"
+    ✔ Remplacer "Ajouter une offre" par "Publier une offre" @done(24-09-10 14:23)
   ☐ Ajouter une étape 1/3 pour les informations relatives à l'entreprise:
     ☐ Nom de l'entreprise
     ☐ Email de réception des candidatures

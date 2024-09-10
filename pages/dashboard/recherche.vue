@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="poste">
-      <div class="bull">{{ searchTerms.join(", ") }}</div>
+      <!-- <div class="bull">{{ searchTerms.join(", ") }}</div> -->
       <div class="shi">Profils correspondants : {{ totalElements }}</div>
     </div>
-    <div class="wholefilters">
+    <!-- <div class="wholefilters">
       <select v-model="dropdownFilters.education">
         <option value="">Tous les niveaux d'éducation</option>
         <option v-for="edu in uniqueEducations" :key="edu" :value="edu">
@@ -29,7 +29,7 @@
           {{ sit }}
         </option>
       </select>
-    </div>
+    </div> -->
     <div id="dave" class="columns">
       <div class="column is-9-desktop is-12-mobile">
         <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
@@ -120,24 +120,6 @@
         </div>
 
         <div class="filter-section">
-          <h3 @click="toggleFilter('experience')" class="filter-title">
-            Expérience
-            <span class="arrow" :class="{
-              'arrow-up': !filters.experience.isOpen,
-              'arrow-down': filters.experience.isOpen,
-            }">▼</span>
-          </h3>
-          <div v-if="filters.experience.isOpen" class="filter-content">
-            <div v-for="exp in uniqueExperiences" :key="exp">
-              <label>
-                <input type="checkbox" v-model="filters.experience.selected" :value="exp" />
-                {{ exp }} ans
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="filter-section">
           <h3 @click="toggleFilter('competences')" class="filter-title">
             Compétences
             <span class="arrow" :class="{
@@ -170,6 +152,7 @@
               <option v-for="titre in uniqueExperienceSpecifiqueTitres" :key="titre" :value="titre" />
             </datalist>
           </div>
+
         </div>
 
 
@@ -214,6 +197,7 @@
               <option v-for="mission in uniqueMissionsPrincipales" :key="mission" :value="mission" />
             </datalist>
           </div>
+
         </div>
 
         <!-- Activités liées -->
@@ -229,6 +213,7 @@
               <option v-for="activite in uniqueActivitesLiees" :key="activite" :value="activite" />
             </datalist>
           </div>
+
         </div>
 
 
@@ -247,36 +232,7 @@
           </div>
         </div>-->
 
-        <!-- Langues -->
-        <div class="filter-section">
-          <h3 @click="toggleFilter('langues')" class="filter-title">
-            Langues
-            <span class="arrow"
-              :class="{ 'arrow-up': !filters.langues.isOpen, 'arrow-down': filters.langues.isOpen }">▼</span>
-          </h3>
-          <div v-if="filters.langues.isOpen" class="filter-content">
-            <div v-for="langue in uniqueLangues" :key="langue" class="langue-filter">
-              <h4>{{ langue }}</h4>
-              <div>
-                <select v-model="filters.langues.selected[langue].expression">
-                  <option value="">Expression</option>
-                  <option value="Oral">Oral</option>
-                  <option value="Écrit">Écrit</option>
-                  <option value="Oral et écrit">Oral et écrit</option>
-                </select>
-                <select v-model="filters.langues.selected[langue].niveau">
-                  <option value="">Niveau</option>
-                  <option value="Débutant">Débutant</option>
-                  <option value="Intermédiaire">Intermédiaire</option>
-                  <option value="Avancé">Avancé</option>
-                  <option value="Courant">Courant</option>
-                  <option value="Natif">Natif</option>
-                </select>
 
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <teleport to="body">
@@ -428,6 +384,7 @@ const showPopup = ref(false);
 const selectedCandidat = ref(null);
 const competenceFilter = ref("");
 const isCollapsed = ref(true);
+
 
 const uniqueEducations = computed(() => {
   return [...new Set(data.value.flatMap(c => c.education))];

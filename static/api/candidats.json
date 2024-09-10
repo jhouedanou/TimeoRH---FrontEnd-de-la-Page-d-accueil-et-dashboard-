@@ -43,18 +43,31 @@
     "taux_remplissage_profil": 75,
     "image": "https://i.pravatar.cc/230?img=49",
     "portfolio": "https://www.behance.net/jhouedanou",
-      "langues": [
-    {
-      "langue": "Français",
-      "expression": "Oral et écrit",
-      "niveau": "Natif"
-    },
-    {
-      "langue": "Anglais",
-      "expression": "Oral et écrit",
-      "niveau": "Courant"
-    }
-  ]
+
+
+
+
+
+
+
+
+
+
+
+
+    "langues": [
+      {
+        "langue": "Français",
+        "expression": "Oral et écrit",
+        "niveau": "Natif"
+      },
+      {
+        "langue": "Anglais",
+        "expression": "Oral et écrit",
+        "niveau": "Courant"
+      }
+    ],
+    "typedeProfil": "excellence"
   },
   {
     "candidat_id": 2,
@@ -100,18 +113,31 @@
     "taux_remplissage_profil": 68,
     "image": "https://i.pravatar.cc/230?img=7",
     "portfolio": "https://www.behance.net/jhouedanou",
-      "langues": [
-    {
-      "langue": "Français",
-      "expression": "Oral et écrit",
-      "niveau": "Natif"
-    },
-    {
-      "langue": "Anglais",
-      "expression": "Oral et écrit",
-      "niveau": "Courant"
-    }
-  ]
+
+
+
+
+
+
+
+
+
+
+
+
+    "langues": [
+      {
+        "langue": "Français",
+        "expression": "Oral et écrit",
+        "niveau": "Natif"
+      },
+      {
+        "langue": "Anglais",
+        "expression": "Oral et écrit",
+        "niveau": "Courant"
+      }
+    ],
+    "typedeProfil": "premium"
   },
   {
     "candidat_id": 3,
@@ -157,18 +183,31 @@
     "taux_remplissage_profil": 80,
     "image": "https://i.pravatar.cc/230?img=34",
     "portfolio": "https://www.behance.net/jhouedanou",
-      "langues": [
-    {
-      "langue": "Français",
-      "expression": "Oral et écrit",
-      "niveau": "Natif"
-    },
-    {
-      "langue": "Anglais",
-      "expression": "Oral et écrit",
-      "niveau": "Courant"
-    }
-  ]
+
+
+
+
+
+
+
+
+
+
+
+
+    "langues": [
+      {
+        "langue": "Français",
+        "expression": "Oral et écrit",
+        "niveau": "Natif"
+      },
+      {
+        "langue": "Anglais",
+        "expression": "Oral et écrit",
+        "niveau": "Courant"
+      }
+    ],
+    "typedeProfil": "privilège"
   },
   {
     "candidat_id": 4,
@@ -214,18 +253,31 @@
     "taux_remplissage_profil": 72,
     "image": "https://i.pravatar.cc/230?img=64",
     "portfolio": "https://www.behance.net/jhouedanou",
-      "langues": [
-    {
-      "langue": "Français",
-      "expression": "Oral et écrit",
-      "niveau": "Natif"
-    },
-    {
-      "langue": "Anglais",
-      "expression": "Oral et écrit",
-      "niveau": "Courant"
-    }
-  ]
+
+
+
+
+
+
+
+
+
+
+
+
+    "langues": [
+      {
+        "langue": "Français",
+        "expression": "Oral et écrit",
+        "niveau": "Natif"
+      },
+      {
+        "langue": "Anglais",
+        "expression": "Oral et écrit",
+        "niveau": "Courant"
+      }
+    ],
+    "typedeProfil": "élite"
   },
   {
     "candidat_id": 5,
@@ -271,17 +323,30 @@
     "taux_remplissage_profil": 78,
     "image": "https://i.pravatar.cc/230?img=16",
     "portfolio": "https://www.behance.net/jhouedanou",
-      "langues": [
-    {
-      "langue": "Français",
-      "expression": "Oral et écrit",
-      "niveau": "Natif"
-    },
-    {
-      "langue": "Anglais",
-      "expression": "Oral et écrit",
-      "niveau": "Courant"
-    }
-  ]
+
+
+
+
+
+
+
+
+
+
+
+
+    "langues": [
+      {
+        "langue": "Français",
+        "expression": "Oral et écrit",
+        "niveau": "Natif"
+      },
+      {
+        "langue": "Anglais",
+        "expression": "Oral et écrit",
+        "niveau": "Courant"
+      }
+    ],
+    "typedeProfil": "excellence"
   }
 ]
