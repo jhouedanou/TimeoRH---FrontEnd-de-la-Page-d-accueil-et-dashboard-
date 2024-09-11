@@ -2,7 +2,7 @@
   <div class="planifier-recrutement">
     <div v-if="emploi">
       <h2 id="bing">Candidatures pour le poste {{ emploi.titre }}</h2>
-      <div v-if="alert" :class="['alert', alert.success ? 'alert-success' : 'alert-danger']">
+      <div v-if="alert" :class="['alert', alert.success ? 'alert-success' : 'alert-success']">
         {{ alert.message }}
       </div>
       <table class="candidatures-table">
@@ -80,7 +80,6 @@ const { data: emplois } = useEmploisJson();
 const { data: candidats } = useCandidatsJson();
 
 const emploi = computed(() => emplois.value.find((e) => e.id === emploiId));
-const alert = ref(null);
 const getAdequationClass = (adequation) => {
   if (adequation >= 80) return 'adequation-high';
   if (adequation >= 60) return 'adequation-medium';
@@ -166,10 +165,15 @@ const afficherPlus = computed(() => {
 const chargerPlus = () => {
   nombreAffiche.value += 3;
 };
+//alerte information de l'utilisat pour savoir le candidat est dans la shortliste
 
-//ggestion des candidatures, ajout au panier 
+const alert = ref(null);
+
 const addToCart = async (candidature) => {
+  console.log('Début de la fonction addToCart');
+  console.log('Candidature reçue:', candidature);
   try {
+    console.log('Préparation de la requête fetch');
     const response = await fetch('/api/emploi/shortlist', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -179,18 +183,34 @@ const addToCart = async (candidature) => {
         estretenu: true
       })
     });
+    console.log('Réponse reçue:', response);
     const result = await response.json();
+    console.log('Résultat parsé:', result);
     if (result.success) {
+      console.log('Succès: Candidat ajouté à la shortlist');
       candidature.estretenu = true;
+      alert.value = { type: 'success', message: 'Candidat ajouté à la shortlist' };
+    } else {
+      console.log('Échec: Le candidat n\'a pas été ajouté à la shortlist');
     }
   } catch (error) {
     console.error('Erreur lors de l\'ajout à la shortlist:', error);
+    alert.value = { type: 'error', message: 'Erreur lors de l\'ajout à la shortlist' };
   }
+  console.log('État final de l\'alerte:', alert.value);
+  // Effacer le message après 3 secondes
+  setTimeout(() => {
+    alert.value = null;
+    console.log('Alerte effacée après 3 secondes');
+  }, 10000);
 };
 
 //gestion des candidatures retirer du panier 
 const removeToCart = async (candidature) => {
+  console.log('Début de la fonction removeToCart');
+  console.log('Candidature reçue:', candidature);
   try {
+    console.log('Préparation de la requête fetch');
     const response = await fetch('/api/emploi/shortlist', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -200,13 +220,25 @@ const removeToCart = async (candidature) => {
         estretenu: false
       })
     });
+    console.log('Réponse reçue:', response);
     const result = await response.json();
+    console.log('Résultat parsé:', result);
     if (result.success) {
-      candidature.estretenu = true;
+      console.log('Succès: Candidat retiré de la shortlist');
+      candidature.estretenu = false;
+      alert.value = { type: 'success', message: 'Candidat retiré de la shortlist' };
+    } else {
+      console.log('Échec: Le candidat n\'a pas été retiré de la shortlist');
     }
   } catch (error) {
-    console.error('Erreur lors de l\'ajout à la shortlist:', error);
+    console.error('Erreur lors du retrait de la shortlist:', error);
+    alert.value = { type: 'error', message: 'Erreur lors du retrait de la shortlist' };
   }
+  console.log('État final de l\'alerte:', alert.value);
+  setTimeout(() => {
+    alert.value = null;
+    console.log('Alerte effacée après 3 secondes');
+  }, 10000);
 };
 
 
