@@ -21,7 +21,7 @@
               Intitulé du poste
               <span v-if="sortKey === 'titre'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
             </th>
             <th @click="changeSort('nombrePosteAPourvoir')">
               Nombre de postes à pourvoir
@@ -36,7 +36,7 @@
               Date d'expiration
               <span v-if="sortKey === 'dateExpiration'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
             </th>
             <th @click="changeSort('nombreCandidatures')">Candidatures reçues <span
                 v-if="sortKey === 'nombreCandidatures'">{{ sortOrder === 'asc' ? '▲' : '▼'
@@ -52,7 +52,7 @@
         <tbody>
           <tr v-for="offre in offresPageCourante" :key="offre.id">
             <td style="vertical-align: middle;">{{ offre.titre }}</td>
-            <td>
+            <td style="vertical-align: middle;">
               {{
                 offre.nombrePosteAPourvoir }}
             </td>

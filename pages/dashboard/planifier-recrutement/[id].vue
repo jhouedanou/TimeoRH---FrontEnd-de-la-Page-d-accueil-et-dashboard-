@@ -8,46 +8,50 @@
       <table class="candidatures-table">
         <thead>
           <tr>
-            <th class="align-middle" @click="sortBy('nom')">Nom et Prénoms</th>
-            <th class="align-middle" @click="sortBy('titre')">Titre</th>
-            <th class="align-middle" @click="sortBy('education')">Niveau d'éducation</th>
-            <th class="align-middle" @click="sortBy('experience')">Expérience</th>
-            <th class="align-middle" @click="sortBy('geolocalisation')">Géolocalisation</th>
-            <th class="align-middle" @click="sortBy('situationProfessionnelle')">Situation Professionnelle</th>
-            <th class="align-middle">Action</th>
+            <th style="vertical-align: middle;" @click="sortBy('nom')">Nom et Prénoms</th>
+            <th style="vertical-align: middle;" @click="sortBy('titre')">Titre</th>
+            <th style="vertical-align: middle;" @click="sortBy('education')">Niveau d'éducation</th>
+            <th style="vertical-align: middle;" @click="sortBy('experience')">Expérience</th>
+            <th style="vertical-align: middle;" @click="sortBy('geolocalisation')">Géolocalisation</th>
+            <th style="vertical-align: middle;" @click="sortBy('situationProfessionnelle')">Situation Professionnelle
+            </th>
+            <th style="vertical-align: middle;">Action</th>
             <th>Shortlist ?</th>
           </tr>
           <tr>
-            <th class="align-middle"><input v-model="filters.nom" placeholder="Filtrer par nom"></th>
-            <th class="align-middle"><input v-model="filters.titre" placeholder="Filtrer par titre"></th>
-            <th class="align-middle"><input v-model="filters.education" placeholder="Filtrer par éducation"></th>
-            <th class="align-middle"><input v-model="filters.experience" placeholder="Filtrer par expérience"></th>
-            <th class="align-middle"><input v-model="filters.geolocalisation" placeholder="Filtrer par géolocalisation">
+            <th style="vertical-align: middle;"><input v-model="filters.nom" placeholder="Filtrer par nom"></th>
+            <th style="vertical-align: middle;"><input v-model="filters.titre" placeholder="Filtrer par titre"></th>
+            <th style="vertical-align: middle;"><input v-model="filters.education" placeholder="Filtrer par éducation">
             </th>
-            <th class="align-middle"><input v-model="filters.situationProfessionnelle"
+            <th style="vertical-align: middle;"><input v-model="filters.experience"
+                placeholder="Filtrer par expérience"></th>
+            <th style="vertical-align: middle;"><input v-model="filters.geolocalisation"
+                placeholder="Filtrer par géolocalisation">
+            </th>
+            <th style="vertical-align: middle;"><input v-model="filters.situationProfessionnelle"
                 placeholder="Filtrer par situation"></th>
-            <th class="align-middle"></th>
+            <th style="vertical-align: middle;"></th>
             <th></th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="candidature in filteredAndSortedCandidatures" :key="candidature.id">
-            <td class="align-middle">{{ candidature.candidat.nom }} {{ candidature.candidat.prenom }}</td>
-            <td class="align-middle">{{ candidature.candidat.titre }}</td>
-            <td class="align-middle">
+            <td style="vertical-align: middle;">{{ candidature.candidat.nom }} {{ candidature.candidat.prenom }}</td>
+            <td style="vertical-align: middle;">{{ candidature.candidat.titre }}</td>
+            <td style="vertical-align: middle;">
               <ul>
                 <li v-for="(edu, index) in candidature.candidat.education" :key="index">
                   {{ edu }}
                 </li>
               </ul>
             </td>
-            <td class="align-middle">{{ candidature.candidat.experience }} ans</td>
-            <td class="align-middle">{{ candidature.candidat.geolocalisation }}</td>
-            <td class="align-middle">{{ candidature.candidat.situationProfessionnelle }}</td>
-            <td class="align-middle">
+            <td style="vertical-align: middle;">{{ candidature.candidat.experience }} ans</td>
+            <td style="vertical-align: middle;">{{ candidature.candidat.geolocalisation }}</td>
+            <td style="vertical-align: middle;">{{ candidature.candidat.situationProfessionnelle }}</td>
+            <td style="vertical-align: middle;">
               <button @click="showCandidatDetails(candidature)">Voir détails</button>
             </td>
-            <td>
+            <td style="vertical-align: middle;">
               <button class="savei" @click="addToCart(candidature)">
                 <span class="material-icons">add</span>
               </button>
