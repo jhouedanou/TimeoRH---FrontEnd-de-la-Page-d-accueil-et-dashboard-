@@ -1,9 +1,3 @@
-/** * Le composant Candidat affiche les informations détaillées d'un candidat, y
-compris son image, son nom, son titre, son expérience, ses coordonnées, ses
-points forts, ses compétences et une appréciation générale. Il affiche également
-un pourcentage d'adéquation du candidat par rapport au poste, ainsi qu'un bouton
-pour afficher un popup avec plus d'informations sur le candidat. * Le composant
-utilise des styles Sass pour la mise en forme. */
 <template>
   <div class="candidat">
     <div class="columns">
@@ -27,11 +21,7 @@ utilise des styles Sass pour la mise en forme. */
             </div>
           </div>
           <div class="skills-container">
-            <span
-              v-for="(point, index) in candidat.points_forts"
-              :key="index"
-              class="skill-button"
-            >
+            <span v-for="(point, index) in candidat.points_forts" :key="index" class="skill-button">
               {{ point }}
             </span>
           </div>
@@ -44,11 +34,7 @@ utilise des styles Sass pour la mise en forme. */
         <div class="competences">
           <!-- <h4>Compétences</h4> -->
           <div class="skills-container">
-            <span
-              v-for="(competence, index) in candidat.competences"
-              :key="index"
-              class="skill-button"
-            >
+            <span v-for="(competence, index) in candidat.competences" :key="index" class="skill-button">
               {{ competence }}
             </span>
           </div>
@@ -76,9 +62,7 @@ utilise des styles Sass pour la mise en forme. */
         <div class="columns infordetaillecandidat">
           <div class="macine column is-6-desktop is-12-mobile is-flex">
             <div class="ligne1cv columns is-12 coleen">
-              <div
-                class="trunks is-flex is-flex-direction-row column is-9-desktop is-12-mobile"
-              >
+              <div class="trunks is-flex is-flex-direction-row column is-9-desktop is-12-mobile">
                 <img :src="candidat.image" alt="" />
                 <div class="neay is-flex is-flex-direction-column">
                   <h2>{{ candidat.nom }} {{ candidat.prenom }}</h2>
@@ -86,8 +70,7 @@ utilise des styles Sass pour la mise en forme. */
                     Candidat parfait
                   </p>
                   <p>
-                    <span class="material-icons">person</span
-                    >{{ candidat.titre }}
+                    <span class="material-icons">person</span>{{ candidat.titre }}
                   </p>
                   <p class="localisation">
                     <span class="material-icons">location_on</span>
@@ -95,8 +78,7 @@ utilise des styles Sass pour la mise en forme. */
                   </p>
                   <p class="telephone">
                     <a :href="'tel:' + candidat.telephone"></a>
-                    <span class="material-icons">phone</span
-                    >{{ candidat.telephone }}
+                    <span class="material-icons">phone</span>{{ candidat.telephone }}
                   </p>
                   <p class="email">
                     <a :href="'mailto:' + candidat.email" target="_blank">
@@ -106,9 +88,7 @@ utilise des styles Sass pour la mise en forme. */
                   </p>
                 </div>
               </div>
-              <div
-                class="vegeta is-flex is-flex-direction-row column is-3-desktop is-12-mobile"
-              >
+              <div class="vegeta is-flex is-flex-direction-row column is-3-desktop is-12-mobile">
                 <div :class="['match', matchColorClass]">
                   <span class="brad"> {{ adequation }}%</span>
                   <p>d'adéquation par rapport au poste</p>
@@ -119,25 +99,19 @@ utilise des styles Sass pour la mise en forme. */
             <div class="ligne2cv is-12 coleen">
               <p>Taux de remplissage du profil professionnel</p>
               <div class="progress-bar-container">
-                <div
-                  class="progress-bar"
-                  :style="{
-                    width: candidat.taux_remplissage_profil + '%',
-                    transition: 'width 1s ease-out',
-                    transformOrigin: 'left',
-                  }"
-                ></div>
-                <span
-                  class="progress-text"
-                  :style="{
-                    position: 'absolute',
-                    left: candidat.taux_remplissage_profil + '%',
-                    top: 0,
-                    bottom: 0,
-                    transform: 'translateX(-50%)',
-                    transition: 'left 1s ease-out',
-                  }"
-                >
+                <div class="progress-bar" :style="{
+                  width: candidat.taux_remplissage_profil + '%',
+                  transition: 'width 1s ease-out',
+                  transformOrigin: 'left',
+                }"></div>
+                <span class="progress-text" :style="{
+                  position: 'absolute',
+                  left: candidat.taux_remplissage_profil + '%',
+                  top: 0,
+                  bottom: 0,
+                  transform: 'translateX(-50%)',
+                  transition: 'left 1s ease-out',
+                }">
                   {{ candidat.taux_remplissage_profil }}%
                 </span>
               </div>
@@ -157,7 +131,7 @@ utilise des styles Sass pour la mise en forme. */
                   <span class="buan">Ne correspondant au poste</span>
                   <span class="morez">{{
                     candidatInfo.necorrespondantpas
-                  }}</span>
+                    }}</span>
                 </div>
               </div>
             </div>
@@ -166,10 +140,7 @@ utilise des styles Sass pour la mise en forme. */
               <div class="lacie">
                 <h3>Compétences :</h3>
                 <ul>
-                  <li
-                    v-for="(competence, index) in candidat.competences"
-                    :key="index"
-                  >
+                  <li v-for="(competence, index) in candidat.competences" :key="index">
                     {{ competence
                     }}{{ index !== candidat.competences.length - 1 ? "," : "" }}
                   </li>
@@ -178,10 +149,7 @@ utilise des styles Sass pour la mise en forme. */
               <div class="lacie">
                 <h3>Diplômes :</h3>
                 <ul>
-                  <li
-                    v-for="(diplome, index) in candidat.education"
-                    :key="index"
-                  >
+                  <li v-for="(diplome, index) in candidat.education" :key="index">
                     {{ diplome
                     }}{{ index !== candidat.education.length - 1 ? "," : "" }}
                   </li>
@@ -194,25 +162,13 @@ utilise des styles Sass pour la mise en forme. */
               <div class="documentsducandidat">
                 <div class="h4">Documents</div>
                 <div class="wrapperdoc">
-                  <a
-                    :href="candidat.cv"
-                    target="_blank"
-                    class="document-button"
-                  >
+                  <a :href="candidat.cv" target="_blank" class="document-button">
                     <button>CV</button>
                   </a>
-                  <a
-                    :href="candidat.lettre_motivation"
-                    target="_blank"
-                    class="document-button"
-                  >
+                  <a :href="candidat.lettre_motivation" target="_blank" class="document-button">
                     <button>Lettre de motivation</button>
                   </a>
-                  <a
-                    :href="candidat.portfolio"
-                    target="_blank"
-                    class="document-button"
-                  >
+                  <a :href="candidat.portfolio" target="_blank" class="document-button">
                     <button>Portfolio</button>
                   </a>
                 </div>
@@ -221,16 +177,10 @@ utilise des styles Sass pour la mise en forme. */
           </div>
           <div class="interviewdecision column is-6-desktop is-12-mobile">
             <ul class="tabs">
-              <li
-                @click="activeTab = 'interview'"
-                :class="{ active: activeTab === 'interview' }"
-              >
+              <li @click="activeTab = 'interview'" :class="{ active: activeTab === 'interview' }">
                 Interview
               </li>
-              <li
-                @click="activeTab = 'decision'"
-                :class="{ active: activeTab === 'decision' }"
-              >
+              <li @click="activeTab = 'decision'" :class="{ active: activeTab === 'decision' }">
                 Décision
               </li>
             </ul>
@@ -239,10 +189,7 @@ utilise des styles Sass pour la mise en forme. */
               <h3>Interviews</h3>
               <div class="interview-list">
                 <ul>
-                  <li
-                    class="major"
-                    v-for="(interview, index) in candidatInfo.interviews"
-                  >
+                  <li class="major" v-for="(interview, index) in candidatInfo.interviews">
                     <p class="raison">{{ interview.raison }}</p>
                     <p class="date">
                       {{ interview.date }} - {{ interview.heure }}
@@ -268,45 +215,25 @@ utilise des styles Sass pour la mise en forme. */
                     <div class="field">
                       <label class="label">Date</label>
                       <div class="control">
-                        <input
-                          v-model="newInterview.date"
-                          type="date"
-                          class="input"
-                          required
-                        />
+                        <input v-model="newInterview.date" type="date" class="input" required />
                       </div>
                     </div>
                     <div class="field">
                       <label class="label">Heure</label>
                       <div class="control">
-                        <input
-                          v-model="newInterview.heure"
-                          type="time"
-                          class="input"
-                          required
-                        />
+                        <input v-model="newInterview.heure" type="time" class="input" required />
                       </div>
                     </div>
                     <div class="field">
                       <label class="label">Raison</label>
                       <div class="control">
-                        <input
-                          v-model="newInterview.raison"
-                          type="text"
-                          class="input"
-                          required
-                        />
+                        <input v-model="newInterview.raison" type="text" class="input" required />
                       </div>
                     </div>
                     <div class="field">
                       <label class="label">Lien</label>
                       <div class="control">
-                        <input
-                          v-model="newInterview.lien"
-                          type="url"
-                          class="input"
-                          required
-                        />
+                        <input v-model="newInterview.lien" type="url" class="input" required />
                       </div>
                     </div>
                     <div class="field">
@@ -327,11 +254,7 @@ utilise des styles Sass pour la mise en forme. */
                 <div class="field">
                   <label class="label">Décision</label>
                   <div class="control">
-                    <textarea
-                      v-model="newDecision"
-                      class="textarea"
-                      required
-                    ></textarea>
+                    <textarea v-model="newDecision" class="textarea" required></textarea>
                   </div>
                 </div>
                 <div class="field">
@@ -493,6 +416,7 @@ const matchColorClass = computed(() => {
 .candidat-info {
   /* Styles pour les informations du candidat */
 }
+
 .andrewtateisanidiot {
   justify-content: flex-end;
   font-size: 25px;
@@ -506,10 +430,12 @@ const matchColorClass = computed(() => {
   background: none;
   border: none;
   cursor: pointer;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -529,6 +455,7 @@ const matchColorClass = computed(() => {
   font-weight: bold;
   color: #002160;
 }
+
 .candidat {
   border-radius: 8px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
@@ -537,14 +464,18 @@ const matchColorClass = computed(() => {
   margin-bottom: 4em;
   padding: 1.5em;
 }
+
 .onez {
   margin-bottom: 2em;
+
   img {
     object-fit: cover;
   }
 }
+
 .twoz {
   padding: 0 1em;
+
   h3 {
     font-size: 25px;
     font-weight: 500;
@@ -556,6 +487,7 @@ const matchColorClass = computed(() => {
     color: #000;
     margin-bottom: 0.5em;
   }
+
   .titre {
     font-size: 20px;
     font-weight: normal;
@@ -568,6 +500,7 @@ const matchColorClass = computed(() => {
     margin-bottom: 0.5em;
   }
 }
+
 .nfo {
   margin-bottom: 0.5em;
 
@@ -582,11 +515,14 @@ const matchColorClass = computed(() => {
     color: #002160;
   }
 }
+
 .skills-container {
   margin-bottom: 1.5em;
 }
+
 .points-forts {
   margin-bottom: 1.5em;
+
   h4 {
     font-size: 20px;
     font-weight: bold;
@@ -598,6 +534,7 @@ const matchColorClass = computed(() => {
     color: #002160;
     margin-bottom: 0.5em;
   }
+
   p {
     font-size: 16px;
     font-weight: normal;
@@ -610,6 +547,7 @@ const matchColorClass = computed(() => {
     margin-bottom: 0.5em;
   }
 }
+
 .levraimatch {
   font-size: 16px;
   font-weight: bold;
@@ -618,12 +556,15 @@ const matchColorClass = computed(() => {
   line-height: 1.9;
   letter-spacing: normal;
   text-align: right;
+
   &::after {
     position: absolute;
     z-index: 10;
   }
+
   &.match-green {
     color: green;
+
     &::after {
       content: "";
       display: block;
@@ -632,8 +573,10 @@ const matchColorClass = computed(() => {
       background: url("/images/100.svg");
     }
   }
+
   &.match-orange {
     color: orange;
+
     &::after {
       display: block;
       content: "";
@@ -642,8 +585,10 @@ const matchColorClass = computed(() => {
       background: url("/images/101.svg");
     }
   }
+
   &.match-red {
     color: red;
+
     &::after {
       display: block;
       content: "";
@@ -653,6 +598,7 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .madjoua {
   display: flex;
   justify-content: flex-start;
@@ -661,6 +607,7 @@ const matchColorClass = computed(() => {
   flex-flow: row;
   flex-wrap: wrap;
   position: relative;
+
   p {
     width: 90%;
     height: 45px;
@@ -676,6 +623,7 @@ const matchColorClass = computed(() => {
     text-align: left;
     color: #002160;
     position: relative;
+
     &::after {
       position: absolute;
       z-index: 10;
@@ -684,6 +632,7 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .trunks {
   img {
     width: 114px;
@@ -691,6 +640,7 @@ const matchColorClass = computed(() => {
     border-radius: 100%;
   }
 }
+
 .macine {
   margin-top: 1em;
   border-radius: 6px;
@@ -699,6 +649,7 @@ const matchColorClass = computed(() => {
   background-color: #fff;
   padding: 1em;
   flex-direction: column;
+
   h2 {
     font-size: 20px;
     font-weight: bold;
@@ -709,6 +660,7 @@ const matchColorClass = computed(() => {
     text-align: left;
     color: #012e61;
   }
+
   p {
     font-size: 14px;
     font-weight: 400;
@@ -725,9 +677,11 @@ const matchColorClass = computed(() => {
     margin-bottom: 0.45rem;
   }
 }
+
 .neay {
   padding-left: 10px;
 }
+
 .candidat-parfait {
   width: 151px;
   height: 30px;
@@ -739,9 +693,9 @@ const matchColorClass = computed(() => {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 1.5em;
-  background: rgba(249, 231, 190, 0.42) url(/images/star-svgrepo-com.svg) center
-    left no-repeat;
+  background: rgba(249, 231, 190, 0.42) url(/images/star-svgrepo-com.svg) center left no-repeat;
 }
+
 .brad {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -759,11 +713,13 @@ const matchColorClass = computed(() => {
   align-items: center;
   margin: 0 auto;
 }
+
 .vegeta {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+
   p {
     font-size: 13px;
     font-weight: 500;
@@ -776,9 +732,11 @@ const matchColorClass = computed(() => {
     position: relative;
     margin-top: 1em;
   }
+
   .match {
     position: relative;
   }
+
   .match-green {
     .brad {
       position: relative;
@@ -788,6 +746,7 @@ const matchColorClass = computed(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/201.svg");
         width: 71px;
@@ -805,6 +764,7 @@ const matchColorClass = computed(() => {
       }
     }
   }
+
   .match-orange {
     .brad {
       position: relative;
@@ -814,6 +774,7 @@ const matchColorClass = computed(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/200.svg");
         width: 71px;
@@ -831,6 +792,7 @@ const matchColorClass = computed(() => {
       }
     }
   }
+
   .match-red {
     .brad {
       position: relative;
@@ -840,6 +802,7 @@ const matchColorClass = computed(() => {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       &::after {
         background: url("/images/202.svg");
         width: 71px;
@@ -858,6 +821,7 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .progress-bar-container {
   width: 100%;
   height: 40px;
@@ -868,6 +832,7 @@ const matchColorClass = computed(() => {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+
   &::after {
     content: "";
     height: 2px;
@@ -879,6 +844,7 @@ const matchColorClass = computed(() => {
     position: absolute;
   }
 }
+
 .progress-bar {
   z-index: 1;
   height: 100%;
@@ -887,6 +853,7 @@ const matchColorClass = computed(() => {
   height: 10px;
   transition: width 1s ease-in-out;
 }
+
 .progress-text {
   z-index: 2;
   width: 33px;
@@ -913,6 +880,7 @@ const matchColorClass = computed(() => {
   text-align: left;
   color: #000;
 }
+
 .coleen {
   &:nth-of-type(2) {
     p {
@@ -928,6 +896,7 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .documentsducandidat {
   display: flex;
   align-items: center;
@@ -938,6 +907,7 @@ const matchColorClass = computed(() => {
   border-radius: 5px;
   border: solid 1px #a5aab5;
   background-color: #fff;
+
   .h4 {
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -954,12 +924,14 @@ const matchColorClass = computed(() => {
     text-align: left;
     color: #747474;
   }
+
   .wrapperdoc {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
     gap: 1px;
+
     a {
       &:nth-of-type(3) {
         button {
@@ -973,6 +945,7 @@ const matchColorClass = computed(() => {
           }
         }
       }
+
       button {
         font-family: "Open Sans", sans-serif;
         font-size: 14px;
@@ -1002,18 +975,21 @@ const matchColorClass = computed(() => {
         }
       }
     }
+
     .doc {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-direction: row;
       gap: 1em;
+
       .doc-icon {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 1em;
+
         .doc-icon-img {
           width: 30px;
           height: 30px;
@@ -1027,10 +1003,12 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .popup-content {
   position: relative;
   padding: 3em;
 }
+
 .todd {
   background: rgb(152, 152, 152);
   color: white;
@@ -1039,23 +1017,34 @@ const matchColorClass = computed(() => {
   right: 10px;
   top: 10px;
 
-  filter: alpha(opacity=50); /* internet explorer */
-  -khtml-opacity: 0.5; /* khtml, old safari */
-  -moz-opacity: 0.5; /* mozilla, netscape */
-  opacity: 0.5; /* fx, safari, opera */
+  filter: alpha(opacity=50);
+  /* internet explorer */
+  -khtml-opacity: 0.5;
+  /* khtml, old safari */
+  -moz-opacity: 0.5;
+  /* mozilla, netscape */
+  opacity: 0.5;
+
+  /* fx, safari, opera */
   &:hover {
-    filter: alpha(opacity=100); /* internet explorer */
-    -khtml-opacity: 1; /* khtml, old safari */
-    -moz-opacity: 1; /* mozilla, netscape */
-    opacity: 1; /* fx, safari, opera */
+    filter: alpha(opacity=100);
+    /* internet explorer */
+    -khtml-opacity: 1;
+    /* khtml, old safari */
+    -moz-opacity: 1;
+    /* mozilla, netscape */
+    opacity: 1;
+    /* fx, safari, opera */
   }
 }
+
 .neay {
   span {
     font-size: 12px;
     margin-right: 10px;
   }
 }
+
 .interviewdecision {
   .tabs {
     display: flex;
@@ -1064,9 +1053,11 @@ const matchColorClass = computed(() => {
     justify-content: flex-start;
     gap: 1em;
     margin-bottom: 1em;
+
     li {
       cursor: pointer;
     }
+
     .tab {
       display: flex;
       align-items: center;
@@ -1086,6 +1077,7 @@ const matchColorClass = computed(() => {
       letter-spacing: normal;
       text-align: left;
       color: #005bbe;
+
       &:hover {
         background: #005bbe;
         border: #005bbe 1px solid;
@@ -1094,10 +1086,12 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .tabs {
   border-radius: 7.6px;
   border: solid 1.1px #c6c6c6;
   background-color: #fff;
+
   li {
     padding: 1em;
     color: black;
@@ -1110,12 +1104,14 @@ const matchColorClass = computed(() => {
     }
   }
 }
+
 .peyton {
   border-radius: 6.5px;
   border: solid 1.1px #e6e6e6;
   background-color: #fff;
 
   padding: 1em;
+
   h3 {
     font-size: 15.2px;
     font-weight: 500;
@@ -1128,7 +1124,9 @@ const matchColorClass = computed(() => {
     border-bottom: 1px solid #e6e6e6;
   }
 }
+
 .peyton {
+
   input,
   textarea {
     font-size: 15px;

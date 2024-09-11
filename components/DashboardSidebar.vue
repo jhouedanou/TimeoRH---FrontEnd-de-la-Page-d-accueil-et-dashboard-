@@ -45,7 +45,7 @@
                 $route.path.includes('ajouter-offre'),
             }" class="tooltip">
               <img src="/images/dashboardsidebar/offremploi.svg" alt="" />
-              Vos offres d'emploi
+              Gestion des offres d'emploi et candidatures
               <span class="tooltiptext">Lister et gérer vos offres d'emploi</span>
 
             </NuxtLink>

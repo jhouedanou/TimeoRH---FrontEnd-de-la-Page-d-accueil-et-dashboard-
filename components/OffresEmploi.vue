@@ -21,7 +21,7 @@
               Intitulé du poste
               <span v-if="sortKey === 'titre'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-                }}</span>
+              }}</span>
             </th>
             <th @click="changeSort('nombrePosteAPourvoir')">
               Nombre de postes à pourvoir
@@ -36,21 +36,12 @@
               Date d'expiration
               <span v-if="sortKey === 'dateExpiration'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-                }}</span>
+              }}</span>
             </th>
             <th @click="changeSort('nombreCandidatures')">Candidatures reçues <span
                 v-if="sortKey === 'nombreCandidatures'">{{ sortOrder === 'asc' ? '▲' : '▼'
                 }}</span>
             </th>
-
-
-            <!-- <th @click="changeSort('statut')">
-              Statut
-              <span v-if="sortKey === 'statut'">{{
-                sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
-            </th> -->
-            <th>Planifier le recrutement</th>
             <th @click="changeSort('candidaturesRetenues')">Candidats retenus<span
                 v-if="sortKey === 'candidaturesRetenues'">{{ sortOrder === 'asc' ? '▲' : '▼'
                 }}</span></th>
@@ -60,20 +51,23 @@
 
         <tbody>
           <tr v-for="offre in offresPageCourante" :key="offre.id">
-            <td>{{ offre.titre }}</td>
-            <td>{{ offre.nombrePosteAPourvoir }}</td>
-
-            <td>{{ offre.datePublication }}</td>
-            <td>{{ offre.dateExpiration }}</td>
-            <td>{{ candidaturesParOffre[offre.id] }}</td>
-            <!-- <td>{{ offre.statut }}</td> -->
+            <td style="vertical-align: middle;">{{ offre.titre }}</td>
             <td>
-              <NuxtLink class="planifierrecrutement" :to="`/dashboard/planifier-recrutement/${offre.id}`">
-                Planifier le recrutement
+              {{
+                offre.nombrePosteAPourvoir }}
+            </td>
+
+            <td style="vertical-align: middle;">{{ offre.datePublication }}</td>
+            <td style="vertical-align: middle;">{{ offre.dateExpiration }}</td>
+            <td style="vertical-align: middle;">
+              <NuxtLink class="planifierrecrutement tooltip" :to="`/dashboard/planifier-recrutement/${offre.id}`">{{
+                candidaturesParOffre[offre.id] }} candidats<span class="tooltiptext">Cliquez ici pour lancer le
+                  processus de recrutement</span>
               </NuxtLink>
             </td>
-            <td>{{ candidaturesRetenuesParOffre[offre.id] }}</td>
-            <td>
+
+            <td style="vertical-align: middle;">{{ candidaturesRetenuesParOffre[offre.id] }}</td>
+            <td style="vertical-align: middle;">
               <button class="editemploi" @click="editerOffre(offre)">
 
                 <span class="material-icons">edit</span>
@@ -81,10 +75,6 @@
               </button>
               <EditOffrePopup v-if="editingOffreId === offre.id" :offre="offre" @close="editingOffreId = null"
                 @save="saveEditedOffre" />
-
-              <!-- <button class="changerstatut" @click="changerStatut(offre)">
-                <span class="material-icons">swap_horiz</span>
-              </button> -->
               <button class="supprimeroffre" @click="supprimerOffre(offre)">
                 <span class="material-icons">delete</span>
               </button>
@@ -560,5 +550,43 @@ th {
   .col-candidatures {
     width: 10%;
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  color: white;
+  background-color: rgb(1, 46, 97);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 1em;
+  right: 1em;
+  opacity: 0;
+  padding: 1em;
+  transition: opacity 0.3s;
+  position: fixed;
+  z-index: 100;
+}
+
+a.planifierrecrutement.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 </style>

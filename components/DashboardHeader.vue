@@ -4,14 +4,8 @@
       <div class="columns">
         <div class="logo-wrapp column is-2-desktop is-2-tablet is-12-mobile">
           <NuxtLink to="/dashboard" aria-label="Retour à l'accueil">
-            <NuxtImg
-              :src="globalData.logo"
-              alt="Logo"
-              class="logo-dashboard"
-              loading="lazy"
-              format="webp"
-              quality="80"
-            />
+            <NuxtImg :src="globalData.logo" alt="Logo" class="logo-dashboard" loading="lazy" format="webp"
+              quality="80" />
           </NuxtLink>
         </div>
 
@@ -19,35 +13,22 @@
           <div class="field">
             <div class="control">
               <div class="input-wrapper">
-                <input
-                  v-model="searchQuery"
-                  type="text"
-                  placeholder="Recherche d'un profil ou de compétences...."
-                  @keyup.enter="redirectToSearch"
-                  @focus="showSuggestions = true"
-                  @blur="hideSuggestionsDelayed"
-                />
+                <input v-model="searchQuery" type="text" placeholder="Recherche d'un profil ou de compétences...."
+                  @keyup.enter="redirectToSearch" @focus="showSuggestions = true" @blur="hideSuggestionsDelayed" />
                 <button class="search-button" @click="redirectToSearch">
                   <span class="material-icons">search</span>
                 </button>
                 <div v-if="showSuggestions" class="suggestions">
                   <h4>Recherches récentes</h4>
                   <ul>
-                    <li
-                      v-for="(search, index) in recentSearches"
-                      :key="index"
-                      @mousedown="selectSearch(search)"
-                    >
+                    <li v-for="(search, index) in recentSearches" :key="index" @mousedown="selectSearch(search)">
                       {{ search }}
                     </li>
                   </ul>
                   <h4>Compétences</h4>
                   <ul>
-                    <li
-                      v-for="(competence, index) in uniqueCompetences"
-                      :key="index"
-                      @mousedown="selectCompetence(competence)"
-                    >
+                    <li v-for="(competence, index) in uniqueCompetences" :key="index"
+                      @mousedown="selectCompetence(competence)">
                       {{ competence }}
                     </li>
                   </ul>
@@ -56,23 +37,11 @@
             </div>
           </div>
         </div>
-        <div
-          class="column is-1-desktop is-1-tablet is-12-mobile is-flex is-justify-content-center is-align-items-end"
-        >
-          <div
-            class="dropdown is-right"
-            :class="{ 'is-active': isNotificationDropdownActive }"
-          >
-            <div
-              class="dropdown-trigger"
-              :class="{ 'has-notifications': hasNotifications }"
-            >
-              <button
-                class="button"
-                aria-haspopup="true"
-                aria-controls="dropdown-menu"
-                @click="toggleNotificationDropdown"
-              >
+        <div class="column is-1-desktop is-1-tablet is-12-mobile is-flex is-justify-content-center is-align-items-end">
+          <div class="dropdown is-right" :class="{ 'is-active': isNotificationDropdownActive }">
+            <div class="dropdown-trigger" :class="{ 'has-notifications': hasNotifications }">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"
+                @click="toggleNotificationDropdown">
                 <span class="icon">
                   <span class="material-icons">notifications</span>
                 </span>
@@ -81,16 +50,10 @@
             <div class="dropdown-menu" id="dropdown-menu" role="menu">
               <div class="dropdown-content">
                 <div class="dropdown-content">
-                  <a
-                    v-for="notif in notifications"
-                    :key="notif.id"
-                    href="#"
-                    class="dropdown-item"
-                    @click.prevent="
-                      showPopup(notif);
-                      deleteNotification(notif.id);
-                    "
-                  >
+                  <a v-for="notif in notifications" :key="notif.id" href="#" class="dropdown-item" @click.prevent="
+                    showPopup(notif);
+                  deleteNotification(notif.id);
+                  ">
                     {{ notif.title }}
                   </a>
                 </div>
@@ -110,11 +73,7 @@
           <p>{{ currentNotification.content }}</p>
         </div>
       </div>
-      <button
-        class="modal-close is-large"
-        aria-label="close"
-        @click="closePopup"
-      ></button>
+      <button class="modal-close is-large" aria-label="close" @click="closePopup"></button>
     </div>
   </teleport>
 </template>
@@ -257,10 +216,12 @@ onMounted(() => {
   text-align: left;
   color: #1c1c1e;
 }
+
 .header-content {
   .input-wrapper {
     position: relative;
     text-align: center;
+
     input {
       z-index: 1000;
     }
@@ -304,26 +265,32 @@ onMounted(() => {
 .input-wrapper {
   position: relative;
 }
+
 .dropdown-trigger {
   button {
     background: white;
     border: none;
   }
 }
+
 .logo-wrapp {
   padding: 20px 0 0 0;
 }
+
 .header {
   padding: 1rem 0;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
   max-height: 40px;
 }
+
 .input-wrapper {
   position: relative;
   display: inline-block;
+
   input {
     width: 100vw;
     max-width: 529px;
@@ -356,6 +323,7 @@ onMounted(() => {
   font-size: 20px;
   color: #999;
 }
+
 .dropdown-trigger.has-notifications::after {
   content: "";
   position: absolute;
@@ -373,15 +341,18 @@ onMounted(() => {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.2);
     opacity: 0.7;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .is-9-desktop {
     display: flex;
@@ -390,17 +361,20 @@ onMounted(() => {
     flex-direction: column;
     margin: 0em !important;
     padding: 0em !important;
+
     input {
       margin: 0 auto;
       max-width: 90vw !important;
     }
   }
+
   .logo-wrapp {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
   }
+
   .hamburger-menu {
     display: block;
   }

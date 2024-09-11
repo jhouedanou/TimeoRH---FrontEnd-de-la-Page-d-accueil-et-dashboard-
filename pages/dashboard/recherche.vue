@@ -39,7 +39,7 @@
           <table class="table is-fullwidth is-striped is-responsive" v-if="data">
             <thead>
               <tr>
-                <th @click="sortBy('nom')">Nom et Prénom</th>
+                <th @click="sortBy('nom')">Nom et Prénoms</th>
                 <th @click="sortBy('titre')">Titre</th>
                 <th @click="sortBy('education')">Niveau d'éducation</th>
                 <th @click="sortBy('experience')">Expérience</th>
