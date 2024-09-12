@@ -1,5 +1,5 @@
 <template>
-  <div class="candidat">
+  <div class="candidatÒ">
     <div class="columns">
       <div class="column is-10-desktop is-12-mobile">
         <div class="candidat-info">
@@ -46,7 +46,7 @@
         </p>
 
         <button @click="showPopup = true" class="andrewtateisanidiot">
-          Afficher le CV
+          Programmer les interviews
         </button>
       </div>
     </div>

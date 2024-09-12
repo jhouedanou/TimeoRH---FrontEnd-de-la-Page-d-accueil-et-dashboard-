@@ -9,7 +9,11 @@
     "situationProfessionnelle": "En poste, en cours de démission",
     "cv": "cv_aya_kouassi.pdf",
     "lettre_motivation": "lettre_motivation_aya_kouassi.pdf",
-    "competences": ["Java", "Python", "SQL"],
+    "competences": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
     "experience": 5,
     "experienceSpecifique": [
       {
@@ -17,14 +21,24 @@
         "duree": 3,
         "manager": true,
         "mission_principale": "Développement et maintenance d'applications web complètes",
-        "activiteliees": ["Conception d'architecture logicielle", "Développement front-end et back-end", "Gestion de base de données", "Intégration continue"]
+        "activiteliees": [
+          "Conception d'architecture logicielle",
+          "Développement front-end et back-end",
+          "Gestion de base de données",
+          "Intégration continue"
+        ]
       },
       {
         "titre": "Développeuse Back-end",
         "duree": 2,
         "manager": false,
         "mission_principale": "Conception et implémentation de services back-end",
-        "activiteliees": ["Développement d'API RESTful", "Optimisation des performances", "Gestion de la sécurité", "Tests unitaires et d'intégration"]
+        "activiteliees": [
+          "Développement d'API RESTful",
+          "Optimisation des performances",
+          "Gestion de la sécurité",
+          "Tests unitaires et d'intégration"
+        ]
       }
     ],
     "dateInscription": "2023-05-15",
@@ -43,18 +57,6 @@
     "taux_remplissage_profil": 75,
     "image": "https://i.pravatar.cc/230?img=49",
     "portfolio": "https://www.behance.net/jhouedanou",
-
-
-
-
-
-
-
-
-
-
-
-
     "langues": [
       {
         "langue": "Français",
@@ -79,7 +81,11 @@
     "situationProfessionnelle": "En recherche active",
     "cv": "cv_mamadou_diallo.pdf",
     "lettre_motivation": "lettre_motivation_mamadou_diallo.pdf",
-    "competences": ["JavaScript", "React", "Node.js"],
+    "competences": [
+      "JavaScript",
+      "React",
+      "Node.js"
+    ],
     "experience": 3,
     "experienceSpecifique": [
       {
@@ -87,14 +93,24 @@
         "duree": 2,
         "manager": false,
         "mission_principale": "Création d'interfaces utilisateur réactives et performantes",
-        "activiteliees": ["Développement avec React", "Optimisation des performances front-end", "Intégration de designs", "Tests unitaires avec Jest"]
+        "activiteliees": [
+          "Développement avec React",
+          "Optimisation des performances front-end",
+          "Intégration de designs",
+          "Tests unitaires avec Jest"
+        ]
       },
       {
         "titre": "Développeur Web Junior",
         "duree": 1,
         "manager": false,
         "mission_principale": "Assistance au développement de sites web",
-        "activiteliees": ["Développement HTML/CSS", "Intégration de fonctionnalités JavaScript", "Maintenance de sites existants", "Collaboration avec l'équipe de design"]
+        "activiteliees": [
+          "Développement HTML/CSS",
+          "Intégration de fonctionnalités JavaScript",
+          "Maintenance de sites existants",
+          "Collaboration avec l'équipe de design"
+        ]
       }
     ],
     "dateInscription": "2023-05-16",
@@ -113,18 +129,6 @@
     "taux_remplissage_profil": 68,
     "image": "https://i.pravatar.cc/230?img=7",
     "portfolio": "https://www.behance.net/jhouedanou",
-
-
-
-
-
-
-
-
-
-
-
-
     "langues": [
       {
         "langue": "Français",
@@ -149,7 +153,11 @@
     "situationProfessionnelle": "En recherche active",
     "cv": "cv_aminata_ouattara.pdf",
     "lettre_motivation": "lettre_motivation_aminata_ouattara.pdf",
-    "competences": ["C++", "C#", "Unity"],
+    "competences": [
+      "C++",
+      "C#",
+      "Unity"
+    ],
     "experience": 7,
     "experienceSpecifique": [
       {
@@ -157,14 +165,24 @@
         "duree": 5,
         "manager": true,
         "mission_principale": "Conception et développement de jeux vidéo",
-        "activiteliees": ["Programmation de gameplay", "Optimisation des performances", "Intégration d'assets", "Gestion d'équipe de développement"]
+        "activiteliees": [
+          "Programmation de gameplay",
+          "Optimisation des performances",
+          "Intégration d'assets",
+          "Gestion d'équipe de développement"
+        ]
       },
       {
         "titre": "Développeuse C++",
         "duree": 2,
         "manager": false,
         "mission_principale": "Développement de logiciels bas niveau en C++",
-        "activiteliees": ["Développement de systèmes embarqués", "Optimisation de code", "Débogage avancé", "Implémentation d'algorithmes complexes"]
+        "activiteliees": [
+          "Développement de systèmes embarqués",
+          "Optimisation de code",
+          "Débogage avancé",
+          "Implémentation d'algorithmes complexes"
+        ]
       }
     ],
     "dateInscription": "2023-05-17",
@@ -183,18 +201,6 @@
     "taux_remplissage_profil": 80,
     "image": "https://i.pravatar.cc/230?img=34",
     "portfolio": "https://www.behance.net/jhouedanou",
-
-
-
-
-
-
-
-
-
-
-
-
     "langues": [
       {
         "langue": "Français",
@@ -219,7 +225,11 @@
     "situationProfessionnelle": "En recherche active",
     "cv": "cv_seydou_kone.pdf",
     "lettre_motivation": "lettre_motivation_seydou_kone.pdf",
-    "competences": ["PHP", "Laravel", "MySQL"],
+    "competences": [
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
     "experience": 4,
     "experienceSpecifique": [
       {
@@ -227,14 +237,24 @@
         "duree": 3,
         "manager": false,
         "mission_principale": "Développement et optimisation de services back-end",
-        "activiteliees": ["Développement d'API RESTful", "Optimisation de requêtes SQL", "Mise en place de systèmes de cache", "Implémentation de systèmes d'authentification"]
+        "activiteliees": [
+          "Développement d'API RESTful",
+          "Optimisation de requêtes SQL",
+          "Mise en place de systèmes de cache",
+          "Implémentation de systèmes d'authentification"
+        ]
       },
       {
         "titre": "Développeur PHP Junior",
         "duree": 1,
         "manager": false,
         "mission_principale": "Développement de fonctionnalités pour des sites web dynamiques",
-        "activiteliees": ["Création de modules PHP", "Intégration de templates", "Gestion de formulaires", "Débogage et maintenance de code"]
+        "activiteliees": [
+          "Création de modules PHP",
+          "Intégration de templates",
+          "Gestion de formulaires",
+          "Débogage et maintenance de code"
+        ]
       }
     ],
     "dateInscription": "2023-05-18",
@@ -253,18 +273,6 @@
     "taux_remplissage_profil": 72,
     "image": "https://i.pravatar.cc/230?img=64",
     "portfolio": "https://www.behance.net/jhouedanou",
-
-
-
-
-
-
-
-
-
-
-
-
     "langues": [
       {
         "langue": "Français",
@@ -289,7 +297,11 @@
     "situationProfessionnelle": "En recherche active",
     "cv": "cv_fanta_bamba.pdf",
     "lettre_motivation": "lettre_motivation_fanta_bamba.pdf",
-    "competences": ["Ruby", "Rails", "PostgreSQL"],
+    "competences": [
+      "Ruby",
+      "Rails",
+      "PostgreSQL"
+    ],
     "experience": 6,
     "experienceSpecifique": [
       {
@@ -297,14 +309,24 @@
         "duree": 4,
         "manager": true,
         "mission_principale": "Développement et maintenance d'applications web avec Ruby on Rails",
-        "activiteliees": ["Conception d'architecture MVC", "Développement de gems personnalisées", "Optimisation des performances", "Gestion de déploiements"]
+        "activiteliees": [
+          "Conception d'architecture MVC",
+          "Développement de gems personnalisées",
+          "Optimisation des performances",
+          "Gestion de déploiements"
+        ]
       },
       {
         "titre": "Développeuse Web Full Stack",
         "duree": 2,
         "manager": false,
         "mission_principale": "Développement de solutions web complètes",
-        "activiteliees": ["Développement front-end avec JavaScript", "Création d'API RESTful", "Intégration de services tiers", "Gestion de bases de données relationnelles"]
+        "activiteliees": [
+          "Développement front-end avec JavaScript",
+          "Création d'API RESTful",
+          "Intégration de services tiers",
+          "Gestion de bases de données relationnelles"
+        ]
       }
     ],
     "dateInscription": "2023-05-19",
@@ -323,18 +345,6 @@
     "taux_remplissage_profil": 78,
     "image": "https://i.pravatar.cc/230?img=16",
     "portfolio": "https://www.behance.net/jhouedanou",
-
-
-
-
-
-
-
-
-
-
-
-
     "langues": [
       {
         "langue": "Français",

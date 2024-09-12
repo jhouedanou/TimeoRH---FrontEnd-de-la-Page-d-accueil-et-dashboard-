@@ -3,11 +3,8 @@
     <h1>Shortlist des candidats</h1>
     <div v-for="emploi in emploisAvecCandidatsRetenus" :key="emploi.id">
       <h2>{{ emploi.titre }}</h2>
-      <Candidat v-for="candidature in emploi.candidaturesRetenues" 
-                :key="candidature.candidat_id" 
-                :candidat="candidature.candidat" 
-                :adequation="candidature.adequation"
-                :emploiId="emploi.id" />
+      <Candidat v-for="candidature in emploi.candidaturesRetenues" :key="candidature.candidat_id"
+        :candidat="candidature.candidat" :adequation="candidature.adequation" :emploiId="emploi.id" />
     </div>
   </div>
 </template>
