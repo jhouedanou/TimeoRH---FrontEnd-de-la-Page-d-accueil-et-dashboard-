@@ -213,8 +213,8 @@ const alert = ref(null);
 const activeTab = ref('tableau');
 
 const addToCart = async (candidature) => {
-  console.log('Début de la fonction addToCart');
-  console.log('Candidature reçue:', candidature);
+  // //console.log('Début de la fonction addToCart');
+  // console.log('Candidature reçue:', candidature);
   try {
     console.log('Préparation de la requête fetch');
     const response = await fetch('/api/emploi/shortlist', {
@@ -226,34 +226,36 @@ const addToCart = async (candidature) => {
         estretenu: true
       })
     });
-    console.log('Réponse reçue:', response);
+    // console.log('Réponse reçue:', response);
     const result = await response.json();
-    console.log('Résultat parsé:', result);
+    //console.log('Résultat parsé:', result);
     if (result.success) {
-      console.log('Succès: Candidat ajouté à la shortlist');
+      //console.log('Succès: Candidat ajouté à la shortlist');
+      window.location.reload();
+
       candidature.estretenu = true;
       alert.value = { type: 'success', message: 'Candidat ajouté à la shortlist' };
     } else {
-      console.log('Échec: Le candidat n\'a pas été ajouté à la shortlist');
+      //console.log('Échec: Le candidat n\'a pas été ajouté à la shortlist');
     }
   } catch (error) {
     console.error('Erreur lors de l\'ajout à la shortlist:', error);
     alert.value = { type: 'error', message: 'Erreur lors de l\'ajout à la shortlist' };
   }
-  console.log('État final de l\'alerte:', alert.value);
+  //console.log('État final de l\'alerte:', alert.value);
   // Effacer le message après 3 secondes
   setTimeout(() => {
     alert.value = null;
-    console.log('Alerte effacée après 3 secondes');
+    //console.log('Alerte effacée après 3 secondes');
   }, 10000);
 };
 
 //gestion des candidatures retirées du panier 
 const removeToCart = async (candidature) => {
-  console.log('Début de la fonction removeToCart');
-  console.log('Candidature reçue:', candidature);
+  //console.log('Début de la fonction removeToCart');
+  //console.log('Candidature reçue:', candidature);
   try {
-    console.log('Préparation de la requête fetch');
+    //console.log('Préparation de la requête fetch');
     const response = await fetch('/api/emploi/shortlist', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -263,24 +265,26 @@ const removeToCart = async (candidature) => {
         estretenu: false
       })
     });
-    console.log('Réponse reçue:', response);
+    //console.log('Réponse reçue:', response);
     const result = await response.json();
-    console.log('Résultat parsé:', result);
+    //console.log('Résultat parsé:', result);
     if (result.success) {
-      console.log('Succès: Candidat retiré de la shortlist');
+      //console.log('Succès: Candidat retiré de la shortlist');
+      window.location.reload();
+
       candidature.estretenu = false;
       alert.value = { type: 'success', message: 'Candidat retiré de la shortlist' };
     } else {
-      console.log('Échec: Le candidat n\'a pas été retiré de la shortlist');
+      //console.log('Échec: Le candidat n\'a pas été retiré de la shortlist');
     }
   } catch (error) {
     console.error('Erreur lors du retrait de la shortlist:', error);
     alert.value = { type: 'error', message: 'Erreur lors du retrait de la shortlist' };
   }
-  console.log('État final de l\'alerte:', alert.value);
+  //console.log('État final de l\'alerte:', alert.value);
   setTimeout(() => {
     alert.value = null;
-    console.log('Alerte effacée après 3 secondes');
+    //console.log('Alerte effacée après 3 secondes');
   }, 10000);
 };
 //onglets dédiées à la gestion des candidatures

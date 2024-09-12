@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
-    const { emploiId, candidatId, decision } = body;
+    const { emploiId, candidatId, decision, estembauche } = body;
     
     const emploisPath = resolve('./static/api/emplois.json');
     let emplois = JSON.parse(readFileSync(emploisPath, 'utf-8'));
@@ -20,6 +20,7 @@ export default defineEventHandler(async (event) => {
     }
     
     candidature.decision = decision;
+    candidature.estembauche = estembauche;
     
     writeFileSync(emploisPath, JSON.stringify(emplois, null, 2));
     

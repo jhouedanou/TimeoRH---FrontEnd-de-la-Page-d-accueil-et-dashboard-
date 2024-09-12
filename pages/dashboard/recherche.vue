@@ -247,22 +247,31 @@
 
               <div class="emplois-postules">
                 <h3>Emplois postulés</h3>
-                <ul>
-                  <li v-for="emploi in emploisPostules" :key="emploi.id">
-                    <NuxtLink :to="`/dashboard/planifier-recrutement/${emploi.id}`">
-                      {{ emploi.titre }}
-                    </NuxtLink>
-                  </li>
-                </ul>
+                <table class="table is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th>Titre de l'emploi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="emploi in emploisPostules" :key="emploi.id">
+                      <td>
+                        <NuxtLink :to="`/dashboard/planifier-recrutement/${emploi.id}`">
+                          {{ emploi.titre }}
+                        </NuxtLink>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
             </div>
           </div>
           <div class="popupfooter is-flex is-align-items-center is-justify-content-space-between">
             <button class="close-button" @click="showPopup = false">Fermer</button>
-            <button class="shortlist-button" @click="addToShortlist(selectedCandidat)">
+            <!-- <button class="shortlist-button" @click="addToShortlist(selectedCandidat)">
               Ajouter à la shortlist
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -1672,6 +1681,26 @@ onMounted(() => {
       width: 100% !important;
       margin-bottom: 1em !important;
     }
+  }
+}
+
+.emplois-postules {
+  padding: 1em;
+  background: #F2F2F2;
+  border-radius: 6px;
+  border: solid 2px #eceef6;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.16px;
+    text-align: left;
+    color: #292d3249;
+    margin-bottom: 1em;
+    font-weight: bold;
   }
 }
 </style>

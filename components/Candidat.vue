@@ -249,8 +249,18 @@
             </div>
 
             <div class="peyton" id="decision" v-if="activeTab === 'decision'">
+              <div class="hiring-decision">
+                <h3>Décision d'embauche</h3>
+                <label>
+                  <input type="radio" v-model="hiringStatus" value="embauche"> Embauché
+                </label>
+                <label>
+                  <input type="radio" v-model="hiringStatus" value="non embauché"> Non embauché
+                </label>
+              </div>
+
               <h3>Décision</h3>
-              <form @submit.prevent="submitDecision">
+              <form @submit.prevent="submitDecision" v-if="isDecisionEnabled">
                 <div class="field">
                   <label class="label">Décision</label>
                   <div class="control">
@@ -276,7 +286,6 @@
 <script setup>
 import { computed, ref, watchEffect } from "vue";
 import { useEmploisJson } from "@/composables/useEmplois";
-
 const props = defineProps({
   candidat: Object,
   adequation: {
@@ -319,26 +328,27 @@ const submitInterview = async () => {
     alert("Erreur lors de l'ajout de l'interview");
   }
 };
-
 const newDecision = ref("");
+const hiringStatus = ref(null);
+const isDecisionEnabled = computed(() => hiringStatus.value !== null);
 
 const submitDecision = async () => {
   try {
     const response = await fetch("/api/decision/add", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         emploiId: props.emploiId,
         candidatId: props.candidat.candidat_id,
         decision: newDecision.value,
-      }),
+        estembauche: hiringStatus.value === 'embauche'
+      })
     });
     const result = await response.json();
     if (result.success) {
       alert("Décision envoyée avec succès");
       newDecision.value = "";
+      hiringStatus.value = null;
     } else {
       alert("Erreur lors de l'envoi de la décision: " + result.message);
     }
@@ -347,6 +357,7 @@ const submitDecision = async () => {
     alert("Erreur lors de l'envoi de la décision");
   }
 };
+
 
 const showPopup = ref(false);
 const activeTab = ref("interview");
@@ -1140,6 +1151,23 @@ const matchColorClass = computed(() => {
     border-radius: 3px;
     border: solid 1px #a4a4a4;
     background-color: #fff;
+  }
+}
+
+.hiring-decision {
+  label {
+    list-style: none;
+    box-sizing: inherit;
+    margin: 0;
+    font-size: 15.2px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #18191c;
+    padding: 0.45em 0;
   }
 }
 </style>
