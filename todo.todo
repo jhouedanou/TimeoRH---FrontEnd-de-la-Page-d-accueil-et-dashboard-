@@ -25,17 +25,17 @@ Recherche d'emploi:
 
     Tableau de bord recruteur (Accueil):
       ☐ Afficher des visuels indiquant:
-        ☐ Nombre de profils enregistrés par catégories (excellence, premium, privilège, élite)
-        ☐ Nombre de recherches ponctuelles de profil effectuées par l'entreprise
-        ☐ Nombre de mises en relation effectuées par TimeoRH
-        ☐ Nombre d'offres d'emploi publiées
-        ☐ Nombre total de candidatures reçues
-        ☐ Nombre total de candidats retenus
-        ☐ Nombre de postes pourvus
-        ☐ Nombre de postes non pourvus
-        ☐ Nombre d'annonces publicitaires diffusées
-        ☐ Nombre de vidéos de formation visualisées
-        ☐ Ne conserver que le taux d'apprentissage
+        ✔ Nombre de profils enregistrés par catégories (excellence, premium, privilège, élite) @done(24-09-12 18:21)
+        ✔ Nombre de recherches ponctuelles de profil effectuées par l'entreprise @done(24-09-12 18:21)
+        ✔ Nombre de mises en relation effectuées par TimeoRH @done(24-09-12 18:21)
+        ✔ Nombre d'offres d'emploi publiées @done(24-09-12 18:21)
+        ✔ Nombre total de candidatures reçues @done(24-09-12 18:21)
+        ✔ Nombre total de candidats retenus @done(24-09-12 18:21)
+        ✔ Nombre de postes pourvus @done(24-09-12 18:21)
+        ✔ Nombre de postes non pourvus @done(24-09-12 18:21)
+        ✔ Nombre d'annonces publicitaires diffusées @done(24-09-12 18:21)
+        ✔ Nombre de vidéos de formation visualisées @done(24-09-12 18:21)
+        ✔ Ne conserver que le taux d'apprentissage @done(24-09-12 18:21)
 
     Interface recruteur:
   ✔ Mettre à jour les rubriques de l'interface: @done(24-09-09 15:50)
