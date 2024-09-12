@@ -35,7 +35,8 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="candidature in filteredAndSortedCandidatures" :key="candidature.id">
+                <tr v-for="candidature in filteredAndSortedCandidatures" :key="candidature.id"
+                  :class="{ 'retained': candidature.estretenu }">
                   <td style="vertical-align: middle;">{{ candidature.candidat.nom }} {{ candidature.candidat.prenom }}
                   </td>
                   <td style="vertical-align: middle;">{{ candidature.candidat.titre }}</td>
@@ -50,7 +51,8 @@
                   <td style="vertical-align: middle;">{{ candidature.candidat.geolocalisation }}</td>
                   <td style="vertical-align: middle;">{{ candidature.adequation }} %</td>
                   <td style="vertical-align: middle;">
-                    <button @click="showCandidatDetails(candidature)">Voir détails</button>
+                    <button @click="showCandidatDetails(candidature)"> <span
+                        class="material-icons">document</span></button>
                     <teleport to="body">
                       <div v-if="showPopup" class="popup">
                         <div class="popup-content">
@@ -563,5 +565,15 @@ align-middle {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.retained {
+  opacity: 0.5;
+  background-color: #f0f0f0;
+  // pointer-events: none;
+}
+
+.retained * {
+  //pointer-events: none;
 }
 </style>

@@ -60,7 +60,7 @@
                 <td>{{ candidat.situationProfessionnelle }}</td>
                 <td>
                   <button @click="openPopup(candidat)" class="button is-primary">
-                    Voir le profil
+                    Voir le CV
                   </button>
                 </td>
               </tr>
@@ -238,125 +238,31 @@
     <teleport to="body">
       <div v-if="showPopup" class="popup">
         <div class="popup-content">
-          <button class="todd" @click="showPopup = false">
-            <span class="material-icons">close</span>
-          </button>
+          <div class="columns">
+            <div class="column is-8">
+              <CandidatRecherche :candidat="selectedCandidat" />
 
-          <div class="columns infordetaillecandidat is-flex is-flex-direction-column">
-            <div class="macine column is-12-desktop is-12-mobile">
-              <div class="ligne1cv columns is-12 coleen">
-                <div class="trunks is-flex is-flex-direction-row column is-12-desktop is-12-mobile">
-                  <img :src="selectedCandidat.image" alt="" />
-                  <div class="neay is-flex is-flex-direction-column">
-                    <h2>
-                      {{ selectedCandidat.nom }} {{ selectedCandidat.prenom }}
-                    </h2>
-                    <h4>{{ selectedCandidat.appreciation }}</h4>
-                    <div class="lola-luv p-1">
-                      <p v-if="titre > 80" class="candidat-parfait">
-                        Candidat parfait
-                      </p>
-                      <p>
-                        <span class="material-icons">person</span>{{ selectedCandidat.titre }}
-                      </p>
-                      <p class="localisation">
-                        <span class="material-icons">location_on</span>
-                        {{ selectedCandidat.geolocalisation }}
-                      </p>
-
-                      <p class="telephone">
-                        <a :href="'tel:' + selectedCandidat.telephone"></a>
-                        <span class="material-icons">phone</span>{{ selectedCandidat.telephone }}
-                      </p>
-                      <p class="email">
-                        <a :href="'mailto:' + selectedCandidat.email" target="_blank">
-                          <span class="material-icons">email</span>
-                          {{ selectedCandidat.email }}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="ligne2cv is-12 coleen">
-                <p>Taux de remplissage du profil professionnel</p>
-                <div class="progress-bar-container">
-                  <div class="progress-bar" :style="{
-                    width: selectedCandidat.taux_remplissage_profil + '%',
-                    transition: 'width 1s ease-out',
-                    transformOrigin: 'left',
-                  }"></div>
-                  <span class="progress-text" :style="{
-                    position: 'absolute',
-                    left: selectedCandidat.taux_remplissage_profil + '%',
-                    top: 0,
-                    bottom: 0,
-                    transform: 'translateX(-50%)',
-                    transition: 'left 1s ease-out',
-                  }">
-                    {{ selectedCandidat.taux_remplissage_profil }}%
-                  </span>
-                </div>
-              </div>
-
-              <div class="ligne4cv">
-                <div class="lacie">
-                  <h3>Compétences :</h3>
-                  <ul>
-                    <li v-for="(
-                        competence, index
-                      ) in selectedCandidat.competences" :key="index">
-                      {{ competence
-                      }}{{
-                        index !== selectedCandidat.competences.length - 1
-                          ? ","
-                          : ""
-                      }}
-                    </li>
-                  </ul>
-                </div>
-                <div class="lacie">
-                  <h3>Diplômes :</h3>
-                  <ul>
-                    <li v-for="(diplome, index) in selectedCandidat.education" :key="index">
-                      {{ diplome
-                      }}{{
-                        index !== selectedCandidat.education.length - 1
-                          ? ","
-                          : ""
-                      }}
-                    </li>
-                  </ul>
-                </div>
-                <div class="lacie">
-                  <h3>Points forts :</h3>
-                  <ul>
-                    <li v-for="(point, index) in selectedCandidat.points_forts" :key="index">
-                      {{ point }}
-                    </li>
-                  </ul>
-                </div>
-                <div class="lacie">
-                  <h3>Expérience professionnelle :</h3>
-                  <p>{{ selectedCandidat.experience }} ans</p>
-                </div>
-                <div class="documentsducandidat">
-                  <div class="h4">Documents</div>
-                  <div class="wrapperdoc">
-                    <a :href="selectedCandidat.cv" target="_blank" class="document-button">
-                      <button>CV</button>
-                    </a>
-                    <a :href="selectedCandidat.lettre_motivation" target="_blank" class="document-button">
-                      <button>Lettre de motivation</button>
-                    </a>
-                    <a :href="selectedCandidat.portfolio" target="_blank" class="document-button">
-                      <button>Portfolio</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
+            <div class="column is-4">
+
+              <div class="emplois-postules">
+                <h3>Emplois postulés</h3>
+                <ul>
+                  <li v-for="emploi in emploisPostules" :key="emploi.id">
+                    <NuxtLink :to="`/dashboard/planifier-recrutement/${emploi.id}`">
+                      {{ emploi.titre }}
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="popupfooter is-flex is-align-items-center is-justify-content-space-between">
+            <button class="close-button" @click="showPopup = false">Fermer</button>
+            <button class="shortlist-button" @click="addToShortlist(selectedCandidat)">
+              Ajouter à la shortlist
+            </button>
           </div>
         </div>
       </div>
@@ -373,6 +279,9 @@ definePageMeta({
 import { ref, computed, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useCandidatsJson } from "@/composables/useCandidats";
+import CandidatRecherche from "@/components/CandidatRecherche.vue";
+import { useEmploisJson } from '@/composables/useEmplois';
+const { data: emplois } = useEmploisJson();
 
 const route = useRoute();
 const router = useRouter();
@@ -385,6 +294,18 @@ const selectedCandidat = ref(null);
 const competenceFilter = ref("");
 const isCollapsed = ref(true);
 
+const props = defineProps({
+  candidat: Object,
+});
+const emploisPostules = computed(() => {
+  if (!selectedCandidat.value || !selectedCandidat.value.candidat_id) return [];
+
+  return emplois.value.filter(emploi =>
+    emploi.candidatures.some(candidature =>
+      candidature.candidat_id === selectedCandidat.value.candidat_id
+    )
+  );
+});
 
 const uniqueEducations = computed(() => {
   return [...new Set(data.value.flatMap(c => c.education))];
