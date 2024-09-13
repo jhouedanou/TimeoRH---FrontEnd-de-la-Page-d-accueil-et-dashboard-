@@ -1686,6 +1686,11 @@ width: 35px;
     }
 }
 @media (max-width: 1024px) {
+    .sous-sections li .material-icons{
+        width:32px !important;
+        font-size:32px !important;
+        height:32px !important;
+    }
     #chart {
         margin: 0 auto;
     }
@@ -1695,8 +1700,8 @@ width: 35px;
         }
     }
     .herowrapper {
-        min-height: 60vh;
-
+        height:70vh !important;
+        min-height:70vh !important;
         h1 {
             font-size: 40px;
         }
