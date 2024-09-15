@@ -35,7 +35,7 @@
         <button @click="resetFilters" :disabled="!isAnyFilterActive" class="button is-info raptor">
           Réinitialiser les filtres
         </button>
-        <div class="table-container">
+        <div class="table-container table-responsive">
           <table class="table is-fullwidth is-striped is-responsive" v-if="data">
             <thead>
               <tr>
@@ -245,9 +245,10 @@
             </div>
             <div class="column is-4">
 
-              <div class="emplois-postules">
+              <div class="emplois-postules table-responsive">
                 <h3>Emplois postulés</h3>
-                <table class="table is-fullwidth">
+                <table class="table is-fullwidth is-striped">
+
                   <thead>
                     <tr>
                       <th>Titre de l'emploi</th>

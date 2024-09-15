@@ -13,7 +13,7 @@
         <NuxtLink class="button is-primary" to="/dashboard/ajouter-offre">Publier une offre</NuxtLink>
       </div>
     </div>
-    <div class="table-container">
+    <div class="table-container table-responsive">
       <table class="table is-fullwidth is-striped is-hoverable is-responsive">
         <thead>
           <tr>
@@ -21,7 +21,7 @@
               Intitulé du poste
               <span v-if="sortKey === 'titre'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
             </th>
             <th @click="changeSort('nombrePosteAPourvoir')">
               Nombre de postes à pourvoir
@@ -36,7 +36,7 @@
               Date d'expiration
               <span v-if="sortKey === 'dateExpiration'">{{
                 sortOrder === "asc" ? "▲" : "▼"
-              }}</span>
+                }}</span>
             </th>
             <th @click="changeSort('nombreCandidatures')">Candidatures reçues <span
                 v-if="sortKey === 'nombreCandidatures'">{{ sortOrder === 'asc' ? '▲' : '▼'

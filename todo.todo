@@ -59,17 +59,17 @@ Recherche d'emploi:
 Offres d'emploi et candidatures:
   ✔ Structurer les rubriques du tableau de bord (de gauche à droite): @done(24-09-10 15:20)
     ✔ Intitulé du poste @done(24-09-12 14:41)
-    ☐ Nombre de postes à pourvoir
-    ✔ Date de publication @done(24-09-10 15:19)
+    ✔ Nombre de postes à pourvoir @done(24-09-15 21:22)
+    ☐ Date de publication
     ✔ Date d'expiration @done(24-09-10 15:19)
     ✔ Candidatures reçues @done(24-09-10 15:19)
     ✔ Candidatures sélectionnées @done(24-09-10 15:19)
     ✔ Planification des entretiens @done(24-09-10 15:19)
     ✔ Candidats retenus @done(24-09-10 15:19)
   ✔ Modifier les boutons: @done(24-09-12 14:41)
-    ☐ Remplacer "Ajouter une offre" par "Publier une offre"
-  ✔ Ajouter une étape 1/3 pour les informations relatives à l'entreprise: @done(24-09-12 14:40)
-    ✔ Nom de l'entreprise @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
+    ✔ Remplacer "Ajouter une offre" par "Publier une offre" @done(24-09-15 21:22)
+  ✔ Ajouter une étape 1/3 pour les informations relatives à l'entreprise: @done(24-09-15 21:22)
+    ☐ Nom de l'entreprise - pas nécessaire car déjà enregistré dans les informations de profil
     ✔ Email de réception des candidatures @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
     ✔ Secteur d'activité de l'entreprise - @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
     ✔ Lieu d'exercice de l'activité @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
@@ -100,3 +100,6 @@ Accès et paiement:
   ☐ Exclure l'utilisateur Diallo Mamadou du paywall
 
   Bug sur la création de compte et d'offres d'emploi
+
+Feedback 21 Septeembre 2024
+-  

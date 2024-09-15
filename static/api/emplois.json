@@ -79,7 +79,7 @@
         "adequation": 95,
         "correspondant": "Diplômes, Expérience",
         "necorrespondantpas": "Géolocalisation",
-        "estretenu": false,
+        "estretenu": true,
         "estembauche": false,
         "decision": "ne correspond pas ",
         "interviews": [
