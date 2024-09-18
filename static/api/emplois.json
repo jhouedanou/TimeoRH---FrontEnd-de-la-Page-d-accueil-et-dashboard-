@@ -4,8 +4,8 @@
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 1,
     "titre": "01- La candidature test",
-    "description": "Nous recherchons un d\u00e9veloppeur Full Stack exp\u00e9riment\u00e9 pour rejoindre notre \u00e9quipe dynamique.",
-    "shortDescription": "Recherche d'un d\u00e9veloppeur Full Stack exp\u00e9riment\u00e9 pour rejoindre une \u00e9quipe dynamique. ",
+    "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
+    "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+5",
     "competencesRequises": [
@@ -15,7 +15,7 @@
       "MongoDB"
     ],
     "experienceRequise": "2 ans",
-    "departement": "D\u00e9veloppement",
+    "departement": "Développement",
     "datePublication": "2023-05-15",
     "dateExpiration": "2024-09-02",
     "statut": "Actif",
@@ -24,7 +24,7 @@
     "motsCles": [
       {
         "id": 1,
-        "mot": "d\u00e9veloppement web"
+        "mot": "développement web"
       },
       {
         "id": 2,
@@ -52,8 +52,8 @@
       {
         "candidat_id": 1,
         "adequation": 87,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -76,8 +76,8 @@
       {
         "candidat_id": 2,
         "adequation": 95,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -100,8 +100,8 @@
       {
         "candidat_id": 3,
         "adequation": 72,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -124,8 +124,8 @@
       {
         "candidat_id": 4,
         "adequation": 63,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -149,22 +149,22 @@
     "evolutionCandidatures": 75,
     "vueDesOffres": -12,
     "typeDeSociete": "Startup technologique",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
-      "Programmation orient\u00e9e objet",
-      "Gestion de bases de donn\u00e9es",
-      "D\u00e9veloppement d'API"
+      "Programmation orientée objet",
+      "Gestion de bases de données",
+      "Développement d'API"
     ],
-    "profilRecherche": "D\u00e9veloppeur exp\u00e9riment\u00e9 avec une solide exp\u00e9rience en d\u00e9veloppement full stack et une passion pour les nouvelles technologies."
+    "profilRecherche": "Développeur expérimenté avec une solide expérience en développement full stack et une passion pour les nouvelles technologies."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 2,
     "titre": "Designer UX/UI",
-    "description": "Nous cherchons un designer UX/UI cr\u00e9atif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
-    "shortDescription": "Recherche d'un designer UX/UI cr\u00e9atif pour concevoir des interfaces utilisateur intuitives. ",
+    "description": "Nous cherchons un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
+    "shortDescription": "Recherche d'un designer UX/UI créatif pour concevoir des interfaces utilisateur intuitives. ",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BTS",
     "competencesRequises": [
@@ -207,8 +207,8 @@
       {
         "candidat_id": 1,
         "adequation": 92,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": true,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -231,8 +231,8 @@
       {
         "candidat_id": 2,
         "adequation": 78,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -255,8 +255,8 @@
       {
         "candidat_id": 3,
         "adequation": 85,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -279,29 +279,29 @@
       {
         "candidat_id": 4,
         "adequation": 69,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 32,
     "vueDesOffres": 45,
     "typeDeSociete": "Agence de design",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
     "competencesDeBase": [
       "Conception d'interfaces",
       "Principes de l'UX",
-      "Cr\u00e9ativit\u00e9"
+      "Créativité"
     ],
-    "profilRecherche": "Designer cr\u00e9atif avec une bonne compr\u00e9hension des principes de l'UX/UI et une capacit\u00e9 \u00e0 cr\u00e9er des interfaces intuitives et esth\u00e9tiques."
+    "profilRecherche": "Designer créatif avec une bonne compréhension des principes de l'UX/UI et une capacité à créer des interfaces intuitives et esthétiques."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 3,
-    "titre": "Ing\u00e9nieur DevOps",
-    "description": "Nous recherchons un ing\u00e9nieur DevOps pour optimiser nos processus de d\u00e9veloppement et de d\u00e9ploiement.",
-    "shortDescription": "Recherche d'un ing\u00e9nieur DevOps pour optimiser les processus de d\u00e9veloppement et d\u00e9ploiement. aa",
+    "titre": "Ingénieur DevOps",
+    "description": "Nous recherchons un ingénieur DevOps pour optimiser nos processus de développement et de déploiement.",
+    "shortDescription": "Recherche d'un ingénieur DevOps pour optimiser les processus de développement et déploiement. aa",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
@@ -311,7 +311,7 @@
       "CI/CD"
     ],
     "experienceRequise": "2 ans",
-    "departement": "Op\u00e9rations",
+    "departement": "Opérations",
     "datePublication": "2023-05-17",
     "dateExpiration": "2024-09-02",
     "statut": "Actif",
@@ -344,8 +344,8 @@
       {
         "candidat_id": 1,
         "adequation": 88,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -368,8 +368,8 @@
       {
         "candidat_id": 2,
         "adequation": 76,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -392,8 +392,8 @@
       {
         "candidat_id": 3,
         "adequation": 94,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -416,29 +416,29 @@
       {
         "candidat_id": 4,
         "adequation": 81,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 95,
     "vueDesOffres": 28,
     "typeDeSociete": "Entreprise de services cloud",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
-      "Administration syst\u00e8me",
+      "Administration système",
       "Scripting",
       "Gestion de configuration"
     ],
-    "profilRecherche": "Ing\u00e9nieur exp\u00e9riment\u00e9 en DevOps avec une solide compr\u00e9hension des pratiques d'int\u00e9gration et de d\u00e9ploiement continus."
+    "profilRecherche": "Ingénieur expérimenté en DevOps avec une solide compréhension des pratiques d'intégration et de déploiement continus."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 4,
-    "titre": "Data Scientist, Sp\u00e9cialiste Python",
-    "description": "Nous cherchons un Data Scientist pour analyser et interpr\u00e9ter des ensembles de donn\u00e9es complexes.",
-    "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de donn\u00e9es complexes. Comp\u00e9tences requises : Python, R, Machine Learning, SQL.",
+    "titre": "Data Scientist, Spécialiste Python",
+    "description": "Nous cherchons un Data Scientist pour analyser et interpréter des ensembles de données complexes.",
+    "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de données complexes. Compétences requises : Python, R, Machine Learning, SQL.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
@@ -448,7 +448,7 @@
       "SQL"
     ],
     "experienceRequise": "2 ans",
-    "departement": "Analyse de donn\u00e9es",
+    "departement": "Analyse de données",
     "datePublication": "2023-05-18",
     "dateExpiration": "2024-09-02",
     "statut": "Inactif",
@@ -461,7 +461,7 @@
       },
       {
         "id": 2,
-        "mot": "analyse de donn\u00e9es"
+        "mot": "analyse de données"
       },
       {
         "id": 3,
@@ -481,8 +481,8 @@
       {
         "candidat_id": 1,
         "adequation": 79,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -505,8 +505,8 @@
       {
         "candidat_id": 2,
         "adequation": 91,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -529,8 +529,8 @@
       {
         "candidat_id": 3,
         "adequation": 86,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -553,29 +553,29 @@
       {
         "candidat_id": 4,
         "adequation": 73,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": -5,
     "vueDesOffres": 52,
-    "typeDeSociete": "Entreprise d'analyse de donn\u00e9es",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "typeDeSociete": "Entreprise d'analyse de données",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
       "Statistiques",
       "Programmation",
-      "Visualisation de donn\u00e9es"
+      "Visualisation de données"
     ],
-    "profilRecherche": "Data Scientist junior avec une solide formation en statistiques et en programmation, capable d'extraire des insights \u00e0 partir de grands ensembles de donn\u00e9es."
+    "profilRecherche": "Data Scientist junior avec une solide formation en statistiques et en programmation, capable d'extraire des insights à partir de grands ensembles de données."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 5,
-    "titre": "D\u00e9veloppeur Front-end",
-    "description": "Nous recherchons un d\u00e9veloppeur Front-end talentueux pour cr\u00e9er des interfaces utilisateur r\u00e9actives et modernes.",
-    "shortDescription": "Recherche d'un d\u00e9veloppeur Front-end pour cr\u00e9er des interfaces utilisateur r\u00e9actives.",
+    "titre": "Développeur Front-end",
+    "description": "Nous recherchons un développeur Front-end talentueux pour créer des interfaces utilisateur réactives et modernes.",
+    "shortDescription": "Recherche d'un développeur Front-end pour créer des interfaces utilisateur réactives.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
@@ -585,7 +585,7 @@
       "Vue.js"
     ],
     "experienceRequise": "4 ans",
-    "departement": "D\u00e9veloppement",
+    "departement": "Développement",
     "datePublication": "2023-05-19",
     "dateExpiration": "2024-09-02",
     "statut": "Actif",
@@ -594,7 +594,7 @@
     "motsCles": [
       {
         "id": 1,
-        "mot": "d\u00e9veloppement web"
+        "mot": "développement web"
       },
       {
         "id": 2,
@@ -618,8 +618,8 @@
       {
         "candidat_id": 1,
         "adequation": 83,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -642,8 +642,8 @@
       {
         "candidat_id": 2,
         "adequation": 97,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -666,8 +666,8 @@
       {
         "candidat_id": 3,
         "adequation": 75,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -690,35 +690,36 @@
       {
         "candidat_id": 4,
         "adequation": 89,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
+        "estretenu": true
       }
     ],
     "evolutionCandidatures": 62,
     "vueDesOffres": -8,
     "typeDeSociete": "Agence web",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
     "competencesDeBase": [
       "HTML5",
       "CSS3",
       "JavaScript ES6+"
     ],
-    "profilRecherche": "D\u00e9veloppeur Front-end junior passionn\u00e9 par la cr\u00e9ation d'interfaces utilisateur modernes et r\u00e9actives, avec une bonne ma\u00eetrise des technologies web actuelles."
+    "profilRecherche": "Développeur Front-end junior passionné par la création d'interfaces utilisateur modernes et réactives, avec une bonne maîtrise des technologies web actuelles."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 5,
     "titre": "Responsable Marketing",
-    "description": "Nous recherchons un Responsable Marketing pour d\u00e9velopper et mettre en \u0153uvre des strat\u00e9gies de marketing innovantes.",
-    "shortDescription": "Recherche d'un Responsable Marketing pour d\u00e9velopper des strat\u00e9gies innovantes. Comp\u00e9tences requises : strat\u00e9gie, communication, analyse de march\u00e9.",
+    "description": "Nous recherchons un Responsable Marketing pour développer et mettre en œuvre des stratégies de marketing innovantes.",
+    "shortDescription": "Recherche d'un Responsable Marketing pour développer des stratégies innovantes. Compétences requises : stratégie, communication, analyse de marché.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
-      "Strat\u00e9gie marketing",
+      "Stratégie marketing",
       "Communication",
-      "Analyse de march\u00e9",
+      "Analyse de marché",
       "Gestion de projet"
     ],
     "experienceRequise": "8 ans",
@@ -735,7 +736,7 @@
       },
       {
         "id": 2,
-        "mot": "strat\u00e9gie"
+        "mot": "stratégie"
       },
       {
         "id": 3,
@@ -755,8 +756,8 @@
       {
         "candidat_id": 1,
         "adequation": 85,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -779,8 +780,8 @@
       {
         "candidat_id": 2,
         "adequation": 90,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -803,8 +804,8 @@
       {
         "candidat_id": 3,
         "adequation": 78,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -827,34 +828,34 @@
       {
         "candidat_id": 4,
         "adequation": 82,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 40,
     "vueDesOffres": 15,
     "typeDeSociete": "Entreprise de marketing",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
       "Gestion de la marque",
       "Campagnes publicitaires",
-      "Analyse de donn\u00e9es"
+      "Analyse de données"
     ],
-    "profilRecherche": "Responsable marketing exp\u00e9riment\u00e9 avec des comp\u00e9tences en strat\u00e9gie, communication et analyse de march\u00e9."
+    "profilRecherche": "Responsable marketing expérimenté avec des compétences en stratégie, communication et analyse de marché."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 6,
     "titre": "Chef de Projet IT",
-    "description": "Nous cherchons un Chef de Projet IT pour g\u00e9rer des projets technologiques complexes de la conception \u00e0 la mise en \u0153uvre.",
-    "shortDescription": "Recherche d'un Chef de Projet IT pour g\u00e9rer des projets technologiques. Comp\u00e9tences requises : gestion de projet, d\u00e9veloppement logiciel, leadership.",
+    "description": "Nous cherchons un Chef de Projet IT pour gérer des projets technologiques complexes de la conception à la mise en œuvre.",
+    "shortDescription": "Recherche d'un Chef de Projet IT pour gérer des projets technologiques. Compétences requises : gestion de projet, développement logiciel, leadership.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Gestion de projet",
-      "D\u00e9veloppement logiciel",
+      "Développement logiciel",
       "Leadership",
       "Analyse des besoins"
     ],
@@ -863,7 +864,7 @@
     "datePublication": "2023-06-10",
     "dateExpiration": "2024-10-10",
     "statut": "Actif",
-    "geolocalisation": "Bouak\u00e9",
+    "geolocalisation": "Bouaké",
     "societe": "TechSolutions CI",
     "motsCles": [
       {
@@ -876,7 +877,7 @@
       },
       {
         "id": 3,
-        "mot": "d\u00e9veloppement"
+        "mot": "développement"
       },
       {
         "id": 4,
@@ -892,8 +893,8 @@
       {
         "candidat_id": 1,
         "adequation": 80,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -916,8 +917,8 @@
       {
         "candidat_id": 2,
         "adequation": 85,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -940,8 +941,8 @@
       {
         "candidat_id": 3,
         "adequation": 75,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -964,39 +965,39 @@
       {
         "candidat_id": 4,
         "adequation": 70,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 55,
     "vueDesOffres": 35,
     "typeDeSociete": "Entreprise IT",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
       "Planification de projet",
-      "Coordination d'\u00e9quipe",
+      "Coordination d'équipe",
       "Gestion des risques"
     ],
-    "profilRecherche": "Chef de projet IT exp\u00e9riment\u00e9 avec une solide exp\u00e9rience en gestion de projet technologique et leadership."
+    "profilRecherche": "Chef de projet IT expérimenté avec une solide expérience en gestion de projet technologique et leadership."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 7,
-    "titre": "D\u00e9veloppeur Mobile",
-    "description": "Nous recrutons un D\u00e9veloppeur Mobile pour cr\u00e9er des applications mobiles innovantes et performantes.",
-    "shortDescription": "Recherche d'un D\u00e9veloppeur Mobile pour cr\u00e9er des applications innovantes. Comp\u00e9tences requises : iOS, Android, Flutter.",
+    "titre": "Développeur Mobile",
+    "description": "Nous recrutons un Développeur Mobile pour créer des applications mobiles innovantes et performantes.",
+    "shortDescription": "Recherche d'un Développeur Mobile pour créer des applications innovantes. Compétences requises : iOS, Android, Flutter.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "iOS",
       "Android",
       "Flutter",
-      "D\u00e9veloppement d'applications"
+      "Développement d'applications"
     ],
     "experienceRequise": "6 ans",
-    "departement": "D\u00e9veloppement",
+    "departement": "Développement",
     "datePublication": "2023-06-20",
     "dateExpiration": "2024-10-20",
     "statut": "Actif",
@@ -1005,7 +1006,7 @@
     "motsCles": [
       {
         "id": 1,
-        "mot": "d\u00e9veloppement mobile"
+        "mot": "développement mobile"
       },
       {
         "id": 2,
@@ -1029,8 +1030,8 @@
       {
         "candidat_id": 1,
         "adequation": 88,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1053,8 +1054,8 @@
       {
         "candidat_id": 2,
         "adequation": 84,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1077,8 +1078,8 @@
       {
         "candidat_id": 3,
         "adequation": 79,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1101,29 +1102,29 @@
       {
         "candidat_id": 4,
         "adequation": 72,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 60,
     "vueDesOffres": 22,
     "typeDeSociete": "Startup mobile",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+4",
     "competencesDeBase": [
-      "D\u00e9veloppement d'applications",
+      "Développement d'applications",
       "Optimisation mobile",
       "UI/UX design"
     ],
-    "profilRecherche": "D\u00e9veloppeur mobile avec une exp\u00e9rience en cr\u00e9ation d'applications innovantes pour iOS et Android."
+    "profilRecherche": "Développeur mobile avec une expérience en création d'applications innovantes pour iOS et Android."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 8,
     "titre": "Assistant Administratif",
-    "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des op\u00e9rations quotidiennes.",
-    "shortDescription": "Recherche d'un Assistant Administratif pour g\u00e9rer les t\u00e2ches administratives et op\u00e9rationnelles. Comp\u00e9tences requises : organisation, communication, gestion des documents.",
+    "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des opérations quotidiennes.",
+    "shortDescription": "Recherche d'un Assistant Administratif pour gérer les tâches administratives et opérationnelles. Compétences requises : organisation, communication, gestion des documents.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
@@ -1166,8 +1167,8 @@
       {
         "candidat_id": 1,
         "adequation": 48,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1190,8 +1191,8 @@
       {
         "candidat_id": 2,
         "adequation": 82,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1214,8 +1215,8 @@
       {
         "candidat_id": 3,
         "adequation": 74,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1238,36 +1239,36 @@
       {
         "candidat_id": 4,
         "adequation": 80,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 25,
     "vueDesOffres": 10,
     "typeDeSociete": "Entreprise de services",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+2",
     "competencesDeBase": [
       "Gestion des agendas",
-      "R\u00e9daction de documents",
+      "Rédaction de documents",
       "Accueil des visiteurs"
     ],
-    "profilRecherche": "Assistant administratif avec des comp\u00e9tences en organisation, gestion des documents et communication."
+    "profilRecherche": "Assistant administratif avec des compétences en organisation, gestion des documents et communication."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 9,
-    "titre": "Charg\u00e9 de Communication",
-    "description": "Nous recherchons un Charg\u00e9 de Communication pour \u00e9laborer des strat\u00e9gies de communication efficaces et g\u00e9rer les relations publiques.",
-    "shortDescription": "Recherche d'un Charg\u00e9 de Communication pour d\u00e9velopper des strat\u00e9gies de communication. Comp\u00e9tences requises : r\u00e9daction, relations publiques, gestion de crise.",
+    "titre": "Chargé de Communication",
+    "description": "Nous recherchons un Chargé de Communication pour élaborer des stratégies de communication efficaces et gérer les relations publiques.",
+    "shortDescription": "Recherche d'un Chargé de Communication pour développer des stratégies de communication. Compétences requises : rédaction, relations publiques, gestion de crise.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
-      "R\u00e9daction",
+      "Rédaction",
       "Relations publiques",
       "Gestion de crise",
-      "Strat\u00e9gie de communication"
+      "Stratégie de communication"
     ],
     "experienceRequise": "6 ans",
     "departement": "Communication",
@@ -1287,7 +1288,7 @@
       },
       {
         "id": 3,
-        "mot": "strat\u00e9gie"
+        "mot": "stratégie"
       },
       {
         "id": 4,
@@ -1303,8 +1304,8 @@
       {
         "candidat_id": 1,
         "adequation": 90,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1327,8 +1328,8 @@
       {
         "candidat_id": 2,
         "adequation": 88,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1351,8 +1352,8 @@
       {
         "candidat_id": 3,
         "adequation": 60,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1375,34 +1376,34 @@
       {
         "candidat_id": 4,
         "adequation": 46,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 35,
     "vueDesOffres": 18,
     "typeDeSociete": "Agence de communication",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+3",
     "competencesDeBase": [
-      "R\u00e9daction de contenu",
-      "Gestion des m\u00e9dias sociaux",
+      "Rédaction de contenu",
+      "Gestion des médias sociaux",
       "Planification de campagnes"
     ],
-    "profilRecherche": "Charg\u00e9 de communication exp\u00e9riment\u00e9 avec des comp\u00e9tences en r\u00e9daction, relations publiques et gestion de crise."
+    "profilRecherche": "Chargé de communication expérimenté avec des compétences en rédaction, relations publiques et gestion de crise."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 10,
     "titre": "Analyste Financier Senior ",
-    "description": "Nous cherchons un Analyste Financier Senior pour analyser les donn\u00e9es financi\u00e8res et fournir des recommandations strat\u00e9giques.",
-    "shortDescription": "Recherche d'un Analyste Financier pour analyser les donn\u00e9es financi\u00e8res et fournir des recommandations. Comp\u00e9tences requises : analyse des donn\u00e9es, pr\u00e9visions financi\u00e8res, reporting.",
+    "description": "Nous cherchons un Analyste Financier Senior pour analyser les données financières et fournir des recommandations stratégiques.",
+    "shortDescription": "Recherche d'un Analyste Financier pour analyser les données financières et fournir des recommandations. Compétences requises : analyse des données, prévisions financières, reporting.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
-      "Analyse des donn\u00e9es",
-      "Pr\u00e9visions financi\u00e8res",
+      "Analyse des données",
+      "Prévisions financières",
       "Reporting",
       "Analyse des risques"
     ],
@@ -1412,7 +1413,7 @@
     "dateExpiration": "2024-11-25",
     "statut": "Inactif",
     "geolocalisation": "Korhogos",
-    "societe": "Finance Experts C\u00f4te d'Ivoire",
+    "societe": "Finance Experts Côte d'Ivoire",
     "motsCles": [
       {
         "id": 1,
@@ -1428,7 +1429,7 @@
       },
       {
         "id": 4,
-        "mot": "pr\u00e9visions"
+        "mot": "prévisions"
       }
     ],
     "type": "Temps plein",
@@ -1440,8 +1441,8 @@
       {
         "candidat_id": 1,
         "adequation": 90,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": true,
         "decision": "On l'embauche",
         "interviews": [
@@ -1463,7 +1464,7 @@
             "id": 3,
             "date": "2222-12-22",
             "heure": "12:00",
-            "raison": "lm\u00f9dm\u00f9l,dzlm,",
+            "raison": "lmùdmùl,dzlm,",
             "lien": "https://google.com"
           },
           {
@@ -1478,8 +1479,8 @@
       {
         "candidat_id": 2,
         "adequation": 85,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1502,8 +1503,8 @@
       {
         "candidat_id": 3,
         "adequation": 80,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1526,8 +1527,8 @@
       {
         "candidat_id": 4,
         "adequation": 88,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "interviews": [
           {
             "id": 1,
@@ -1549,32 +1550,32 @@
     "evolutionCandidatures": 50,
     "vueDesOffres": 28,
     "typeDeSociete": "Cabinet de conseil financier",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
-      "Analyse financi\u00e8re",
+      "Analyse financière",
       "Gestion des budgets",
-      "Pr\u00e9visions \u00e9conomiques"
+      "Prévisions économiques"
     ],
-    "profilRecherche": "Analyste financier avec une solide exp\u00e9rience en analyse des donn\u00e9es financi\u00e8res et pr\u00e9visions \u00e9conomiques."
+    "profilRecherche": "Analyste financier avec une solide expérience en analyse des données financières et prévisions économiques."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 11,
     "titre": "Graphiste",
-    "description": "Nous recrutons un Graphiste pour cr\u00e9er des visuels innovants pour nos supports marketing et de communication.",
-    "shortDescription": "Recherche d'un Graphiste pour cr\u00e9er des visuels innovants. Comp\u00e9tences requises : design graphique, ma\u00eetrise des outils Adobe, cr\u00e9ativit\u00e9.",
+    "description": "Nous recrutons un Graphiste pour créer des visuels innovants pour nos supports marketing et de communication.",
+    "shortDescription": "Recherche d'un Graphiste pour créer des visuels innovants. Compétences requises : design graphique, maîtrise des outils Adobe, créativité.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Design graphique",
-      "Ma\u00eetrise des outils Adobe",
-      "Cr\u00e9ativit\u00e9",
+      "Maîtrise des outils Adobe",
+      "Créativité",
       "Gestion de projet"
     ],
     "experienceRequise": "2 ans",
-    "departement": "Cr\u00e9ation",
+    "departement": "Création",
     "datePublication": "2023-08-01",
     "dateExpiration": "2024-12-01",
     "statut": "Actif",
@@ -1603,8 +1604,8 @@
       {
         "candidat_id": 1,
         "adequation": 78,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1627,35 +1628,35 @@
       {
         "candidat_id": 2,
         "adequation": 82,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 20,
     "vueDesOffres": 30,
     "typeDeSociete": "Agence de design",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+2",
     "competencesDeBase": [
-      "Cr\u00e9ation visuelle",
-      "Ma\u00eetrise des logiciels",
-      "D\u00e9veloppement de concepts"
+      "Création visuelle",
+      "Maîtrise des logiciels",
+      "Développement de concepts"
     ],
-    "profilRecherche": "Graphiste d\u00e9butant avec une bonne ma\u00eetrise des outils de design et une forte cr\u00e9ativit\u00e9."
+    "profilRecherche": "Graphiste débutant avec une bonne maîtrise des outils de design et une forte créativité."
   },
   {
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 12,
     "titre": "Responsable RH",
-    "description": "Nous recherchons un Responsable RH pour g\u00e9rer les ressources humaines et d\u00e9velopper des politiques de gestion du personnel.",
-    "shortDescription": "Recherche d'un Responsable RH pour g\u00e9rer les ressources humaines. Comp\u00e9tences requises : gestion des talents, d\u00e9veloppement organisationnel, l\u00e9gislation du travail.",
+    "description": "Nous recherchons un Responsable RH pour gérer les ressources humaines et développer des politiques de gestion du personnel.",
+    "shortDescription": "Recherche d'un Responsable RH pour gérer les ressources humaines. Compétences requises : gestion des talents, développement organisationnel, législation du travail.",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+4",
     "competencesRequises": [
       "Gestion des talents",
-      "D\u00e9veloppement organisationnel",
-      "L\u00e9gislation du travail",
+      "Développement organisationnel",
+      "Législation du travail",
       "Gestion des conflits"
     ],
     "experienceRequise": "14 ans",
@@ -1663,7 +1664,7 @@
     "datePublication": "2023-08-15",
     "dateExpiration": "2024-12-15",
     "statut": "Inactif",
-    "geolocalisation": "Abengourou",
+    "geolocalisation": "Daoukro",
     "societe": "HRManagement CI",
     "motsCles": [
       {
@@ -1676,7 +1677,7 @@
       },
       {
         "id": 3,
-        "mot": "d\u00e9veloppement"
+        "mot": "développement"
       }
     ],
     "type": "Temps plein",
@@ -1688,8 +1689,8 @@
       {
         "candidat_id": 1,
         "adequation": 88,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1712,8 +1713,8 @@
       {
         "candidat_id": 2,
         "adequation": 85,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1736,8 +1737,8 @@
       {
         "candidat_id": 3,
         "adequation": 82,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation",
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation",
         "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
@@ -1760,20 +1761,20 @@
       {
         "candidat_id": 4,
         "adequation": 90,
-        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
-        "necorrespondantpas": "G\u00e9olocalisation"
+        "correspondant": "Diplômes, Expérience",
+        "necorrespondantpas": "Géolocalisation"
       }
     ],
     "evolutionCandidatures": 45,
     "vueDesOffres": 22,
     "typeDeSociete": "Entreprise de gestion des ressources humaines",
-    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "paysdelaSociete": "Côte d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
       "Gestion des ressources humaines",
-      "D\u00e9veloppement des politiques",
-      "Relations avec les employ\u00e9s"
+      "Développement des politiques",
+      "Relations avec les employés"
     ],
-    "profilRecherche": "Responsable RH senior avec une exp\u00e9rience en gestion des talents, d\u00e9veloppement organisationnel et l\u00e9gislation du travail."
+    "profilRecherche": "Responsable RH senior avec une expérience en gestion des talents, développement organisationnel et législation du travail."
   }
 ]
