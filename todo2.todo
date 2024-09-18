@@ -1,42 +1,26 @@
+- Corriger le bug sur la création de compte et d'offres d'emploi
 
-  Bug sur la création de compte et d'offres d'emploi
+Modifications de la page d'accueil :
 
-Feedback 15 Septeembre 2024
-- Au niveau de la page d'accueil 
-- supprimer "Grâce à TimeoRH, optimisez votre processus de recrutement"
+ ✔ Supprimer "Grâce à TimeoRH, optimisez votre processus de recrutement" de son emplacement actuel @done(24-09-18 15:37)
+✔ Déplacer cette phrase sous la section "Vous êtes recruteur" @done(24-09-18 15:37)
+Ajouter les éléments suivants dans la section "Vous êtes recruteur" :
+✔ people_outline - Recrutement simplifié @done(24-09-18 15:37)
+✔ handshake - Mise en relation professionnelle @done(24-09-18 15:37)
+✔ trending_up - Promotion de votre marque employeur @done(24-09-18 15:37)
+Modifications du formulaire de création d'emploi :
 
-mettre la phrase " Grâce à TimeoRH, optimisez votre processus de recrutement", sous vous êtes recruter 
+Les informations suivantes sont déjà enregistrées dans le profil et ne nécessitent pas d'être ajoutées :
+☐ Nom de l'entreprise
+☐ Email de réception des candidatures
+☐ Secteur d'activité de l'entreprise
+☐ Lieu d'exercice de l'activité
+Améliorations de l'accueil du dashboard :
 
-people_outline
-Recrutement
-simplifié
+☐ Segmenter les statistiques par catégories
+☐ Afficher les statistiques liées au recruteur sur le côté gauche
+☐ Afficher les statistiques générales à droite, avec un aperçu incitatif pour publier des offres d'emploi (style LinkedIn)
+☐ Ajouter une nouvelle section pour la gestion des publicités, incluant un formulaire pour les demandes de publicités
+Amélioration de la fonction de recherche :
 
-handshake
-Mise en relation
-professionnelle
-
-trending_up
-Promotion de votre marque employeur
-
-
-a mettre daans la secton "vous êtes recruteur"
-
-Ajouter dans les informations de création de l'emploi les informations suivantes:
-
-  ☐ Nom de l'entreprise - pas nécessaire car déjà enregistré dans les informations de profil
-  ✔ Email de réception des candidatures @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
-  ✔ Secteur d'activité de l'entreprise - @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profil
-  ✔ Lieu d'exercice de l'activité @done(24-09-12 14:39) - pas nécessaire car déjà enregistré dans les informations de profi
-
-
-Accueil du dashboard
-
-  - statistiques à segmenter par catégories
-  - liées au recruteur sur le côté gauche
-  - générales à droite ( aperçu avec un incitatif pour publier des offres d'emploi - linkedIn)
-NOUVELLE SECTION
-  - geston des publicités, prévoir un formulaire pour les demandes de publicités
-
-
-Recherche 
- - dans la zone des filtres, ajouter un champ de formulaire dédié à l'inntitulé du poste à rechercher
+☐ Ajouter un champ de formulaire dédié à l'intitulé du poste à rechercher dans la zone des filtres

@@ -8,20 +8,21 @@
   "appStoreUrl": "https://apps.apple.com/app/id123456789",
   "introSectionEmploi": "Offres d’emploi les plus récentes",
   "titreSectionRecruteurs": "Vous êtes un <span>Recruteur </span>?",
-  "soustitreSectionRecruteurs": "Gâce à TimoRH, élevez votre stratégie de recrutement à de nouveaux sommets",
+  "soustitreSectionRecruteurs": "Grâce à TimeoRH, optimisez votre processus de recrutement",
+  "soustitre": "Grâce à TimeoRH, optimisez votre processus de recrutement",
   "recrutementBlock": {
     "0": {
-      "titre": "recrutement simplifié",
-      "description": "de la publication des offres d'emploi à l'évaluation des candidats, TimeoRH simplifie chaque étape",
+      "titre": "Recrutement\nsimplifié",
+      "description": "De la publication des offres d'emploi à l'évaluation des candidats, TimeoRH simplifie chaque étape",
       "image": "/images/file.svg"
     },
     "1": {
-      "titre": "recrutement simplifié",
-      "description": "connectez-vous facilement avec des professionnels qualifiés dans diverses industries.",
+      "titre": "Mise en relation\nprofessionnelle",
+      "description": "Connectez-vous facilement avec des professionnels qualifiés dans diverses industries.",
       "image": "/images/visage.svg"
     },
     "2": {
-      "titre": "recrutement simplifié",
+      "titre": "Promotion de votre marque employeur",
       "description": "présentez la culture et les valeurs de votre entreprise pour attirer les meilleurs talents sans effort.",
       "image": "/images/tasse.svg"
     }
