@@ -4,6 +4,34 @@
     <div class="columns">
       <div id="oneside" class="column is-8-desktop is-12-mobile">
         <div class="is-full" v-if="step === 1">
+          <h2>Informations préliminaires</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company-name">Nom de l'entreprise</label>
+              <input type="text" id="company-name" v-model="formData.societe" list="societes" />
+              <datalist id="societes">
+                <option v-for="societe in uniqueSocietes" :key="societe" :value="societe" />
+              </datalist>
+            </div>
+            <div class="form-group">
+              <label for="company-sector">Secteur d'activité de l'entreprise</label>
+              <input type="text" id="company-sector" v-model="formData.secteurActivite" list="secteurs" />
+              <datalist id="secteurs">
+                <option v-for="secteur in uniqueSecteurs" :key="secteur" :value="secteur" />
+              </datalist>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="job-location">Lieu d'exercice de l'activité</label>
+              <input type="text" id="job-location" v-model="formData.geolocalisation" list="localisations" />
+              <datalist id="localisations">
+                <option v-for="localisation in uniqueLocalisations" :key="localisation" :value="localisation" />
+              </datalist>
+            </div>
+          </div>
+
           <h2>Etape 1/3 : Décrire l'offre d'emploi</h2>
           <div class="form-group">
             <label for="job-title">Quel est la meilleure dénomination pour cet emploi ?</label>
@@ -215,7 +243,15 @@ const formData = reactive({
   experienceRequise: "",
   diplomeRequis: "",
   profilRecherche: "",
+
+  societe: "",
+  emailReception: "",
+  secteurActivite: "",
+  geolocalisation: "",
 });
+const uniqueSocietes = computed(() => [...new Set(emplois.value.map(e => e.societe))]);
+const uniqueSecteurs = computed(() => [...new Set(emplois.value.map(e => e.secteurActivite))]);
+const uniqueLocalisations = computed(() => [...new Set(emplois.value.map(e => e.geolocalisation))]);
 const resetForm = () => {
   // Réinitialiser le formulaire et revenir au step 1
   Object.assign(formData, initialFormData);

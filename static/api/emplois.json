@@ -3,9 +3,9 @@
     "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
     "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
     "id": 1,
-    "titre": "Test",
-    "description": "Nous recherchons un développeur Full Stack expérimenté pour rejoindre notre équipe dynamique.",
-    "shortDescription": "Recherche d'un développeur Full Stack expérimenté pour rejoindre une équipe dynamique. ",
+    "titre": "01- La candidature test",
+    "description": "Nous recherchons un d\u00e9veloppeur Full Stack exp\u00e9riment\u00e9 pour rejoindre notre \u00e9quipe dynamique.",
+    "shortDescription": "Recherche d'un d\u00e9veloppeur Full Stack exp\u00e9riment\u00e9 pour rejoindre une \u00e9quipe dynamique. ",
     "nombrePosteAPourvoir": 5,
     "diplomeRequis": "BAC+5",
     "competencesRequises": [
@@ -15,16 +15,16 @@
       "MongoDB"
     ],
     "experienceRequise": "2 ans",
-    "departement": "Développement",
+    "departement": "D\u00e9veloppement",
     "datePublication": "2023-05-15",
     "dateExpiration": "2024-09-02",
     "statut": "Actif",
-    "geolocalisation": "Cocodykops",
+    "geolocalisation": "Cocody",
     "societe": "TechInnovate CI",
     "motsCles": [
       {
         "id": 1,
-        "mot": "développement web"
+        "mot": "d\u00e9veloppement web"
       },
       {
         "id": 2,
@@ -52,10 +52,9 @@
       {
         "candidat_id": 1,
         "adequation": 87,
-        "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation",
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
         "estretenu": false,
-        "estembauche": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -77,11 +76,10 @@
       {
         "candidat_id": 2,
         "adequation": 95,
-        "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation",
-        "estretenu": true,
-        "estembauche": true,
-        "decision": "redh vb",
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
             "id": 1,
@@ -102,10 +100,9 @@
       {
         "candidat_id": 3,
         "adequation": 72,
-        "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation",
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
         "estretenu": false,
-        "estembauche": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -127,10 +124,9 @@
       {
         "candidat_id": 4,
         "adequation": 63,
-        "correspondant": "Diplômes, Expérience",
-        "necorrespondantpas": "Géolocalisation",
-        "estretenu": true,
-        "estembauche": false,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
         "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
         "interviews": [
           {
@@ -153,13 +149,1631 @@
     "evolutionCandidatures": 75,
     "vueDesOffres": -12,
     "typeDeSociete": "Startup technologique",
-    "paysdelaSociete": "Côte d'Ivoire",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
     "NiveauDePoste": "Bac+5",
     "competencesDeBase": [
-      "Programmation orientée objet",
-      "Gestion de bases de données",
-      "Développement d'API"
+      "Programmation orient\u00e9e objet",
+      "Gestion de bases de donn\u00e9es",
+      "D\u00e9veloppement d'API"
     ],
-    "profilRecherche": "Développeur expérimenté avec une solide expérience en développement full stack et une passion pour les nouvelles technologies."
+    "profilRecherche": "D\u00e9veloppeur exp\u00e9riment\u00e9 avec une solide exp\u00e9rience en d\u00e9veloppement full stack et une passion pour les nouvelles technologies."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 2,
+    "titre": "Designer UX/UI",
+    "description": "Nous cherchons un designer UX/UI cr\u00e9atif pour concevoir des interfaces utilisateur intuitives et attrayantes.",
+    "shortDescription": "Recherche d'un designer UX/UI cr\u00e9atif pour concevoir des interfaces utilisateur intuitives. ",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BTS",
+    "competencesRequises": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Prototypage"
+    ],
+    "experienceRequise": "2 ans",
+    "departement": "Design",
+    "datePublication": "2023-05-16",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
+    "geolocalisation": "Plateau",
+    "societe": "Design Masters CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "design"
+      },
+      {
+        "id": 2,
+        "mot": "UX/UI"
+      },
+      {
+        "id": 3,
+        "mot": "interface utilisateur"
+      },
+      {
+        "id": 4,
+        "mot": "prototypage"
+      }
+    ],
+    "type": "Freelance",
+    "typeDeContrat": "Freelance",
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 876,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 92,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": true,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 78,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 85,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 69,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 32,
+    "vueDesOffres": 45,
+    "typeDeSociete": "Agence de design",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": [
+      "Conception d'interfaces",
+      "Principes de l'UX",
+      "Cr\u00e9ativit\u00e9"
+    ],
+    "profilRecherche": "Designer cr\u00e9atif avec une bonne compr\u00e9hension des principes de l'UX/UI et une capacit\u00e9 \u00e0 cr\u00e9er des interfaces intuitives et esth\u00e9tiques."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 3,
+    "titre": "Ing\u00e9nieur DevOps",
+    "description": "Nous recherchons un ing\u00e9nieur DevOps pour optimiser nos processus de d\u00e9veloppement et de d\u00e9ploiement.",
+    "shortDescription": "Recherche d'un ing\u00e9nieur DevOps pour optimiser les processus de d\u00e9veloppement et d\u00e9ploiement. aa",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD"
+    ],
+    "experienceRequise": "2 ans",
+    "departement": "Op\u00e9rations",
+    "datePublication": "2023-05-17",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
+    "geolocalisation": "Marcory",
+    "societe": "CloudOps CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "DevOps"
+      },
+      {
+        "id": 2,
+        "mot": "cloud"
+      },
+      {
+        "id": 3,
+        "mot": "automatisation"
+      },
+      {
+        "id": 4,
+        "mot": "CI/CD"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 2103,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 88,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 76,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 94,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 81,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 95,
+    "vueDesOffres": 28,
+    "typeDeSociete": "Entreprise de services cloud",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Administration syst\u00e8me",
+      "Scripting",
+      "Gestion de configuration"
+    ],
+    "profilRecherche": "Ing\u00e9nieur exp\u00e9riment\u00e9 en DevOps avec une solide compr\u00e9hension des pratiques d'int\u00e9gration et de d\u00e9ploiement continus."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 4,
+    "titre": "Data Scientist, Sp\u00e9cialiste Python",
+    "description": "Nous cherchons un Data Scientist pour analyser et interpr\u00e9ter des ensembles de donn\u00e9es complexes.",
+    "shortDescription": "Recherche d'un Data Scientist pour analyser des ensembles de donn\u00e9es complexes. Comp\u00e9tences requises : Python, R, Machine Learning, SQL.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Python",
+      "R",
+      "Machine Learning",
+      "SQL"
+    ],
+    "experienceRequise": "2 ans",
+    "departement": "Analyse de donn\u00e9es",
+    "datePublication": "2023-05-18",
+    "dateExpiration": "2024-09-02",
+    "statut": "Inactif",
+    "geolocalisation": "Yopougon",
+    "societe": "DataInsights CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "data science"
+      },
+      {
+        "id": 2,
+        "mot": "analyse de donn\u00e9es"
+      },
+      {
+        "id": 3,
+        "mot": "machine learning"
+      },
+      {
+        "id": 4,
+        "mot": "statistiques"
+      }
+    ],
+    "type": "Freelance",
+    "typeDeContrat": "Freelance",
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 1587,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 79,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 91,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 86,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 73,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": -5,
+    "vueDesOffres": 52,
+    "typeDeSociete": "Entreprise d'analyse de donn\u00e9es",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Statistiques",
+      "Programmation",
+      "Visualisation de donn\u00e9es"
+    ],
+    "profilRecherche": "Data Scientist junior avec une solide formation en statistiques et en programmation, capable d'extraire des insights \u00e0 partir de grands ensembles de donn\u00e9es."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 5,
+    "titre": "D\u00e9veloppeur Front-end",
+    "description": "Nous recherchons un d\u00e9veloppeur Front-end talentueux pour cr\u00e9er des interfaces utilisateur r\u00e9actives et modernes.",
+    "shortDescription": "Recherche d'un d\u00e9veloppeur Front-end pour cr\u00e9er des interfaces utilisateur r\u00e9actives.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vue.js"
+    ],
+    "experienceRequise": "4 ans",
+    "departement": "D\u00e9veloppement",
+    "datePublication": "2023-05-19",
+    "dateExpiration": "2024-09-02",
+    "statut": "Actif",
+    "geolocalisation": "Treichville",
+    "societe": "Web Front CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "d\u00e9veloppement web"
+      },
+      {
+        "id": 2,
+        "mot": "front-end"
+      },
+      {
+        "id": 3,
+        "mot": "JavaScript"
+      },
+      {
+        "id": 4,
+        "mot": "Vue.js"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 1,
+    "pourvu": true,
+    "nbvues": 932,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 83,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 97,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 75,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 89,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 62,
+    "vueDesOffres": -8,
+    "typeDeSociete": "Agence web",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+"
+    ],
+    "profilRecherche": "D\u00e9veloppeur Front-end junior passionn\u00e9 par la cr\u00e9ation d'interfaces utilisateur modernes et r\u00e9actives, avec une bonne ma\u00eetrise des technologies web actuelles."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 5,
+    "titre": "Responsable Marketing",
+    "description": "Nous recherchons un Responsable Marketing pour d\u00e9velopper et mettre en \u0153uvre des strat\u00e9gies de marketing innovantes.",
+    "shortDescription": "Recherche d'un Responsable Marketing pour d\u00e9velopper des strat\u00e9gies innovantes. Comp\u00e9tences requises : strat\u00e9gie, communication, analyse de march\u00e9.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Strat\u00e9gie marketing",
+      "Communication",
+      "Analyse de march\u00e9",
+      "Gestion de projet"
+    ],
+    "experienceRequise": "8 ans",
+    "departement": "Marketing",
+    "datePublication": "2023-06-01",
+    "dateExpiration": "2024-10-01",
+    "statut": "Actif",
+    "geolocalisation": "Abidjan",
+    "societe": "MarketLeaders CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "marketing"
+      },
+      {
+        "id": 2,
+        "mot": "strat\u00e9gie"
+      },
+      {
+        "id": 3,
+        "mot": "communication"
+      },
+      {
+        "id": 4,
+        "mot": "analyse"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 2,
+    "pourvu": false,
+    "nbvues": 1345,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 85,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 90,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 78,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 82,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 40,
+    "vueDesOffres": 15,
+    "typeDeSociete": "Entreprise de marketing",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Gestion de la marque",
+      "Campagnes publicitaires",
+      "Analyse de donn\u00e9es"
+    ],
+    "profilRecherche": "Responsable marketing exp\u00e9riment\u00e9 avec des comp\u00e9tences en strat\u00e9gie, communication et analyse de march\u00e9."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 6,
+    "titre": "Chef de Projet IT",
+    "description": "Nous cherchons un Chef de Projet IT pour g\u00e9rer des projets technologiques complexes de la conception \u00e0 la mise en \u0153uvre.",
+    "shortDescription": "Recherche d'un Chef de Projet IT pour g\u00e9rer des projets technologiques. Comp\u00e9tences requises : gestion de projet, d\u00e9veloppement logiciel, leadership.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Gestion de projet",
+      "D\u00e9veloppement logiciel",
+      "Leadership",
+      "Analyse des besoins"
+    ],
+    "experienceRequise": "12 ans",
+    "departement": "IT",
+    "datePublication": "2023-06-10",
+    "dateExpiration": "2024-10-10",
+    "statut": "Actif",
+    "geolocalisation": "Bouak\u00e9",
+    "societe": "TechSolutions CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "gestion de projet"
+      },
+      {
+        "id": 2,
+        "mot": "IT"
+      },
+      {
+        "id": 3,
+        "mot": "d\u00e9veloppement"
+      },
+      {
+        "id": 4,
+        "mot": "leadership"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 3,
+    "pourvu": false,
+    "nbvues": 1023,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 80,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 85,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 75,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 70,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 55,
+    "vueDesOffres": 35,
+    "typeDeSociete": "Entreprise IT",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Planification de projet",
+      "Coordination d'\u00e9quipe",
+      "Gestion des risques"
+    ],
+    "profilRecherche": "Chef de projet IT exp\u00e9riment\u00e9 avec une solide exp\u00e9rience en gestion de projet technologique et leadership."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 7,
+    "titre": "D\u00e9veloppeur Mobile",
+    "description": "Nous recrutons un D\u00e9veloppeur Mobile pour cr\u00e9er des applications mobiles innovantes et performantes.",
+    "shortDescription": "Recherche d'un D\u00e9veloppeur Mobile pour cr\u00e9er des applications innovantes. Comp\u00e9tences requises : iOS, Android, Flutter.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "iOS",
+      "Android",
+      "Flutter",
+      "D\u00e9veloppement d'applications"
+    ],
+    "experienceRequise": "6 ans",
+    "departement": "D\u00e9veloppement",
+    "datePublication": "2023-06-20",
+    "dateExpiration": "2024-10-20",
+    "statut": "Actif",
+    "geolocalisation": "San Pedro",
+    "societe": "MobileInnovate CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "d\u00e9veloppement mobile"
+      },
+      {
+        "id": 2,
+        "mot": "iOS"
+      },
+      {
+        "id": 3,
+        "mot": "Android"
+      },
+      {
+        "id": 4,
+        "mot": "Flutter"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 4,
+    "pourvu": false,
+    "nbvues": 980,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 88,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 84,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 79,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 72,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 60,
+    "vueDesOffres": 22,
+    "typeDeSociete": "Startup mobile",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+4",
+    "competencesDeBase": [
+      "D\u00e9veloppement d'applications",
+      "Optimisation mobile",
+      "UI/UX design"
+    ],
+    "profilRecherche": "D\u00e9veloppeur mobile avec une exp\u00e9rience en cr\u00e9ation d'applications innovantes pour iOS et Android."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 8,
+    "titre": "Assistant Administratif",
+    "description": "Nous cherchons un Assistant Administratif pour assurer le bon fonctionnement des op\u00e9rations quotidiennes.",
+    "shortDescription": "Recherche d'un Assistant Administratif pour g\u00e9rer les t\u00e2ches administratives et op\u00e9rationnelles. Comp\u00e9tences requises : organisation, communication, gestion des documents.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Organisation",
+      "Gestion des documents",
+      "Communication",
+      "Bureautique"
+    ],
+    "experienceRequise": "0 ans",
+    "departement": "Administration",
+    "datePublication": "2023-07-01",
+    "dateExpiration": "2024-11-01",
+    "statut": "Inactif",
+    "geolocalisation": "Dabou",
+    "societe": "OfficeSupport CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "administration"
+      },
+      {
+        "id": 2,
+        "mot": "assistance"
+      },
+      {
+        "id": 3,
+        "mot": "gestion"
+      },
+      {
+        "id": 4,
+        "mot": "organisation"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDD",
+    "id_recruteur": 5,
+    "pourvu": false,
+    "nbvues": 1150,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 48,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 82,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 74,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 80,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 25,
+    "vueDesOffres": 10,
+    "typeDeSociete": "Entreprise de services",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+2",
+    "competencesDeBase": [
+      "Gestion des agendas",
+      "R\u00e9daction de documents",
+      "Accueil des visiteurs"
+    ],
+    "profilRecherche": "Assistant administratif avec des comp\u00e9tences en organisation, gestion des documents et communication."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 9,
+    "titre": "Charg\u00e9 de Communication",
+    "description": "Nous recherchons un Charg\u00e9 de Communication pour \u00e9laborer des strat\u00e9gies de communication efficaces et g\u00e9rer les relations publiques.",
+    "shortDescription": "Recherche d'un Charg\u00e9 de Communication pour d\u00e9velopper des strat\u00e9gies de communication. Comp\u00e9tences requises : r\u00e9daction, relations publiques, gestion de crise.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "R\u00e9daction",
+      "Relations publiques",
+      "Gestion de crise",
+      "Strat\u00e9gie de communication"
+    ],
+    "experienceRequise": "6 ans",
+    "departement": "Communication",
+    "datePublication": "2023-07-15",
+    "dateExpiration": "2024-11-15",
+    "statut": "Actif",
+    "geolocalisation": "Yamoussoukro",
+    "societe": "Comms Pro CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "communication"
+      },
+      {
+        "id": 2,
+        "mot": "relations publiques"
+      },
+      {
+        "id": 3,
+        "mot": "strat\u00e9gie"
+      },
+      {
+        "id": 4,
+        "mot": "gestion de crise"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 6,
+    "pourvu": false,
+    "nbvues": 1250,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 90,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 88,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 60,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 46,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 35,
+    "vueDesOffres": 18,
+    "typeDeSociete": "Agence de communication",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+3",
+    "competencesDeBase": [
+      "R\u00e9daction de contenu",
+      "Gestion des m\u00e9dias sociaux",
+      "Planification de campagnes"
+    ],
+    "profilRecherche": "Charg\u00e9 de communication exp\u00e9riment\u00e9 avec des comp\u00e9tences en r\u00e9daction, relations publiques et gestion de crise."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 10,
+    "titre": "Analyste Financier Senior ",
+    "description": "Nous cherchons un Analyste Financier Senior pour analyser les donn\u00e9es financi\u00e8res et fournir des recommandations strat\u00e9giques.",
+    "shortDescription": "Recherche d'un Analyste Financier pour analyser les donn\u00e9es financi\u00e8res et fournir des recommandations. Comp\u00e9tences requises : analyse des donn\u00e9es, pr\u00e9visions financi\u00e8res, reporting.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Analyse des donn\u00e9es",
+      "Pr\u00e9visions financi\u00e8res",
+      "Reporting",
+      "Analyse des risques"
+    ],
+    "experienceRequise": "12 ans",
+    "departement": "Finance",
+    "datePublication": "2023-07-25",
+    "dateExpiration": "2024-11-25",
+    "statut": "Inactif",
+    "geolocalisation": "Korhogos",
+    "societe": "Finance Experts C\u00f4te d'Ivoire",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "finance"
+      },
+      {
+        "id": 2,
+        "mot": "analyse"
+      },
+      {
+        "id": 3,
+        "mot": "reporting"
+      },
+      {
+        "id": 4,
+        "mot": "pr\u00e9visions"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 7,
+    "pourvu": false,
+    "nbvues": 1080,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 90,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": true,
+        "decision": "On l'embauche",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 3,
+            "date": "2222-12-22",
+            "heure": "12:00",
+            "raison": "lm\u00f9dm\u00f9l,dzlm,",
+            "lien": "https://google.com"
+          },
+          {
+            "id": 4,
+            "date": "2222-02-21",
+            "heure": "12:22",
+            "raison": "ada",
+            "lien": "http://google.com"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 85,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 80,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 88,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-01-02",
+            "heure": "13:00",
+            "raison": "PAM",
+            "lien": "https://houedanou.com"
+          },
+          {
+            "id": 2,
+            "date": "2000-12-12",
+            "heure": "13:00",
+            "raison": "PAM",
+            "lien": "https://google.com"
+          }
+        ]
+      }
+    ],
+    "evolutionCandidatures": 50,
+    "vueDesOffres": 28,
+    "typeDeSociete": "Cabinet de conseil financier",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Analyse financi\u00e8re",
+      "Gestion des budgets",
+      "Pr\u00e9visions \u00e9conomiques"
+    ],
+    "profilRecherche": "Analyste financier avec une solide exp\u00e9rience en analyse des donn\u00e9es financi\u00e8res et pr\u00e9visions \u00e9conomiques."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 11,
+    "titre": "Graphiste",
+    "description": "Nous recrutons un Graphiste pour cr\u00e9er des visuels innovants pour nos supports marketing et de communication.",
+    "shortDescription": "Recherche d'un Graphiste pour cr\u00e9er des visuels innovants. Comp\u00e9tences requises : design graphique, ma\u00eetrise des outils Adobe, cr\u00e9ativit\u00e9.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Design graphique",
+      "Ma\u00eetrise des outils Adobe",
+      "Cr\u00e9ativit\u00e9",
+      "Gestion de projet"
+    ],
+    "experienceRequise": "2 ans",
+    "departement": "Cr\u00e9ation",
+    "datePublication": "2023-08-01",
+    "dateExpiration": "2024-12-01",
+    "statut": "Actif",
+    "geolocalisation": "Gagnoa",
+    "societe": "DesignCreative CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "graphisme"
+      },
+      {
+        "id": 2,
+        "mot": "design"
+      },
+      {
+        "id": 3,
+        "mot": "Adobe"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDD",
+    "id_recruteur": 8,
+    "pourvu": false,
+    "nbvues": 1400,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 78,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 82,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 20,
+    "vueDesOffres": 30,
+    "typeDeSociete": "Agence de design",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+2",
+    "competencesDeBase": [
+      "Cr\u00e9ation visuelle",
+      "Ma\u00eetrise des logiciels",
+      "D\u00e9veloppement de concepts"
+    ],
+    "profilRecherche": "Graphiste d\u00e9butant avec une bonne ma\u00eetrise des outils de design et une forte cr\u00e9ativit\u00e9."
+  },
+  {
+    "image": "https://dummyimage.com/400x400/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "imageHomepage": "https://dummyimage.com/400x250/1f1f1f/EEE.jpg&text=visuel+emploi",
+    "id": 12,
+    "titre": "Responsable RH",
+    "description": "Nous recherchons un Responsable RH pour g\u00e9rer les ressources humaines et d\u00e9velopper des politiques de gestion du personnel.",
+    "shortDescription": "Recherche d'un Responsable RH pour g\u00e9rer les ressources humaines. Comp\u00e9tences requises : gestion des talents, d\u00e9veloppement organisationnel, l\u00e9gislation du travail.",
+    "nombrePosteAPourvoir": 5,
+    "diplomeRequis": "BAC+4",
+    "competencesRequises": [
+      "Gestion des talents",
+      "D\u00e9veloppement organisationnel",
+      "L\u00e9gislation du travail",
+      "Gestion des conflits"
+    ],
+    "experienceRequise": "14 ans",
+    "departement": "Ressources Humaines",
+    "datePublication": "2023-08-15",
+    "dateExpiration": "2024-12-15",
+    "statut": "Inactif",
+    "geolocalisation": "Abengourou",
+    "societe": "HRManagement CI",
+    "motsCles": [
+      {
+        "id": 1,
+        "mot": "ressources humaines"
+      },
+      {
+        "id": 2,
+        "mot": "gestion des talents"
+      },
+      {
+        "id": 3,
+        "mot": "d\u00e9veloppement"
+      }
+    ],
+    "type": "Temps plein",
+    "typeDeContrat": "CDI",
+    "id_recruteur": 1,
+    "pourvu": false,
+    "nbvues": 980,
+    "candidatures": [
+      {
+        "candidat_id": 1,
+        "adequation": 88,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 2,
+        "adequation": 85,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 3,
+        "adequation": 82,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation",
+        "estretenu": false,
+        "decision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas viverra ligula at auctor. Proin quis ornare augue. Duis pellentesque arcu tellus, sit amet iaculis ipsum dapibus id. Quisque aliquet, augue eget congue egestas, turpis lorem mattis tellus, a lobortis odio dui nec tellus. Nam non malesuada sapien. Quisque eu velit lacinia, consectetur risus quis, efficitur nibh. Integer in velit nibh. Integer eleifend vel odio eget tristique. Proin eu ipsum suscipit, vehicula quam et, fringilla ligula. Aenean nec sagittis nibh, consequat ullamcorper magna.",
+        "interviews": [
+          {
+            "id": 1,
+            "date": "2023-05-15",
+            "heure": "14:00",
+            "raison": "Technical Test Interview",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          },
+          {
+            "id": 2,
+            "date": "2023-05-15",
+            "heure": "16:00",
+            "raison": "Technical Test Interview 2",
+            "lien": "https://www.zoom.com/meetingchdijiso"
+          }
+        ]
+      },
+      {
+        "candidat_id": 4,
+        "adequation": 90,
+        "correspondant": "Dipl\u00f4mes, Exp\u00e9rience",
+        "necorrespondantpas": "G\u00e9olocalisation"
+      }
+    ],
+    "evolutionCandidatures": 45,
+    "vueDesOffres": 22,
+    "typeDeSociete": "Entreprise de gestion des ressources humaines",
+    "paysdelaSociete": "C\u00f4te d'Ivoire",
+    "NiveauDePoste": "Bac+5",
+    "competencesDeBase": [
+      "Gestion des ressources humaines",
+      "D\u00e9veloppement des politiques",
+      "Relations avec les employ\u00e9s"
+    ],
+    "profilRecherche": "Responsable RH senior avec une exp\u00e9rience en gestion des talents, d\u00e9veloppement organisationnel et l\u00e9gislation du travail."
   }
 ]

@@ -83,6 +83,22 @@
       </div>
       <div class="searchFilters column is-4-desktop is-12-mobile">
         <div class="filter-section">
+          <h3 @click="toggleFilter('titrePoste')" class="filter-title">
+            Titre du poste
+            <span class="arrow" :class="{
+              'arrow-up': !filters.titrePoste.isOpen,
+              'arrow-down': filters.titrePoste.isOpen,
+            }">▼</span>
+          </h3>
+          <div v-if="filters.titrePoste.isOpen" class="filter-content">
+            <input v-model="filters.titrePoste.value" list="titresPoste" placeholder="Filtrer par titre de poste">
+            <datalist id="titresPoste">
+              <option v-for="titre in uniqueTitres" :key="titre" :value="titre" />
+            </datalist>
+          </div>
+        </div>
+
+        <div class="filter-section">
           <h3 @click="toggleFilter('education')" class="filter-title">
             Éducation
             <span class="arrow" :class="{
@@ -316,7 +332,9 @@ const emploisPostules = computed(() => {
     )
   );
 });
-
+const uniqueTitres = computed(() => {
+  return [...new Set(data.value.map(c => c.titre))];
+});
 const uniqueEducations = computed(() => {
   return [...new Set(data.value.flatMap(c => c.education))];
 });
@@ -382,6 +400,7 @@ const searchTerms = computed(() => {
 
 const initializeFilters = () => {
   return {
+    titrePoste: { isOpen: false, value: '' },
     education: { isOpen: true, selected: [] },
     geolocalisation: { isOpen: false, selected: [] },
     experience: { isOpen: false, selected: [] },
@@ -467,7 +486,8 @@ const filteredCandidats = computed(() => {
       competenceMatch &&
       locationMatch &&
       searchMatch &&
-      languageMatch
+      languageMatch &&
+      checkTitreMatch(candidat)
     );
   });
 });
@@ -476,7 +496,10 @@ function checkLocationMatch(candidat) {
   return filters.value.geolocalisation.selected.length === 0 ||
     filters.value.geolocalisation.selected.includes(candidat.geolocalisation);
 }
-
+function checkTitreMatch(candidat) {
+  return !filters.value.titrePoste.value ||
+    candidat.titre.toLowerCase().includes(filters.value.titrePoste.value.toLowerCase());
+}
 // Méthodes de filtrage séparées
 function checkEducationMatch(candidat) {
   return filters.value.education.selected.length === 0 ||

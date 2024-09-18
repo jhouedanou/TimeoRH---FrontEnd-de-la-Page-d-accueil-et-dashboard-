@@ -1,4 +1,4 @@
-- Corriger le bug sur la création de compte et d'offres d'emploi
+☐ Corriger le bug sur la création de compte et d'offres d'emploi
 
 Modifications de la page d'accueil :
 
@@ -11,10 +11,12 @@ Ajouter les éléments suivants dans la section "Vous êtes recruteur" :
 Modifications du formulaire de création d'emploi :
 
 Les informations suivantes sont déjà enregistrées dans le profil et ne nécessitent pas d'être ajoutées :
-☐ Nom de l'entreprise
-☐ Email de réception des candidatures
-☐ Secteur d'activité de l'entreprise
-☐ Lieu d'exercice de l'activité
+✔ @done(24-09-18 16:39)
+✔ Nom de l'entreprise @done(24-09-18 16:39)
+✔ Email de réception des candidatures @done(24-09-18 16:39)
+✔ Secteur d'activité de l'entreprise @done(24-09-18 16:39)
+✔ Lieu d'exercice de l'activité @done(24-09-18 16:39)
+
 Améliorations de l'accueil du dashboard :
 
 ☐ Segmenter les statistiques par catégories
