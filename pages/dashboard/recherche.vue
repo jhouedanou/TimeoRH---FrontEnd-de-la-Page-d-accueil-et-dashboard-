@@ -400,8 +400,8 @@ const searchTerms = computed(() => {
 
 const initializeFilters = () => {
   return {
-    titrePoste: { isOpen: false, value: '' },
-    education: { isOpen: true, selected: [] },
+    titrePoste: { isOpen: true, value: '' },
+    education: { isOpen: false, selected: [] },
     geolocalisation: { isOpen: false, selected: [] },
     experience: { isOpen: false, selected: [] },
     competences: { isOpen: false, selected: [] },
