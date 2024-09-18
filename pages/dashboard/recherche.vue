@@ -1704,4 +1704,80 @@ onMounted(() => {
     font-weight: bold;
   }
 }
+
+.chip {
+  display: inline-block;
+  margin: 0.3rem;
+  transition: all 0.3s ease;
+
+  label {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &.selected {
+      background-color: #dc9756;
+      color: white;
+      border-color: #dc9756;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  input {
+    display: none;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dc9756;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dc9756;
+    cursor: pointer;
+  }
+}
+
+input[list] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border-color: #dc9756;
+    box-shadow: 0 0 0 2px rgba(220, 151, 86, 0.2);
+  }
+}
 </style>
